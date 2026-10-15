@@ -8,7 +8,7 @@
 | 23375175 | Antony Thomas |
 | 23381272 | Oisin Minogue |
 | 23367687 | Padraig Shannon |
-| 23365757 | Tadgh Austin |
+| 23365757 | Tadhg Austin |
 | 23355573 | Shaun Purcell |
 
 ---
