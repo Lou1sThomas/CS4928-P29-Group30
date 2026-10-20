@@ -30,11 +30,19 @@ Size: 61,562
 EXM10: 14.799714109353173
 
 The pilot successfully extracted the expected summary row without errors.
-Evidence: results/week7/pilot_output.txt
-Limitation: This is an extraction of published aggregate results, not an independent execution of the authors preprocessing pipeline or statisical tests.
+**Evidence:** results/week7/pilot_output.txt
+**Limitation:** This is an extraction of published aggregate results, not an independent execution of the authors preprocessing pipeline or statisical tests.
 
 
 ## Step 4 – Full bounded run
+We couldn't run the original preprocessing experiment because some of the files needed were missing from the authors' repository and Zenodo.
+
+Instead, we used the FinalRatios.zip file from Zenodo, which contains the authors' published results. We extracted the file and used PowerShell to get the T5-small results from ProjectLevel_test.csv.
+
+I saved all the results into results/week7/t5_small_summary.csv. We checked the file to ensure the results were saved correctly.
+
+**Evidence:** results/week7/t5_small_summary.csv and screenshots showing the results in PowerShell and VS Code.
+**Limitation:** We only extracted the authors existing results. We didn't run their original preprocessing code or statistical tests because the required files were missing.
 
 ## Step 5 – Evidence chain (one value traced back)
 
