@@ -77,8 +77,24 @@ We couldn't confirm an exact match because the graph only gives approximate valu
 
 **Evidence:** results/week7/t5_small_summary.csv and Figure 7(c) from the original paper.
 
-**Limitation:** The graph only gives approximate values and we couldn't run the original preprocessing pipeline or statisical tests because the required files were missing.
+**Limitation:** The graph only gives approximate values and we couldn't run the original preprocessing pipeline or statistical tests because the required files were missing.
 
 ## Step 7 – Current status
+So far we have downloaded the authors FinalRatios.zip file from Zenodo and extract the T5-small results.
+
+We successfully ran a pilot using PowerShell to check one result and then saved all six project level results into results/week6/t5_small_summary.csv.
+
+We also compared these results with Figure 7(c) in the original paper. Some values were similar but we couldn't confirm an exact match for every step.
+
+We couldn't run the original preprocessing pipeline or statistical tests because the required datasets and supporting files were missing.
+
+Current status: Inconclusive
+
+We have evidence of the published results being extracted and checked but we haven't independently reproduced the original experiment.
 
 ## Step 8 – Next action before M2
+Before submitting we need to make sure all our evidence is uploaded to our GitHub repository, including all images and csv's and our updated REPRODUCTION.md
+
+We also need to get our alternative approach approved. If approved we can use the published results as our contingency evidence. If it is not approved we need to discuss another way of completing the reproduction.
+
+Our current result will remain inconclusive because we havent been able reproduce the original experiment.
