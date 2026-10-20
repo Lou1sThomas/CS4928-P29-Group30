@@ -60,7 +60,7 @@ The value matched the one I extracted earlier, so I could confirm that it had be
 
 **Evidence:** results/week6/t5_small_summary.csv and results/week6/step5-evidence_chain.png.
 
-**Limitation:** This checks a published summary value. It doesn't trace an individual prediction through the preprocessing pipeline.
+**Limitation:** I was able to check that the result in my CSV matched the authors' published result. However, I couldn't check how they originally calculated it because the dataset and other files needed to run their preprocessing code were missing.
 
 
 ## Step 6 – Comparison with the original study
