@@ -67,9 +67,11 @@ The value matched the one I extracted earlier, so I could confirm that it had be
 
 We compared the T5-small results from t5_small_summary.csv with Figure 7(c) in the original paper.
 
-The CSV values for P1, P3 and P4 looked similar to the blue points on the graph. For example, P1 had an EXM10 value of 14.80%, which is close to 0.15 (15%) on the graph.
+At first, the CSV values for P1, P3 and P4 looked similar to the blue points on the graph. For example, P1 had an EXM10 value of 14.80%, which is close to 0.15 (15%) on the graph.
 
-The P2 value was 20.35% in our CSV, but the graph looked closer to 16%. We're not sure whether this is a difference in the results or whether the CSV and graph are showing different configurations.
+The P2 value was 20.35% in our CSV, but the graph looked closer to 16%. We then realised we had used ProjectLevel_test.csv instead of ProjectLevel_test_common.csv. After checking th common-test file, P2 was 14.95% which was much closer to the graph.
+
+The other values in the common-test file were also similar to the graph with P1 at 15.05%, P3 at 10.31% and P4 at 21.68%
 
 We couldn't confirm an exact match because the graph only gives approximate values, and we couldn't run the original experiment because some of the required data files were missing.
 
