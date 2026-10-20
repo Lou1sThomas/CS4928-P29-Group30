@@ -20,6 +20,19 @@
 ### Execution route
 
 ## Step 3 – Pilot on one file
+The pilot used the published T5-small project-level summary file FinalRatios/csvResultsS2T5/final_results/ProjectLevel_test.csv, extracted from the authors' Zenodo archive
+
+PowerShell Import-CSV was used to select the S2_P1 configuration and read its Size and EXM10 columns.
+
+**Pilot Result**
+Configuration: S2_P1
+Size: 61,562
+EXM10: 14.799714109353173
+
+The pilot successfully extracted the expected summary row without errors.
+Evidence: results/week7/pilot_output.txt
+Limitation: This is an extraction of published aggregate results, not an independent execution of the authors preprocessing pipeline or statisical tests.
+
 
 ## Step 4 – Full bounded run
 
