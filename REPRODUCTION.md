@@ -30,7 +30,7 @@ Size: 61,562
 EXM10: 14.799714109353173
 
 The pilot successfully extracted the expected summary row without errors.
-**Evidence:** results/week7/pilot_output.txt
+**Evidence:** results/week6/pilot_output.txt
 **Limitation:** This is an extraction of published aggregate results, not an independent execution of the authors preprocessing pipeline or statisical tests.
 
 
@@ -41,10 +41,27 @@ Instead, we used the FinalRatios.zip file from Zenodo, which contains the author
 
 I saved all the results into results/week7/t5_small_summary.csv. We checked the file to ensure the results were saved correctly.
 
-**Evidence:** results/week7/t5_small_summary.csv and screenshots showing the results in PowerShell and VS Code.
+**Evidence:** results/week6/t5_small_summary.csv and screenshots showing the results in PowerShell and VS Code.
 **Limitation:** We only extracted the authors existing results. We didn't run their original preprocessing code or statistical tests because the required files were missing.
 
 ## Step 5 – Evidence chain (one value traced back)
+For this step, we checked one of the T5-small results to show where it came from.
+
+We used the S2_P1 configuration from the authors ProjectLevel_test.csv file, which was included in FinalRatios.zip on Zenodo.
+
+We checked the value again in my saved t5_small_summary.csv file using PowerShell.
+
+The result was:
+Step: S2_P1
+Size: 61,562
+EXM10: 14.799714109353173
+
+The value matched the one I extracted earlier, so I could confirm that it had been saved correctly.
+
+**Evidence:** results/week6/t5_small_summary.csv and results/week6/step5-evidence_chain.png.
+
+**Limitation:** This checks a published summary value. It doesn't trace an individual prediction through the preprocessing pipeline.
+
 
 ## Step 6 – Comparison with the original study
 
