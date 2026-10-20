@@ -65,6 +65,20 @@ The value matched the one I extracted earlier, so I could confirm that it had be
 
 ## Step 6 – Comparison with the original study
 
+We compared the T5-small results from t5_small_summary.csv with Figure 7(c) in the original paper.
+
+The CSV values for P1, P3 and P4 looked similar to the blue points on the graph. For example, P1 had an EXM10 value of 14.80%, which is close to 0.15 (15%) on the graph.
+
+The P2 value was 20.35% in our CSV, but the graph looked closer to 16%. We're not sure whether this is a difference in the results or whether the CSV and graph are showing different configurations.
+
+We couldn't confirm an exact match because the graph only gives approximate values, and we couldn't run the original experiment because some of the required data files were missing.
+
+**Outcome:** Inconclusive
+
+**Evidence:** results/week7/t5_small_summary.csv and Figure 7(c) from the original paper.
+
+**Limitation:** The graph only gives approximate values and we couldn't run the original preprocessing pipeline or statisical tests because the required files were missing.
+
 ## Step 7 – Current status
 
 ## Step 8 – Next action before M2
