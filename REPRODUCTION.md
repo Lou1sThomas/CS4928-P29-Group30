@@ -15,9 +15,63 @@
 
 
 ## Step 2 – Prepare one traceable run
+ 
 ### Input identity
+ 
+| Input | Version / identity |
+| --- | --- |
+| Authors' repository | https://github.com/shirinpirouzkhaah/Price-of-Precision – commit `d1e96929d2e78a20e65f78422676761411c8b18c` (29 Sep 2025). Re-cloned 15 Oct 2026 to `../authors-repo` (outside this repo); same commit as the 5 Oct clone, so no changes since. Code only – the data folders in GitHub are empty. |
+| Zenodo record | https://doi.org/10.5281/zenodo.17227729 – v1 (29 Sep 2025), still the only version on 15 Oct 2026. One file: `FinalRatios.zip` (45.5 kB, CC BY 4.0). |
+| Input file | `data/FinalRatios.zip` – Zenodo MD5: `b1947a3cab816a130a5fe3c329723b18`; our copy: `b1947a3cab816a130a5fe3c329723b18` → **MATCH** (checked 15 Oct 2026 with `Get-FileHash -Algorithm MD5`, re-checked after rebuilding the unzipped folder). |
+| Unzipped copy (never edited) | `data/FinalRatios/` – rebuilt from the verified zip on 15 Oct 2026. |
+| Bounded items | All rows of the 10 CSVs in `data/FinalRatios/csvResultsS2T5/final_results/` (T5-small, setting S2): ProjectLevel / TimeLevel × test / new_test × all / common, plus `ProjectLevel_common_new_test.csv` and `TimeLevel_common_new_test.csv`. Pilot (Step 3): `ProjectLevel_test.csv`. |
+ 
 ### Environment
+ 
+| Item | Value |
+| --- | --- |
+| OS | Windows [11 / 10] [version, e.g. 23H2] (from `winver`) |
+| Python | 3.11.10 (from `python --version`, 15 Oct 2026) |
+| Libraries | Standard library only (`csv`, `os`, `sys`) – nothing installed with pip |
+| Hardware | Not material – the script does simple arithmetic on small CSVs; no model is run |
+ 
 ### Execution route
+ 
+ 
+| Item | Value |
+| --- | --- |
+| Scripts | Authors' repo, commit `d1e9692`: `Preprocessing/Cululative_code/Preprocessing_Pipeline.py` (RQ1a, per-step record counts); `Results/StatisticalTests/stats_EXM_all_steps.py` (RQ1b, statistical verdict); `Results/StatisticalTests/stats_EXM_Time_vs_project.py` and `stats_Time_vs_project.py` (RQ2, project vs time split) |
+| Command | `python <script>.py`, run unchanged from `../authors-repo` (input paths are set inside each script) |
+| Status | Not run. Inputs they read (`SplittedData/` and per-record model results) are not in the GitHub repo or the Zenodo record (checked 15 Oct 2026). |
+ 
+**Fallback route**
+ 
+| Item | Value |
+| --- | --- |
+| Script | `scripts/check_ratios.py` (SHA-256: `[PASTE]`) – recomputes Precision, Recall and F1 from each row's Size and EXM10 and compares them with the published values. Drafted with GenAI; checked by hand on one row by [NAME]. |
+| Command (run from repo root) | `python scripts\check_ratios.py data\FinalRatios\csvResultsS2T5\final_results results\week6\ratio_check.csv > results\week6\run_log.txt` |
+ 
+### Raw evidence
+ 
+| Evidence | Location | Status |
+| --- | --- | --- |
+| Authors' published results (input, unedited) | `data/FinalRatios/csvResultsS2T5/final_results/` – 10 CSVs | In repo; MD5 of source zip matches Zenodo |
+| Blocker evidence – authors' route | `results/week6/blocker_evidence.txt` – listing of `authors-repo/Preprocessing/SplittedData` (incl. hidden files) at commit `d1e9692`: only `.DS_Store` (macOS folder-settings file, 6 kB), 0 CSV files | Saved 20 Oct 2026 |
+| Script output – per row | `results/week6/ratio_check.csv` – one row per input row: published vs recomputed Precision, Recall, F1, with a YES/NO match flag | Not yet produced – pending lab attendant approval, then Step 3 pilot / Step 4 full run |
+| Script output – summary | `results/week6/run_log.txt` – the script's printed summary | Not yet produced – as above |
+ 
+### Derived result
+ 
+The derived results are the numbers we calculate from the raw output and then compare with the paper. None have been produced yet.
+ 
+**What we will calculate (fallback route):**
+- **(A) Do the authors' numbers add up?** For every row in the 10 CSVs, the script recalculates Precision, Recall and F1 from Size and EXM10 and checks they match the published values (within 0.0005). Result: how many rows match out of the total. Comes from `results/week6/ratio_check.csv`.
+- **(B) Do the authors' numbers match the paper?** For each preprocessing step, we compare the test Size with the paper's Table 4, and the EXM10 with the paper's T5 results (§5, Figure 7). Saved in `results/week6/paper_comparison.md`.
+**What we can't calculate (original route – BLOCKED):**
+- RQ1a: the record count after each preprocessing step (needs the authors' pipeline input, which isn't published).
+- RQ1b: whether preprocessing makes a statistically significant difference (needs per-record results, which aren't published).
+- RQ2: whether project-level and time-level splits give different results (needs the same per-record results).
+Evidence for the blocker: `results/week6/blocker_evidence.txt`. The rule for deciding REPRODUCED / NOT REPRODUCED is in the `PLAN.md` Change log, entry dated 15 Oct 2026
 
 ## Step 3 – Pilot on one file
 The pilot used the published T5-small project-level summary file FinalRatios/csvResultsS2T5/final_results/ProjectLevel_test.csv, extracted from the authors' Zenodo archive
