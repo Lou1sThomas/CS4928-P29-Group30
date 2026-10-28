@@ -1,0 +1,9 @@
+run,step,count_before,count_after,our_removed_pct,paper_removed_pct,diff_pts,within_10pts
+GitHub_SampleA_first12,P1,12,5,58.3,,,
+GitHub_SampleA_first12,P2,5,1,80.0,69.3,10.7,False
+GitHub_SampleA_first12,P3,1,1,0.0,28.2,-28.2,False
+GitHub_SampleA_first12,P4,1,1,0.0,7.7,-7.7,True
+GitHub_SampleA_all50,P1,50,21,58.0,,,
+GitHub_SampleA_all50,P2,21,4,81.0,69.3,11.7,False
+GitHub_SampleA_all50,P3,4,2,50.0,28.2,21.8,False
+GitHub_SampleA_all50,P4,2,2,0.0,7.7,-7.7,True
