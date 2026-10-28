@@ -1,0 +1,6 @@
+    public void testContainsFloatNaN() {
+        float[] array = new float[] { Float.NEGATIVE_INFINITY, Float.NaN, Float.POSITIVE_INFINITY };
+        assertTrue(ArrayUtils.contains(array, Float.POSITIVE_INFINITY));
+        assertTrue(ArrayUtils.contains(array, Float.NEGATIVE_INFINITY));
+        assertTrue(ArrayUtils.contains(array, Float.NaN));
+    }

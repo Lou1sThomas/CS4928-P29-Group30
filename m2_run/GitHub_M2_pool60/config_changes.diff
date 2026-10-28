@@ -1,0 +1,8 @@
+33c33
+< input_csv_path = os.path.join(Root_dir,'SplittedData/ProjectLevel/Gerrit_ProjectSplited_Test_NoLeakage.csv')
+---
+> input_csv_path = os.path.join(Root_dir,'SplittedData/ProjectLevel/GitHub_M2_trial2repos.csv')
+137c137
+<     data_type = 'Gerrit'
+---
+>     data_type = 'GitHub'

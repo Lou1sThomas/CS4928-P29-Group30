@@ -1,0 +1,106 @@
+Record_id,references,comment,before,before_marked,after,owner_comment,comment_to_comment,method_flag_linked,creation_time,before_marked_flat,after_flat
+5,"[np.int64(314), np.int64(314)]",a -> array,"    public void testContainsFloatNaN() {
+        float[] a = new float[] { Float.NEGATIVE_INFINITY, Float.NaN, Float.POSITIVE_INFINITY };
+        assertTrue(ArrayUtils.contains(a, Float.POSITIVE_INFINITY));
+        assertTrue(ArrayUtils.contains(a, Float.NEGATIVE_INFINITY));
+        assertTrue(ArrayUtils.contains(a, Float.NaN));
+    }
+","    public void testContainsFloatNaN() { START         float[] a = new float[] { Float.NEGATIVE_INFINITY, Float.NaN, Float.POSITIVE_INFINITY }; END         assertTrue(ArrayUtils.contains(a, Float.POSITIVE_INFINITY));        assertTrue(ArrayUtils.contains(a, Float.NEGATIVE_INFINITY));        assertTrue(ArrayUtils.contains(a, Float.NaN));    }","    public void testContainsFloatNaN() {
+        float[] array = new float[] { Float.NEGATIVE_INFINITY, Float.NaN, Float.POSITIVE_INFINITY };
+        assertTrue(ArrayUtils.contains(array, Float.POSITIVE_INFINITY));
+        assertTrue(ArrayUtils.contains(array, Float.NEGATIVE_INFINITY));
+        assertTrue(ArrayUtils.contains(array, Float.NaN));
+    }
+",False,False,True,2020-11-15T20:00:17Z,"public void testContainsFloatNaN() { <START>  float[] a = new float[] { Float.NEGATIVE_INFINITY, Float.NaN, Float.POSITIVE_INFINITY };  <END> assertTrue(ArrayUtils.contains(a, Float.POSITIVE_INFINITY)); assertTrue(ArrayUtils.contains(a, Float.NEGATIVE_INFINITY)); assertTrue(ArrayUtils.contains(a, Float.NaN)); }","public void testContainsFloatNaN() { float[] array = new float[] { Float.NEGATIVE_INFINITY, Float.NaN, Float.POSITIVE_INFINITY }; assertTrue(ArrayUtils.contains(array, Float.POSITIVE_INFINITY)); assertTrue(ArrayUtils.contains(array, Float.NEGATIVE_INFINITY)); assertTrue(ArrayUtils.contains(array, Float.NaN)); }"
+28,"[np.int64(785), np.int64(785)]","let's not hard-code linux-specific new-line chars in error messages, but, if you really want new-lines, use `%n` with `string.format()`.","    public static Method getMatchingMethod(final Class<?> cls, final String methodName,
+            final Class<?>... parameterTypes) {
+        Validate.notNull(cls, ""cls"");
+        Validate.notEmpty(methodName, ""methodName"");
+
+        final List<Method> methods = Arrays.stream(cls.getDeclaredMethods())
+                .filter(method -> method.getName().equals(methodName))
+                .collect(toList());
+
+        ClassUtils.getAllSuperclasses(cls).stream()
+                .map(Class::getDeclaredMethods)
+                .flatMap(Arrays::stream)
+                .filter(method -> method.getName().equals(methodName))
+                .forEach(methods::add);
+
+        for (Method method : methods) {
+            if (Arrays.deepEquals(method.getParameterTypes(), parameterTypes)) {
+                return method;
+            }
+        }
+
+        final TreeMap<Double, List<Method>> candidates = new TreeMap<>();
+
+        methods.stream()
+                .filter(method -> ClassUtils.isAssignable(parameterTypes, method.getParameterTypes(), true))
+                .forEach(method -> {
+                    final double distance = distance(parameterTypes, method.getParameterTypes());
+                    List<Method> methods1 = candidates.computeIfAbsent(distance, k -> new ArrayList<>());
+                    methods1.add(method);
+                });
+
+        if (candidates.isEmpty()) {
+            return null;
+        }
+
+        final List<Method> bestCandidates = candidates.values().iterator().next();
+        if (bestCandidates.size() == 1) {
+            return bestCandidates.get(0);
+        }
+
+        final String target = methodName + Arrays.stream(parameterTypes).map(String::valueOf).collect(Collectors.joining("","", ""("", "")""));
+        final String strCandidates = bestCandidates.stream().map(Method::toString).collect(Collectors.joining(""\n  ""));
+        throw new IllegalStateException(""Found multiple candidates for method "" + target + "" on class "" + cls + "":\n  "" + strCandidates);
+    }
+","    public static Method getMatchingMethod(final Class<?> cls, final String methodName,            final Class<?>... parameterTypes) {        Validate.notNull(cls, ""cls"");        Validate.notEmpty(methodName, ""methodName"");        final List<Method> methods = Arrays.stream(cls.getDeclaredMethods())                .filter(method -> method.getName().equals(methodName))                .collect(toList());        ClassUtils.getAllSuperclasses(cls).stream()                .map(Class::getDeclaredMethods)                .flatMap(Arrays::stream)                .filter(method -> method.getName().equals(methodName))                .forEach(methods::add);        for (Method method : methods) {            if (Arrays.deepEquals(method.getParameterTypes(), parameterTypes)) {                return method;            }        }        final TreeMap<Double, List<Method>> candidates = new TreeMap<>();        methods.stream()                .filter(method -> ClassUtils.isAssignable(parameterTypes, method.getParameterTypes(), true))                .forEach(method -> {                    final double distance = distance(parameterTypes, method.getParameterTypes());                    List<Method> methods1 = candidates.computeIfAbsent(distance, k -> new ArrayList<>());                    methods1.add(method);                });        if (candidates.isEmpty()) {            return null;        }        final List<Method> bestCandidates = candidates.values().iterator().next();        if (bestCandidates.size() == 1) {            return bestCandidates.get(0);        }        final String target = methodName + Arrays.stream(parameterTypes).map(String::valueOf).collect(Collectors.joining("","", ""("", "")""));        final String strCandidates = bestCandidates.stream().map(Method::toString).collect(Collectors.joining(""\n  "")); START         throw new IllegalStateException(""Found multiple candidates for method "" + target + "" on class "" + cls + "":\n  "" + strCandidates); END     }","    public static Method getMatchingMethod(final Class<?> cls, final String methodName,
+            final Class<?>... parameterTypes) {
+        Validate.notNull(cls, ""cls"");
+        Validate.notEmpty(methodName, ""methodName"");
+
+        final List<Method> methods = Arrays.stream(cls.getDeclaredMethods())
+                .filter(method -> method.getName().equals(methodName))
+                .collect(toList());
+
+        ClassUtils.getAllSuperclasses(cls).stream()
+                .map(Class::getDeclaredMethods)
+                .flatMap(Arrays::stream)
+                .filter(method -> method.getName().equals(methodName))
+                .forEach(methods::add);
+
+        for (Method method : methods) {
+            if (Arrays.deepEquals(method.getParameterTypes(), parameterTypes)) {
+                return method;
+            }
+        }
+
+        final TreeMap<Integer, List<Method>> candidates = new TreeMap<>();
+
+        methods.stream()
+                .filter(method -> ClassUtils.isAssignable(parameterTypes, method.getParameterTypes(), true))
+                .forEach(method -> {
+                    final int distance = distance(parameterTypes, method.getParameterTypes());
+                    final List<Method> candidatesAtDistance = candidates.computeIfAbsent(distance, k -> new ArrayList<>());
+                    candidatesAtDistance.add(method);
+                });
+
+        if (candidates.isEmpty()) {
+            return null;
+        }
+
+        final List<Method> bestCandidates = candidates.values().iterator().next();
+        if (bestCandidates.size() == 1) {
+            return bestCandidates.get(0);
+        }
+
+        throw new IllegalStateException(
+                String.format(""Found multiple candidates for method %s on class %s : %s"",
+                        methodName + Arrays.stream(parameterTypes).map(String::valueOf).collect(Collectors.joining("","", ""("", "")"")),
+                        cls.getName(),
+                        bestCandidates.stream().map(Method::toString).collect(Collectors.joining("","", ""["", ""]"")))
+        );
+    }
+",False,False,True,2020-12-22T17:12:09Z,"public static Method getMatchingMethod(final Class<?> cls, final String methodName, final Class<?>... parameterTypes) { Validate.notNull(cls, ""cls""); Validate.notEmpty(methodName, ""methodName""); final List<Method> methods = Arrays.stream(cls.getDeclaredMethods()) .filter(method -> method.getName().equals(methodName)) .collect(toList()); ClassUtils.getAllSuperclasses(cls).stream() .map(Class::getDeclaredMethods) .flatMap(Arrays::stream) .filter(method -> method.getName().equals(methodName)) .forEach(methods::add); for (Method method : methods) { if (Arrays.deepEquals(method.getParameterTypes(), parameterTypes)) { return method; } } final TreeMap<Double, List<Method>> candidates = new TreeMap<>(); methods.stream() .filter(method -> ClassUtils.isAssignable(parameterTypes, method.getParameterTypes(), true)) .forEach(method -> { final double distance = distance(parameterTypes, method.getParameterTypes()); List<Method> methods1 = candidates.computeIfAbsent(distance, k -> new ArrayList<>()); methods1.add(method); }); if (candidates.isEmpty()) { return null; } final List<Method> bestCandidates = candidates.values().iterator().next(); if (bestCandidates.size() == 1) { return bestCandidates.get(0); } final String target = methodName + Arrays.stream(parameterTypes).map(String::valueOf).collect(Collectors.joining("","", ""("", "")"")); final String strCandidates = bestCandidates.stream().map(Method::toString).collect(Collectors.joining(""\n "")); <START>  throw new IllegalStateException(""Found multiple candidates for method "" + target + "" on class "" + cls + "":\n "" + strCandidates);  <END> }","public static Method getMatchingMethod(final Class<?> cls, final String methodName, final Class<?>... parameterTypes) { Validate.notNull(cls, ""cls""); Validate.notEmpty(methodName, ""methodName""); final List<Method> methods = Arrays.stream(cls.getDeclaredMethods()) .filter(method -> method.getName().equals(methodName)) .collect(toList()); ClassUtils.getAllSuperclasses(cls).stream() .map(Class::getDeclaredMethods) .flatMap(Arrays::stream) .filter(method -> method.getName().equals(methodName)) .forEach(methods::add); for (Method method : methods) { if (Arrays.deepEquals(method.getParameterTypes(), parameterTypes)) { return method; } } final TreeMap<Integer, List<Method>> candidates = new TreeMap<>(); methods.stream() .filter(method -> ClassUtils.isAssignable(parameterTypes, method.getParameterTypes(), true)) .forEach(method -> { final int distance = distance(parameterTypes, method.getParameterTypes()); final List<Method> candidatesAtDistance = candidates.computeIfAbsent(distance, k -> new ArrayList<>()); candidatesAtDistance.add(method); }); if (candidates.isEmpty()) { return null; } final List<Method> bestCandidates = candidates.values().iterator().next(); if (bestCandidates.size() == 1) { return bestCandidates.get(0); } throw new IllegalStateException( String.format(""Found multiple candidates for method %s on class %s : %s"", methodName + Arrays.stream(parameterTypes).map(String::valueOf).collect(Collectors.joining("","", ""("", "")"")), cls.getName(), bestCandidates.stream().map(Method::toString).collect(Collectors.joining("","", ""["", ""]""))) ); }"

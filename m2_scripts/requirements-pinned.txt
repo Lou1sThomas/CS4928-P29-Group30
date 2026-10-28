@@ -1,0 +1,8 @@
+langdetect==1.0.9
+langid==1.1.6
+lizard==1.24.3
+numpy==2.2.6
+pandas==2.3.3
+regex==2026.9.29
+textblob==0.20.1
+tqdm==4.70.1

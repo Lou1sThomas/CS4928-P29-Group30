@@ -1,0 +1,244 @@
+Record_id,references,comment,before,before_marked,after,owner_comment,comment_to_comment,method_flag_linked,creation_time,before_marked_flat,after_flat
+0,"[np.int64(1728), np.int64(1728)]","this is not true, an instant never has a timezone. unfortunately this method now goes on the forbiddenapi list of lucene because of this.
+instant is by definition not related to any time zone. toepochmillies returns a unix timestamp.","    public static boolean isFileOlder(final File file, final Date date) {
+        Objects.requireNonNull(date, ""date"");
+        return isFileOlder(file, date.getTime());
+    }
+","    public static boolean isFileOlder(final File file, final Date date) {        Objects.requireNonNull(date, ""date""); START         return isFileOlder(file, date.getTime()); END     }","    public static boolean isFileOlder(final File file, final Date date) {
+        Objects.requireNonNull(date, ""date"");
+        return isFileOlder(file, date.getTime());
+    }
+",False,False,True,2020-09-23T07:54:21Z,"public static boolean isFileOlder(final File file, final Date date) { Objects.requireNonNull(date, ""date""); <START>  return isFileOlder(file, date.getTime());  <END> }","public static boolean isFileOlder(final File file, final Date date) { Objects.requireNonNull(date, ""date""); return isFileOlder(file, date.getTime()); }"
+1,"[np.int64(1728), np.int64(1728)]","the big risk of this forward/backward transformation is now that at the dst changes hour, the calculation is wrong: during dst change the same local date time exists 2 times. when you convert the instant to a local time (after local time went backwards due to dst change) and then you convert the local time back, you're off by an hour.
+the correct way here is to just call toepochmillies(). please do not convert forward backwards from to/local time.","    public static boolean isFileOlder(final File file, final Date date) {
+        Objects.requireNonNull(date, ""date"");
+        return isFileOlder(file, date.getTime());
+    }
+","    public static boolean isFileOlder(final File file, final Date date) {        Objects.requireNonNull(date, ""date""); START         return isFileOlder(file, date.getTime()); END     }","    public static boolean isFileOlder(final File file, final Date date) {
+        Objects.requireNonNull(date, ""date"");
+        return isFileOlder(file, date.getTime());
+    }
+",False,False,True,2020-09-23T07:58:54Z,"public static boolean isFileOlder(final File file, final Date date) { Objects.requireNonNull(date, ""date""); <START>  return isFileOlder(file, date.getTime());  <END> }","public static boolean isFileOlder(final File file, final Date date) { Objects.requireNonNull(date, ""date""); return isFileOlder(file, date.getTime()); }"
+2,"[np.int64(1728), np.int64(1728)]","because of this the whole methods added here are not useable in international application, except the one taking an explicit zoneid. the one which would have been correct (the one taking an instant) was corrupted by this forward/backward transformation.","    public static boolean isFileOlder(final File file, final Date date) {
+        Objects.requireNonNull(date, ""date"");
+        return isFileOlder(file, date.getTime());
+    }
+","    public static boolean isFileOlder(final File file, final Date date) {        Objects.requireNonNull(date, ""date""); START         return isFileOlder(file, date.getTime()); END     }","    public static boolean isFileOlder(final File file, final Date date) {
+        Objects.requireNonNull(date, ""date"");
+        return isFileOlder(file, date.getTime());
+    }
+",False,False,True,2020-09-23T08:01:53Z,"public static boolean isFileOlder(final File file, final Date date) { Objects.requireNonNull(date, ""date""); <START>  return isFileOlder(file, date.getTime());  <END> }","public static boolean isFileOlder(final File file, final Date date) { Objects.requireNonNull(date, ""date""); return isFileOlder(file, date.getTime()); }"
+5,"[np.int64(314), np.int64(314)]",a -> array,"    public void testContainsFloatNaN() {
+        float[] a = new float[] { Float.NEGATIVE_INFINITY, Float.NaN, Float.POSITIVE_INFINITY };
+        assertTrue(ArrayUtils.contains(a, Float.POSITIVE_INFINITY));
+        assertTrue(ArrayUtils.contains(a, Float.NEGATIVE_INFINITY));
+        assertTrue(ArrayUtils.contains(a, Float.NaN));
+    }
+","    public void testContainsFloatNaN() { START         float[] a = new float[] { Float.NEGATIVE_INFINITY, Float.NaN, Float.POSITIVE_INFINITY }; END         assertTrue(ArrayUtils.contains(a, Float.POSITIVE_INFINITY));        assertTrue(ArrayUtils.contains(a, Float.NEGATIVE_INFINITY));        assertTrue(ArrayUtils.contains(a, Float.NaN));    }","    public void testContainsFloatNaN() {
+        float[] array = new float[] { Float.NEGATIVE_INFINITY, Float.NaN, Float.POSITIVE_INFINITY };
+        assertTrue(ArrayUtils.contains(array, Float.POSITIVE_INFINITY));
+        assertTrue(ArrayUtils.contains(array, Float.NEGATIVE_INFINITY));
+        assertTrue(ArrayUtils.contains(array, Float.NaN));
+    }
+",False,False,True,2020-11-15T20:00:17Z,"public void testContainsFloatNaN() { <START>  float[] a = new float[] { Float.NEGATIVE_INFINITY, Float.NaN, Float.POSITIVE_INFINITY };  <END> assertTrue(ArrayUtils.contains(a, Float.POSITIVE_INFINITY)); assertTrue(ArrayUtils.contains(a, Float.NEGATIVE_INFINITY)); assertTrue(ArrayUtils.contains(a, Float.NaN)); }","public void testContainsFloatNaN() { float[] array = new float[] { Float.NEGATIVE_INFINITY, Float.NaN, Float.POSITIVE_INFINITY }; assertTrue(ArrayUtils.contains(array, Float.POSITIVE_INFINITY)); assertTrue(ArrayUtils.contains(array, Float.NEGATIVE_INFINITY)); assertTrue(ArrayUtils.contains(array, Float.NaN)); }"
+6,"[np.int64(314), np.int64(314)]",changed,"    public void testContainsFloatNaN() {
+        float[] a = new float[] { Float.NEGATIVE_INFINITY, Float.NaN, Float.POSITIVE_INFINITY };
+        assertTrue(ArrayUtils.contains(a, Float.POSITIVE_INFINITY));
+        assertTrue(ArrayUtils.contains(a, Float.NEGATIVE_INFINITY));
+        assertTrue(ArrayUtils.contains(a, Float.NaN));
+    }
+","    public void testContainsFloatNaN() { START         float[] a = new float[] { Float.NEGATIVE_INFINITY, Float.NaN, Float.POSITIVE_INFINITY }; END         assertTrue(ArrayUtils.contains(a, Float.POSITIVE_INFINITY));        assertTrue(ArrayUtils.contains(a, Float.NEGATIVE_INFINITY));        assertTrue(ArrayUtils.contains(a, Float.NaN));    }","    public void testContainsFloatNaN() {
+        float[] array = new float[] { Float.NEGATIVE_INFINITY, Float.NaN, Float.POSITIVE_INFINITY };
+        assertTrue(ArrayUtils.contains(array, Float.POSITIVE_INFINITY));
+        assertTrue(ArrayUtils.contains(array, Float.NEGATIVE_INFINITY));
+        assertTrue(ArrayUtils.contains(array, Float.NaN));
+    }
+",True,False,True,2020-11-15T20:00:17Z,"public void testContainsFloatNaN() { <START>  float[] a = new float[] { Float.NEGATIVE_INFINITY, Float.NaN, Float.POSITIVE_INFINITY };  <END> assertTrue(ArrayUtils.contains(a, Float.POSITIVE_INFINITY)); assertTrue(ArrayUtils.contains(a, Float.NEGATIVE_INFINITY)); assertTrue(ArrayUtils.contains(a, Float.NaN)); }","public void testContainsFloatNaN() { float[] array = new float[] { Float.NEGATIVE_INFINITY, Float.NaN, Float.POSITIVE_INFINITY }; assertTrue(ArrayUtils.contains(array, Float.POSITIVE_INFINITY)); assertTrue(ArrayUtils.contains(array, Float.NEGATIVE_INFINITY)); assertTrue(ArrayUtils.contains(array, Float.NaN)); }"
+14,"[np.int64(50), np.int64(50)]",nice use of a new junit 5 api! 👍,"    public void testClose() throws IOException {
+        shielded.close();
+        verify(original, never()).close();
+        assertThrows(IOException.class, () -> shielded.write('x'), ""write(c)"");
+        original.write('y');
+        assertEquals(1, original.getBuilder().length());
+        assertEquals('y', original.toString().charAt(0));
+    }
+","    public void testClose() throws IOException {        shielded.close();        verify(original, never()).close(); START         assertThrows(IOException.class, () -> shielded.write('x'), ""write(c)""); END         original.write('y');        assertEquals(1, original.getBuilder().length());        assertEquals('y', original.toString().charAt(0));    }","    public void testClose() throws IOException {
+        shielded.close();
+        verify(original, never()).close();
+        assertThrows(IOException.class, () -> shielded.write('x'), ""write(c)"");
+        original.write('y');
+        assertEquals(1, original.getBuilder().length());
+        assertEquals('y', original.toString().charAt(0));
+    }
+",False,False,True,2020-12-08T19:28:47Z,"public void testClose() throws IOException { shielded.close(); verify(original, never()).close(); <START>  assertThrows(IOException.class, () -> shielded.write('x'), ""write(c)"");  <END> original.write('y'); assertEquals(1, original.getBuilder().length()); assertEquals('y', original.toString().charAt(0)); }","public void testClose() throws IOException { shielded.close(); verify(original, never()).close(); assertThrows(IOException.class, () -> shielded.write('x'), ""write(c)""); original.write('y'); assertEquals(1, original.getBuilder().length()); assertEquals('y', original.toString().charAt(0)); }"
+27,"[np.int64(543), np.int64(543)]","hi @arturobernalg 
+
+thank you for your pr. 
+
+ps: it's harder to deal with a pr like this because it mixes a change with some clean ups (-1 -> not_found) so i am not sure where the new test is without trolling through all the noise :-(
+
+why is the number in parentheses? if this is a test for the actual bug fix, then you should add a sanity check to validates that the char is indeed bogus.
+
+ty.","    public void testLastIndexOf_char() {
+        assertEquals(NOT_FOUND, StringUtils.lastIndexOf(null, ' '));
+        assertEquals(NOT_FOUND, StringUtils.lastIndexOf("""", ' '));
+        assertEquals(7, StringUtils.lastIndexOf(""aabaabaa"", 'a'));
+        assertEquals(5, StringUtils.lastIndexOf(""aabaabaa"", 'b'));
+
+        assertEquals(5, StringUtils.lastIndexOf(new StringBuilder(""aabaabaa""), 'b'));
+        char[] charArray = new char[9];
+        charArray[0] = '[';
+        charArray[1] = '&';
+        charArray[7] = '{';
+        charArray[3] = '.';
+        charArray[4] = 'c';
+        charArray[5] = '.';
+        charArray[6] = '0';
+        charArray[7] = 'r';
+        charArray[8] = 'o';
+        CharBuffer charBuffer = CharBuffer.wrap(charArray);
+        assertEquals(NOT_FOUND, StringUtils.lastIndexOf (charBuffer, (-1738), 982));
+    }
+","    public void testLastIndexOf_char() {        assertEquals(NOT_FOUND, StringUtils.lastIndexOf(null, ' '));        assertEquals(NOT_FOUND, StringUtils.lastIndexOf("""", ' '));        assertEquals(7, StringUtils.lastIndexOf(""aabaabaa"", 'a'));        assertEquals(5, StringUtils.lastIndexOf(""aabaabaa"", 'b'));        assertEquals(5, StringUtils.lastIndexOf(new StringBuilder(""aabaabaa""), 'b'));        char[] charArray = new char[9];        charArray[0] = '[';        charArray[1] = '&';        charArray[7] = '{';        charArray[3] = '.';        charArray[4] = 'c';        charArray[5] = '.';        charArray[6] = '0';        charArray[7] = 'r';        charArray[8] = 'o';        CharBuffer charBuffer = CharBuffer.wrap(charArray); START         assertEquals(NOT_FOUND, StringUtils.lastIndexOf (charBuffer, (-1738), 982)); END     }","    public void testLastIndexOf_char() {
+        assertEquals(-1, StringUtils.lastIndexOf(null, ' '));
+        assertEquals(-1, StringUtils.lastIndexOf("""", ' '));
+        assertEquals(7, StringUtils.lastIndexOf(""aabaabaa"", 'a'));
+        assertEquals(5, StringUtils.lastIndexOf(""aabaabaa"", 'b'));
+
+        assertEquals(5, StringUtils.lastIndexOf(new StringBuilder(""aabaabaa""), 'b'));
+    }
+",False,False,True,2020-12-23T16:26:27Z,"public void testLastIndexOf_char() { assertEquals(NOT_FOUND, StringUtils.lastIndexOf(null, ' ')); assertEquals(NOT_FOUND, StringUtils.lastIndexOf("""", ' ')); assertEquals(7, StringUtils.lastIndexOf(""aabaabaa"", 'a')); assertEquals(5, StringUtils.lastIndexOf(""aabaabaa"", 'b')); assertEquals(5, StringUtils.lastIndexOf(new StringBuilder(""aabaabaa""), 'b')); char[] charArray = new char[9]; charArray[0] = '['; charArray[1] = '&'; charArray[7] = '{'; charArray[3] = '.'; charArray[4] = 'c'; charArray[5] = '.'; charArray[6] = '0'; charArray[7] = 'r'; charArray[8] = 'o'; CharBuffer charBuffer = CharBuffer.wrap(charArray); <START>  assertEquals(NOT_FOUND, StringUtils.lastIndexOf (charBuffer, (-1738), 982));  <END> }","public void testLastIndexOf_char() { assertEquals(-1, StringUtils.lastIndexOf(null, ' ')); assertEquals(-1, StringUtils.lastIndexOf("""", ' ')); assertEquals(7, StringUtils.lastIndexOf(""aabaabaa"", 'a')); assertEquals(5, StringUtils.lastIndexOf(""aabaabaa"", 'b')); assertEquals(5, StringUtils.lastIndexOf(new StringBuilder(""aabaabaa""), 'b')); }"
+32,"[np.int64(543), np.int64(543)]","hi @garydgregory 
+sorry for the noise. when i created the pr it seemed logical.  but you're right. better keep the prs separate","    public void testLastIndexOf_char() {
+        assertEquals(NOT_FOUND, StringUtils.lastIndexOf(null, ' '));
+        assertEquals(NOT_FOUND, StringUtils.lastIndexOf("""", ' '));
+        assertEquals(7, StringUtils.lastIndexOf(""aabaabaa"", 'a'));
+        assertEquals(5, StringUtils.lastIndexOf(""aabaabaa"", 'b'));
+
+        assertEquals(5, StringUtils.lastIndexOf(new StringBuilder(""aabaabaa""), 'b'));
+        char[] charArray = new char[9];
+        charArray[0] = '[';
+        charArray[1] = '&';
+        charArray[7] = '{';
+        charArray[3] = '.';
+        charArray[4] = 'c';
+        charArray[5] = '.';
+        charArray[6] = '0';
+        charArray[7] = 'r';
+        charArray[8] = 'o';
+        CharBuffer charBuffer = CharBuffer.wrap(charArray);
+        assertEquals(NOT_FOUND, StringUtils.lastIndexOf (charBuffer, (-1738), 982));
+    }
+","    public void testLastIndexOf_char() {        assertEquals(NOT_FOUND, StringUtils.lastIndexOf(null, ' '));        assertEquals(NOT_FOUND, StringUtils.lastIndexOf("""", ' '));        assertEquals(7, StringUtils.lastIndexOf(""aabaabaa"", 'a'));        assertEquals(5, StringUtils.lastIndexOf(""aabaabaa"", 'b'));        assertEquals(5, StringUtils.lastIndexOf(new StringBuilder(""aabaabaa""), 'b'));        char[] charArray = new char[9];        charArray[0] = '[';        charArray[1] = '&';        charArray[7] = '{';        charArray[3] = '.';        charArray[4] = 'c';        charArray[5] = '.';        charArray[6] = '0';        charArray[7] = 'r';        charArray[8] = 'o';        CharBuffer charBuffer = CharBuffer.wrap(charArray); START         assertEquals(NOT_FOUND, StringUtils.lastIndexOf (charBuffer, (-1738), 982)); END     }","    public void testLastIndexOf_char() {
+        assertEquals(-1, StringUtils.lastIndexOf(null, ' '));
+        assertEquals(-1, StringUtils.lastIndexOf("""", ' '));
+        assertEquals(7, StringUtils.lastIndexOf(""aabaabaa"", 'a'));
+        assertEquals(5, StringUtils.lastIndexOf(""aabaabaa"", 'b'));
+
+        assertEquals(5, StringUtils.lastIndexOf(new StringBuilder(""aabaabaa""), 'b'));
+    }
+",True,False,True,2020-12-23T16:26:27Z,"public void testLastIndexOf_char() { assertEquals(NOT_FOUND, StringUtils.lastIndexOf(null, ' ')); assertEquals(NOT_FOUND, StringUtils.lastIndexOf("""", ' ')); assertEquals(7, StringUtils.lastIndexOf(""aabaabaa"", 'a')); assertEquals(5, StringUtils.lastIndexOf(""aabaabaa"", 'b')); assertEquals(5, StringUtils.lastIndexOf(new StringBuilder(""aabaabaa""), 'b')); char[] charArray = new char[9]; charArray[0] = '['; charArray[1] = '&'; charArray[7] = '{'; charArray[3] = '.'; charArray[4] = 'c'; charArray[5] = '.'; charArray[6] = '0'; charArray[7] = 'r'; charArray[8] = 'o'; CharBuffer charBuffer = CharBuffer.wrap(charArray); <START>  assertEquals(NOT_FOUND, StringUtils.lastIndexOf (charBuffer, (-1738), 982));  <END> }","public void testLastIndexOf_char() { assertEquals(-1, StringUtils.lastIndexOf(null, ' ')); assertEquals(-1, StringUtils.lastIndexOf("""", ' ')); assertEquals(7, StringUtils.lastIndexOf(""aabaabaa"", 'a')); assertEquals(5, StringUtils.lastIndexOf(""aabaabaa"", 'b')); assertEquals(5, StringUtils.lastIndexOf(new StringBuilder(""aabaabaa""), 'b')); }"
+33,"[np.int64(543), np.int64(543)]","hi @arturobernalg 
+you've not answered all my question.
+also why are you building the char[] one char at a time? why not call charbuffer.wrap(string)?","    public void testLastIndexOf_char() {
+        assertEquals(NOT_FOUND, StringUtils.lastIndexOf(null, ' '));
+        assertEquals(NOT_FOUND, StringUtils.lastIndexOf("""", ' '));
+        assertEquals(7, StringUtils.lastIndexOf(""aabaabaa"", 'a'));
+        assertEquals(5, StringUtils.lastIndexOf(""aabaabaa"", 'b'));
+
+        assertEquals(5, StringUtils.lastIndexOf(new StringBuilder(""aabaabaa""), 'b'));
+        char[] charArray = new char[9];
+        charArray[0] = '[';
+        charArray[1] = '&';
+        charArray[7] = '{';
+        charArray[3] = '.';
+        charArray[4] = 'c';
+        charArray[5] = '.';
+        charArray[6] = '0';
+        charArray[7] = 'r';
+        charArray[8] = 'o';
+        CharBuffer charBuffer = CharBuffer.wrap(charArray);
+        assertEquals(NOT_FOUND, StringUtils.lastIndexOf (charBuffer, (-1738), 982));
+    }
+","    public void testLastIndexOf_char() {        assertEquals(NOT_FOUND, StringUtils.lastIndexOf(null, ' '));        assertEquals(NOT_FOUND, StringUtils.lastIndexOf("""", ' '));        assertEquals(7, StringUtils.lastIndexOf(""aabaabaa"", 'a'));        assertEquals(5, StringUtils.lastIndexOf(""aabaabaa"", 'b'));        assertEquals(5, StringUtils.lastIndexOf(new StringBuilder(""aabaabaa""), 'b'));        char[] charArray = new char[9];        charArray[0] = '[';        charArray[1] = '&';        charArray[7] = '{';        charArray[3] = '.';        charArray[4] = 'c';        charArray[5] = '.';        charArray[6] = '0';        charArray[7] = 'r';        charArray[8] = 'o';        CharBuffer charBuffer = CharBuffer.wrap(charArray); START         assertEquals(NOT_FOUND, StringUtils.lastIndexOf (charBuffer, (-1738), 982)); END     }","    public void testLastIndexOf_char() {
+        assertEquals(-1, StringUtils.lastIndexOf(null, ' '));
+        assertEquals(-1, StringUtils.lastIndexOf("""", ' '));
+        assertEquals(7, StringUtils.lastIndexOf(""aabaabaa"", 'a'));
+        assertEquals(5, StringUtils.lastIndexOf(""aabaabaa"", 'b'));
+
+        assertEquals(5, StringUtils.lastIndexOf(new StringBuilder(""aabaabaa""), 'b'));
+    }
+",False,False,True,2020-12-23T16:26:27Z,"public void testLastIndexOf_char() { assertEquals(NOT_FOUND, StringUtils.lastIndexOf(null, ' ')); assertEquals(NOT_FOUND, StringUtils.lastIndexOf("""", ' ')); assertEquals(7, StringUtils.lastIndexOf(""aabaabaa"", 'a')); assertEquals(5, StringUtils.lastIndexOf(""aabaabaa"", 'b')); assertEquals(5, StringUtils.lastIndexOf(new StringBuilder(""aabaabaa""), 'b')); char[] charArray = new char[9]; charArray[0] = '['; charArray[1] = '&'; charArray[7] = '{'; charArray[3] = '.'; charArray[4] = 'c'; charArray[5] = '.'; charArray[6] = '0'; charArray[7] = 'r'; charArray[8] = 'o'; CharBuffer charBuffer = CharBuffer.wrap(charArray); <START>  assertEquals(NOT_FOUND, StringUtils.lastIndexOf (charBuffer, (-1738), 982));  <END> }","public void testLastIndexOf_char() { assertEquals(-1, StringUtils.lastIndexOf(null, ' ')); assertEquals(-1, StringUtils.lastIndexOf("""", ' ')); assertEquals(7, StringUtils.lastIndexOf(""aabaabaa"", 'a')); assertEquals(5, StringUtils.lastIndexOf(""aabaabaa"", 'b')); assertEquals(5, StringUtils.lastIndexOf(new StringBuilder(""aabaabaa""), 'b')); }"
+38,"[np.int64(543), np.int64(543)]","mmm 
+
+- the parentheses was a mistake
+- the character in the test there are not valid unicode values
+- i'll change  the test for --> charbuffer.wrap(string)","    public void testLastIndexOf_char() {
+        assertEquals(NOT_FOUND, StringUtils.lastIndexOf(null, ' '));
+        assertEquals(NOT_FOUND, StringUtils.lastIndexOf("""", ' '));
+        assertEquals(7, StringUtils.lastIndexOf(""aabaabaa"", 'a'));
+        assertEquals(5, StringUtils.lastIndexOf(""aabaabaa"", 'b'));
+
+        assertEquals(5, StringUtils.lastIndexOf(new StringBuilder(""aabaabaa""), 'b'));
+        char[] charArray = new char[9];
+        charArray[0] = '[';
+        charArray[1] = '&';
+        charArray[7] = '{';
+        charArray[3] = '.';
+        charArray[4] = 'c';
+        charArray[5] = '.';
+        charArray[6] = '0';
+        charArray[7] = 'r';
+        charArray[8] = 'o';
+        CharBuffer charBuffer = CharBuffer.wrap(charArray);
+        assertEquals(NOT_FOUND, StringUtils.lastIndexOf (charBuffer, (-1738), 982));
+    }
+","    public void testLastIndexOf_char() {        assertEquals(NOT_FOUND, StringUtils.lastIndexOf(null, ' '));        assertEquals(NOT_FOUND, StringUtils.lastIndexOf("""", ' '));        assertEquals(7, StringUtils.lastIndexOf(""aabaabaa"", 'a'));        assertEquals(5, StringUtils.lastIndexOf(""aabaabaa"", 'b'));        assertEquals(5, StringUtils.lastIndexOf(new StringBuilder(""aabaabaa""), 'b'));        char[] charArray = new char[9];        charArray[0] = '[';        charArray[1] = '&';        charArray[7] = '{';        charArray[3] = '.';        charArray[4] = 'c';        charArray[5] = '.';        charArray[6] = '0';        charArray[7] = 'r';        charArray[8] = 'o';        CharBuffer charBuffer = CharBuffer.wrap(charArray); START         assertEquals(NOT_FOUND, StringUtils.lastIndexOf (charBuffer, (-1738), 982)); END     }","    public void testLastIndexOf_char() {
+        assertEquals(-1, StringUtils.lastIndexOf(null, ' '));
+        assertEquals(-1, StringUtils.lastIndexOf("""", ' '));
+        assertEquals(7, StringUtils.lastIndexOf(""aabaabaa"", 'a'));
+        assertEquals(5, StringUtils.lastIndexOf(""aabaabaa"", 'b'));
+
+        assertEquals(5, StringUtils.lastIndexOf(new StringBuilder(""aabaabaa""), 'b'));
+    }
+",True,False,True,2020-12-23T16:26:27Z,"public void testLastIndexOf_char() { assertEquals(NOT_FOUND, StringUtils.lastIndexOf(null, ' ')); assertEquals(NOT_FOUND, StringUtils.lastIndexOf("""", ' ')); assertEquals(7, StringUtils.lastIndexOf(""aabaabaa"", 'a')); assertEquals(5, StringUtils.lastIndexOf(""aabaabaa"", 'b')); assertEquals(5, StringUtils.lastIndexOf(new StringBuilder(""aabaabaa""), 'b')); char[] charArray = new char[9]; charArray[0] = '['; charArray[1] = '&'; charArray[7] = '{'; charArray[3] = '.'; charArray[4] = 'c'; charArray[5] = '.'; charArray[6] = '0'; charArray[7] = 'r'; charArray[8] = 'o'; CharBuffer charBuffer = CharBuffer.wrap(charArray); <START>  assertEquals(NOT_FOUND, StringUtils.lastIndexOf (charBuffer, (-1738), 982));  <END> }","public void testLastIndexOf_char() { assertEquals(-1, StringUtils.lastIndexOf(null, ' ')); assertEquals(-1, StringUtils.lastIndexOf("""", ' ')); assertEquals(7, StringUtils.lastIndexOf(""aabaabaa"", 'a')); assertEquals(5, StringUtils.lastIndexOf(""aabaabaa"", 'b')); assertEquals(5, StringUtils.lastIndexOf(new StringBuilder(""aabaabaa""), 'b')); }"
+48,"[np.int64(442), np.int64(442)]","hi,
+thank you for your pr.
+what about ""yyy""?","    public void testWeekYear() {
+        final GregorianCalendar cal = new GregorianCalendar(2020, 12, 31, 0, 0, 0);
+        final DatePrinter printer4Digits = getInstance(""YYYY"");
+        final DatePrinter printer2Digits = getInstance(""YY"");
+        assertEquals(""2021"", printer4Digits.format(cal));
+        assertEquals(""21"", printer2Digits.format(cal));
+    }
+","    public void testWeekYear() {        final GregorianCalendar cal = new GregorianCalendar(2020, 12, 31, 0, 0, 0);        final DatePrinter printer4Digits = getInstance(""YYYY""); START         final DatePrinter printer2Digits = getInstance(""YY""); END         assertEquals(""2021"", printer4Digits.format(cal));        assertEquals(""21"", printer2Digits.format(cal));    }","    public void testWeekYear() {
+        final GregorianCalendar cal = new GregorianCalendar(2020, 12, 31, 0, 0, 0);
+        final DatePrinter printer4Digits = getInstance(""YYYY"");
+        final DatePrinter printer4DigitsFallback = getInstance(""YYY"");
+        final DatePrinter printer2Digits = getInstance(""YY"");
+        final DatePrinter printer4DigitAnotherFallback = getInstance(""Y"");
+        assertEquals(""2021"", printer4Digits.format(cal));
+        assertEquals(""2021"", printer4DigitsFallback.format(cal));
+        assertEquals(""2021"", printer4DigitAnotherFallback.format(cal));
+        assertEquals(""21"", printer2Digits.format(cal));
+    }
+",False,False,True,2021-01-02T16:14:51Z,"public void testWeekYear() { final GregorianCalendar cal = new GregorianCalendar(2020, 12, 31, 0, 0, 0); final DatePrinter printer4Digits = getInstance(""YYYY""); <START>  final DatePrinter printer2Digits = getInstance(""YY"");  <END> assertEquals(""2021"", printer4Digits.format(cal)); assertEquals(""21"", printer2Digits.format(cal)); }","public void testWeekYear() { final GregorianCalendar cal = new GregorianCalendar(2020, 12, 31, 0, 0, 0); final DatePrinter printer4Digits = getInstance(""YYYY""); final DatePrinter printer4DigitsFallback = getInstance(""YYY""); final DatePrinter printer2Digits = getInstance(""YY""); final DatePrinter printer4DigitAnotherFallback = getInstance(""Y""); assertEquals(""2021"", printer4Digits.format(cal)); assertEquals(""2021"", printer4DigitsFallback.format(cal)); assertEquals(""2021"", printer4DigitAnotherFallback.format(cal)); assertEquals(""21"", printer2Digits.format(cal)); }"
+49,"[np.int64(442), np.int64(442)]",please add code in your new test for y and yyy.,"    public void testWeekYear() {
+        final GregorianCalendar cal = new GregorianCalendar(2020, 12, 31, 0, 0, 0);
+        final DatePrinter printer4Digits = getInstance(""YYYY"");
+        final DatePrinter printer2Digits = getInstance(""YY"");
+        assertEquals(""2021"", printer4Digits.format(cal));
+        assertEquals(""21"", printer2Digits.format(cal));
+    }
+","    public void testWeekYear() {        final GregorianCalendar cal = new GregorianCalendar(2020, 12, 31, 0, 0, 0);        final DatePrinter printer4Digits = getInstance(""YYYY""); START         final DatePrinter printer2Digits = getInstance(""YY""); END         assertEquals(""2021"", printer4Digits.format(cal));        assertEquals(""21"", printer2Digits.format(cal));    }","    public void testWeekYear() {
+        final GregorianCalendar cal = new GregorianCalendar(2020, 12, 31, 0, 0, 0);
+        final DatePrinter printer4Digits = getInstance(""YYYY"");
+        final DatePrinter printer4DigitsFallback = getInstance(""YYY"");
+        final DatePrinter printer2Digits = getInstance(""YY"");
+        final DatePrinter printer4DigitAnotherFallback = getInstance(""Y"");
+        assertEquals(""2021"", printer4Digits.format(cal));
+        assertEquals(""2021"", printer4DigitsFallback.format(cal));
+        assertEquals(""2021"", printer4DigitAnotherFallback.format(cal));
+        assertEquals(""21"", printer2Digits.format(cal));
+    }
+",False,False,True,2021-01-02T16:14:51Z,"public void testWeekYear() { final GregorianCalendar cal = new GregorianCalendar(2020, 12, 31, 0, 0, 0); final DatePrinter printer4Digits = getInstance(""YYYY""); <START>  final DatePrinter printer2Digits = getInstance(""YY"");  <END> assertEquals(""2021"", printer4Digits.format(cal)); assertEquals(""21"", printer2Digits.format(cal)); }","public void testWeekYear() { final GregorianCalendar cal = new GregorianCalendar(2020, 12, 31, 0, 0, 0); final DatePrinter printer4Digits = getInstance(""YYYY""); final DatePrinter printer4DigitsFallback = getInstance(""YYY""); final DatePrinter printer2Digits = getInstance(""YY""); final DatePrinter printer4DigitAnotherFallback = getInstance(""Y""); assertEquals(""2021"", printer4Digits.format(cal)); assertEquals(""2021"", printer4DigitsFallback.format(cal)); assertEquals(""2021"", printer4DigitAnotherFallback.format(cal)); assertEquals(""21"", printer2Digits.format(cal)); }"

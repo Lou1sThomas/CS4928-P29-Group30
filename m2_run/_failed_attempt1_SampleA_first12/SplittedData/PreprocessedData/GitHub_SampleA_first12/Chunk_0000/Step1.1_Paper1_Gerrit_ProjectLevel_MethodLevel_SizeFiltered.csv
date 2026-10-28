@@ -1,0 +1,56 @@
+Record_id,references,comment,before,before_marked,after,owner_comment,comment_to_comment,method_flag_linked,creation_time,before_marked_flat,after_flat
+0,"[np.int64(1728), np.int64(1728)]","this is not true, an instant never has a timezone. unfortunately this method now goes on the forbiddenapi list of lucene because of this.
+instant is by definition not related to any time zone. toepochmillies returns a unix timestamp.","    public static boolean isFileOlder(final File file, final Date date) {
+        Objects.requireNonNull(date, ""date"");
+        return isFileOlder(file, date.getTime());
+    }
+","    public static boolean isFileOlder(final File file, final Date date) {        Objects.requireNonNull(date, ""date""); START         return isFileOlder(file, date.getTime()); END     }","    public static boolean isFileOlder(final File file, final Date date) {
+        Objects.requireNonNull(date, ""date"");
+        return isFileOlder(file, date.getTime());
+    }
+",False,False,True,2020-09-23T07:54:21Z,"public static boolean isFileOlder(final File file, final Date date) { Objects.requireNonNull(date, ""date""); <START>  return isFileOlder(file, date.getTime());  <END> }","public static boolean isFileOlder(final File file, final Date date) { Objects.requireNonNull(date, ""date""); return isFileOlder(file, date.getTime()); }"
+1,"[np.int64(1728), np.int64(1728)]","the big risk of this forward/backward transformation is now that at the dst changes hour, the calculation is wrong: during dst change the same local date time exists 2 times. when you convert the instant to a local time (after local time went backwards due to dst change) and then you convert the local time back, you're off by an hour.
+the correct way here is to just call toepochmillies(). please do not convert forward backwards from to/local time.","    public static boolean isFileOlder(final File file, final Date date) {
+        Objects.requireNonNull(date, ""date"");
+        return isFileOlder(file, date.getTime());
+    }
+","    public static boolean isFileOlder(final File file, final Date date) {        Objects.requireNonNull(date, ""date""); START         return isFileOlder(file, date.getTime()); END     }","    public static boolean isFileOlder(final File file, final Date date) {
+        Objects.requireNonNull(date, ""date"");
+        return isFileOlder(file, date.getTime());
+    }
+",False,False,True,2020-09-23T07:58:54Z,"public static boolean isFileOlder(final File file, final Date date) { Objects.requireNonNull(date, ""date""); <START>  return isFileOlder(file, date.getTime());  <END> }","public static boolean isFileOlder(final File file, final Date date) { Objects.requireNonNull(date, ""date""); return isFileOlder(file, date.getTime()); }"
+2,"[np.int64(1728), np.int64(1728)]","because of this the whole methods added here are not useable in international application, except the one taking an explicit zoneid. the one which would have been correct (the one taking an instant) was corrupted by this forward/backward transformation.","    public static boolean isFileOlder(final File file, final Date date) {
+        Objects.requireNonNull(date, ""date"");
+        return isFileOlder(file, date.getTime());
+    }
+","    public static boolean isFileOlder(final File file, final Date date) {        Objects.requireNonNull(date, ""date""); START         return isFileOlder(file, date.getTime()); END     }","    public static boolean isFileOlder(final File file, final Date date) {
+        Objects.requireNonNull(date, ""date"");
+        return isFileOlder(file, date.getTime());
+    }
+",False,False,True,2020-09-23T08:01:53Z,"public static boolean isFileOlder(final File file, final Date date) { Objects.requireNonNull(date, ""date""); <START>  return isFileOlder(file, date.getTime());  <END> }","public static boolean isFileOlder(final File file, final Date date) { Objects.requireNonNull(date, ""date""); return isFileOlder(file, date.getTime()); }"
+5,"[np.int64(314), np.int64(314)]",a -> array,"    public void testContainsFloatNaN() {
+        float[] a = new float[] { Float.NEGATIVE_INFINITY, Float.NaN, Float.POSITIVE_INFINITY };
+        assertTrue(ArrayUtils.contains(a, Float.POSITIVE_INFINITY));
+        assertTrue(ArrayUtils.contains(a, Float.NEGATIVE_INFINITY));
+        assertTrue(ArrayUtils.contains(a, Float.NaN));
+    }
+","    public void testContainsFloatNaN() { START         float[] a = new float[] { Float.NEGATIVE_INFINITY, Float.NaN, Float.POSITIVE_INFINITY }; END         assertTrue(ArrayUtils.contains(a, Float.POSITIVE_INFINITY));        assertTrue(ArrayUtils.contains(a, Float.NEGATIVE_INFINITY));        assertTrue(ArrayUtils.contains(a, Float.NaN));    }","    public void testContainsFloatNaN() {
+        float[] array = new float[] { Float.NEGATIVE_INFINITY, Float.NaN, Float.POSITIVE_INFINITY };
+        assertTrue(ArrayUtils.contains(array, Float.POSITIVE_INFINITY));
+        assertTrue(ArrayUtils.contains(array, Float.NEGATIVE_INFINITY));
+        assertTrue(ArrayUtils.contains(array, Float.NaN));
+    }
+",False,False,True,2020-11-15T20:00:17Z,"public void testContainsFloatNaN() { <START>  float[] a = new float[] { Float.NEGATIVE_INFINITY, Float.NaN, Float.POSITIVE_INFINITY };  <END> assertTrue(ArrayUtils.contains(a, Float.POSITIVE_INFINITY)); assertTrue(ArrayUtils.contains(a, Float.NEGATIVE_INFINITY)); assertTrue(ArrayUtils.contains(a, Float.NaN)); }","public void testContainsFloatNaN() { float[] array = new float[] { Float.NEGATIVE_INFINITY, Float.NaN, Float.POSITIVE_INFINITY }; assertTrue(ArrayUtils.contains(array, Float.POSITIVE_INFINITY)); assertTrue(ArrayUtils.contains(array, Float.NEGATIVE_INFINITY)); assertTrue(ArrayUtils.contains(array, Float.NaN)); }"
+6,"[np.int64(314), np.int64(314)]",changed,"    public void testContainsFloatNaN() {
+        float[] a = new float[] { Float.NEGATIVE_INFINITY, Float.NaN, Float.POSITIVE_INFINITY };
+        assertTrue(ArrayUtils.contains(a, Float.POSITIVE_INFINITY));
+        assertTrue(ArrayUtils.contains(a, Float.NEGATIVE_INFINITY));
+        assertTrue(ArrayUtils.contains(a, Float.NaN));
+    }
+","    public void testContainsFloatNaN() { START         float[] a = new float[] { Float.NEGATIVE_INFINITY, Float.NaN, Float.POSITIVE_INFINITY }; END         assertTrue(ArrayUtils.contains(a, Float.POSITIVE_INFINITY));        assertTrue(ArrayUtils.contains(a, Float.NEGATIVE_INFINITY));        assertTrue(ArrayUtils.contains(a, Float.NaN));    }","    public void testContainsFloatNaN() {
+        float[] array = new float[] { Float.NEGATIVE_INFINITY, Float.NaN, Float.POSITIVE_INFINITY };
+        assertTrue(ArrayUtils.contains(array, Float.POSITIVE_INFINITY));
+        assertTrue(ArrayUtils.contains(array, Float.NEGATIVE_INFINITY));
+        assertTrue(ArrayUtils.contains(array, Float.NaN));
+    }
+",True,False,True,2020-11-15T20:00:17Z,"public void testContainsFloatNaN() { <START>  float[] a = new float[] { Float.NEGATIVE_INFINITY, Float.NaN, Float.POSITIVE_INFINITY };  <END> assertTrue(ArrayUtils.contains(a, Float.POSITIVE_INFINITY)); assertTrue(ArrayUtils.contains(a, Float.NEGATIVE_INFINITY)); assertTrue(ArrayUtils.contains(a, Float.NaN)); }","public void testContainsFloatNaN() { float[] array = new float[] { Float.NEGATIVE_INFINITY, Float.NaN, Float.POSITIVE_INFINITY }; assertTrue(ArrayUtils.contains(array, Float.POSITIVE_INFINITY)); assertTrue(ArrayUtils.contains(array, Float.NEGATIVE_INFINITY)); assertTrue(ArrayUtils.contains(array, Float.NaN)); }"
