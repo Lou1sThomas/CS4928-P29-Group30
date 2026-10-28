@@ -4,14 +4,14 @@
 
 ### What M1 froze, and whether it can run as frozen
 
-| M1 item | What M1 froze (PLAN.md section) | Can it run as frozen? |
+| M1 item | What we froze | Can it run? |
 | --- | --- | --- |
-| **RQ + target** | **RQ1:** does the authors' code and data on the project-level test split give the same per-step record counts as Table 4 and the same statistical conclusion for T5-small ("only a weak dependence on cumulative preprocessing")? **RQ2:** does the pipeline behave the same on the authors' new GitHub data, and is restructuring its duplicated code worth doing?  | **RQ1 PARTLY:** the record counts and significance tests cannot run (data not published), but the per-step summary results for T5-small are published in `FinalRatios.zip`. **RQ2 PARTLY:** the transfer part is BLOCKED (new data not published); the design part needs only the code, which is available. |
-| **Bounded sample** | Unit: one code-review record (RQ1, RQ2 transfer); one source-file pair (RQ2 design). Source: authors' repo (29 Sep 2025) + Zenodo v1. Size: 12 records per test file; 4 file pairs. Rule: first 12 eligible in stable file order; exclusions listed in `data/excluded_rows.csv` (§2) | **PARTLY.** No record-level file exists to sample from for RQ1 or the RQ2 transfer part. The 4 file pairs are available. |
-| **Method** | Run the authors' pipeline and statistics scripts unchanged on the published data; measure duplication and complexity of the 4 file pairs (§3) | **PARTLY.** Scripts are present and compile but have no input data. The design measurement can run. |
-| **Metric / result** | Per-step record counts (RQ1); EXM@10 with Cochran's Q + McNemar, α = 0.05 (RQ1); removal % per step (RQ2 transfer); duplicated lines, cyclomatic complexity, output hashes (RQ2 design) (§3–4) | **PARTLY.** Counts, tests and removal % need missing data. Per-step EXM10, sizes, precision, recall and F1 are available as published summaries. Design metrics can be measured. |
-| **Decision rule** | RQ1: exact counts and same verdict + direction. RQ2: within 10 points per step; restructure only if ≥50% duplication removed, identical output, ≤10% complexity rise. Missing data = BLOCKED (§4.2–4.3) | **YES, unchanged.** An extra rule is needed for the FinalRatios check; it goes in the Change log before any run. |
-| **Held-out boundary** | No Event / held-out material | **YES.** Only the authors' public repository and Zenodo files are used. |
+| **RQ + target** | **RQ1:** Do the authors' code and data (project-level test split) give the same record counts per step as Table 4, and the same T5-small conclusion (preprocessing has only a weak effect)? **RQ2:** Does the pipeline behave the same on the new GitHub data, and is it worth restructuring the duplicated code? | **RQ1: Partly.** Counts and significance tests can't run (data not published), but T5-small summary results are in `FinalRatios.zip`. **RQ2: Partly.** The new-data part is blocked (not published); the code part can run. |
+| **Sample** | One code-review record (RQ1, RQ2 new data) or one source-file pair (RQ2 code). Source: authors' repo (29 Sep 2025) + Zenodo v1. 12 records per test file; 4 file pairs. First 12 eligible in file order; exclusions in `data/excluded_rows.csv`. | **Partly.** No record-level data to sample from. The 4 file pairs are available. |
+| **Method** | Run the authors' pipeline and statistics scripts unchanged; measure duplication and complexity of the 4 file pairs. | **Partly.** Scripts are there but have no input data. The code measurements can run. |
+| **Metric** | RQ1: record counts per step; EXM@10 with Cochran's Q + McNemar (α = 0.05). RQ2: % removed per step; duplicated lines, complexity, output hashes. | **Partly.** Counts, tests and % removed need the missing data. Published summaries (EXM@10, sizes, precision, recall, F1) and code metrics are available. |
+| **Decision rule** | RQ1: exact counts, same verdict and direction. RQ2: within 10 points per step; restructure only if it removes ≥50% duplication, keeps output identical and raises complexity ≤10%. Missing data = BLOCKED. | **Yes.** One extra rule is needed for the FinalRatios check; add it to the Change log before running. |
+| **Held-out** | No Event / held-out material. | **Yes.** Only the authors' public repo and Zenodo files are used. |
 
 
 ## Step 2 – Prepare one traceable run

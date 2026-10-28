@@ -1,0 +1,64 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20261028152846
+Username: LOUISLAPTOP\louis
+RunAs User: LOUISLAPTOP\louis
+Configuration Name: 
+Machine: LOUISLAPTOP (Microsoft Windows NT 10.0.26200.0)
+Host Application: powershell -NoProfile -ExecutionPolicy Bypass -File C:\Users\louis\Desktop\CS4928\CS4928-P29-Group30\m2_altdata\run\1_setup.ps1
+Process ID: 29620
+PSVersion: 5.1.26100.9711
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.9711
+BuildVersion: 10.0.26100.9711
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+=== 2026-10-28T15:28:46.6583062+00:00 repo: C:\Users\louis\Desktop\CS4928\CS4928-P29-Group30
+=== git: commit and tag M1_DEVIATION_2 (before any mining)
+warning: in the working copy of 'docs/DEVIATION_02_alternative_dataset.md', LF will be replaced by CRLF the next time Gi
+t touches it
+warning: in the working copy of 'm2_altdata/README.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'm2_altdata/config.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'm2_altdata/prompt_template.txt', LF will be replaced by CRLF the next time Git touches
+it
+warning: in the working copy of 'm2_altdata/run/1_setup.ps1', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'm2_altdata/run/2_run.ps1', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'm2_altdata/scripts/authors_steps.py', LF will be replaced by CRLF the next time Git tou
+ches it
+warning: in the working copy of 'm2_altdata/scripts/freeze_sample.py', LF will be replaced by CRLF the next time Git tou
+ches it
+warning: in the working copy of 'm2_altdata/scripts/mine_cases.py', LF will be replaced by CRLF the next time Git touche
+s it
+warning: in the working copy of 'm2_altdata/scripts/preprocess.py', LF will be replaced by CRLF the next time Git touche
+s it
+warning: in the working copy of 'm2_altdata/scripts/run_model.py', LF will be replaced by CRLF the next time Git touches
+ it
+warning: in the working copy of 'm2_altdata/scripts/score.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'm2_altdata/utils/stop-words-english.txt', LF will be replaced by CRLF the next time Git
+ touches it
+ create mode 100644 m2_altdata/scripts/mine_cases.py
+ create mode 100644 m2_altdata/scripts/preprocess.py
+ create mode 100644 m2_altdata/scripts/run_model.py
+ create mode 100644 m2_altdata/scripts/score.py
+ create mode 100644 m2_altdata/utils/idioms.csv
+ create mode 100644 m2_altdata/utils/stop-words-english.txt
+
+
+=== python libraries
+
+
+
+=== Ollama
+ollama exe: C:\Users\louis\AppData\Local\Programs\Ollama\ollama.exe  exists: True
+server already running
+
+
+
+=== SETUP FINISHED 2026-10-28T15:44:37.7049332+00:00
+**********************
+Windows PowerShell transcript end
+End time: 20261028154437
+**********************
