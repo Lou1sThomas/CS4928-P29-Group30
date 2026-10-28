@@ -1,0 +1,148 @@
+Record_id,references,comment,old,new,old_wo_comment,new_wo_comment,Diff_is_tagged,owner_comment,comment_to_comment,creation_time,old_tags,new_clean
+11,"[np.int64(42), np.int64(42)]","i don't agree with deprecating these apis, different versions of different ides raise different warnings depending on your preferred configuration of said ide. let's keep this pr simpler and lighter, we can always add deprecation later if it is truly warranted.","      *             the underlying input stream is never closed.
+      *             Use {@link #wrap(InputStream)} instead.
+      */
+ START     @Deprecated END 
+     public CloseShieldInputStream(final InputStream in) {
+         super(in);
+     }","      *             the underlying input stream is never closed.
+      *             Use {@link #wrap(InputStream)} instead.
+      */
+-    @Deprecated
++    @Deprecated
+     public CloseShieldInputStream(final InputStream in) {
+         super(in);
+     }","      *             the underlying input stream is never closed.
+      *             Use {@link #wrap(InputStream)} instead.
+      */
+ START     @Deprecated END 
+     public CloseShieldInputStream(final InputStream in) {
+         super(in);
+     }","      *             the underlying input stream is never closed.
+      *             Use {@link #wrap(InputStream)} instead.
+      */
+-    @Deprecated
++    @Deprecated
+     public CloseShieldInputStream(final InputStream in) {
+         super(in);
+     }",True,False,False,2020-12-08T19:28:47Z,"* the underlying input stream is never closed.
+      * Use {@link #wrap(InputStream)} instead.
+      */
+ <START>  @Deprecated  <END>
+     public CloseShieldInputStream(final InputStream in) {
+         super(in);
+     }","* the underlying input stream is never closed.
+      * Use {@link #wrap(InputStream)} instead.
+      */
+-    @Deprecated
++    @Deprecated
+     public CloseShieldInputStream(final InputStream in) {
+         super(in);
+     }"
+3,"[np.int64(27), np.int64(27)]",please don't use star imports.," import java.math.BigInteger;
+ import java.math.RoundingMode;
+ START import static org.junit.jupiter.api.Assertions.*; END 
+ /**
+  * Unit tests {@link org.apache.commons.lang3.math.NumberUtils}."," import java.math.BigInteger;
+ import java.math.RoundingMode;
+-import static org.junit.jupiter.api.Assertions.*;
++import org.junit.jupiter.api.Test;
+ /**
+  * Unit tests {@link org.apache.commons.lang3.math.NumberUtils}."," import java.math.BigInteger;
+ import java.math.RoundingMode;
+ START import static org.junit.jupiter.api.Assertions.*; END "," import java.math.BigInteger;
+ import java.math.RoundingMode;
+-import static org.junit.jupiter.api.Assertions.*;
++import org.junit.jupiter.api.Test;",True,False,False,2020-10-25T14:00:54Z,"import java.math.BigInteger;
+ import java.math.RoundingMode;
+ <START>  import static org.junit.jupiter.api.Assertions.*;  <END>
+ /**
+  * Unit tests {@link org.apache.commons.lang3.math.NumberUtils}.","import java.math.BigInteger;
+ import java.math.RoundingMode;
+-import static org.junit.jupiter.api.Assertions.*;
++import org.junit.jupiter.api.Test;
+ /**
+  * Unit tests {@link org.apache.commons.lang3.math.NumberUtils}."
+0,"[np.int64(1728), np.int64(1728)]","this is not true, an instant never has a timezone. unfortunately this method now goes on the forbiddenapi list of lucene because of this.
+instant is by definition not related to any time zone. toepochmillies returns a unix timestamp.","      */
+     public static boolean isFileOlder(final File file, final Date date) {
+         Objects.requireNonNull(date, ""date"");
+ START         return isFileOlder(file, date.getTime()); END 
+     }
+     //-----------------------------------------------------------------------","      */
+     public static boolean isFileOlder(final File file, final Date date) {
+         Objects.requireNonNull(date, ""date"");
+-        return isFileOlder(file, date.getTime());
++        return isFileOlder(file, date.getTime());
+     }
+     //-----------------------------------------------------------------------",,,True,False,False,2020-09-23T07:54:21Z,"*/
+     public static boolean isFileOlder(final File file, final Date date) {
+         Objects.requireNonNull(date, ""date"");
+ <START>  return isFileOlder(file, date.getTime());  <END>
+     }
+     //-----------------------------------------------------------------------","*/
+     public static boolean isFileOlder(final File file, final Date date) {
+         Objects.requireNonNull(date, ""date"");
+-        return isFileOlder(file, date.getTime());
++        return isFileOlder(file, date.getTime());
+     }
+     //-----------------------------------------------------------------------"
+5,"[np.int64(314), np.int64(314)]",a -> array," 
+     @Test
+     public void testContainsFloatNaN() {
+ START         float[] a = new float[] { Float.NEGATIVE_INFINITY, Float.NaN, Float.POSITIVE_INFINITY }; END 
+        assertTrue(ArrayUtils.contains(a, Float.POSITIVE_INFINITY));
+        assertTrue(ArrayUtils.contains(a, Float.NEGATIVE_INFINITY));
+        assertTrue(ArrayUtils.contains(a, Float.NaN));
+     }
+     @Test"," 
+     @Test
+     public void testContainsFloatNaN() {
+-        float[] a = new float[] { Float.NEGATIVE_INFINITY, Float.NaN, Float.POSITIVE_INFINITY };
+-        assertTrue(ArrayUtils.contains(a, Float.POSITIVE_INFINITY));
+-        assertTrue(ArrayUtils.contains(a, Float.NEGATIVE_INFINITY));
+-        assertTrue(ArrayUtils.contains(a, Float.NaN));
++        float[] array = new float[] { Float.NEGATIVE_INFINITY, Float.NaN, Float.POSITIVE_INFINITY };
++        assertTrue(ArrayUtils.contains(array, Float.POSITIVE_INFINITY));
++        assertTrue(ArrayUtils.contains(array, Float.NEGATIVE_INFINITY));
++        assertTrue(ArrayUtils.contains(array, Float.NaN));
+     }
+     @Test"," 
+     @Test
+     public void testContainsFloatNaN() {
+ START         float[] a = new float[] { Float.NEGATIVE_INFINITY, Float.NaN, Float.POSITIVE_INFINITY }; END 
+        assertTrue(ArrayUtils.contains(a, Float.POSITIVE_INFINITY));
+        assertTrue(ArrayUtils.contains(a, Float.NEGATIVE_INFINITY));
+        assertTrue(ArrayUtils.contains(a, Float.NaN));
+     }
+     @Test"," 
+     @Test
+     public void testContainsFloatNaN() {
+-        float[] a = new float[] { Float.NEGATIVE_INFINITY, Float.NaN, Float.POSITIVE_INFINITY };
+-        assertTrue(ArrayUtils.contains(a, Float.POSITIVE_INFINITY));
+-        assertTrue(ArrayUtils.contains(a, Float.NEGATIVE_INFINITY));
+-        assertTrue(ArrayUtils.contains(a, Float.NaN));
++        float[] array = new float[] { Float.NEGATIVE_INFINITY, Float.NaN, Float.POSITIVE_INFINITY };
++        assertTrue(ArrayUtils.contains(array, Float.POSITIVE_INFINITY));
++        assertTrue(ArrayUtils.contains(array, Float.NEGATIVE_INFINITY));
++        assertTrue(ArrayUtils.contains(array, Float.NaN));
+     }
+     @Test",True,False,False,2020-11-15T20:00:17Z,"@Test
+     public void testContainsFloatNaN() {
+ <START>  float[] a = new float[] { Float.NEGATIVE_INFINITY, Float.NaN, Float.POSITIVE_INFINITY };  <END>
+        assertTrue(ArrayUtils.contains(a, Float.POSITIVE_INFINITY));
+        assertTrue(ArrayUtils.contains(a, Float.NEGATIVE_INFINITY));
+        assertTrue(ArrayUtils.contains(a, Float.NaN));
+     }
+     @Test","@Test
+     public void testContainsFloatNaN() {
+-        float[] a = new float[] { Float.NEGATIVE_INFINITY, Float.NaN, Float.POSITIVE_INFINITY };
+-        assertTrue(ArrayUtils.contains(a, Float.POSITIVE_INFINITY));
+-        assertTrue(ArrayUtils.contains(a, Float.NEGATIVE_INFINITY));
+-        assertTrue(ArrayUtils.contains(a, Float.NaN));
++        float[] array = new float[] { Float.NEGATIVE_INFINITY, Float.NaN, Float.POSITIVE_INFINITY };
++        assertTrue(ArrayUtils.contains(array, Float.POSITIVE_INFINITY));
++        assertTrue(ArrayUtils.contains(array, Float.NEGATIVE_INFINITY));
++        assertTrue(ArrayUtils.contains(array, Float.NaN));
+     }
+     @Test"

@@ -1,0 +1,3604 @@
+Record_id,references,comment,old,new,old_wo_comment,new_wo_comment,Diff_is_tagged,owner_comment,comment_to_comment,creation_time,old_tags,new_clean
+0,"[np.int64(956), np.int64(956)]",done.,"      */
+     /**
+     * <p>Determine whether the given object is an array:
+ START      * either an Object array or a primitive array. END 
+      * <pre>
+      * ObjectUtils.isArray(null)             = false
+      * ObjectUtils.isArray("""")               = false","      */
+     /**
+-     * <p>Determine whether the given object is an array:
+-     * either an Object array or a primitive array.
++     * <p>
++     * Checks, whether the given object is an Object array or a primitive array in a null-safe manner.
++     * </p>
++     *
++     * <p>
++     * A {@code null} {@code object} Object will return {@code false}.
++     * </p>
++     *
+      * <pre>
+      * ObjectUtils.isArray(null)             = false
+      * ObjectUtils.isArray("""")               = false",,,True,True,True,2021-09-04T14:30:17Z,"*/
+     /**
+     * <p>Determine whether the given object is an array:
+ <START>  * either an Object array or a primitive array.  <END>
+      * <pre>
+      * ObjectUtils.isArray(null) = false
+      * ObjectUtils.isArray("""") = false","*/
+     /**
+-     * <p>Determine whether the given object is an array:
+-     * either an Object array or a primitive array.
++     * <p>
++     * Checks, whether the given object is an Object array or a primitive array in a null-safe manner.
++     * </p>
++     *
++     * <p>
++     * A {@code null} {@code object} Object will return {@code false}.
++     * </p>
++     *
+      * <pre>
+      * ObjectUtils.isArray(null) = false
+      * ObjectUtils.isArray("""") = false"
+3,"[np.int64(955), np.int64(955)]","changed.
+ty","      */
+     /**
+ START      * <p>Determine whether the given object is an array: END 
+     * either an Object array or a primitive array.
+      * <pre>
+      * ObjectUtils.isArray(null)             = false
+      * ObjectUtils.isArray("""")               = false","      */
+     /**
+-     * <p>Determine whether the given object is an array:
+-     * either an Object array or a primitive array.
++     * <p>
++     * Checks, whether the given object is an Object array or a primitive array in a null-safe manner.
++     * </p>
++     *
++     * <p>
++     * A {@code null} {@code object} Object will return {@code false}.
++     * </p>
++     *
+      * <pre>
+      * ObjectUtils.isArray(null)             = false
+      * ObjectUtils.isArray("""")               = false",,,True,True,True,2021-09-04T14:33:40Z,"*/
+     /**
+ <START>  * <p>Determine whether the given object is an array:  <END>
+     * either an Object array or a primitive array.
+      * <pre>
+      * ObjectUtils.isArray(null) = false
+      * ObjectUtils.isArray("""") = false","*/
+     /**
+-     * <p>Determine whether the given object is an array:
+-     * either an Object array or a primitive array.
++     * <p>
++     * Checks, whether the given object is an Object array or a primitive array in a null-safe manner.
++     * </p>
++     *
++     * <p>
++     * A {@code null} {@code object} Object will return {@code false}.
++     * </p>
++     *
+      * <pre>
+      * ObjectUtils.isArray(null) = false
+      * ObjectUtils.isArray("""") = false"
+4,"[np.int64(64), np.int64(64)]",end sentences in a period.,"     /**
+      * Creates a new writer that always throws an {@link IOException}.
+      *
+ START      * @param exceptionSupplier a supplier for the exception to be thrown END 
+      * @since 2.12.0
+      */
+     public BrokenWriter(final Supplier<IOException> exceptionSupplier) {","     /**
+      * Creates a new writer that always throws an {@link IOException}.
+      *
+-     * @param exceptionSupplier a supplier for the exception to be thrown
++     * @param exceptionSupplier a supplier for the exception to be thrown.
+      * @since 2.12.0
+      */
+     public BrokenWriter(final Supplier<IOException> exceptionSupplier) {",,,True,False,True,2021-09-28T00:32:21Z,"/**
+      * Creates a new writer that always throws an {@link IOException}.
+      *
+ <START>  * @param exceptionSupplier a supplier for the exception to be thrown  <END>
+      * @since 2.12.0
+      */
+     public BrokenWriter(final Supplier<IOException> exceptionSupplier) {","/**
+      * Creates a new writer that always throws an {@link IOException}.
+      *
+-     * @param exceptionSupplier a supplier for the exception to be thrown
++     * @param exceptionSupplier a supplier for the exception to be thrown.
+      * @since 2.12.0
+      */
+     public BrokenWriter(final Supplier<IOException> exceptionSupplier) {"
+7,"[np.int64(1021), np.int64(1021)]",not sure if this is correct. needs analysis. was this change made by a tool in intellij or eclipse?,"             final Class<?> acls;
+             if (interfaceIndex >= allInterfaces.size()) {
+                 acls = allSuperclasses.get(superClassIndex++);
+ START             } else if ((superClassIndex >= allSuperclasses.size()) || !(superClassIndex < interfaceIndex)) { END 
+                 acls = allInterfaces.get(interfaceIndex++);
+             } else {
+                 acls = allSuperclasses.get(superClassIndex++);","             final Class<?> acls;
+             if (interfaceIndex >= allInterfaces.size()) {
+                 acls = allSuperclasses.get(superClassIndex++);
+-            } else if ((superClassIndex >= allSuperclasses.size()) || !(superClassIndex < interfaceIndex)) {
++            } else if ((superClassIndex >= allSuperclasses.size()) || !(superClassIndex < interfaceIndex)) {
+                 acls = allInterfaces.get(interfaceIndex++);
+             } else {
+                 acls = allSuperclasses.get(superClassIndex++);","             final Class<?> acls;
+             if (interfaceIndex >= allInterfaces.size()) {
+                 acls = allSuperclasses.get(superClassIndex++);
+ START             } else if ((superClassIndex >= allSuperclasses.size()) || !(superClassIndex < interfaceIndex)) { END 
+                 acls = allInterfaces.get(interfaceIndex++);
+             } else {
+                 acls = allSuperclasses.get(superClassIndex++);","             final Class<?> acls;
+             if (interfaceIndex >= allInterfaces.size()) {
+                 acls = allSuperclasses.get(superClassIndex++);
+-            } else if ((superClassIndex >= allSuperclasses.size()) || !(superClassIndex < interfaceIndex)) {
++            } else if ((superClassIndex >= allSuperclasses.size()) || !(superClassIndex < interfaceIndex)) {
+                 acls = allInterfaces.get(interfaceIndex++);
+             } else {
+                 acls = allSuperclasses.get(superClassIndex++);",True,False,False,2021-10-08T19:31:26Z,"final Class<?> acls;
+             if (interfaceIndex >= allInterfaces.size()) {
+                 acls = allSuperclasses.get(superClassIndex++);
+ <START>  } else if ((superClassIndex >= allSuperclasses.size()) || !(superClassIndex < interfaceIndex)) {  <END>
+                 acls = allInterfaces.get(interfaceIndex++);
+             } else {
+                 acls = allSuperclasses.get(superClassIndex++);","final Class<?> acls;
+             if (interfaceIndex >= allInterfaces.size()) {
+                 acls = allSuperclasses.get(superClassIndex++);
+-            } else if ((superClassIndex >= allSuperclasses.size()) || !(superClassIndex < interfaceIndex)) {
++            } else if ((superClassIndex >= allSuperclasses.size()) || !(superClassIndex < interfaceIndex)) {
+                 acls = allInterfaces.get(interfaceIndex++);
+             } else {
+                 acls = allSuperclasses.get(superClassIndex++);"
+8,"[np.int64(1021), np.int64(1021)]",the conditions its covered by the condition --> '!(superclassindex < interfaceindex)',"             final Class<?> acls;
+             if (interfaceIndex >= allInterfaces.size()) {
+                 acls = allSuperclasses.get(superClassIndex++);
+ START             } else if ((superClassIndex >= allSuperclasses.size()) || !(superClassIndex < interfaceIndex)) { END 
+                 acls = allInterfaces.get(interfaceIndex++);
+             } else {
+                 acls = allSuperclasses.get(superClassIndex++);","             final Class<?> acls;
+             if (interfaceIndex >= allInterfaces.size()) {
+                 acls = allSuperclasses.get(superClassIndex++);
+-            } else if ((superClassIndex >= allSuperclasses.size()) || !(superClassIndex < interfaceIndex)) {
++            } else if ((superClassIndex >= allSuperclasses.size()) || !(superClassIndex < interfaceIndex)) {
+                 acls = allInterfaces.get(interfaceIndex++);
+             } else {
+                 acls = allSuperclasses.get(superClassIndex++);","             final Class<?> acls;
+             if (interfaceIndex >= allInterfaces.size()) {
+                 acls = allSuperclasses.get(superClassIndex++);
+ START             } else if ((superClassIndex >= allSuperclasses.size()) || !(superClassIndex < interfaceIndex)) { END 
+                 acls = allInterfaces.get(interfaceIndex++);
+             } else {
+                 acls = allSuperclasses.get(superClassIndex++);","             final Class<?> acls;
+             if (interfaceIndex >= allInterfaces.size()) {
+                 acls = allSuperclasses.get(superClassIndex++);
+-            } else if ((superClassIndex >= allSuperclasses.size()) || !(superClassIndex < interfaceIndex)) {
++            } else if ((superClassIndex >= allSuperclasses.size()) || !(superClassIndex < interfaceIndex)) {
+                 acls = allInterfaces.get(interfaceIndex++);
+             } else {
+                 acls = allSuperclasses.get(superClassIndex++);",True,True,False,2021-10-09T04:49:20Z,"final Class<?> acls;
+             if (interfaceIndex >= allInterfaces.size()) {
+                 acls = allSuperclasses.get(superClassIndex++);
+ <START>  } else if ((superClassIndex >= allSuperclasses.size()) || !(superClassIndex < interfaceIndex)) {  <END>
+                 acls = allInterfaces.get(interfaceIndex++);
+             } else {
+                 acls = allSuperclasses.get(superClassIndex++);","final Class<?> acls;
+             if (interfaceIndex >= allInterfaces.size()) {
+                 acls = allSuperclasses.get(superClassIndex++);
+-            } else if ((superClassIndex >= allSuperclasses.size()) || !(superClassIndex < interfaceIndex)) {
++            } else if ((superClassIndex >= allSuperclasses.size()) || !(superClassIndex < interfaceIndex)) {
+                 acls = allInterfaces.get(interfaceIndex++);
+             } else {
+                 acls = allSuperclasses.get(superClassIndex++);"
+9,"[np.int64(988), np.int64(988)]",the p html tag is still not closed.,"     /**
+      * Copies bytes from a {@link java.io.ByteArrayOutputStream} to a {@code QueueInputStream}.
+      * <p>
+     * Unlike using JDK {@link PipedInputStream} and {@link PipedOutputStream} for this, this solution works safely in a single thread
+ START      * environment. END 
+      * <p>
+      * Example usage:
+      * </p>
+      *
+      * <pre>
+      * ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
+     * outputStream.writeBytes(""hello world"".getBytes(UTF_8));
+      *
+      * InputStream inputStream = IOUtils.copy(outputStream);
+      * </pre>","     /**
+      * Copies bytes from a {@link java.io.ByteArrayOutputStream} to a {@code QueueInputStream}.
+      * <p>
+-     * Unlike using JDK {@link PipedInputStream} and {@link PipedOutputStream} for this, this solution works safely in a single thread
+-     * environment.
++     * Unlike using JDK {@link java.io.PipedInputStream} and {@link java.io.PipedOutputStream} for this, this
++     * solution works safely in a single thread environment.
++     * </p>
+      * <p>
+      * Example usage:
+      * </p>
+      *
+      * <pre>
+      * ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
+-     * outputStream.writeBytes(""hello world"".getBytes(UTF_8));
++     * outputStream.writeBytes(""hello world"".getBytes(StandardCharsets.UTF_8));
+      *
+      * InputStream inputStream = IOUtils.copy(outputStream);
+      * </pre>",,,True,False,True,2021-10-12T10:41:59Z,"/**
+      * Copies bytes from a {@link java.io.ByteArrayOutputStream} to a {@code QueueInputStream}.
+      * <p>
+     * Unlike using JDK {@link PipedInputStream} and {@link PipedOutputStream} for this, this solution works safely in a single thread
+ <START>  * environment.  <END>
+      * <p>
+      * Example usage:
+      * </p>
+      *
+      * <pre>
+      * ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
+     * outputStream.writeBytes(""hello world"".getBytes(UTF_8));
+      *
+      * InputStream inputStream = IOUtils.copy(outputStream);
+      * </pre>","/**
+      * Copies bytes from a {@link java.io.ByteArrayOutputStream} to a {@code QueueInputStream}.
+      * <p>
+-     * Unlike using JDK {@link PipedInputStream} and {@link PipedOutputStream} for this, this solution works safely in a single thread
+-     * environment.
++     * Unlike using JDK {@link java.io.PipedInputStream} and {@link java.io.PipedOutputStream} for this, this
++     * solution works safely in a single thread environment.
++     * </p>
+      * <p>
+      * Example usage:
+      * </p>
+      *
+      * <pre>
+      * ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
+-     * outputStream.writeBytes(""hello world"".getBytes(UTF_8));
++     * outputStream.writeBytes(""hello world"".getBytes(StandardCharsets.UTF_8));
+      *
+      * InputStream inputStream = IOUtils.copy(outputStream);
+      * </pre>"
+10,"[np.int64(1008), np.int64(1008)]",this pr should test this path with an `assertthrows()`.,"      * @since 2.12
+      */
+     @SuppressWarnings(""resource"") // streams are closed by the caller.
+ START     public static QueueInputStream copy(final java.io.ByteArrayOutputStream outputStream) throws IOException { END 
+         Objects.requireNonNull(outputStream, ""outputStream"");
+         final QueueInputStream in = new QueueInputStream();
+        final QueueOutputStream out = in.newQueueOutputStream();
+        outputStream.writeTo(out);
+         return in;
+     }","      * @since 2.12
+      */
+     @SuppressWarnings(""resource"") // streams are closed by the caller.
+-    public static QueueInputStream copy(final java.io.ByteArrayOutputStream outputStream) throws IOException {
++    public static QueueInputStream copy(final java.io.ByteArrayOutputStream outputStream) throws IOException {
+         Objects.requireNonNull(outputStream, ""outputStream"");
+         final QueueInputStream in = new QueueInputStream();
+-        final QueueOutputStream out = in.newQueueOutputStream();
+-        outputStream.writeTo(out);
++        outputStream.writeTo(in.newQueueOutputStream());
+         return in;
+     }","      * @since 2.12
+      */
+     @SuppressWarnings(""resource"") // streams are closed by the caller.
+ START     public static QueueInputStream copy(final java.io.ByteArrayOutputStream outputStream) throws IOException { END 
+         Objects.requireNonNull(outputStream, ""outputStream"");
+         final QueueInputStream in = new QueueInputStream();
+        final QueueOutputStream out = in.newQueueOutputStream();
+        outputStream.writeTo(out);
+         return in;
+     }","      * @since 2.12
+      */
+     @SuppressWarnings(""resource"") // streams are closed by the caller.
+-    public static QueueInputStream copy(final java.io.ByteArrayOutputStream outputStream) throws IOException {
++    public static QueueInputStream copy(final java.io.ByteArrayOutputStream outputStream) throws IOException {
+         Objects.requireNonNull(outputStream, ""outputStream"");
+         final QueueInputStream in = new QueueInputStream();
+-        final QueueOutputStream out = in.newQueueOutputStream();
+-        outputStream.writeTo(out);
++        outputStream.writeTo(in.newQueueOutputStream());
+         return in;
+     }",True,False,False,2021-10-16T18:14:26Z,"* @since 2.12
+      */
+     @SuppressWarnings(""resource"") // streams are closed by the caller.
+ <START>  public static QueueInputStream copy(final java.io.ByteArrayOutputStream outputStream) throws IOException {  <END>
+         Objects.requireNonNull(outputStream, ""outputStream"");
+         final QueueInputStream in = new QueueInputStream();
+        final QueueOutputStream out = in.newQueueOutputStream();
+        outputStream.writeTo(out);
+         return in;
+     }","* @since 2.12
+      */
+     @SuppressWarnings(""resource"") // streams are closed by the caller.
+-    public static QueueInputStream copy(final java.io.ByteArrayOutputStream outputStream) throws IOException {
++    public static QueueInputStream copy(final java.io.ByteArrayOutputStream outputStream) throws IOException {
+         Objects.requireNonNull(outputStream, ""outputStream"");
+         final QueueInputStream in = new QueueInputStream();
+-        final QueueOutputStream out = in.newQueueOutputStream();
+-        outputStream.writeTo(out);
++        outputStream.writeTo(in.newQueueOutputStream());
+         return in;
+     }"
+11,"[np.int64(1012), np.int64(1012)]",the `out` variable is not needed imo.,"         Objects.requireNonNull(outputStream, ""outputStream"");
+         final QueueInputStream in = new QueueInputStream();
+ START         final QueueOutputStream out = in.newQueueOutputStream(); END 
+        outputStream.writeTo(out);
+         return in;
+     }","         Objects.requireNonNull(outputStream, ""outputStream"");
+         final QueueInputStream in = new QueueInputStream();
+-        final QueueOutputStream out = in.newQueueOutputStream();
+-        outputStream.writeTo(out);
++        outputStream.writeTo(in.newQueueOutputStream());
+         return in;
+     }","         Objects.requireNonNull(outputStream, ""outputStream"");
+         final QueueInputStream in = new QueueInputStream();
+ START         final QueueOutputStream out = in.newQueueOutputStream(); END 
+        outputStream.writeTo(out);
+         return in;
+     }","         Objects.requireNonNull(outputStream, ""outputStream"");
+         final QueueInputStream in = new QueueInputStream();
+-        final QueueOutputStream out = in.newQueueOutputStream();
+-        outputStream.writeTo(out);
++        outputStream.writeTo(in.newQueueOutputStream());
+         return in;
+     }",True,False,False,2021-10-16T18:14:26Z,"Objects.requireNonNull(outputStream, ""outputStream"");
+         final QueueInputStream in = new QueueInputStream();
+ <START>  final QueueOutputStream out = in.newQueueOutputStream();  <END>
+        outputStream.writeTo(out);
+         return in;
+     }","Objects.requireNonNull(outputStream, ""outputStream"");
+         final QueueInputStream in = new QueueInputStream();
+-        final QueueOutputStream out = in.newQueueOutputStream();
+-        outputStream.writeTo(out);
++        outputStream.writeTo(in.newQueueOutputStream());
+         return in;
+     }"
+12,"[np.int64(97), np.int64(97)]","see above, missing test for null input using `assertthrows()`.","         assertEquals(0, in.available(), ""Not all bytes were read"");
+         assertEquals(inData.length, insize, ""Sizes differ"");
+         assertArrayEquals(inData, inData2, ""Content differs"");
+ START     } END 
+     /**
+      * Test Copying file > 2GB  - see issue# IO-84","         assertEquals(0, in.available(), ""Not all bytes were read"");
+         assertEquals(inData.length, insize, ""Sizes differ"");
+         assertArrayEquals(inData, inData2, ""Content differs"");
+-    }
++    }
++
++    @Test
++    public void testCopy_byteArrayOutputStreamToInputStream_nullOutputStream() {
++        assertThrows(NullPointerException.class, () -> IOUtils.copy(null));
++    }
+     /**
+      * Test Copying file > 2GB  - see issue# IO-84","         assertEquals(0, in.available(), ""Not all bytes were read"");
+         assertEquals(inData.length, insize, ""Sizes differ"");
+         assertArrayEquals(inData, inData2, ""Content differs"");
+ START     } END ","         assertEquals(0, in.available(), ""Not all bytes were read"");
+         assertEquals(inData.length, insize, ""Sizes differ"");
+         assertArrayEquals(inData, inData2, ""Content differs"");
+-    }
++    }
++
++    @Test
++    public void testCopy_byteArrayOutputStreamToInputStream_nullOutputStream() {
++        assertThrows(NullPointerException.class, () -> IOUtils.copy(null));
++    }",True,False,False,2021-10-16T18:14:26Z,"assertEquals(0, in.available(), ""Not all bytes were read"");
+         assertEquals(inData.length, insize, ""Sizes differ"");
+         assertArrayEquals(inData, inData2, ""Content differs"");
+ <START>  }  <END>
+     /**
+      * Test Copying file > 2GB - see issue# IO-84","assertEquals(0, in.available(), ""Not all bytes were read"");
+         assertEquals(inData.length, insize, ""Sizes differ"");
+         assertArrayEquals(inData, inData2, ""Content differs"");
+-    }
++    }
++
++    @Test
++    public void testCopy_byteArrayOutputStreamToInputStream_nullOutputStream() {
++        assertThrows(NullPointerException.class, () -> IOUtils.copy(null));
++    }
+     /**
+      * Test Copying file > 2GB - see issue# IO-84"
+13,"[np.int64(996), np.int64(996)]",undefined constant: in example `utf_8` -> `standardcharsets.utf_8`.,"      *
+      * <pre>
+      * ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
+ START      * outputStream.writeBytes(""hello world"".getBytes(UTF_8)); END 
+      *
+      * InputStream inputStream = IOUtils.copy(outputStream);
+      * </pre>","      *
+      * <pre>
+      * ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
+-     * outputStream.writeBytes(""hello world"".getBytes(UTF_8));
++     * outputStream.writeBytes(""hello world"".getBytes(StandardCharsets.UTF_8));
+      *
+      * InputStream inputStream = IOUtils.copy(outputStream);
+      * </pre>","      *
+      * <pre>
+      * ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
+ START      * outputStream.writeBytes(""hello world"".getBytes(UTF_8)); END 
+      *
+      * InputStream inputStream = IOUtils.copy(outputStream);
+      * </pre>","      *
+      * <pre>
+      * ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
+-     * outputStream.writeBytes(""hello world"".getBytes(UTF_8));
++     * outputStream.writeBytes(""hello world"".getBytes(StandardCharsets.UTF_8));
+      *
+      * InputStream inputStream = IOUtils.copy(outputStream);
+      * </pre>",True,False,True,2021-10-16T18:14:26Z,"*
+      * <pre>
+      * ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
+ <START>  * outputStream.writeBytes(""hello world"".getBytes(UTF_8));  <END>
+      *
+      * InputStream inputStream = IOUtils.copy(outputStream);
+      * </pre>","*
+      * <pre>
+      * ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
+-     * outputStream.writeBytes(""hello world"".getBytes(UTF_8));
++     * outputStream.writeBytes(""hello world"".getBytes(StandardCharsets.UTF_8));
+      *
+      * InputStream inputStream = IOUtils.copy(outputStream);
+      * </pre>"
+14,"[np.int64(1007), np.int64(1007)]",import bytearrayoutputstream instead of using a fqcn.,"      * @throws IOException if an I/O error occurs.
+      * @since 2.12
+      */
+ START     @SuppressWarnings(""resource"") // streams are closed by the caller. END 
+     public static QueueInputStream copy(final java.io.ByteArrayOutputStream outputStream) throws IOException {
+         Objects.requireNonNull(outputStream, ""outputStream"");
+         final QueueInputStream in = new QueueInputStream();
+        final QueueOutputStream out = in.newQueueOutputStream();
+        outputStream.writeTo(out);
+         return in;
+     }","      * @throws IOException if an I/O error occurs.
+      * @since 2.12
+      */
+-    @SuppressWarnings(""resource"") // streams are closed by the caller.
++    @SuppressWarnings(""resource"") // streams are closed by the caller.
+     public static QueueInputStream copy(final java.io.ByteArrayOutputStream outputStream) throws IOException {
+         Objects.requireNonNull(outputStream, ""outputStream"");
+         final QueueInputStream in = new QueueInputStream();
+-        final QueueOutputStream out = in.newQueueOutputStream();
+-        outputStream.writeTo(out);
++        outputStream.writeTo(in.newQueueOutputStream());
+         return in;
+     }","      * @throws IOException if an I/O error occurs.
+      * @since 2.12
+      */
+ START     @SuppressWarnings(""resource"") // streams are closed by the caller. END 
+     public static QueueInputStream copy(final java.io.ByteArrayOutputStream outputStream) throws IOException {
+         Objects.requireNonNull(outputStream, ""outputStream"");
+         final QueueInputStream in = new QueueInputStream();
+        final QueueOutputStream out = in.newQueueOutputStream();
+        outputStream.writeTo(out);
+         return in;
+     }","      * @throws IOException if an I/O error occurs.
+      * @since 2.12
+      */
+-    @SuppressWarnings(""resource"") // streams are closed by the caller.
++    @SuppressWarnings(""resource"") // streams are closed by the caller.
+     public static QueueInputStream copy(final java.io.ByteArrayOutputStream outputStream) throws IOException {
+         Objects.requireNonNull(outputStream, ""outputStream"");
+         final QueueInputStream in = new QueueInputStream();
+-        final QueueOutputStream out = in.newQueueOutputStream();
+-        outputStream.writeTo(out);
++        outputStream.writeTo(in.newQueueOutputStream());
+         return in;
+     }",True,False,False,2021-10-16T18:14:26Z,"* @throws IOException if an I/O error occurs.
+      * @since 2.12
+      */
+ <START>  @SuppressWarnings(""resource"") // streams are closed by the caller.  <END>
+     public static QueueInputStream copy(final java.io.ByteArrayOutputStream outputStream) throws IOException {
+         Objects.requireNonNull(outputStream, ""outputStream"");
+         final QueueInputStream in = new QueueInputStream();
+        final QueueOutputStream out = in.newQueueOutputStream();
+        outputStream.writeTo(out);
+         return in;
+     }","* @throws IOException if an I/O error occurs.
+      * @since 2.12
+      */
+-    @SuppressWarnings(""resource"") // streams are closed by the caller.
++    @SuppressWarnings(""resource"") // streams are closed by the caller.
+     public static QueueInputStream copy(final java.io.ByteArrayOutputStream outputStream) throws IOException {
+         Objects.requireNonNull(outputStream, ""outputStream"");
+         final QueueInputStream in = new QueueInputStream();
+-        final QueueOutputStream out = in.newQueueOutputStream();
+-        outputStream.writeTo(out);
++        outputStream.writeTo(in.newQueueOutputStream());
+         return in;
+     }"
+15,"[np.int64(86), np.int64(86)]","here, using the fqcn is required since this test class imports `org.apache.commons.io.output.bytearrayoutputstream`.","     @SuppressWarnings(""resource"") // 'in' is deliberately not closed
+     @Test
+     public void testCopy_byteArrayOutputStreamToInputStream() throws Exception {
+ START         final java.io.ByteArrayOutputStream out = new java.io.ByteArrayOutputStream(); END 
+         out.write(inData);
+         final InputStream in = IOUtils.copy(out);","     @SuppressWarnings(""resource"") // 'in' is deliberately not closed
+     @Test
+     public void testCopy_byteArrayOutputStreamToInputStream() throws Exception {
+-        final java.io.ByteArrayOutputStream out = new java.io.ByteArrayOutputStream();
++        final java.io.ByteArrayOutputStream out = new java.io.ByteArrayOutputStream();
+         out.write(inData);
+         final InputStream in = IOUtils.copy(out);","     @SuppressWarnings(""resource"") // 'in' is deliberately not closed
+     @Test
+     public void testCopy_byteArrayOutputStreamToInputStream() throws Exception {
+ START         final java.io.ByteArrayOutputStream out = new java.io.ByteArrayOutputStream(); END 
+         out.write(inData);
+         final InputStream in = IOUtils.copy(out);","     @SuppressWarnings(""resource"") // 'in' is deliberately not closed
+     @Test
+     public void testCopy_byteArrayOutputStreamToInputStream() throws Exception {
+-        final java.io.ByteArrayOutputStream out = new java.io.ByteArrayOutputStream();
++        final java.io.ByteArrayOutputStream out = new java.io.ByteArrayOutputStream();
+         out.write(inData);
+         final InputStream in = IOUtils.copy(out);",True,False,False,2021-10-16T18:14:26Z,"@SuppressWarnings(""resource"") // 'in' is deliberately not closed
+     @Test
+     public void testCopy_byteArrayOutputStreamToInputStream() throws Exception {
+ <START>  final java.io.ByteArrayOutputStream out = new java.io.ByteArrayOutputStream();  <END>
+         out.write(inData);
+         final InputStream in = IOUtils.copy(out);","@SuppressWarnings(""resource"") // 'in' is deliberately not closed
+     @Test
+     public void testCopy_byteArrayOutputStreamToInputStream() throws Exception {
+-        final java.io.ByteArrayOutputStream out = new java.io.ByteArrayOutputStream();
++        final java.io.ByteArrayOutputStream out = new java.io.ByteArrayOutputStream();
+         out.write(inData);
+         final InputStream in = IOUtils.copy(out);"
+16,"[np.int64(1007), np.int64(1007)]","that is not possible, since org.apache.commons.io.output.bytearrayoutputstream is imported and used throughout ioutils","      * @throws IOException if an I/O error occurs.
+      * @since 2.12
+      */
+ START     @SuppressWarnings(""resource"") // streams are closed by the caller. END 
+     public static QueueInputStream copy(final java.io.ByteArrayOutputStream outputStream) throws IOException {
+         Objects.requireNonNull(outputStream, ""outputStream"");
+         final QueueInputStream in = new QueueInputStream();
+        final QueueOutputStream out = in.newQueueOutputStream();
+        outputStream.writeTo(out);
+         return in;
+     }","      * @throws IOException if an I/O error occurs.
+      * @since 2.12
+      */
+-    @SuppressWarnings(""resource"") // streams are closed by the caller.
++    @SuppressWarnings(""resource"") // streams are closed by the caller.
+     public static QueueInputStream copy(final java.io.ByteArrayOutputStream outputStream) throws IOException {
+         Objects.requireNonNull(outputStream, ""outputStream"");
+         final QueueInputStream in = new QueueInputStream();
+-        final QueueOutputStream out = in.newQueueOutputStream();
+-        outputStream.writeTo(out);
++        outputStream.writeTo(in.newQueueOutputStream());
+         return in;
+     }","      * @throws IOException if an I/O error occurs.
+      * @since 2.12
+      */
+ START     @SuppressWarnings(""resource"") // streams are closed by the caller. END 
+     public static QueueInputStream copy(final java.io.ByteArrayOutputStream outputStream) throws IOException {
+         Objects.requireNonNull(outputStream, ""outputStream"");
+         final QueueInputStream in = new QueueInputStream();
+        final QueueOutputStream out = in.newQueueOutputStream();
+        outputStream.writeTo(out);
+         return in;
+     }","      * @throws IOException if an I/O error occurs.
+      * @since 2.12
+      */
+-    @SuppressWarnings(""resource"") // streams are closed by the caller.
++    @SuppressWarnings(""resource"") // streams are closed by the caller.
+     public static QueueInputStream copy(final java.io.ByteArrayOutputStream outputStream) throws IOException {
+         Objects.requireNonNull(outputStream, ""outputStream"");
+         final QueueInputStream in = new QueueInputStream();
+-        final QueueOutputStream out = in.newQueueOutputStream();
+-        outputStream.writeTo(out);
++        outputStream.writeTo(in.newQueueOutputStream());
+         return in;
+     }",True,True,False,2021-10-18T07:58:58Z,"* @throws IOException if an I/O error occurs.
+      * @since 2.12
+      */
+ <START>  @SuppressWarnings(""resource"") // streams are closed by the caller.  <END>
+     public static QueueInputStream copy(final java.io.ByteArrayOutputStream outputStream) throws IOException {
+         Objects.requireNonNull(outputStream, ""outputStream"");
+         final QueueInputStream in = new QueueInputStream();
+        final QueueOutputStream out = in.newQueueOutputStream();
+        outputStream.writeTo(out);
+         return in;
+     }","* @throws IOException if an I/O error occurs.
+      * @since 2.12
+      */
+-    @SuppressWarnings(""resource"") // streams are closed by the caller.
++    @SuppressWarnings(""resource"") // streams are closed by the caller.
+     public static QueueInputStream copy(final java.io.ByteArrayOutputStream outputStream) throws IOException {
+         Objects.requireNonNull(outputStream, ""outputStream"");
+         final QueueInputStream in = new QueueInputStream();
+-        final QueueOutputStream out = in.newQueueOutputStream();
+-        outputStream.writeTo(out);
++        outputStream.writeTo(in.newQueueOutputStream());
+         return in;
+     }"
+17,"[np.int64(86), np.int64(86)]","gotcha, please see the other comments.","     @SuppressWarnings(""resource"") // 'in' is deliberately not closed
+     @Test
+     public void testCopy_byteArrayOutputStreamToInputStream() throws Exception {
+ START         final java.io.ByteArrayOutputStream out = new java.io.ByteArrayOutputStream(); END 
+         out.write(inData);
+         final InputStream in = IOUtils.copy(out);","     @SuppressWarnings(""resource"") // 'in' is deliberately not closed
+     @Test
+     public void testCopy_byteArrayOutputStreamToInputStream() throws Exception {
+-        final java.io.ByteArrayOutputStream out = new java.io.ByteArrayOutputStream();
++        final java.io.ByteArrayOutputStream out = new java.io.ByteArrayOutputStream();
+         out.write(inData);
+         final InputStream in = IOUtils.copy(out);","     @SuppressWarnings(""resource"") // 'in' is deliberately not closed
+     @Test
+     public void testCopy_byteArrayOutputStreamToInputStream() throws Exception {
+ START         final java.io.ByteArrayOutputStream out = new java.io.ByteArrayOutputStream(); END 
+         out.write(inData);
+         final InputStream in = IOUtils.copy(out);","     @SuppressWarnings(""resource"") // 'in' is deliberately not closed
+     @Test
+     public void testCopy_byteArrayOutputStreamToInputStream() throws Exception {
+-        final java.io.ByteArrayOutputStream out = new java.io.ByteArrayOutputStream();
++        final java.io.ByteArrayOutputStream out = new java.io.ByteArrayOutputStream();
+         out.write(inData);
+         final InputStream in = IOUtils.copy(out);",True,False,False,2021-10-19T13:03:42Z,"@SuppressWarnings(""resource"") // 'in' is deliberately not closed
+     @Test
+     public void testCopy_byteArrayOutputStreamToInputStream() throws Exception {
+ <START>  final java.io.ByteArrayOutputStream out = new java.io.ByteArrayOutputStream();  <END>
+         out.write(inData);
+         final InputStream in = IOUtils.copy(out);","@SuppressWarnings(""resource"") // 'in' is deliberately not closed
+     @Test
+     public void testCopy_byteArrayOutputStreamToInputStream() throws Exception {
+-        final java.io.ByteArrayOutputStream out = new java.io.ByteArrayOutputStream();
++        final java.io.ByteArrayOutputStream out = new java.io.ByteArrayOutputStream();
+         out.write(inData);
+         final InputStream in = IOUtils.copy(out);"
+23,"[np.int64(51), np.int64(51)]","not sure if it's handling `null`s, or being used when some value is `null`. but maybe `noop_writer` would be a better name?","  */
+ public class FileWriterWithEncoding extends ProxyWriter {
+ START     private static final Writer NULL_WRITER = new Writer() { END 
+
+        @Override
+        public final void write(final char[] cbuf, final int off, final int len) throws IOException {
+        }
+
+        @Override
+        public final void write(final char[] cbuf) throws IOException {
+        }
+
+        @Override
+        public final void write(final int idx) throws IOException {
+        }
+
+        @Override
+        public final void write(final String str) throws IOException {
+        }
+
+        @Override
+        public final void write(final String str, final int st, final int end) throws IOException {
+        }
+
+        @Override
+        public final void flush() throws IOException {
+        }
+
+        @Override
+        public final void close() throws IOException {
+        }
+
+        @Override
+        public final Writer append(final char c) throws IOException {
+            return this;
+        }
+
+        @Override
+        public final Writer append(final CharSequence csq) throws IOException {
+            return this;
+        }
+
+        @Override
+        public final Writer append(final CharSequence csq, final int start, final int end) throws IOException {
+            return this;
+        }
+    };
+
+     /**
+      * Initializes the wrapped file writer. Ensure that a cleanup occurs if the writer creation fails.
+      *","  */
+ public class FileWriterWithEncoding extends ProxyWriter {
+-    private static final Writer NULL_WRITER = new Writer() {
+-
+-        @Override
+-        public final void write(final char[] cbuf, final int off, final int len) throws IOException {
+-        }
+-
+-        @Override
+-        public final void write(final char[] cbuf) throws IOException {
+-        }
+-
+-        @Override
+-        public final void write(final int idx) throws IOException {
+-        }
+-
+-        @Override
+-        public final void write(final String str) throws IOException {
+-        }
+-
+-        @Override
+-        public final void write(final String str, final int st, final int end) throws IOException {
+-        }
+-
+-        @Override
+-        public final void flush() throws IOException {
+-        }
+-
+-        @Override
+-        public final void close() throws IOException {
+-        }
+-
+-        @Override
+-        public final Writer append(final char c) throws IOException {
+-            return this;
+-        }
+-
+-        @Override
+-        public final Writer append(final CharSequence csq) throws IOException {
+-            return this;
+-        }
+-
+-        @Override
+-        public final Writer append(final CharSequence csq, final int start, final int end) throws IOException {
+-            return this;
+-        }
+-    };
+-
+     /**
+      * Initializes the wrapped file writer. Ensure that a cleanup occurs if the writer creation fails.
+      *","  */
+ public class FileWriterWithEncoding extends ProxyWriter {
+ START     private static final Writer NULL_WRITER = new Writer() { END 
+
+        @Override
+        public final void write(final char[] cbuf, final int off, final int len) throws IOException {
+        }
+
+        @Override
+        public final void write(final char[] cbuf) throws IOException {
+        }
+
+        @Override
+        public final void write(final int idx) throws IOException {
+        }
+
+        @Override
+        public final void write(final String str) throws IOException {
+        }
+
+        @Override
+        public final void write(final String str, final int st, final int end) throws IOException {
+        }
+
+        @Override
+        public final void flush() throws IOException {
+        }
+
+        @Override
+        public final void close() throws IOException {
+        }
+
+        @Override
+        public final Writer append(final char c) throws IOException {
+            return this;
+        }
+
+        @Override
+        public final Writer append(final CharSequence csq) throws IOException {
+            return this;
+        }
+
+        @Override
+        public final Writer append(final CharSequence csq, final int start, final int end) throws IOException {
+            return this;
+        }
+    };
+
+     public FileWriterWithEncoding(final File file, final Charset encoding, final boolean append) throws IOException {
+        super(NULL_WRITER);
+
+        super.out = initWriter(file, encoding, append);
+
+        super.lock = super.out;
+     }
+     public FileWriterWithEncoding(final File file, final CharsetEncoder charsetEncoder, final boolean append) throws IOException {
+        super(NULL_WRITER);
+
+        super.out = initWriter(file, charsetEncoder, append);
+
+        super.lock = super.out;
+     }
+     public FileWriterWithEncoding(final File file, final String charsetName, final boolean append) throws IOException {
+        super(NULL_WRITER);
+
+        super.out = initWriter(file, charsetName, append);
+
+        super.lock = super.out;
+     }
+    @Override
+    public void close() throws IOException {
+        super.close();
+    }
+
+    @Override
+    public void flush() throws IOException {
+        super.flush();
+    }
+
+    @Override
+    public void write(final char[] chr) throws IOException {
+        super.write(chr);
+    }
+
+    @Override
+    public void write(final char[] chr, final int st, final int end) throws IOException {
+        super.write(chr, st, end);
+    }
+
+    @Override
+    public void write(final int idx) throws IOException {
+        super.write(idx);
+    }
+
+    @Override
+    public void write(final String str) throws IOException {
+        super.write(str);
+    }
+
+    @Override
+    public void write(final String str, final int st, final int end) throws IOException {
+        super.write(str, st, end);
+    }
+ }","  */
+ public class FileWriterWithEncoding extends ProxyWriter {
+-    private static final Writer NULL_WRITER = new Writer() {
+-
+-        @Override
+-        public final void write(final char[] cbuf, final int off, final int len) throws IOException {
+-        }
+-
+-        @Override
+-        public final void write(final char[] cbuf) throws IOException {
+-        }
+-
+-        @Override
+-        public final void write(final int idx) throws IOException {
+-        }
+-
+-        @Override
+-        public final void write(final String str) throws IOException {
+-        }
+-
+-        @Override
+-        public final void write(final String str, final int st, final int end) throws IOException {
+-        }
+-
+-        @Override
+-        public final void flush() throws IOException {
+-        }
+-
+-        @Override
+-        public final void close() throws IOException {
+-        }
+-
+-        @Override
+-        public final Writer append(final char c) throws IOException {
+-            return this;
+-        }
+-
+-        @Override
+-        public final Writer append(final CharSequence csq) throws IOException {
+-            return this;
+-        }
+-
+-        @Override
+-        public final Writer append(final CharSequence csq, final int start, final int end) throws IOException {
+-            return this;
+-        }
+-    };
+-
+     public FileWriterWithEncoding(final File file, final Charset encoding, final boolean append) throws IOException {
+-        super(NULL_WRITER);
+-
+-        super.out = initWriter(file, encoding, append);
+-
+-        super.lock = super.out;
++        super(initWriter(file, encoding, append));
+     }
+     public FileWriterWithEncoding(final File file, final CharsetEncoder charsetEncoder, final boolean append) throws IOException {
+-        super(NULL_WRITER);
+-
+-        super.out = initWriter(file, charsetEncoder, append);
+-
+-        super.lock = super.out;
++        super(initWriter(file, charsetEncoder, append));
+     }
+     public FileWriterWithEncoding(final File file, final String charsetName, final boolean append) throws IOException {
+-        super(NULL_WRITER);
+-
+-        super.out = initWriter(file, charsetName, append);
+-
+-        super.lock = super.out;
++        super(initWriter(file, charsetName, append));
+     }
+-    @Override
+-    public void close() throws IOException {
+-        super.close();
+-    }
+-
+-    @Override
+-    public void flush() throws IOException {
+-        super.flush();
+-    }
+-
+-    @Override
+-    public void write(final char[] chr) throws IOException {
+-        super.write(chr);
+-    }
+-
+-    @Override
+-    public void write(final char[] chr, final int st, final int end) throws IOException {
+-        super.write(chr, st, end);
+-    }
+-
+-    @Override
+-    public void write(final int idx) throws IOException {
+-        super.write(idx);
+-    }
+-
+-    @Override
+-    public void write(final String str) throws IOException {
+-        super.write(str);
+-    }
+-
+-    @Override
+-    public void write(final String str, final int st, final int end) throws IOException {
+-        super.write(str, st, end);
+-    }
+ }",True,False,False,2021-11-02T23:27:55Z,"*/
+ public class FileWriterWithEncoding extends ProxyWriter {
+ <START>  private static final Writer NULL_WRITER = new Writer() {  <END>
+        @Override
+        public final void write(final char[] cbuf, final int off, final int len) throws IOException {
+        }
+        @Override
+        public final void write(final char[] cbuf) throws IOException {
+        }
+        @Override
+        public final void write(final int idx) throws IOException {
+        }
+        @Override
+        public final void write(final String str) throws IOException {
+        }
+        @Override
+        public final void write(final String str, final int st, final int end) throws IOException {
+        }
+        @Override
+        public final void flush() throws IOException {
+        }
+        @Override
+        public final void close() throws IOException {
+        }
+        @Override
+        public final Writer append(final char c) throws IOException {
+            return this;
+        }
+        @Override
+        public final Writer append(final CharSequence csq) throws IOException {
+            return this;
+        }
+        @Override
+        public final Writer append(final CharSequence csq, final int start, final int end) throws IOException {
+            return this;
+        }
+    };
+     /**
+      * Initializes the wrapped file writer. Ensure that a cleanup occurs if the writer creation fails.
+      *","*/
+ public class FileWriterWithEncoding extends ProxyWriter {
+-    private static final Writer NULL_WRITER = new Writer() {
+-
+-        @Override
+-        public final void write(final char[] cbuf, final int off, final int len) throws IOException {
+-        }
+-
+-        @Override
+-        public final void write(final char[] cbuf) throws IOException {
+-        }
+-
+-        @Override
+-        public final void write(final int idx) throws IOException {
+-        }
+-
+-        @Override
+-        public final void write(final String str) throws IOException {
+-        }
+-
+-        @Override
+-        public final void write(final String str, final int st, final int end) throws IOException {
+-        }
+-
+-        @Override
+-        public final void flush() throws IOException {
+-        }
+-
+-        @Override
+-        public final void close() throws IOException {
+-        }
+-
+-        @Override
+-        public final Writer append(final char c) throws IOException {
+-            return this;
+-        }
+-
+-        @Override
+-        public final Writer append(final CharSequence csq) throws IOException {
+-            return this;
+-        }
+-
+-        @Override
+-        public final Writer append(final CharSequence csq, final int start, final int end) throws IOException {
+-            return this;
+-        }
+-    };
+-
+     /**
+      * Initializes the wrapped file writer. Ensure that a cleanup occurs if the writer creation fails.
+      *"
+24,"[np.int64(214), np.int64(214)]","ah, i think now i understand this pull request.
+
+@wodencafe i think we pass the `null_writer` to the parent `proxywriter` as a way to give it a valid object. but in reality, that `null_writer` is then replaced here when we call `super.out = ....`.
+
+while i guess that would work, but not sure if modifying setting `super.out` twice (once after the `super(null_writer)`, then here :point_up: ) would be the best approach.","      * @throws IOException in case of an I/O error.
+      */
+     public FileWriterWithEncoding(final File file, final String charsetName, final boolean append) throws IOException {
+        super(NULL_WRITER);
+
+ START         super.out = initWriter(file, charsetName, append); END 
+
+        super.lock = super.out;
+     }
+     /**","      * @throws IOException in case of an I/O error.
+      */
+     public FileWriterWithEncoding(final File file, final String charsetName, final boolean append) throws IOException {
+-        super(NULL_WRITER);
+-
+-        super.out = initWriter(file, charsetName, append);
+-
+-        super.lock = super.out;
++        super(initWriter(file, charsetName, append));
+     }
+     /**",,,True,False,False,2021-11-02T23:27:55Z,"* @throws IOException in case of an I/O error.
+      */
+     public FileWriterWithEncoding(final File file, final String charsetName, final boolean append) throws IOException {
+        super(NULL_WRITER);
+ <START>  super.out = initWriter(file, charsetName, append);  <END>
+        super.lock = super.out;
+     }
+     /**","* @throws IOException in case of an I/O error.
+      */
+     public FileWriterWithEncoding(final File file, final String charsetName, final boolean append) throws IOException {
+-        super(NULL_WRITER);
+-
+-        super.out = initWriter(file, charsetName, append);
+-
+-        super.lock = super.out;
++        super(initWriter(file, charsetName, append));
+     }
+     /**"
+25,"[np.int64(51), np.int64(51)]","just saw your comment about the `writer.nullwriter()`, i guess that's where you got the name from :+1: no need to change it.","  */
+ public class FileWriterWithEncoding extends ProxyWriter {
+ START     private static final Writer NULL_WRITER = new Writer() { END 
+
+        @Override
+        public final void write(final char[] cbuf, final int off, final int len) throws IOException {
+        }
+
+        @Override
+        public final void write(final char[] cbuf) throws IOException {
+        }
+
+        @Override
+        public final void write(final int idx) throws IOException {
+        }
+
+        @Override
+        public final void write(final String str) throws IOException {
+        }
+
+        @Override
+        public final void write(final String str, final int st, final int end) throws IOException {
+        }
+
+        @Override
+        public final void flush() throws IOException {
+        }
+
+        @Override
+        public final void close() throws IOException {
+        }
+
+        @Override
+        public final Writer append(final char c) throws IOException {
+            return this;
+        }
+
+        @Override
+        public final Writer append(final CharSequence csq) throws IOException {
+            return this;
+        }
+
+        @Override
+        public final Writer append(final CharSequence csq, final int start, final int end) throws IOException {
+            return this;
+        }
+    };
+
+     /**
+      * Initializes the wrapped file writer. Ensure that a cleanup occurs if the writer creation fails.
+      *","  */
+ public class FileWriterWithEncoding extends ProxyWriter {
+-    private static final Writer NULL_WRITER = new Writer() {
+-
+-        @Override
+-        public final void write(final char[] cbuf, final int off, final int len) throws IOException {
+-        }
+-
+-        @Override
+-        public final void write(final char[] cbuf) throws IOException {
+-        }
+-
+-        @Override
+-        public final void write(final int idx) throws IOException {
+-        }
+-
+-        @Override
+-        public final void write(final String str) throws IOException {
+-        }
+-
+-        @Override
+-        public final void write(final String str, final int st, final int end) throws IOException {
+-        }
+-
+-        @Override
+-        public final void flush() throws IOException {
+-        }
+-
+-        @Override
+-        public final void close() throws IOException {
+-        }
+-
+-        @Override
+-        public final Writer append(final char c) throws IOException {
+-            return this;
+-        }
+-
+-        @Override
+-        public final Writer append(final CharSequence csq) throws IOException {
+-            return this;
+-        }
+-
+-        @Override
+-        public final Writer append(final CharSequence csq, final int start, final int end) throws IOException {
+-            return this;
+-        }
+-    };
+-
+     /**
+      * Initializes the wrapped file writer. Ensure that a cleanup occurs if the writer creation fails.
+      *","  */
+ public class FileWriterWithEncoding extends ProxyWriter {
+ START     private static final Writer NULL_WRITER = new Writer() { END 
+
+        @Override
+        public final void write(final char[] cbuf, final int off, final int len) throws IOException {
+        }
+
+        @Override
+        public final void write(final char[] cbuf) throws IOException {
+        }
+
+        @Override
+        public final void write(final int idx) throws IOException {
+        }
+
+        @Override
+        public final void write(final String str) throws IOException {
+        }
+
+        @Override
+        public final void write(final String str, final int st, final int end) throws IOException {
+        }
+
+        @Override
+        public final void flush() throws IOException {
+        }
+
+        @Override
+        public final void close() throws IOException {
+        }
+
+        @Override
+        public final Writer append(final char c) throws IOException {
+            return this;
+        }
+
+        @Override
+        public final Writer append(final CharSequence csq) throws IOException {
+            return this;
+        }
+
+        @Override
+        public final Writer append(final CharSequence csq, final int start, final int end) throws IOException {
+            return this;
+        }
+    };
+
+     public FileWriterWithEncoding(final File file, final Charset encoding, final boolean append) throws IOException {
+        super(NULL_WRITER);
+
+        super.out = initWriter(file, encoding, append);
+
+        super.lock = super.out;
+     }
+     public FileWriterWithEncoding(final File file, final CharsetEncoder charsetEncoder, final boolean append) throws IOException {
+        super(NULL_WRITER);
+
+        super.out = initWriter(file, charsetEncoder, append);
+
+        super.lock = super.out;
+     }
+     public FileWriterWithEncoding(final File file, final String charsetName, final boolean append) throws IOException {
+        super(NULL_WRITER);
+
+        super.out = initWriter(file, charsetName, append);
+
+        super.lock = super.out;
+     }
+    @Override
+    public void close() throws IOException {
+        super.close();
+    }
+
+    @Override
+    public void flush() throws IOException {
+        super.flush();
+    }
+
+    @Override
+    public void write(final char[] chr) throws IOException {
+        super.write(chr);
+    }
+
+    @Override
+    public void write(final char[] chr, final int st, final int end) throws IOException {
+        super.write(chr, st, end);
+    }
+
+    @Override
+    public void write(final int idx) throws IOException {
+        super.write(idx);
+    }
+
+    @Override
+    public void write(final String str) throws IOException {
+        super.write(str);
+    }
+
+    @Override
+    public void write(final String str, final int st, final int end) throws IOException {
+        super.write(str, st, end);
+    }
+ }","  */
+ public class FileWriterWithEncoding extends ProxyWriter {
+-    private static final Writer NULL_WRITER = new Writer() {
+-
+-        @Override
+-        public final void write(final char[] cbuf, final int off, final int len) throws IOException {
+-        }
+-
+-        @Override
+-        public final void write(final char[] cbuf) throws IOException {
+-        }
+-
+-        @Override
+-        public final void write(final int idx) throws IOException {
+-        }
+-
+-        @Override
+-        public final void write(final String str) throws IOException {
+-        }
+-
+-        @Override
+-        public final void write(final String str, final int st, final int end) throws IOException {
+-        }
+-
+-        @Override
+-        public final void flush() throws IOException {
+-        }
+-
+-        @Override
+-        public final void close() throws IOException {
+-        }
+-
+-        @Override
+-        public final Writer append(final char c) throws IOException {
+-            return this;
+-        }
+-
+-        @Override
+-        public final Writer append(final CharSequence csq) throws IOException {
+-            return this;
+-        }
+-
+-        @Override
+-        public final Writer append(final CharSequence csq, final int start, final int end) throws IOException {
+-            return this;
+-        }
+-    };
+-
+     public FileWriterWithEncoding(final File file, final Charset encoding, final boolean append) throws IOException {
+-        super(NULL_WRITER);
+-
+-        super.out = initWriter(file, encoding, append);
+-
+-        super.lock = super.out;
++        super(initWriter(file, encoding, append));
+     }
+     public FileWriterWithEncoding(final File file, final CharsetEncoder charsetEncoder, final boolean append) throws IOException {
+-        super(NULL_WRITER);
+-
+-        super.out = initWriter(file, charsetEncoder, append);
+-
+-        super.lock = super.out;
++        super(initWriter(file, charsetEncoder, append));
+     }
+     public FileWriterWithEncoding(final File file, final String charsetName, final boolean append) throws IOException {
+-        super(NULL_WRITER);
+-
+-        super.out = initWriter(file, charsetName, append);
+-
+-        super.lock = super.out;
++        super(initWriter(file, charsetName, append));
+     }
+-    @Override
+-    public void close() throws IOException {
+-        super.close();
+-    }
+-
+-    @Override
+-    public void flush() throws IOException {
+-        super.flush();
+-    }
+-
+-    @Override
+-    public void write(final char[] chr) throws IOException {
+-        super.write(chr);
+-    }
+-
+-    @Override
+-    public void write(final char[] chr, final int st, final int end) throws IOException {
+-        super.write(chr, st, end);
+-    }
+-
+-    @Override
+-    public void write(final int idx) throws IOException {
+-        super.write(idx);
+-    }
+-
+-    @Override
+-    public void write(final String str) throws IOException {
+-        super.write(str);
+-    }
+-
+-    @Override
+-    public void write(final String str, final int st, final int end) throws IOException {
+-        super.write(str, st, end);
+-    }
+ }",True,False,False,2021-11-02T23:28:30Z,"*/
+ public class FileWriterWithEncoding extends ProxyWriter {
+ <START>  private static final Writer NULL_WRITER = new Writer() {  <END>
+        @Override
+        public final void write(final char[] cbuf, final int off, final int len) throws IOException {
+        }
+        @Override
+        public final void write(final char[] cbuf) throws IOException {
+        }
+        @Override
+        public final void write(final int idx) throws IOException {
+        }
+        @Override
+        public final void write(final String str) throws IOException {
+        }
+        @Override
+        public final void write(final String str, final int st, final int end) throws IOException {
+        }
+        @Override
+        public final void flush() throws IOException {
+        }
+        @Override
+        public final void close() throws IOException {
+        }
+        @Override
+        public final Writer append(final char c) throws IOException {
+            return this;
+        }
+        @Override
+        public final Writer append(final CharSequence csq) throws IOException {
+            return this;
+        }
+        @Override
+        public final Writer append(final CharSequence csq, final int start, final int end) throws IOException {
+            return this;
+        }
+    };
+     /**
+      * Initializes the wrapped file writer. Ensure that a cleanup occurs if the writer creation fails.
+      *","*/
+ public class FileWriterWithEncoding extends ProxyWriter {
+-    private static final Writer NULL_WRITER = new Writer() {
+-
+-        @Override
+-        public final void write(final char[] cbuf, final int off, final int len) throws IOException {
+-        }
+-
+-        @Override
+-        public final void write(final char[] cbuf) throws IOException {
+-        }
+-
+-        @Override
+-        public final void write(final int idx) throws IOException {
+-        }
+-
+-        @Override
+-        public final void write(final String str) throws IOException {
+-        }
+-
+-        @Override
+-        public final void write(final String str, final int st, final int end) throws IOException {
+-        }
+-
+-        @Override
+-        public final void flush() throws IOException {
+-        }
+-
+-        @Override
+-        public final void close() throws IOException {
+-        }
+-
+-        @Override
+-        public final Writer append(final char c) throws IOException {
+-            return this;
+-        }
+-
+-        @Override
+-        public final Writer append(final CharSequence csq) throws IOException {
+-            return this;
+-        }
+-
+-        @Override
+-        public final Writer append(final CharSequence csq, final int start, final int end) throws IOException {
+-            return this;
+-        }
+-    };
+-
+     /**
+      * Initializes the wrapped file writer. Ensure that a cleanup occurs if the writer creation fails.
+      *"
+26,"[np.int64(240), np.int64(240)]",@wodencafe do we need to override the methods below? could we just use the parent methods directly?,"     public FileWriterWithEncoding(final String fileName, final String charsetName, final boolean append) throws IOException {
+         this(new File(fileName), charsetName, append);
+     }
+
+    /**
+     * Closes the stream.
+     *
+     * @throws IOException if an I/O error occurs.
+ START      */ END 
+    @Override
+    public void close() throws IOException {
+        super.close();
+    }
+
+    /**
+     * Flushes the stream.
+     *
+     * @throws IOException if an I/O error occurs.
+     */
+    @Override
+    public void flush() throws IOException {
+        super.flush();
+    }
+
+    /**
+     * Writes the characters from an array.
+     *
+     * @param chr the characters to write
+     * @throws IOException if an I/O error occurs.
+     */
+    @Override
+    public void write(final char[] chr) throws IOException {
+        super.write(chr);
+    }
+
+    /**
+     * Writes the specified characters from an array.
+     *
+     * @param chr the characters to write
+     * @param st The start offset
+     * @param end The number of characters to write
+     * @throws IOException if an I/O error occurs.
+     */
+    @Override
+    public void write(final char[] chr, final int st, final int end) throws IOException {
+        super.write(chr, st, end);
+    }
+
+    /**
+     * Writes a character.
+     *
+     * @param idx the character to write
+     * @throws IOException if an I/O error occurs.
+     */
+    @Override
+    public void write(final int idx) throws IOException {
+        super.write(idx);
+    }
+
+    /**
+     * Writes the characters from a string.
+     *
+     * @param str the string to write
+     * @throws IOException if an I/O error occurs.
+     */
+    @Override
+    public void write(final String str) throws IOException {
+        super.write(str);
+    }
+
+    /**
+     * Writes the specified characters from a string.
+     *
+     * @param str the string to write
+     * @param st The start offset
+     * @param end The number of characters to write
+     * @throws IOException if an I/O error occurs.
+     */
+    @Override
+    public void write(final String str, final int st, final int end) throws IOException {
+        super.write(str, st, end);
+    }
+ }","     public FileWriterWithEncoding(final String fileName, final String charsetName, final boolean append) throws IOException {
+         this(new File(fileName), charsetName, append);
+     }
+-
+-    /**
+-     * Closes the stream.
+-     *
+-     * @throws IOException if an I/O error occurs.
+-     */
+-    @Override
+-    public void close() throws IOException {
+-        super.close();
+-    }
+-
+-    /**
+-     * Flushes the stream.
+-     *
+-     * @throws IOException if an I/O error occurs.
+-     */
+-    @Override
+-    public void flush() throws IOException {
+-        super.flush();
+-    }
+-
+-    /**
+-     * Writes the characters from an array.
+-     *
+-     * @param chr the characters to write
+-     * @throws IOException if an I/O error occurs.
+-     */
+-    @Override
+-    public void write(final char[] chr) throws IOException {
+-        super.write(chr);
+-    }
+-
+-    /**
+-     * Writes the specified characters from an array.
+-     *
+-     * @param chr the characters to write
+-     * @param st The start offset
+-     * @param end The number of characters to write
+-     * @throws IOException if an I/O error occurs.
+-     */
+-    @Override
+-    public void write(final char[] chr, final int st, final int end) throws IOException {
+-        super.write(chr, st, end);
+-    }
+-
+-    /**
+-     * Writes a character.
+-     *
+-     * @param idx the character to write
+-     * @throws IOException if an I/O error occurs.
+-     */
+-    @Override
+-    public void write(final int idx) throws IOException {
+-        super.write(idx);
+-    }
+-
+-    /**
+-     * Writes the characters from a string.
+-     *
+-     * @param str the string to write
+-     * @throws IOException if an I/O error occurs.
+-     */
+-    @Override
+-    public void write(final String str) throws IOException {
+-        super.write(str);
+-    }
+-
+-    /**
+-     * Writes the specified characters from a string.
+-     *
+-     * @param str the string to write
+-     * @param st The start offset
+-     * @param end The number of characters to write
+-     * @throws IOException if an I/O error occurs.
+-     */
+-    @Override
+-    public void write(final String str, final int st, final int end) throws IOException {
+-        super.write(str, st, end);
+-    }
+ }","     public FileWriterWithEncoding(final String fileName, final String charsetName, final boolean append) throws IOException {
+         this(new File(fileName), charsetName, append);
+     }
+
+    @Override
+    public void close() throws IOException {
+        super.close();
+    }
+
+    @Override
+    public void flush() throws IOException {
+        super.flush();
+    }
+
+    @Override
+    public void write(final char[] chr) throws IOException {
+        super.write(chr);
+    }
+
+    @Override
+    public void write(final char[] chr, final int st, final int end) throws IOException {
+        super.write(chr, st, end);
+    }
+
+    @Override
+    public void write(final int idx) throws IOException {
+        super.write(idx);
+    }
+
+    @Override
+    public void write(final String str) throws IOException {
+        super.write(str);
+    }
+
+    @Override
+    public void write(final String str, final int st, final int end) throws IOException {
+        super.write(str, st, end);
+    }
+ }","     public FileWriterWithEncoding(final String fileName, final String charsetName, final boolean append) throws IOException {
+         this(new File(fileName), charsetName, append);
+     }
+-
+-    @Override
+-    public void close() throws IOException {
+-        super.close();
+-    }
+-
+-    @Override
+-    public void flush() throws IOException {
+-        super.flush();
+-    }
+-
+-    @Override
+-    public void write(final char[] chr) throws IOException {
+-        super.write(chr);
+-    }
+-
+-    @Override
+-    public void write(final char[] chr, final int st, final int end) throws IOException {
+-        super.write(chr, st, end);
+-    }
+-
+-    @Override
+-    public void write(final int idx) throws IOException {
+-        super.write(idx);
+-    }
+-
+-    @Override
+-    public void write(final String str) throws IOException {
+-        super.write(str);
+-    }
+-
+-    @Override
+-    public void write(final String str, final int st, final int end) throws IOException {
+-        super.write(str, st, end);
+-    }
+ }",True,False,True,2021-11-03T02:53:51Z,"public FileWriterWithEncoding(final String fileName, final String charsetName, final boolean append) throws IOException {
+         this(new File(fileName), charsetName, append);
+     }
+    /**
+     * Closes the stream.
+     *
+     * @throws IOException if an I/O error occurs.
+ <START>  */  <END>
+    @Override
+    public void close() throws IOException {
+        super.close();
+    }
+    /**
+     * Flushes the stream.
+     *
+     * @throws IOException if an I/O error occurs.
+     */
+    @Override
+    public void flush() throws IOException {
+        super.flush();
+    }
+    /**
+     * Writes the characters from an array.
+     *
+     * @param chr the characters to write
+     * @throws IOException if an I/O error occurs.
+     */
+    @Override
+    public void write(final char[] chr) throws IOException {
+        super.write(chr);
+    }
+    /**
+     * Writes the specified characters from an array.
+     *
+     * @param chr the characters to write
+     * @param st The start offset
+     * @param end The number of characters to write
+     * @throws IOException if an I/O error occurs.
+     */
+    @Override
+    public void write(final char[] chr, final int st, final int end) throws IOException {
+        super.write(chr, st, end);
+    }
+    /**
+     * Writes a character.
+     *
+     * @param idx the character to write
+     * @throws IOException if an I/O error occurs.
+     */
+    @Override
+    public void write(final int idx) throws IOException {
+        super.write(idx);
+    }
+    /**
+     * Writes the characters from a string.
+     *
+     * @param str the string to write
+     * @throws IOException if an I/O error occurs.
+     */
+    @Override
+    public void write(final String str) throws IOException {
+        super.write(str);
+    }
+    /**
+     * Writes the specified characters from a string.
+     *
+     * @param str the string to write
+     * @param st The start offset
+     * @param end The number of characters to write
+     * @throws IOException if an I/O error occurs.
+     */
+    @Override
+    public void write(final String str, final int st, final int end) throws IOException {
+        super.write(str, st, end);
+    }
+ }","public FileWriterWithEncoding(final String fileName, final String charsetName, final boolean append) throws IOException {
+         this(new File(fileName), charsetName, append);
+     }
+-
+-    /**
+-     * Closes the stream.
+-     *
+-     * @throws IOException if an I/O error occurs.
+-     */
+-    @Override
+-    public void close() throws IOException {
+-        super.close();
+-    }
+-
+-    /**
+-     * Flushes the stream.
+-     *
+-     * @throws IOException if an I/O error occurs.
+-     */
+-    @Override
+-    public void flush() throws IOException {
+-        super.flush();
+-    }
+-
+-    /**
+-     * Writes the characters from an array.
+-     *
+-     * @param chr the characters to write
+-     * @throws IOException if an I/O error occurs.
+-     */
+-    @Override
+-    public void write(final char[] chr) throws IOException {
+-        super.write(chr);
+-    }
+-
+-    /**
+-     * Writes the specified characters from an array.
+-     *
+-     * @param chr the characters to write
+-     * @param st The start offset
+-     * @param end The number of characters to write
+-     * @throws IOException if an I/O error occurs.
+-     */
+-    @Override
+-    public void write(final char[] chr, final int st, final int end) throws IOException {
+-        super.write(chr, st, end);
+-    }
+-
+-    /**
+-     * Writes a character.
+-     *
+-     * @param idx the character to write
+-     * @throws IOException if an I/O error occurs.
+-     */
+-    @Override
+-    public void write(final int idx) throws IOException {
+-        super.write(idx);
+-    }
+-
+-    /**
+-     * Writes the characters from a string.
+-     *
+-     * @param str the string to write
+-     * @throws IOException if an I/O error occurs.
+-     */
+-    @Override
+-    public void write(final String str) throws IOException {
+-        super.write(str);
+-    }
+-
+-    /**
+-     * Writes the specified characters from a string.
+-     *
+-     * @param str the string to write
+-     * @param st The start offset
+-     * @param end The number of characters to write
+-     * @throws IOException if an I/O error occurs.
+-     */
+-    @Override
+-    public void write(final String str, final int st, final int end) throws IOException {
+-        super.write(str, st, end);
+-    }
+ }"
+27,"[np.int64(240), np.int64(240)]","good point, we should just let the super class handle it.","     public FileWriterWithEncoding(final String fileName, final String charsetName, final boolean append) throws IOException {
+         this(new File(fileName), charsetName, append);
+     }
+
+    /**
+     * Closes the stream.
+     *
+     * @throws IOException if an I/O error occurs.
+ START      */ END 
+    @Override
+    public void close() throws IOException {
+        super.close();
+    }
+
+    /**
+     * Flushes the stream.
+     *
+     * @throws IOException if an I/O error occurs.
+     */
+    @Override
+    public void flush() throws IOException {
+        super.flush();
+    }
+
+    /**
+     * Writes the characters from an array.
+     *
+     * @param chr the characters to write
+     * @throws IOException if an I/O error occurs.
+     */
+    @Override
+    public void write(final char[] chr) throws IOException {
+        super.write(chr);
+    }
+
+    /**
+     * Writes the specified characters from an array.
+     *
+     * @param chr the characters to write
+     * @param st The start offset
+     * @param end The number of characters to write
+     * @throws IOException if an I/O error occurs.
+     */
+    @Override
+    public void write(final char[] chr, final int st, final int end) throws IOException {
+        super.write(chr, st, end);
+    }
+
+    /**
+     * Writes a character.
+     *
+     * @param idx the character to write
+     * @throws IOException if an I/O error occurs.
+     */
+    @Override
+    public void write(final int idx) throws IOException {
+        super.write(idx);
+    }
+
+    /**
+     * Writes the characters from a string.
+     *
+     * @param str the string to write
+     * @throws IOException if an I/O error occurs.
+     */
+    @Override
+    public void write(final String str) throws IOException {
+        super.write(str);
+    }
+
+    /**
+     * Writes the specified characters from a string.
+     *
+     * @param str the string to write
+     * @param st The start offset
+     * @param end The number of characters to write
+     * @throws IOException if an I/O error occurs.
+     */
+    @Override
+    public void write(final String str, final int st, final int end) throws IOException {
+        super.write(str, st, end);
+    }
+ }","     public FileWriterWithEncoding(final String fileName, final String charsetName, final boolean append) throws IOException {
+         this(new File(fileName), charsetName, append);
+     }
+-
+-    /**
+-     * Closes the stream.
+-     *
+-     * @throws IOException if an I/O error occurs.
+-     */
+-    @Override
+-    public void close() throws IOException {
+-        super.close();
+-    }
+-
+-    /**
+-     * Flushes the stream.
+-     *
+-     * @throws IOException if an I/O error occurs.
+-     */
+-    @Override
+-    public void flush() throws IOException {
+-        super.flush();
+-    }
+-
+-    /**
+-     * Writes the characters from an array.
+-     *
+-     * @param chr the characters to write
+-     * @throws IOException if an I/O error occurs.
+-     */
+-    @Override
+-    public void write(final char[] chr) throws IOException {
+-        super.write(chr);
+-    }
+-
+-    /**
+-     * Writes the specified characters from an array.
+-     *
+-     * @param chr the characters to write
+-     * @param st The start offset
+-     * @param end The number of characters to write
+-     * @throws IOException if an I/O error occurs.
+-     */
+-    @Override
+-    public void write(final char[] chr, final int st, final int end) throws IOException {
+-        super.write(chr, st, end);
+-    }
+-
+-    /**
+-     * Writes a character.
+-     *
+-     * @param idx the character to write
+-     * @throws IOException if an I/O error occurs.
+-     */
+-    @Override
+-    public void write(final int idx) throws IOException {
+-        super.write(idx);
+-    }
+-
+-    /**
+-     * Writes the characters from a string.
+-     *
+-     * @param str the string to write
+-     * @throws IOException if an I/O error occurs.
+-     */
+-    @Override
+-    public void write(final String str) throws IOException {
+-        super.write(str);
+-    }
+-
+-    /**
+-     * Writes the specified characters from a string.
+-     *
+-     * @param str the string to write
+-     * @param st The start offset
+-     * @param end The number of characters to write
+-     * @throws IOException if an I/O error occurs.
+-     */
+-    @Override
+-    public void write(final String str, final int st, final int end) throws IOException {
+-        super.write(str, st, end);
+-    }
+ }","     public FileWriterWithEncoding(final String fileName, final String charsetName, final boolean append) throws IOException {
+         this(new File(fileName), charsetName, append);
+     }
+
+    @Override
+    public void close() throws IOException {
+        super.close();
+    }
+
+    @Override
+    public void flush() throws IOException {
+        super.flush();
+    }
+
+    @Override
+    public void write(final char[] chr) throws IOException {
+        super.write(chr);
+    }
+
+    @Override
+    public void write(final char[] chr, final int st, final int end) throws IOException {
+        super.write(chr, st, end);
+    }
+
+    @Override
+    public void write(final int idx) throws IOException {
+        super.write(idx);
+    }
+
+    @Override
+    public void write(final String str) throws IOException {
+        super.write(str);
+    }
+
+    @Override
+    public void write(final String str, final int st, final int end) throws IOException {
+        super.write(str, st, end);
+    }
+ }","     public FileWriterWithEncoding(final String fileName, final String charsetName, final boolean append) throws IOException {
+         this(new File(fileName), charsetName, append);
+     }
+-
+-    @Override
+-    public void close() throws IOException {
+-        super.close();
+-    }
+-
+-    @Override
+-    public void flush() throws IOException {
+-        super.flush();
+-    }
+-
+-    @Override
+-    public void write(final char[] chr) throws IOException {
+-        super.write(chr);
+-    }
+-
+-    @Override
+-    public void write(final char[] chr, final int st, final int end) throws IOException {
+-        super.write(chr, st, end);
+-    }
+-
+-    @Override
+-    public void write(final int idx) throws IOException {
+-        super.write(idx);
+-    }
+-
+-    @Override
+-    public void write(final String str) throws IOException {
+-        super.write(str);
+-    }
+-
+-    @Override
+-    public void write(final String str, final int st, final int end) throws IOException {
+-        super.write(str, st, end);
+-    }
+ }",True,True,True,2021-11-03T06:34:54Z,"public FileWriterWithEncoding(final String fileName, final String charsetName, final boolean append) throws IOException {
+         this(new File(fileName), charsetName, append);
+     }
+    /**
+     * Closes the stream.
+     *
+     * @throws IOException if an I/O error occurs.
+ <START>  */  <END>
+    @Override
+    public void close() throws IOException {
+        super.close();
+    }
+    /**
+     * Flushes the stream.
+     *
+     * @throws IOException if an I/O error occurs.
+     */
+    @Override
+    public void flush() throws IOException {
+        super.flush();
+    }
+    /**
+     * Writes the characters from an array.
+     *
+     * @param chr the characters to write
+     * @throws IOException if an I/O error occurs.
+     */
+    @Override
+    public void write(final char[] chr) throws IOException {
+        super.write(chr);
+    }
+    /**
+     * Writes the specified characters from an array.
+     *
+     * @param chr the characters to write
+     * @param st The start offset
+     * @param end The number of characters to write
+     * @throws IOException if an I/O error occurs.
+     */
+    @Override
+    public void write(final char[] chr, final int st, final int end) throws IOException {
+        super.write(chr, st, end);
+    }
+    /**
+     * Writes a character.
+     *
+     * @param idx the character to write
+     * @throws IOException if an I/O error occurs.
+     */
+    @Override
+    public void write(final int idx) throws IOException {
+        super.write(idx);
+    }
+    /**
+     * Writes the characters from a string.
+     *
+     * @param str the string to write
+     * @throws IOException if an I/O error occurs.
+     */
+    @Override
+    public void write(final String str) throws IOException {
+        super.write(str);
+    }
+    /**
+     * Writes the specified characters from a string.
+     *
+     * @param str the string to write
+     * @param st The start offset
+     * @param end The number of characters to write
+     * @throws IOException if an I/O error occurs.
+     */
+    @Override
+    public void write(final String str, final int st, final int end) throws IOException {
+        super.write(str, st, end);
+    }
+ }","public FileWriterWithEncoding(final String fileName, final String charsetName, final boolean append) throws IOException {
+         this(new File(fileName), charsetName, append);
+     }
+-
+-    /**
+-     * Closes the stream.
+-     *
+-     * @throws IOException if an I/O error occurs.
+-     */
+-    @Override
+-    public void close() throws IOException {
+-        super.close();
+-    }
+-
+-    /**
+-     * Flushes the stream.
+-     *
+-     * @throws IOException if an I/O error occurs.
+-     */
+-    @Override
+-    public void flush() throws IOException {
+-        super.flush();
+-    }
+-
+-    /**
+-     * Writes the characters from an array.
+-     *
+-     * @param chr the characters to write
+-     * @throws IOException if an I/O error occurs.
+-     */
+-    @Override
+-    public void write(final char[] chr) throws IOException {
+-        super.write(chr);
+-    }
+-
+-    /**
+-     * Writes the specified characters from an array.
+-     *
+-     * @param chr the characters to write
+-     * @param st The start offset
+-     * @param end The number of characters to write
+-     * @throws IOException if an I/O error occurs.
+-     */
+-    @Override
+-    public void write(final char[] chr, final int st, final int end) throws IOException {
+-        super.write(chr, st, end);
+-    }
+-
+-    /**
+-     * Writes a character.
+-     *
+-     * @param idx the character to write
+-     * @throws IOException if an I/O error occurs.
+-     */
+-    @Override
+-    public void write(final int idx) throws IOException {
+-        super.write(idx);
+-    }
+-
+-    /**
+-     * Writes the characters from a string.
+-     *
+-     * @param str the string to write
+-     * @throws IOException if an I/O error occurs.
+-     */
+-    @Override
+-    public void write(final String str) throws IOException {
+-        super.write(str);
+-    }
+-
+-    /**
+-     * Writes the specified characters from a string.
+-     *
+-     * @param str the string to write
+-     * @param st The start offset
+-     * @param end The number of characters to write
+-     * @throws IOException if an I/O error occurs.
+-     */
+-    @Override
+-    public void write(final String str, final int st, final int end) throws IOException {
+-        super.write(str, st, end);
+-    }
+ }"
+28,"[np.int64(60), np.int64(60)]","this one is not really necessary @wodencafe ? `initwriter` is already private, so making it `final` won't change much for internal/external devs?","      * @return the initialized writer
+      * @throws IOException if an error occurs
+      */
+ START     private static final Writer initWriter(final File file, final Object encoding, final boolean append) throws IOException { END 
+         Objects.requireNonNull(file, ""file"");
+         OutputStream stream = null;
+         final boolean fileExistedAlready = file.exists();","      * @return the initialized writer
+      * @throws IOException if an error occurs
+      */
+-    private static final Writer initWriter(final File file, final Object encoding, final boolean append) throws IOException {
++    private static Writer initWriter(final File file, final Object encoding, final boolean append) throws IOException {
+         Objects.requireNonNull(file, ""file"");
+         OutputStream stream = null;
+         final boolean fileExistedAlready = file.exists();","      * @return the initialized writer
+      * @throws IOException if an error occurs
+      */
+ START     private static final Writer initWriter(final File file, final Object encoding, final boolean append) throws IOException { END 
+         Objects.requireNonNull(file, ""file"");
+         OutputStream stream = null;
+         final boolean fileExistedAlready = file.exists();","      * @return the initialized writer
+      * @throws IOException if an error occurs
+      */
+-    private static final Writer initWriter(final File file, final Object encoding, final boolean append) throws IOException {
++    private static Writer initWriter(final File file, final Object encoding, final boolean append) throws IOException {
+         Objects.requireNonNull(file, ""file"");
+         OutputStream stream = null;
+         final boolean fileExistedAlready = file.exists();",True,False,False,2021-11-04T21:12:54Z,"* @return the initialized writer
+      * @throws IOException if an error occurs
+      */
+ <START>  private static final Writer initWriter(final File file, final Object encoding, final boolean append) throws IOException {  <END>
+         Objects.requireNonNull(file, ""file"");
+         OutputStream stream = null;
+         final boolean fileExistedAlready = file.exists();","* @return the initialized writer
+      * @throws IOException if an error occurs
+      */
+-    private static final Writer initWriter(final File file, final Object encoding, final boolean append) throws IOException {
++    private static Writer initWriter(final File file, final Object encoding, final boolean append) throws IOException {
+         Objects.requireNonNull(file, ""file"");
+         OutputStream stream = null;
+         final boolean fileExistedAlready = file.exists();"
+29,"[np.int64(60), np.int64(60)]","i usually do this out of habit, but after doing some research it seems that there is no functional difference for adding the `final` modifier to a private static nested class. it has been removed.","      * @return the initialized writer
+      * @throws IOException if an error occurs
+      */
+ START     private static final Writer initWriter(final File file, final Object encoding, final boolean append) throws IOException { END 
+         Objects.requireNonNull(file, ""file"");
+         OutputStream stream = null;
+         final boolean fileExistedAlready = file.exists();","      * @return the initialized writer
+      * @throws IOException if an error occurs
+      */
+-    private static final Writer initWriter(final File file, final Object encoding, final boolean append) throws IOException {
++    private static Writer initWriter(final File file, final Object encoding, final boolean append) throws IOException {
+         Objects.requireNonNull(file, ""file"");
+         OutputStream stream = null;
+         final boolean fileExistedAlready = file.exists();","      * @return the initialized writer
+      * @throws IOException if an error occurs
+      */
+ START     private static final Writer initWriter(final File file, final Object encoding, final boolean append) throws IOException { END 
+         Objects.requireNonNull(file, ""file"");
+         OutputStream stream = null;
+         final boolean fileExistedAlready = file.exists();","      * @return the initialized writer
+      * @throws IOException if an error occurs
+      */
+-    private static final Writer initWriter(final File file, final Object encoding, final boolean append) throws IOException {
++    private static Writer initWriter(final File file, final Object encoding, final boolean append) throws IOException {
+         Objects.requireNonNull(file, ""file"");
+         OutputStream stream = null;
+         final boolean fileExistedAlready = file.exists();",True,True,False,2021-11-05T04:14:12Z,"* @return the initialized writer
+      * @throws IOException if an error occurs
+      */
+ <START>  private static final Writer initWriter(final File file, final Object encoding, final boolean append) throws IOException {  <END>
+         Objects.requireNonNull(file, ""file"");
+         OutputStream stream = null;
+         final boolean fileExistedAlready = file.exists();","* @return the initialized writer
+      * @throws IOException if an error occurs
+      */
+-    private static final Writer initWriter(final File file, final Object encoding, final boolean append) throws IOException {
++    private static Writer initWriter(final File file, final Object encoding, final boolean append) throws IOException {
+         Objects.requireNonNull(file, ""file"");
+         OutputStream stream = null;
+         final boolean fileExistedAlready = file.exists();"
+30,"[np.int64(252), np.int64(252)]","blame my weak eyes - could we introduce constants here, e.g. ""underscore""?","             return new Locale(str);
+         }
+        final String[] segments = str.contains(""-"")
+ START             ? str.split(""-"", -1) END 
+            : str.split(""_"", -1);
+         final String language = segments[0];
+         if (segments.length == 2) {
+             final String country = segments[1];","             return new Locale(str);
+         }
+-        final String[] segments = str.contains(""-"")
+-            ? str.split(""-"", -1)
+-            : str.split(""_"", -1);
++        final String[] segments = str.indexOf(UNDERSCORE) != -1
++            ? str.split(String.valueOf(UNDERSCORE), -1)
++            : str.split(String.valueOf(DASH), -1);
+         final String language = segments[0];
+         if (segments.length == 2) {
+             final String country = segments[1];","             return new Locale(str);
+         }
+        final String[] segments = str.contains(""-"")
+ START             ? str.split(""-"", -1) END 
+            : str.split(""_"", -1);
+         final String language = segments[0];
+         if (segments.length == 2) {
+             final String country = segments[1];","             return new Locale(str);
+         }
+-        final String[] segments = str.contains(""-"")
+-            ? str.split(""-"", -1)
+-            : str.split(""_"", -1);
++        final String[] segments = str.indexOf(UNDERSCORE) != -1
++            ? str.split(String.valueOf(UNDERSCORE), -1)
++            : str.split(String.valueOf(DASH), -1);
+         final String language = segments[0];
+         if (segments.length == 2) {
+             final String country = segments[1];",True,False,False,2021-11-08T17:18:53Z,"return new Locale(str);
+         }
+        final String[] segments = str.contains(""-"")
+ <START>  ? str.split(""-"", -1)  <END>
+            : str.split(""_"", -1);
+         final String language = segments[0];
+         if (segments.length == 2) {
+             final String country = segments[1];","return new Locale(str);
+         }
+-        final String[] segments = str.contains(""-"")
+-            ? str.split(""-"", -1)
+-            : str.split(""_"", -1);
++        final String[] segments = str.indexOf(UNDERSCORE) != -1
++            ? str.split(String.valueOf(UNDERSCORE), -1)
++            : str.split(String.valueOf(DASH), -1);
+         final String language = segments[0];
+         if (segments.length == 2) {
+             final String country = segments[1];"
+31,"[np.int64(330), np.int64(330)]","we could use ""underscore"" or ""dash"" here or introduce a helper method, e.g. ""isdelimiter""? what do you think?","             throw new IllegalArgumentException(""Invalid locale format: "" + str);
+         }
+         final char ch0 = str.charAt(0);
+ START         if (ch0 == '_' || ch0 == '-') { END 
+             if (len < 3) {
+                 throw new IllegalArgumentException(""Invalid locale format: "" + str);
+             }","             throw new IllegalArgumentException(""Invalid locale format: "" + str);
+         }
+         final char ch0 = str.charAt(0);
+-        if (ch0 == '_' || ch0 == '-') {
++        if (ch0 == UNDERSCORE || ch0 == DASH) {
+             if (len < 3) {
+                 throw new IllegalArgumentException(""Invalid locale format: "" + str);
+             }","             throw new IllegalArgumentException(""Invalid locale format: "" + str);
+         }
+         final char ch0 = str.charAt(0);
+ START         if (ch0 == '_' || ch0 == '-') { END 
+             if (len < 3) {
+                 throw new IllegalArgumentException(""Invalid locale format: "" + str);
+             }","             throw new IllegalArgumentException(""Invalid locale format: "" + str);
+         }
+         final char ch0 = str.charAt(0);
+-        if (ch0 == '_' || ch0 == '-') {
++        if (ch0 == UNDERSCORE || ch0 == DASH) {
+             if (len < 3) {
+                 throw new IllegalArgumentException(""Invalid locale format: "" + str);
+             }",True,False,False,2021-11-08T17:18:53Z,"throw new IllegalArgumentException(""Invalid locale format: "" + str);
+         }
+         final char ch0 = str.charAt(0);
+ <START>  if (ch0 == '_' || ch0 == '-') {  <END>
+             if (len < 3) {
+                 throw new IllegalArgumentException(""Invalid locale format: "" + str);
+             }","throw new IllegalArgumentException(""Invalid locale format: "" + str);
+         }
+         final char ch0 = str.charAt(0);
+-        if (ch0 == '_' || ch0 == '-') {
++        if (ch0 == UNDERSCORE || ch0 == DASH) {
+             if (len < 3) {
+                 throw new IllegalArgumentException(""Invalid locale format: "" + str);
+             }"
+32,"[np.int64(252), np.int64(252)]",done in 730e156.,"             return new Locale(str);
+         }
+        final String[] segments = str.contains(""-"")
+ START             ? str.split(""-"", -1) END 
+            : str.split(""_"", -1);
+         final String language = segments[0];
+         if (segments.length == 2) {
+             final String country = segments[1];","             return new Locale(str);
+         }
+-        final String[] segments = str.contains(""-"")
+-            ? str.split(""-"", -1)
+-            : str.split(""_"", -1);
++        final String[] segments = str.indexOf(UNDERSCORE) != -1
++            ? str.split(String.valueOf(UNDERSCORE), -1)
++            : str.split(String.valueOf(DASH), -1);
+         final String language = segments[0];
+         if (segments.length == 2) {
+             final String country = segments[1];","             return new Locale(str);
+         }
+        final String[] segments = str.contains(""-"")
+ START             ? str.split(""-"", -1) END 
+            : str.split(""_"", -1);
+         final String language = segments[0];
+         if (segments.length == 2) {
+             final String country = segments[1];","             return new Locale(str);
+         }
+-        final String[] segments = str.contains(""-"")
+-            ? str.split(""-"", -1)
+-            : str.split(""_"", -1);
++        final String[] segments = str.indexOf(UNDERSCORE) != -1
++            ? str.split(String.valueOf(UNDERSCORE), -1)
++            : str.split(String.valueOf(DASH), -1);
+         final String language = segments[0];
+         if (segments.length == 2) {
+             final String country = segments[1];",True,True,False,2021-11-09T02:02:13Z,"return new Locale(str);
+         }
+        final String[] segments = str.contains(""-"")
+ <START>  ? str.split(""-"", -1)  <END>
+            : str.split(""_"", -1);
+         final String language = segments[0];
+         if (segments.length == 2) {
+             final String country = segments[1];","return new Locale(str);
+         }
+-        final String[] segments = str.contains(""-"")
+-            ? str.split(""-"", -1)
+-            : str.split(""_"", -1);
++        final String[] segments = str.indexOf(UNDERSCORE) != -1
++            ? str.split(String.valueOf(UNDERSCORE), -1)
++            : str.split(String.valueOf(DASH), -1);
+         final String language = segments[0];
+         if (segments.length == 2) {
+             final String country = segments[1];"
+33,"[np.int64(330), np.int64(330)]",added the constant in 730e156. i'd prefer not to add the helper method to avoid changing too much of the structure as part of this fairly minor overall change.,"             throw new IllegalArgumentException(""Invalid locale format: "" + str);
+         }
+         final char ch0 = str.charAt(0);
+ START         if (ch0 == '_' || ch0 == '-') { END 
+             if (len < 3) {
+                 throw new IllegalArgumentException(""Invalid locale format: "" + str);
+             }","             throw new IllegalArgumentException(""Invalid locale format: "" + str);
+         }
+         final char ch0 = str.charAt(0);
+-        if (ch0 == '_' || ch0 == '-') {
++        if (ch0 == UNDERSCORE || ch0 == DASH) {
+             if (len < 3) {
+                 throw new IllegalArgumentException(""Invalid locale format: "" + str);
+             }","             throw new IllegalArgumentException(""Invalid locale format: "" + str);
+         }
+         final char ch0 = str.charAt(0);
+ START         if (ch0 == '_' || ch0 == '-') { END 
+             if (len < 3) {
+                 throw new IllegalArgumentException(""Invalid locale format: "" + str);
+             }","             throw new IllegalArgumentException(""Invalid locale format: "" + str);
+         }
+         final char ch0 = str.charAt(0);
+-        if (ch0 == '_' || ch0 == '-') {
++        if (ch0 == UNDERSCORE || ch0 == DASH) {
+             if (len < 3) {
+                 throw new IllegalArgumentException(""Invalid locale format: "" + str);
+             }",True,True,False,2021-11-09T02:02:05Z,"throw new IllegalArgumentException(""Invalid locale format: "" + str);
+         }
+         final char ch0 = str.charAt(0);
+ <START>  if (ch0 == '_' || ch0 == '-') {  <END>
+             if (len < 3) {
+                 throw new IllegalArgumentException(""Invalid locale format: "" + str);
+             }","throw new IllegalArgumentException(""Invalid locale format: "" + str);
+         }
+         final char ch0 = str.charAt(0);
+-        if (ch0 == '_' || ch0 == '-') {
++        if (ch0 == UNDERSCORE || ch0 == DASH) {
+             if (len < 3) {
+                 throw new IllegalArgumentException(""Invalid locale format: "" + str);
+             }"
+37,"[np.int64(242), np.int64(242)]",this pr is only supposed to be about docs as stated in the pr title. furthermore this change is not matched with a unit test.,"         reader.close();
+     }
+    /**
+     * The implementation by {@link ReaderInputStream} always returns 0.
+     */
+    @Override
+    public int available() throws IOException {
+        // Could implement this using Reader.ready(), but would be rather cumbersome
+        // and probably not very efficient
+        return 0;
+    }
+ START  END 
+     /**
+      * Fills the internal char buffer from the reader.
+      *","         reader.close();
+     }
+-    /**
+-     * The implementation by {@link ReaderInputStream} always returns 0.
+-     */
+-    @Override
+-    public int available() throws IOException {
+-        // Could implement this using Reader.ready(), but would be rather cumbersome
+-        // and probably not very efficient
+-        return 0;
+-    }
+-
+     /**
+      * Fills the internal char buffer from the reader.
+      *",,,True,False,False,2021-11-11T19:44:03Z,"reader.close();
+     }
+    /**
+     * The implementation by {@link ReaderInputStream} always returns 0.
+     */
+    @Override
+    public int available() throws IOException {
+        // Could implement this using Reader.ready(), but would be rather cumbersome
+        // and probably not very efficient
+        return 0;
+    }
+ <START>   <END>
+     /**
+      * Fills the internal char buffer from the reader.
+      *","reader.close();
+     }
+-    /**
+-     * The implementation by {@link ReaderInputStream} always returns 0.
+-     */
+-    @Override
+-    public int available() throws IOException {
+-        // Could implement this using Reader.ready(), but would be rather cumbersome
+-        // and probably not very efficient
+-        return 0;
+-    }
+-
+     /**
+      * Fills the internal char buffer from the reader.
+      *"
+39,"[np.int64(1), np.int64(1)]","this class directly extends `inputstream` and the [`inputstream.available()` documentation](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/inputstream.html#available()) says:
+> the available method of inputstream always returns 0.
+
+i could have used `return super.available();` instead, but then it would be less obvious to the reader why the documentation of this method here says that it always returns 0 but calls `super.available()`. so i wanted to avoid requiring them to look up the super implementation to verify that this method behaves correctly."," START /* END 
+  * Licensed to the Apache Software Foundation (ASF) under one or more
+  * contributor license agreements.  See the NOTICE file distributed with
+  * this work for additional information regarding copyright ownership.","-/*
++/*
+  * Licensed to the Apache Software Foundation (ASF) under one or more
+  * contributor license agreements.  See the NOTICE file distributed with
+  * this work for additional information regarding copyright ownership.",,,True,True,True,2021-11-13T00:06:13Z,"<START>  /*  <END>
+  * Licensed to the Apache Software Foundation (ASF) under one or more
+  * contributor license agreements. See the NOTICE file distributed with
+  * this work for additional information regarding copyright ownership.","-/*
++/*
+  * Licensed to the Apache Software Foundation (ASF) under one or more
+  * contributor license agreements. See the NOTICE file distributed with
+  * this work for additional information regarding copyright ownership."
+40,"[np.int64(3941), np.int64(3941)]","interesting, i thought instead of `deletechartat` using an `if` statement in the `for` above, to avoid adding the last `delimiter` would improve more the performance. for a follow-up discussion i think.","         if (endIndex - startIndex <= 0) {
+             return EMPTY;
+         }
+        final StringBuilder stringBuilder = new StringBuilder();
+         for (int i = startIndex; i < endIndex; i++) {
+             stringBuilder
+                     .append(array[i])
+                     .append(delimiter);
+         }
+        return stringBuilder
+                .deleteCharAt(stringBuilder.length() - 1)
+ START                 .toString(); END 
+     }
+     /**","         if (endIndex - startIndex <= 0) {
+             return EMPTY;
+         }
+-        final StringBuilder stringBuilder = new StringBuilder();
++        final StringBuilder stringBuilder = new StringBuilder(array.length * 5 + array.length - 1);
+         for (int i = startIndex; i < endIndex; i++) {
+             stringBuilder
+                     .append(array[i])
+                     .append(delimiter);
+         }
+-        return stringBuilder
+-                .deleteCharAt(stringBuilder.length() - 1)
+-                .toString();
++        return stringBuilder.substring(0, stringBuilder.length() - 1);
+     }
+     /**","         if (endIndex - startIndex <= 0) {
+             return EMPTY;
+         }
+        final StringBuilder stringBuilder = new StringBuilder();
+         for (int i = startIndex; i < endIndex; i++) {
+             stringBuilder
+                     .append(array[i])
+                     .append(delimiter);
+         }
+        return stringBuilder
+                .deleteCharAt(stringBuilder.length() - 1)
+ START                 .toString(); END 
+     }","         if (endIndex - startIndex <= 0) {
+             return EMPTY;
+         }
+-        final StringBuilder stringBuilder = new StringBuilder();
++        final StringBuilder stringBuilder = new StringBuilder(array.length * 5 + array.length - 1);
+         for (int i = startIndex; i < endIndex; i++) {
+             stringBuilder
+                     .append(array[i])
+                     .append(delimiter);
+         }
+-        return stringBuilder
+-                .deleteCharAt(stringBuilder.length() - 1)
+-                .toString();
++        return stringBuilder.substring(0, stringBuilder.length() - 1);
+     }",True,False,False,2021-11-19T09:45:23Z,"if (endIndex - startIndex <= 0) {
+             return EMPTY;
+         }
+        final StringBuilder stringBuilder = new StringBuilder();
+         for (int i = startIndex; i < endIndex; i++) {
+             stringBuilder
+                     .append(array[i])
+                     .append(delimiter);
+         }
+        return stringBuilder
+                .deleteCharAt(stringBuilder.length() - 1)
+ <START>  .toString();  <END>
+     }
+     /**","if (endIndex - startIndex <= 0) {
+             return EMPTY;
+         }
+-        final StringBuilder stringBuilder = new StringBuilder();
++        final StringBuilder stringBuilder = new StringBuilder(array.length * 5 + array.length - 1);
+         for (int i = startIndex; i < endIndex; i++) {
+             stringBuilder
+                     .append(array[i])
+                     .append(delimiter);
+         }
+-        return stringBuilder
+-                .deleteCharAt(stringBuilder.length() - 1)
+-                .toString();
++        return stringBuilder.substring(0, stringBuilder.length() - 1);
+     }
+     /**"
+41,"[np.int64(81), np.int64(81)]",all _new_ `protected` and `public` elements new `@since 3.13.0`.,"     private final DiffBuilder<T> diffBuilder;
+     /**
+     * Which field names to exclude from output. Intended for fields like {@code ""password""} or {@code ""lastModificationDate}.
+      */
+ START     protected String[] excludeFieldNames; END 
+     /**
+     * <p>
+      * Constructs a builder for the specified objects with the specified style.
+     * </p>
+      *
+      * <p>
+      * If {@code lhs == rhs} or {@code lhs.equals(rhs)} then the builder will","     private final DiffBuilder<T> diffBuilder;
+     /**
+-     * Which field names to exclude from output. Intended for fields like {@code ""password""} or {@code ""lastModificationDate}.
++     * Which field names to exclude from output. Intended for fields like {@code ""password""} or {@code ""lastModificationDate""}.
++     * @since 3.13.0
+      */
+-    protected String[] excludeFieldNames;
++    private String[] excludeFieldNames;
+     /**
+-     * <p>
+      * Constructs a builder for the specified objects with the specified style.
+-     * </p>
+      *
+      * <p>
+      * If {@code lhs == rhs} or {@code lhs.equals(rhs)} then the builder will",,,True,False,False,2021-12-04T15:44:58Z,"private final DiffBuilder<T> diffBuilder;
+     /**
+     * Which field names to exclude from output. Intended for fields like {@code ""password""} or {@code ""lastModificationDate}.
+      */
+ <START>  protected String[] excludeFieldNames;  <END>
+     /**
+     * <p>
+      * Constructs a builder for the specified objects with the specified style.
+     * </p>
+      *
+      * <p>
+      * If {@code lhs == rhs} or {@code lhs.equals(rhs)} then the builder will","private final DiffBuilder<T> diffBuilder;
+     /**
+-     * Which field names to exclude from output. Intended for fields like {@code ""password""} or {@code ""lastModificationDate}.
++     * Which field names to exclude from output. Intended for fields like {@code ""password""} or {@code ""lastModificationDate""}.
++     * @since 3.13.0
+      */
+-    protected String[] excludeFieldNames;
++    private String[] excludeFieldNames;
+     /**
+-     * <p>
+      * Constructs a builder for the specified objects with the specified style.
+-     * </p>
+      *
+      * <p>
+      * If {@code lhs == rhs} or {@code lhs.equals(rhs)} then the builder will"
+42,"[np.int64(110), np.int64(110)]",javadoc comments start with a sentence.,"     }
+     /**
+ START      * @return Returns the excludeFieldNames. END 
+      */
+     public String[] getExcludeFieldNames() {
+         return this.excludeFieldNames.clone();","     }
+     /**
+-     * @return Returns the excludeFieldNames.
++     * Gets the field names that should be excluded from the diff
++     * @return Returns the excludeFieldNames.
++     * @since 3.13.0
+      */
+     public String[] getExcludeFieldNames() {
+         return this.excludeFieldNames.clone();",,,True,False,True,2021-12-04T15:44:58Z,"}
+     /**
+ <START>  * @return Returns the excludeFieldNames.  <END>
+      */
+     public String[] getExcludeFieldNames() {
+         return this.excludeFieldNames.clone();","}
+     /**
+-     * @return Returns the excludeFieldNames.
++     * Gets the field names that should be excluded from the diff
++     * @return Returns the excludeFieldNames.
++     * @since 3.13.0
+      */
+     public String[] getExcludeFieldNames() {
+         return this.excludeFieldNames.clone();"
+43,"[np.int64(254), np.int64(254)]",does it matter that dash is tested before underscore?,"             return new Locale(str);
+         }
+        final String[] segments = str.indexOf(DASH) != -1
+ START             ? str.split(String.valueOf(DASH), -1) END 
+            : str.split(String.valueOf(UNDERSCORE), -1);
+         final String language = segments[0];
+         if (segments.length == 2) {
+             final String country = segments[1];","             return new Locale(str);
+         }
+-        final String[] segments = str.indexOf(DASH) != -1
+-            ? str.split(String.valueOf(DASH), -1)
+-            : str.split(String.valueOf(UNDERSCORE), -1);
++        final String[] segments = str.indexOf(UNDERSCORE) != -1
++            ? str.split(String.valueOf(UNDERSCORE), -1)
++            : str.split(String.valueOf(DASH), -1);
+         final String language = segments[0];
+         if (segments.length == 2) {
+             final String country = segments[1];","             return new Locale(str);
+         }
+        final String[] segments = str.indexOf(DASH) != -1
+ START             ? str.split(String.valueOf(DASH), -1) END 
+            : str.split(String.valueOf(UNDERSCORE), -1);
+         final String language = segments[0];
+         if (segments.length == 2) {
+             final String country = segments[1];","             return new Locale(str);
+         }
+-        final String[] segments = str.indexOf(DASH) != -1
+-            ? str.split(String.valueOf(DASH), -1)
+-            : str.split(String.valueOf(UNDERSCORE), -1);
++        final String[] segments = str.indexOf(UNDERSCORE) != -1
++            ? str.split(String.valueOf(UNDERSCORE), -1)
++            : str.split(String.valueOf(DASH), -1);
+         final String language = segments[0];
+         if (segments.length == 2) {
+             final String country = segments[1];",True,False,False,2021-12-06T15:59:28Z,"return new Locale(str);
+         }
+        final String[] segments = str.indexOf(DASH) != -1
+ <START>  ? str.split(String.valueOf(DASH), -1)  <END>
+            : str.split(String.valueOf(UNDERSCORE), -1);
+         final String language = segments[0];
+         if (segments.length == 2) {
+             final String country = segments[1];","return new Locale(str);
+         }
+-        final String[] segments = str.indexOf(DASH) != -1
+-            ? str.split(String.valueOf(DASH), -1)
+-            : str.split(String.valueOf(UNDERSCORE), -1);
++        final String[] segments = str.indexOf(UNDERSCORE) != -1
++            ? str.split(String.valueOf(UNDERSCORE), -1)
++            : str.split(String.valueOf(DASH), -1);
+         final String language = segments[0];
+         if (segments.length == 2) {
+             final String country = segments[1];"
+44,"[np.int64(254), np.int64(254)]","it's been a while since i wrote this code, but i don't think so. should be possible to switch them around without issues.","             return new Locale(str);
+         }
+        final String[] segments = str.indexOf(DASH) != -1
+ START             ? str.split(String.valueOf(DASH), -1) END 
+            : str.split(String.valueOf(UNDERSCORE), -1);
+         final String language = segments[0];
+         if (segments.length == 2) {
+             final String country = segments[1];","             return new Locale(str);
+         }
+-        final String[] segments = str.indexOf(DASH) != -1
+-            ? str.split(String.valueOf(DASH), -1)
+-            : str.split(String.valueOf(UNDERSCORE), -1);
++        final String[] segments = str.indexOf(UNDERSCORE) != -1
++            ? str.split(String.valueOf(UNDERSCORE), -1)
++            : str.split(String.valueOf(DASH), -1);
+         final String language = segments[0];
+         if (segments.length == 2) {
+             final String country = segments[1];","             return new Locale(str);
+         }
+        final String[] segments = str.indexOf(DASH) != -1
+ START             ? str.split(String.valueOf(DASH), -1) END 
+            : str.split(String.valueOf(UNDERSCORE), -1);
+         final String language = segments[0];
+         if (segments.length == 2) {
+             final String country = segments[1];","             return new Locale(str);
+         }
+-        final String[] segments = str.indexOf(DASH) != -1
+-            ? str.split(String.valueOf(DASH), -1)
+-            : str.split(String.valueOf(UNDERSCORE), -1);
++        final String[] segments = str.indexOf(UNDERSCORE) != -1
++            ? str.split(String.valueOf(UNDERSCORE), -1)
++            : str.split(String.valueOf(DASH), -1);
+         final String language = segments[0];
+         if (segments.length == 2) {
+             final String country = segments[1];",True,True,False,2021-12-06T16:49:54Z,"return new Locale(str);
+         }
+        final String[] segments = str.indexOf(DASH) != -1
+ <START>  ? str.split(String.valueOf(DASH), -1)  <END>
+            : str.split(String.valueOf(UNDERSCORE), -1);
+         final String language = segments[0];
+         if (segments.length == 2) {
+             final String country = segments[1];","return new Locale(str);
+         }
+-        final String[] segments = str.indexOf(DASH) != -1
+-            ? str.split(String.valueOf(DASH), -1)
+-            : str.split(String.valueOf(UNDERSCORE), -1);
++        final String[] segments = str.indexOf(UNDERSCORE) != -1
++            ? str.split(String.valueOf(UNDERSCORE), -1)
++            : str.split(String.valueOf(DASH), -1);
+         final String language = segments[0];
+         if (segments.length == 2) {
+             final String country = segments[1];"
+45,"[np.int64(254), np.int64(254)]",all the unit tests still pass with the comparison swapped. i made the change in 0319d84d1. it's probably the right thing to optimize for the previous delimiter as that'll be the vast majority of use-cases.,"             return new Locale(str);
+         }
+        final String[] segments = str.indexOf(DASH) != -1
+ START             ? str.split(String.valueOf(DASH), -1) END 
+            : str.split(String.valueOf(UNDERSCORE), -1);
+         final String language = segments[0];
+         if (segments.length == 2) {
+             final String country = segments[1];","             return new Locale(str);
+         }
+-        final String[] segments = str.indexOf(DASH) != -1
+-            ? str.split(String.valueOf(DASH), -1)
+-            : str.split(String.valueOf(UNDERSCORE), -1);
++        final String[] segments = str.indexOf(UNDERSCORE) != -1
++            ? str.split(String.valueOf(UNDERSCORE), -1)
++            : str.split(String.valueOf(DASH), -1);
+         final String language = segments[0];
+         if (segments.length == 2) {
+             final String country = segments[1];","             return new Locale(str);
+         }
+        final String[] segments = str.indexOf(DASH) != -1
+ START             ? str.split(String.valueOf(DASH), -1) END 
+            : str.split(String.valueOf(UNDERSCORE), -1);
+         final String language = segments[0];
+         if (segments.length == 2) {
+             final String country = segments[1];","             return new Locale(str);
+         }
+-        final String[] segments = str.indexOf(DASH) != -1
+-            ? str.split(String.valueOf(DASH), -1)
+-            : str.split(String.valueOf(UNDERSCORE), -1);
++        final String[] segments = str.indexOf(UNDERSCORE) != -1
++            ? str.split(String.valueOf(UNDERSCORE), -1)
++            : str.split(String.valueOf(DASH), -1);
+         final String language = segments[0];
+         if (segments.length == 2) {
+             final String country = segments[1];",True,True,False,2021-12-06T16:58:46Z,"return new Locale(str);
+         }
+        final String[] segments = str.indexOf(DASH) != -1
+ <START>  ? str.split(String.valueOf(DASH), -1)  <END>
+            : str.split(String.valueOf(UNDERSCORE), -1);
+         final String language = segments[0];
+         if (segments.length == 2) {
+             final String country = segments[1];","return new Locale(str);
+         }
+-        final String[] segments = str.indexOf(DASH) != -1
+-            ? str.split(String.valueOf(DASH), -1)
+-            : str.split(String.valueOf(UNDERSCORE), -1);
++        final String[] segments = str.indexOf(UNDERSCORE) != -1
++            ? str.split(String.valueOf(UNDERSCORE), -1)
++            : str.split(String.valueOf(DASH), -1);
+         final String language = segments[0];
+         if (segments.length == 2) {
+             final String country = segments[1];"
+46,"[np.int64(378), np.int64(378)]","we do not need to create the writers at all. imo, just guard the method by starting it with:
+```
+        if (throwable == null) {
+            return stringutils.empty;
+        }
+```","         return sw.getBuffer().toString();
+     }
+    //-----------------------------------------------------------------------
+    /**
+     * <p>Counts the number of {@code Throwable} objects in the
+ START      * exception chain.</p> END 
+      *
+      * <p>A throwable without cause will return {@code 1}.
+      * A throwable with one cause will return {@code 2} and so on.","         return sw.getBuffer().toString();
+     }
+-    //-----------------------------------------------------------------------
+-    /**
+-     * <p>Counts the number of {@code Throwable} objects in the
+-     * exception chain.</p>
++    /**
++     * Gets a count of the number of {@code Throwable} objects in the
++     * exception chain.
+      *
+      * <p>A throwable without cause will return {@code 1}.
+      * A throwable with one cause will return {@code 2} and so on.",,,True,False,True,2022-03-06T13:51:08Z,"return sw.getBuffer().toString();
+     }
+    //-----------------------------------------------------------------------
+    /**
+     * <p>Counts the number of {@code Throwable} objects in the
+ <START>  * exception chain.</p>  <END>
+      *
+      * <p>A throwable without cause will return {@code 1}.
+      * A throwable with one cause will return {@code 2} and so on.","return sw.getBuffer().toString();
+     }
+-    //-----------------------------------------------------------------------
+-    /**
+-     * <p>Counts the number of {@code Throwable} objects in the
+-     * exception chain.</p>
++    /**
++     * Gets a count of the number of {@code Throwable} objects in the
++     * exception chain.
+      *
+      * <p>A throwable without cause will return {@code 1}.
+      * A throwable with one cause will return {@code 2} and so on."
+47,"[np.int64(378), np.int64(378)]",ping.,"         return sw.getBuffer().toString();
+     }
+    //-----------------------------------------------------------------------
+    /**
+     * <p>Counts the number of {@code Throwable} objects in the
+ START      * exception chain.</p> END 
+      *
+      * <p>A throwable without cause will return {@code 1}.
+      * A throwable with one cause will return {@code 2} and so on.","         return sw.getBuffer().toString();
+     }
+-    //-----------------------------------------------------------------------
+-    /**
+-     * <p>Counts the number of {@code Throwable} objects in the
+-     * exception chain.</p>
++    /**
++     * Gets a count of the number of {@code Throwable} objects in the
++     * exception chain.
+      *
+      * <p>A throwable without cause will return {@code 1}.
+      * A throwable with one cause will return {@code 2} and so on.",,,True,False,True,2022-04-03T14:23:13Z,"return sw.getBuffer().toString();
+     }
+    //-----------------------------------------------------------------------
+    /**
+     * <p>Counts the number of {@code Throwable} objects in the
+ <START>  * exception chain.</p>  <END>
+      *
+      * <p>A throwable without cause will return {@code 1}.
+      * A throwable with one cause will return {@code 2} and so on.","return sw.getBuffer().toString();
+     }
+-    //-----------------------------------------------------------------------
+-    /**
+-     * <p>Counts the number of {@code Throwable} objects in the
+-     * exception chain.</p>
++    /**
++     * Gets a count of the number of {@code Throwable} objects in the
++     * exception chain.
+      *
+      * <p>A throwable without cause will return {@code 1}.
+      * A throwable with one cause will return {@code 2} and so on."
+48,"[np.int64(378), np.int64(378)]","hi @garydgregory 
+i don't see the way to just use string and not break the binary.","         return sw.getBuffer().toString();
+     }
+    //-----------------------------------------------------------------------
+    /**
+     * <p>Counts the number of {@code Throwable} objects in the
+ START      * exception chain.</p> END 
+      *
+      * <p>A throwable without cause will return {@code 1}.
+      * A throwable with one cause will return {@code 2} and so on.","         return sw.getBuffer().toString();
+     }
+-    //-----------------------------------------------------------------------
+-    /**
+-     * <p>Counts the number of {@code Throwable} objects in the
+-     * exception chain.</p>
++    /**
++     * Gets a count of the number of {@code Throwable} objects in the
++     * exception chain.
+      *
+      * <p>A throwable without cause will return {@code 1}.
+      * A throwable with one cause will return {@code 2} and so on.",,,True,True,True,2022-04-03T16:10:56Z,"return sw.getBuffer().toString();
+     }
+    //-----------------------------------------------------------------------
+    /**
+     * <p>Counts the number of {@code Throwable} objects in the
+ <START>  * exception chain.</p>  <END>
+      *
+      * <p>A throwable without cause will return {@code 1}.
+      * A throwable with one cause will return {@code 2} and so on.","return sw.getBuffer().toString();
+     }
+-    //-----------------------------------------------------------------------
+-    /**
+-     * <p>Counts the number of {@code Throwable} objects in the
+-     * exception chain.</p>
++    /**
++     * Gets a count of the number of {@code Throwable} objects in the
++     * exception chain.
+      *
+      * <p>A throwable without cause will return {@code 1}.
+      * A throwable with one cause will return {@code 2} and so on."
+49,"[np.int64(130), np.int64(130)]",reuse `arrayutils.empty_string_array`,"      */
+     public ReflectionDiffBuilder setExcludeFieldNames(final String... excludeFieldNamesParam) {
+         if (excludeFieldNamesParam == null) {
+ START             this.excludeFieldNames = new String[0]; END 
+         } else {
+            //clone and remove nulls
+             this.excludeFieldNames = ArraySorter.sort(ReflectionToStringBuilder.toNoNullStringArray(excludeFieldNamesParam));
+         }
+         return this;","      */
+     public ReflectionDiffBuilder setExcludeFieldNames(final String... excludeFieldNamesParam) {
+         if (excludeFieldNamesParam == null) {
+-            this.excludeFieldNames = new String[0];
++            this.excludeFieldNames = ArrayUtils.EMPTY_STRING_ARRAY;
+         } else {
+-            //clone and remove nulls
++            // clone and remove nulls
+             this.excludeFieldNames = ArraySorter.sort(ReflectionToStringBuilder.toNoNullStringArray(excludeFieldNamesParam));
+         }
+         return this;","      */
+     public ReflectionDiffBuilder setExcludeFieldNames(final String... excludeFieldNamesParam) {
+         if (excludeFieldNamesParam == null) {
+ START             this.excludeFieldNames = new String[0]; END 
+         } else {
+             this.excludeFieldNames = ArraySorter.sort(ReflectionToStringBuilder.toNoNullStringArray(excludeFieldNamesParam));
+         }
+         return this;","      */
+     public ReflectionDiffBuilder setExcludeFieldNames(final String... excludeFieldNamesParam) {
+         if (excludeFieldNamesParam == null) {
+-            this.excludeFieldNames = new String[0];
++            this.excludeFieldNames = ArrayUtils.EMPTY_STRING_ARRAY;
+         } else {
+             this.excludeFieldNames = ArraySorter.sort(ReflectionToStringBuilder.toNoNullStringArray(excludeFieldNamesParam));
+         }
+         return this;",True,False,False,2022-04-06T14:16:29Z,"*/
+     public ReflectionDiffBuilder setExcludeFieldNames(final String... excludeFieldNamesParam) {
+         if (excludeFieldNamesParam == null) {
+ <START>  this.excludeFieldNames = new String[0];  <END>
+         } else {
+            //clone and remove nulls
+             this.excludeFieldNames = ArraySorter.sort(ReflectionToStringBuilder.toNoNullStringArray(excludeFieldNamesParam));
+         }
+         return this;","*/
+     public ReflectionDiffBuilder setExcludeFieldNames(final String... excludeFieldNamesParam) {
+         if (excludeFieldNamesParam == null) {
+-            this.excludeFieldNames = new String[0];
++            this.excludeFieldNames = ArrayUtils.EMPTY_STRING_ARRAY;
+         } else {
+-            //clone and remove nulls
++            // clone and remove nulls
+             this.excludeFieldNames = ArraySorter.sort(ReflectionToStringBuilder.toNoNullStringArray(excludeFieldNamesParam));
+         }
+         return this;"
+50,"[np.int64(132), np.int64(132)]",space after `//`,"      */
+     public ReflectionDiffBuilder setExcludeFieldNames(final String... excludeFieldNamesParam) {
+         if (excludeFieldNamesParam == null) {
+            this.excludeFieldNames = new String[0];
+         } else {
+ START             //clone and remove nulls END 
+             this.excludeFieldNames = ArraySorter.sort(ReflectionToStringBuilder.toNoNullStringArray(excludeFieldNamesParam));
+         }
+         return this;","      */
+     public ReflectionDiffBuilder setExcludeFieldNames(final String... excludeFieldNamesParam) {
+         if (excludeFieldNamesParam == null) {
+-            this.excludeFieldNames = new String[0];
++            this.excludeFieldNames = ArrayUtils.EMPTY_STRING_ARRAY;
+         } else {
+-            //clone and remove nulls
++            // clone and remove nulls
+             this.excludeFieldNames = ArraySorter.sort(ReflectionToStringBuilder.toNoNullStringArray(excludeFieldNamesParam));
+         }
+         return this;","      */
+     public ReflectionDiffBuilder setExcludeFieldNames(final String... excludeFieldNamesParam) {
+         if (excludeFieldNamesParam == null) {
+            this.excludeFieldNames = new String[0];
+         } else {
+ START             //clone and remove nulls END 
+             this.excludeFieldNames = ArraySorter.sort(ReflectionToStringBuilder.toNoNullStringArray(excludeFieldNamesParam));
+         }
+         return this;","      */
+     public ReflectionDiffBuilder setExcludeFieldNames(final String... excludeFieldNamesParam) {
+         if (excludeFieldNamesParam == null) {
+-            this.excludeFieldNames = new String[0];
++            this.excludeFieldNames = ArrayUtils.EMPTY_STRING_ARRAY;
+         } else {
+-            //clone and remove nulls
+             this.excludeFieldNames = ArraySorter.sort(ReflectionToStringBuilder.toNoNullStringArray(excludeFieldNamesParam));
+         }
+         return this;",True,False,True,2022-04-06T14:16:29Z,"*/
+     public ReflectionDiffBuilder setExcludeFieldNames(final String... excludeFieldNamesParam) {
+         if (excludeFieldNamesParam == null) {
+            this.excludeFieldNames = new String[0];
+         } else {
+ <START>  //clone and remove nulls  <END>
+             this.excludeFieldNames = ArraySorter.sort(ReflectionToStringBuilder.toNoNullStringArray(excludeFieldNamesParam));
+         }
+         return this;","*/
+     public ReflectionDiffBuilder setExcludeFieldNames(final String... excludeFieldNamesParam) {
+         if (excludeFieldNamesParam == null) {
+-            this.excludeFieldNames = new String[0];
++            this.excludeFieldNames = ArrayUtils.EMPTY_STRING_ARRAY;
+         } else {
+-            //clone and remove nulls
++            // clone and remove nulls
+             this.excludeFieldNames = ArraySorter.sort(ReflectionToStringBuilder.toNoNullStringArray(excludeFieldNamesParam));
+         }
+         return this;"
+51,"[np.int64(82), np.int64(82)]",make `private`.,"     private final DiffBuilder<T> diffBuilder;
+     /**
+     * Which field names to exclude from output. Intended for fields like {@code ""password""} or {@code ""lastModificationDate}.
+      * @since 3.13.0
+      */
+ START     protected String[] excludeFieldNames; END 
+     /**
+     * <p>
+      * Constructs a builder for the specified objects with the specified style.
+     * </p>
+      *
+      * <p>
+      * If {@code lhs == rhs} or {@code lhs.equals(rhs)} then the builder will","     private final DiffBuilder<T> diffBuilder;
+     /**
+-     * Which field names to exclude from output. Intended for fields like {@code ""password""} or {@code ""lastModificationDate}.
++     * Which field names to exclude from output. Intended for fields like {@code ""password""} or {@code ""lastModificationDate""}.
+      * @since 3.13.0
+      */
+-    protected String[] excludeFieldNames;
++    private String[] excludeFieldNames;
+     /**
+-     * <p>
+      * Constructs a builder for the specified objects with the specified style.
+-     * </p>
+      *
+      * <p>
+      * If {@code lhs == rhs} or {@code lhs.equals(rhs)} then the builder will",,,True,False,False,2022-04-06T14:16:29Z,"private final DiffBuilder<T> diffBuilder;
+     /**
+     * Which field names to exclude from output. Intended for fields like {@code ""password""} or {@code ""lastModificationDate}.
+      * @since 3.13.0
+      */
+ <START>  protected String[] excludeFieldNames;  <END>
+     /**
+     * <p>
+      * Constructs a builder for the specified objects with the specified style.
+     * </p>
+      *
+      * <p>
+      * If {@code lhs == rhs} or {@code lhs.equals(rhs)} then the builder will","private final DiffBuilder<T> diffBuilder;
+     /**
+-     * Which field names to exclude from output. Intended for fields like {@code ""password""} or {@code ""lastModificationDate}.
++     * Which field names to exclude from output. Intended for fields like {@code ""password""} or {@code ""lastModificationDate""}.
+      * @since 3.13.0
+      */
+-    protected String[] excludeFieldNames;
++    private String[] excludeFieldNames;
+     /**
+-     * <p>
+      * Constructs a builder for the specified objects with the specified style.
+-     * </p>
+      *
+      * <p>
+      * If {@code lhs == rhs} or {@code lhs.equals(rhs)} then the builder will"
+52,"[np.int64(171), np.int64(171)]","if you make the default value the empty array and the setter does not allow excludefieldnames to be null, then you do not need this check? it might be better this way though, not sure.","             return false;
+         }
+         if (Modifier.isStatic(field.getModifiers())) {
+ START             return false; END 
+         }
+         if (this.excludeFieldNames != null
+                 && Arrays.binarySearch(this.excludeFieldNames, field.getName()) >= 0) {","             return false;
+         }
+         if (Modifier.isStatic(field.getModifiers())) {
+-            return false;
++            return false;
+         }
+         if (this.excludeFieldNames != null
+                 && Arrays.binarySearch(this.excludeFieldNames, field.getName()) >= 0) {","             return false;
+         }
+         if (Modifier.isStatic(field.getModifiers())) {
+ START             return false; END 
+         }
+         if (this.excludeFieldNames != null
+                 && Arrays.binarySearch(this.excludeFieldNames, field.getName()) >= 0) {","             return false;
+         }
+         if (Modifier.isStatic(field.getModifiers())) {
+-            return false;
++            return false;
+         }
+         if (this.excludeFieldNames != null
+                 && Arrays.binarySearch(this.excludeFieldNames, field.getName()) >= 0) {",True,False,False,2022-04-06T14:16:29Z,"return false;
+         }
+         if (Modifier.isStatic(field.getModifiers())) {
+ <START>  return false;  <END>
+         }
+         if (this.excludeFieldNames != null
+                 && Arrays.binarySearch(this.excludeFieldNames, field.getName()) >= 0) {","return false;
+         }
+         if (Modifier.isStatic(field.getModifiers())) {
+-            return false;
++            return false;
+         }
+         if (this.excludeFieldNames != null
+                 && Arrays.binarySearch(this.excludeFieldNames, field.getName()) >= 0) {"
+53,"[np.int64(1), np.int64(1)]",leave formatting alone here.," START /* END 
+  * Licensed to the Apache Software Foundation (ASF) under one or more
+  * contributor license agreements.  See the NOTICE file distributed with
+  * this work for additional information regarding copyright ownership.","-/*
++/*
+  * Licensed to the Apache Software Foundation (ASF) under one or more
+  * contributor license agreements.  See the NOTICE file distributed with
+  * this work for additional information regarding copyright ownership.",,,True,False,True,2022-04-06T14:16:29Z,"<START>  /*  <END>
+  * Licensed to the Apache Software Foundation (ASF) under one or more
+  * contributor license agreements. See the NOTICE file distributed with
+  * this work for additional information regarding copyright ownership.","-/*
++/*
+  * Licensed to the Apache Software Foundation (ASF) under one or more
+  * contributor license agreements. See the NOTICE file distributed with
+  * this work for additional information regarding copyright ownership."
+56,"[np.int64(1), np.int64(1)]",you should test a non-transient null field.," START /* END 
+  * Licensed to the Apache Software Foundation (ASF) under one or more
+  * contributor license agreements.  See the NOTICE file distributed with
+  * this work for additional information regarding copyright ownership.","-/*
++/*
+  * Licensed to the Apache Software Foundation (ASF) under one or more
+  * contributor license agreements.  See the NOTICE file distributed with
+  * this work for additional information regarding copyright ownership.",,,True,False,True,2022-04-06T14:16:29Z,"<START>  /*  <END>
+  * Licensed to the Apache Software Foundation (ASF) under one or more
+  * contributor license agreements. See the NOTICE file distributed with
+  * this work for additional information regarding copyright ownership.","-/*
++/*
+  * Licensed to the Apache Software Foundation (ASF) under one or more
+  * contributor license agreements. See the NOTICE file distributed with
+  * this work for additional information regarding copyright ownership."
+57,"[np.int64(1), np.int64(1)]","i took some ""inspiration"" from the `reflectiontostringbuilder` where we also have the null check. 
+in case you do call setexcludefieldnames with null, it's still safe here, guess that's the main reason."," START /* END 
+  * Licensed to the Apache Software Foundation (ASF) under one or more
+  * contributor license agreements.  See the NOTICE file distributed with
+  * this work for additional information regarding copyright ownership.","-/*
++/*
+  * Licensed to the Apache Software Foundation (ASF) under one or more
+  * contributor license agreements.  See the NOTICE file distributed with
+  * this work for additional information regarding copyright ownership.",,,True,True,True,2022-04-06T18:42:36Z,"<START>  /*  <END>
+  * Licensed to the Apache Software Foundation (ASF) under one or more
+  * contributor license agreements. See the NOTICE file distributed with
+  * this work for additional information regarding copyright ownership.","-/*
++/*
+  * Licensed to the Apache Software Foundation (ASF) under one or more
+  * contributor license agreements. See the NOTICE file distributed with
+  * this work for additional information regarding copyright ownership."
+58,"[np.int64(1), np.int64(1)]","there is already a testcase `test_transient_field_difference` that validates this, there is no specific or new logic for transient fields that get excluded."," START /* END 
+  * Licensed to the Apache Software Foundation (ASF) under one or more
+  * contributor license agreements.  See the NOTICE file distributed with
+  * this work for additional information regarding copyright ownership.","-/*
++/*
+  * Licensed to the Apache Software Foundation (ASF) under one or more
+  * contributor license agreements.  See the NOTICE file distributed with
+  * this work for additional information regarding copyright ownership.",,,True,True,True,2022-04-06T18:52:32Z,"<START>  /*  <END>
+  * Licensed to the Apache Software Foundation (ASF) under one or more
+  * contributor license agreements. See the NOTICE file distributed with
+  * this work for additional information regarding copyright ownership.","-/*
++/*
+  * Licensed to the Apache Software Foundation (ASF) under one or more
+  * contributor license agreements. See the NOTICE file distributed with
+  * this work for additional information regarding copyright ownership."
+59,"[np.int64(1), np.int64(1)]","these two methods are identical except for calendar.short_standalone vs. calendar.long_standalone? why duplicate? javadoc: ""obtain..."" -> ""gets..."""," START /* END 
+  * Licensed to the Apache Software Foundation (ASF) under one or more
+  * contributor license agreements.  See the NOTICE file distributed with
+  * this work for additional information regarding copyright ownership.","-/*
++/*
+  * Licensed to the Apache Software Foundation (ASF) under one or more
+  * contributor license agreements.  See the NOTICE file distributed with
+  * this work for additional information regarding copyright ownership.",,,True,False,True,2022-05-14T13:19:54Z,"<START>  /*  <END>
+  * Licensed to the Apache Software Foundation (ASF) under one or more
+  * contributor license agreements. See the NOTICE file distributed with
+  * this work for additional information regarding copyright ownership.","-/*
++/*
+  * Licensed to the Apache Software Foundation (ASF) under one or more
+  * contributor license agreements. See the NOTICE file distributed with
+  * this work for additional information regarding copyright ownership."
+5,"[np.int64(72), np.int64(72)]",use final where you can.," 
+     @Test
+     public void testTryWithResources() {
+ START         IOException thrown = assertThrows(IOException.class, () -> { END 
+             try (InputStream newStream = new BrokenInputStream()) {
+                 newStream.read();
+             }
+         });
+         assertEquals(""Broken input stream"", thrown.getMessage());
+        Throwable[] suppressed = thrown.getSuppressed();
+         assertEquals(1, suppressed.length);
+         assertEquals(IOException.class, suppressed[0].getClass());
+         assertEquals(""Broken input stream"", suppressed[0].getMessage());"," 
+     @Test
+     public void testTryWithResources() {
+-        IOException thrown = assertThrows(IOException.class, () -> {
++        final IOException thrown = assertThrows(IOException.class, () -> {
+             try (InputStream newStream = new BrokenInputStream()) {
+                 newStream.read();
+             }
+         });
+         assertEquals(""Broken input stream"", thrown.getMessage());
+-        Throwable[] suppressed = thrown.getSuppressed();
++        final Throwable[] suppressed = thrown.getSuppressed();
+         assertEquals(1, suppressed.length);
+         assertEquals(IOException.class, suppressed[0].getClass());
+         assertEquals(""Broken input stream"", suppressed[0].getMessage());"," 
+     @Test
+     public void testTryWithResources() {
+ START         IOException thrown = assertThrows(IOException.class, () -> { END 
+             try (InputStream newStream = new BrokenInputStream()) {
+                 newStream.read();
+             }
+         });
+         assertEquals(""Broken input stream"", thrown.getMessage());
+        Throwable[] suppressed = thrown.getSuppressed();
+         assertEquals(1, suppressed.length);
+         assertEquals(IOException.class, suppressed[0].getClass());
+         assertEquals(""Broken input stream"", suppressed[0].getMessage());"," 
+     @Test
+     public void testTryWithResources() {
+-        IOException thrown = assertThrows(IOException.class, () -> {
++        final IOException thrown = assertThrows(IOException.class, () -> {
+             try (InputStream newStream = new BrokenInputStream()) {
+                 newStream.read();
+             }
+         });
+         assertEquals(""Broken input stream"", thrown.getMessage());
+-        Throwable[] suppressed = thrown.getSuppressed();
++        final Throwable[] suppressed = thrown.getSuppressed();
+         assertEquals(1, suppressed.length);
+         assertEquals(IOException.class, suppressed[0].getClass());
+         assertEquals(""Broken input stream"", suppressed[0].getMessage());",True,False,False,2021-09-28T00:32:21Z,"@Test
+     public void testTryWithResources() {
+ <START>  IOException thrown = assertThrows(IOException.class, () -> {  <END>
+             try (InputStream newStream = new BrokenInputStream()) {
+                 newStream.read();
+             }
+         });
+         assertEquals(""Broken input stream"", thrown.getMessage());
+        Throwable[] suppressed = thrown.getSuppressed();
+         assertEquals(1, suppressed.length);
+         assertEquals(IOException.class, suppressed[0].getClass());
+         assertEquals(""Broken input stream"", suppressed[0].getMessage());","@Test
+     public void testTryWithResources() {
+-        IOException thrown = assertThrows(IOException.class, () -> {
++        final IOException thrown = assertThrows(IOException.class, () -> {
+             try (InputStream newStream = new BrokenInputStream()) {
+                 newStream.read();
+             }
+         });
+         assertEquals(""Broken input stream"", thrown.getMessage());
+-        Throwable[] suppressed = thrown.getSuppressed();
++        final Throwable[] suppressed = thrown.getSuppressed();
+         assertEquals(1, suppressed.length);
+         assertEquals(IOException.class, suppressed[0].getClass());
+         assertEquals(""Broken input stream"", suppressed[0].getMessage());"
+34,"[np.int64(133), np.int64(133)]",close html tags.,"      * Constructs a new {@link ReaderInputStream} with a default input buffer size of {@value #DEFAULT_BUFFER_SIZE}
+      * characters.
+      *
+     * <p>The encoder created for the specified charset will use {@link CodingErrorAction#REPLACE} for malformed input
+      * and unmappable characters.
+ START      * END 
+      * @param reader the target {@link Reader}
+      * @param charset the charset encoding
+      */","      * Constructs a new {@link ReaderInputStream} with a default input buffer size of {@value #DEFAULT_BUFFER_SIZE}
+      * characters.
+      *
+-     * <p>The encoder created for the specified charset will use {@link CodingErrorAction#REPLACE} for malformed input
++     * <p>
++     * The encoder created for the specified charset will use {@link CodingErrorAction#REPLACE} for malformed input
+      * and unmappable characters.
+-     *
++     * </p>
++     *
+      * @param reader the target {@link Reader}
+      * @param charset the charset encoding
+      */","      * Constructs a new {@link ReaderInputStream} with a default input buffer size of {@value #DEFAULT_BUFFER_SIZE}
+      * characters.
+      *
+     * <p>The encoder created for the specified charset will use {@link CodingErrorAction#REPLACE} for malformed input
+      * and unmappable characters.
+ START      * END 
+      * @param reader the target {@link Reader}
+      * @param charset the charset encoding
+      */
+    @Override
+    public int available() throws IOException {
+        return 0;
+     }","      * Constructs a new {@link ReaderInputStream} with a default input buffer size of {@value #DEFAULT_BUFFER_SIZE}
+      * characters.
+      *
+-     * <p>The encoder created for the specified charset will use {@link CodingErrorAction#REPLACE} for malformed input
++     * <p>
++     * The encoder created for the specified charset will use {@link CodingErrorAction#REPLACE} for malformed input
+      * and unmappable characters.
+-     *
++     * </p>
++     *
+      * @param reader the target {@link Reader}
+      * @param charset the charset encoding
+      */
+-    @Override
+-    public int available() throws IOException {
+-        return 0;
+     }",True,False,True,2021-11-11T19:44:03Z,"* Constructs a new {@link ReaderInputStream} with a default input buffer size of {@value #DEFAULT_BUFFER_SIZE}
+      * characters.
+      *
+     * <p>The encoder created for the specified charset will use {@link CodingErrorAction#REPLACE} for malformed input
+      * and unmappable characters.
+ <START>  *  <END>
+      * @param reader the target {@link Reader}
+      * @param charset the charset encoding
+      */","* Constructs a new {@link ReaderInputStream} with a default input buffer size of {@value #DEFAULT_BUFFER_SIZE}
+      * characters.
+      *
+-     * <p>The encoder created for the specified charset will use {@link CodingErrorAction#REPLACE} for malformed input
++     * <p>
++     * The encoder created for the specified charset will use {@link CodingErrorAction#REPLACE} for malformed input
+      * and unmappable characters.
+-     *
++     * </p>
++     *
+      * @param reader the target {@link Reader}
+      * @param charset the charset encoding
+      */"
+1,"[np.int64(602), np.int64(602)]",done,"         assertFalse(ObjectUtils.isArray(""""));
+         assertFalse(ObjectUtils.isArray(""abg""));
+         assertFalse(ObjectUtils.isArray(123));
+
+         assertTrue(ObjectUtils.isArray(NON_EMPTY_ARRAY));
+        assertTrue(ObjectUtils.isArray(new int[] {}));
+         assertTrue(ObjectUtils.isArray(new int[]{1, 2, 3}));
+ START  END 
+
+     }
+     @Test","         assertFalse(ObjectUtils.isArray(""""));
+         assertFalse(ObjectUtils.isArray(""abg""));
+         assertFalse(ObjectUtils.isArray(123));
+-
+         assertTrue(ObjectUtils.isArray(NON_EMPTY_ARRAY));
+-        assertTrue(ObjectUtils.isArray(new int[] {}));
+         assertTrue(ObjectUtils.isArray(new int[]{1, 2, 3}));
+-
+-
++        assertTrue(ObjectUtils.isArray(ArrayUtils.EMPTY_BOOLEAN_ARRAY));
++        assertTrue(ObjectUtils.isArray(ArrayUtils.EMPTY_BOOLEAN_ARRAY));
++        assertTrue(ObjectUtils.isArray(ArrayUtils.EMPTY_BOOLEAN_OBJECT_ARRAY));
++        assertTrue(ObjectUtils.isArray(ArrayUtils.EMPTY_BYTE_ARRAY));
++        assertTrue(ObjectUtils.isArray(ArrayUtils.EMPTY_BYTE_OBJECT_ARRAY));
++        assertTrue(ObjectUtils.isArray(ArrayUtils.EMPTY_CHAR_ARRAY));
++        assertTrue(ObjectUtils.isArray(ArrayUtils.EMPTY_CHARACTER_OBJECT_ARRAY));
++        assertTrue(ObjectUtils.isArray(ArrayUtils.EMPTY_CLASS_ARRAY));
++        assertTrue(ObjectUtils.isArray(ArrayUtils.EMPTY_DOUBLE_ARRAY));
++        assertTrue(ObjectUtils.isArray(ArrayUtils.EMPTY_DOUBLE_OBJECT_ARRAY));
++        assertTrue(ObjectUtils.isArray(ArrayUtils.EMPTY_FIELD_ARRAY));
++        assertTrue(ObjectUtils.isArray(ArrayUtils.EMPTY_FLOAT_ARRAY));
++        assertTrue(ObjectUtils.isArray(ArrayUtils.EMPTY_FLOAT_OBJECT_ARRAY));
++        assertTrue(ObjectUtils.isArray(ArrayUtils.EMPTY_INT_ARRAY));
++        assertTrue(ObjectUtils.isArray(ArrayUtils.EMPTY_INTEGER_OBJECT_ARRAY));
++        assertTrue(ObjectUtils.isArray(ArrayUtils.EMPTY_LONG_ARRAY));
++        assertTrue(ObjectUtils.isArray(ArrayUtils.EMPTY_LONG_OBJECT_ARRAY));
++        assertTrue(ObjectUtils.isArray(ArrayUtils.EMPTY_METHOD_ARRAY));
++        assertTrue(ObjectUtils.isArray(ArrayUtils.EMPTY_OBJECT_ARRAY));
++        assertTrue(ObjectUtils.isArray(ArrayUtils.EMPTY_SHORT_ARRAY));
++        assertTrue(ObjectUtils.isArray(ArrayUtils.EMPTY_SHORT_OBJECT_ARRAY));
++        assertTrue(ObjectUtils.isArray(ArrayUtils.EMPTY_STRING_ARRAY));
++        assertTrue(ObjectUtils.isArray(ArrayUtils.EMPTY_THROWABLE_ARRAY));
++        assertTrue(ObjectUtils.isArray(ArrayUtils.EMPTY_TYPE_ARRAY));
+     }
+     @Test","         assertFalse(ObjectUtils.isArray(""""));
+         assertFalse(ObjectUtils.isArray(""abg""));
+         assertFalse(ObjectUtils.isArray(123));
+
+         assertTrue(ObjectUtils.isArray(NON_EMPTY_ARRAY));
+        assertTrue(ObjectUtils.isArray(new int[] {}));
+         assertTrue(ObjectUtils.isArray(new int[]{1, 2, 3}));
+ START  END 
+
+     }
+     @Test","         assertFalse(ObjectUtils.isArray(""""));
+         assertFalse(ObjectUtils.isArray(""abg""));
+         assertFalse(ObjectUtils.isArray(123));
+-
+         assertTrue(ObjectUtils.isArray(NON_EMPTY_ARRAY));
+-        assertTrue(ObjectUtils.isArray(new int[] {}));
+         assertTrue(ObjectUtils.isArray(new int[]{1, 2, 3}));
+-
+-
++        assertTrue(ObjectUtils.isArray(ArrayUtils.EMPTY_BOOLEAN_ARRAY));
++        assertTrue(ObjectUtils.isArray(ArrayUtils.EMPTY_BOOLEAN_ARRAY));
++        assertTrue(ObjectUtils.isArray(ArrayUtils.EMPTY_BOOLEAN_OBJECT_ARRAY));
++        assertTrue(ObjectUtils.isArray(ArrayUtils.EMPTY_BYTE_ARRAY));
++        assertTrue(ObjectUtils.isArray(ArrayUtils.EMPTY_BYTE_OBJECT_ARRAY));
++        assertTrue(ObjectUtils.isArray(ArrayUtils.EMPTY_CHAR_ARRAY));
++        assertTrue(ObjectUtils.isArray(ArrayUtils.EMPTY_CHARACTER_OBJECT_ARRAY));
++        assertTrue(ObjectUtils.isArray(ArrayUtils.EMPTY_CLASS_ARRAY));
++        assertTrue(ObjectUtils.isArray(ArrayUtils.EMPTY_DOUBLE_ARRAY));
++        assertTrue(ObjectUtils.isArray(ArrayUtils.EMPTY_DOUBLE_OBJECT_ARRAY));
++        assertTrue(ObjectUtils.isArray(ArrayUtils.EMPTY_FIELD_ARRAY));
++        assertTrue(ObjectUtils.isArray(ArrayUtils.EMPTY_FLOAT_ARRAY));
++        assertTrue(ObjectUtils.isArray(ArrayUtils.EMPTY_FLOAT_OBJECT_ARRAY));
++        assertTrue(ObjectUtils.isArray(ArrayUtils.EMPTY_INT_ARRAY));
++        assertTrue(ObjectUtils.isArray(ArrayUtils.EMPTY_INTEGER_OBJECT_ARRAY));
++        assertTrue(ObjectUtils.isArray(ArrayUtils.EMPTY_LONG_ARRAY));
++        assertTrue(ObjectUtils.isArray(ArrayUtils.EMPTY_LONG_OBJECT_ARRAY));
++        assertTrue(ObjectUtils.isArray(ArrayUtils.EMPTY_METHOD_ARRAY));
++        assertTrue(ObjectUtils.isArray(ArrayUtils.EMPTY_OBJECT_ARRAY));
++        assertTrue(ObjectUtils.isArray(ArrayUtils.EMPTY_SHORT_ARRAY));
++        assertTrue(ObjectUtils.isArray(ArrayUtils.EMPTY_SHORT_OBJECT_ARRAY));
++        assertTrue(ObjectUtils.isArray(ArrayUtils.EMPTY_STRING_ARRAY));
++        assertTrue(ObjectUtils.isArray(ArrayUtils.EMPTY_THROWABLE_ARRAY));
++        assertTrue(ObjectUtils.isArray(ArrayUtils.EMPTY_TYPE_ARRAY));
+     }
+     @Test",True,True,False,2021-09-04T14:30:42Z,"assertFalse(ObjectUtils.isArray(""""));
+         assertFalse(ObjectUtils.isArray(""abg""));
+         assertFalse(ObjectUtils.isArray(123));
+         assertTrue(ObjectUtils.isArray(NON_EMPTY_ARRAY));
+        assertTrue(ObjectUtils.isArray(new int[] {}));
+         assertTrue(ObjectUtils.isArray(new int[]{1, 2, 3}));
+ <START>   <END>
+     }
+     @Test","assertFalse(ObjectUtils.isArray(""""));
+         assertFalse(ObjectUtils.isArray(""abg""));
+         assertFalse(ObjectUtils.isArray(123));
+-
+         assertTrue(ObjectUtils.isArray(NON_EMPTY_ARRAY));
+-        assertTrue(ObjectUtils.isArray(new int[] {}));
+         assertTrue(ObjectUtils.isArray(new int[]{1, 2, 3}));
+-
+-
++        assertTrue(ObjectUtils.isArray(ArrayUtils.EMPTY_BOOLEAN_ARRAY));
++        assertTrue(ObjectUtils.isArray(ArrayUtils.EMPTY_BOOLEAN_ARRAY));
++        assertTrue(ObjectUtils.isArray(ArrayUtils.EMPTY_BOOLEAN_OBJECT_ARRAY));
++        assertTrue(ObjectUtils.isArray(ArrayUtils.EMPTY_BYTE_ARRAY));
++        assertTrue(ObjectUtils.isArray(ArrayUtils.EMPTY_BYTE_OBJECT_ARRAY));
++        assertTrue(ObjectUtils.isArray(ArrayUtils.EMPTY_CHAR_ARRAY));
++        assertTrue(ObjectUtils.isArray(ArrayUtils.EMPTY_CHARACTER_OBJECT_ARRAY));
++        assertTrue(ObjectUtils.isArray(ArrayUtils.EMPTY_CLASS_ARRAY));
++        assertTrue(ObjectUtils.isArray(ArrayUtils.EMPTY_DOUBLE_ARRAY));
++        assertTrue(ObjectUtils.isArray(ArrayUtils.EMPTY_DOUBLE_OBJECT_ARRAY));
++        assertTrue(ObjectUtils.isArray(ArrayUtils.EMPTY_FIELD_ARRAY));
++        assertTrue(ObjectUtils.isArray(ArrayUtils.EMPTY_FLOAT_ARRAY));
++        assertTrue(ObjectUtils.isArray(ArrayUtils.EMPTY_FLOAT_OBJECT_ARRAY));
++        assertTrue(ObjectUtils.isArray(ArrayUtils.EMPTY_INT_ARRAY));
++        assertTrue(ObjectUtils.isArray(ArrayUtils.EMPTY_INTEGER_OBJECT_ARRAY));
++        assertTrue(ObjectUtils.isArray(ArrayUtils.EMPTY_LONG_ARRAY));
++        assertTrue(ObjectUtils.isArray(ArrayUtils.EMPTY_LONG_OBJECT_ARRAY));
++        assertTrue(ObjectUtils.isArray(ArrayUtils.EMPTY_METHOD_ARRAY));
++        assertTrue(ObjectUtils.isArray(ArrayUtils.EMPTY_OBJECT_ARRAY));
++        assertTrue(ObjectUtils.isArray(ArrayUtils.EMPTY_SHORT_ARRAY));
++        assertTrue(ObjectUtils.isArray(ArrayUtils.EMPTY_SHORT_OBJECT_ARRAY));
++        assertTrue(ObjectUtils.isArray(ArrayUtils.EMPTY_STRING_ARRAY));
++        assertTrue(ObjectUtils.isArray(ArrayUtils.EMPTY_THROWABLE_ARRAY));
++        assertTrue(ObjectUtils.isArray(ArrayUtils.EMPTY_TYPE_ARRAY));
+     }
+     @Test"

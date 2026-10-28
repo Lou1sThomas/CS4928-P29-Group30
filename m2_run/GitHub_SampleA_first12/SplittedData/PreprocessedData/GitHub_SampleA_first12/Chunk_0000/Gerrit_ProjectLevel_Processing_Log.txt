@@ -1,0 +1,120 @@
+===== Gerrit ProjectLevel Test_NoLeakage Preprocessing Log =====
+
+Initial raw records: 12
+
+[Raw Data Cleanup]
+ - Initial raw records: 12
+ - NaN records removed: 0
+ - Duplicates removed: 0
+ - Left-side comments removed: 1
+
+[Method-Level] (Step 1.1 - Paper 1 & 2) P1: Method extraction
+ - Initial Method-Level extracted records: 5
+ - NaN/empty extracted methods removed: 0
+ - Duplicates removed: 0
+ - Duplicated comments removed (same comments different before&after): 0
+ - Output: ../../SplittedData/PreprocessedData/GitHub_SampleA_first12/Chunk_0000/Step1.1_Paper1-2_Gerrit_ProjectLevel_MethodLevel_Preprocessed.csv
+ - Records remaining (Records before size filtering): 5
+   > Size filter (Paper 1 - 100 tokens) removed: 0
+ - Remaining after size filtering: 5
+   > Size filter (Paper 2 - 512 tokens) removed: 0
+ - Remaining after size filtering: 5
+
+[Method-Level] (Step 1.2 - Paper 1 & 2) ----> P2: Comment pruning
+ - Initial records before comment pruning: 5
+ - Rows with invalid comments (owner, comment2comment, not linked, empty string) removed: 1
+ - Methods with multiple comments removed (same before&after, multiple comments): 3
+ - Output: ../../SplittedData/PreprocessedData/GitHub_SampleA_first12/Chunk_0000/Step1.2_Paper1-2_Gerrit_ProjectLevel_MethodLevel_Preprocessed.csv
+ - Records remaining  (Records before size filtering): 1
+   > Size filter (Paper 1 - 100 tokens) removed: 0
+ - Remaining after size filtering: 1
+   > Size filter (Paper 2 - 512 tokens) removed: 0
+ - Remaining after size filtering: 1
+
+[Method-Level] (Step 1.3 - Paper 1 & 2) ----> P3: Unchanged methods removal
+ - Initial records before unchanged methods removal: 1
+ - Equal before==after removed: 0
+ - Output: ../../SplittedData/PreprocessedData/GitHub_SampleA_first12/Chunk_0000/Step1.3_Paper1-2_Gerrit_ProjectLevel_MethodLevel_Preprocessed.csv
+ - Records remaining: 1
+   > Size filter (Paper 1 - 100 tokens) removed: 0
+ - Remaining after size filtering: 1
+   > Size filter (Paper 2 - 512 tokens) removed: 0
+ - Remaining after size filtering: 1
+
+[Method-Level] (Step 2.1 - Paper 1) ----> P4: Abstraction
+ - Initial records before abstraction: 1
+ - Records After abstraction: 0
+ - Step 2.1: NaNs records removed: 0
+ - Output: ../../SplittedData/PreprocessedData/GitHub_SampleA_first12/Chunk_0000/Step2.1_Paper1_Gerrit_ProjectLevel_MethodLevel_Preprocessed.csv
+ - Records remaining: 0
+   > Size filter (Paper 1 - 100 tokens) removed: 0
+ - Remaining after size filtering: 0
+
+[Method-Level] (Step 2.2 - Paper 1) ----> P5: Unchanged methods removal
+ - Initial records before unchanged abstracted methods removal: 0
+ - Step 2.2: Removed because abs(before) == abs(after): 0
+ - Output: ../../SplittedData/PreprocessedData/GitHub_SampleA_first12/Chunk_0000/Step2.2_Paper1_Gerrit_ProjectLevel_MethodLevel_Preprocessed.csv
+ - Records remaining: 0
+   > Size filter (Paper 1 - 100 tokens) removed: 0
+ - Remaining after size filtering: 0
+
+[Method-Level] (Step 2.3 - Paper 1) ----> P6: New token removal
+ - Initial records before new token removal: 0
+ - Step 2.3: Removed due to new tokens in abs(after): 0
+ - Output: ../../SplittedData/PreprocessedData/GitHub_SampleA_first12/Chunk_0000/Step2.3_Paper1_Gerrit_ProjectLevel_MethodLevel_Preprocessed.csv
+ - Records remaining: 0
+   > Size filter (Paper 1 - 100 tokens) removed: 0
+ - Remaining after size filtering: 0
+
+[Method-Level] (Step 2.4 - Paper 1) ----> P7: Comment cleaning
+ - Initial records before comment cleaning: 0
+ - Step 2.4: Removed irrelevant/empty abstracted comments: 0
+ - Output: ../../SplittedData/PreprocessedData/GitHub_SampleA_first12/Chunk_0000/Step2.4_Paper1_Gerrit_ProjectLevel_MethodLevel_Preprocessed.csv
+ - Records remaining: 0
+   > Size filter (Paper 1 - 100 tokens) removed: 0
+ - Remaining after size filtering: 0
+
+[Method-Level] (Step 2.1 - Paper 2)  ----> P4: Comment cleaning
+ - Initial records before comment cleaning: 1
+ - Step 2.1: Removed irrelevant/empty non-abstracted comments: 0
+ - Output: ../../SplittedData/PreprocessedData/GitHub_SampleA_first12/Chunk_0000/Step2.1_Paper2_Gerrit_ProjectLevel_MethodLevel_Preprocessed.csv
+ - Records remaining: 1
+   > Size filter (Paper 2 - 512 tokens) removed: 0
+ - Remaining after size filtering: 1
+
+[Diff-Level] (Step 1.1 - Paper 3) ----> P1: diff extraction
+ - Diff-Level extracted records: 8
+ - NaN/empty diff hunks removed: 0
+ - Duplicates removed: 0
+ - Duplicated comments removed (same comments on different hunks): 0
+ - Output: ../../SplittedData/PreprocessedData/GitHub_SampleA_first12/Chunk_0000/Step1.1_Paper3_Gerrit_ProjectLevel_DiffLevel_Preprocessed.csv
+ - Records remaining: 8
+   > Size filter (Paper 3 - 200 tokens) removed: 0
+ - Remaining after size filtering: 8
+
+[Diff-Level] (Step 1.2 - Paper 3) ----> P2: Comment pruning
+ - Initial records before comment pruning: 8
+ - Invalid diff comments removed: 2
+ - Multiple comments on same hunk (keeping earliest) removed: 2
+ - Output: ../../SplittedData/PreprocessedData/GitHub_SampleA_first12/Chunk_0000/Step1.2_Paper3_Gerrit_ProjectLevel_DiffLevel_Preprocessed.csv
+ - Records remaining: 4
+   > Size filter (Paper 3 - 200 tokens) removed: 0
+ - Remaining after size filtering: 4
+
+[Diff-Level] (Step 1.3 - Paper 3) ----> P3: Inline comments removal 
+ - Initial records before inline comments removal: 4
+ - Diff rows with NA/empty old_wo_comment or new_wo_comment removed: 1
+ - Output: ../../SplittedData/PreprocessedData/GitHub_SampleA_first12/Chunk_0000/Step1.3_Paper3_Gerrit_ProjectLevel_DiffLevel_Preprocessed.csv
+ - Records remaining: 3
+   > Size filter (Paper 3 - 200 tokens) removed: 0
+ - Remaining after size filtering: 3
+
+[Diff-Level] (Step 1.4 - Paper 3) ----> P4: Comment cleaning
+ - Initial records before comment cleaning: 3
+ - Rows with empty/NA cleaned_comment_no_praise removed: 0
+ - Rows outside size limits (Comment_size_filter_3_150) removed: 0
+ - Irrelevant comments removed (diff_Comment_is_relevant=False): 0
+ - Output: ../../SplittedData/PreprocessedData/GitHub_SampleA_first12/Chunk_0000/Step1.4_Paper3_Gerrit_ProjectLevel_DiffLevel_Preprocessed.csv
+ - Records remaining: 3
+   > Size filter (Paper 3 - 200 tokens) removed: 0
+ - Remaining after size filtering: 3

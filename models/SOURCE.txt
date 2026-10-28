@@ -1,0 +1,1 @@
+Tufano et al. 2022 (Zenodo 10.5281/zenodo.5387856, CC-BY 4.0): models.zip md5 67adafb6c10796c81a2cb43dac98470b, tokenizer.zip md5 976cc134497e2c38fea869c340d0d811 (both verified 2026-10-28). Checkpoint used: T5_pre-trained_new_large_dataset_code&comment-to-code

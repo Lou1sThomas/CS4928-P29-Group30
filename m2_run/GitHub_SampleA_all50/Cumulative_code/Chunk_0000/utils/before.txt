@@ -1,0 +1,44 @@
+    public static Method getMatchingMethod(final Class<?> cls, final String methodName,
+            final Class<?>... parameterTypes) {
+        Validate.notNull(cls, "cls");
+        Validate.notEmpty(methodName, "methodName");
+
+        final List<Method> methods = Arrays.stream(cls.getDeclaredMethods())
+                .filter(method -> method.getName().equals(methodName))
+                .collect(toList());
+
+        ClassUtils.getAllSuperclasses(cls).stream()
+                .map(Class::getDeclaredMethods)
+                .flatMap(Arrays::stream)
+                .filter(method -> method.getName().equals(methodName))
+                .forEach(methods::add);
+
+        for (Method method : methods) {
+            if (Arrays.deepEquals(method.getParameterTypes(), parameterTypes)) {
+                return method;
+            }
+        }
+
+        final TreeMap<Double, List<Method>> candidates = new TreeMap<>();
+
+        methods.stream()
+                .filter(method -> ClassUtils.isAssignable(parameterTypes, method.getParameterTypes(), true))
+                .forEach(method -> {
+                    final double distance = distance(parameterTypes, method.getParameterTypes());
+                    List<Method> methods1 = candidates.computeIfAbsent(distance, k -> new ArrayList<>());
+                    methods1.add(method);
+                });
+
+        if (candidates.isEmpty()) {
+            return null;
+        }
+
+        final List<Method> bestCandidates = candidates.values().iterator().next();
+        if (bestCandidates.size() == 1) {
+            return bestCandidates.get(0);
+        }
+
+        final String target = methodName + Arrays.stream(parameterTypes).map(String::valueOf).collect(Collectors.joining(",", "(", ")"));
+        final String strCandidates = bestCandidates.stream().map(Method::toString).collect(Collectors.joining("\n  "));
+        throw new IllegalStateException("Found multiple candidates for method " + target + " on class " + cls + ":\n  " + strCandidates);
+    }

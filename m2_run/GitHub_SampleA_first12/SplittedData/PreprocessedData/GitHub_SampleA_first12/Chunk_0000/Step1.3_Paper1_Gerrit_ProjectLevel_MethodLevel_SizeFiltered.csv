@@ -1,0 +1,14 @@
+Record_id,references,comment,before,before_marked,after,owner_comment,comment_to_comment,method_flag_linked,creation_time,before_marked_flat,after_flat
+5,"[np.int64(314), np.int64(314)]",a -> array,"    public void testContainsFloatNaN() {
+        float[] a = new float[] { Float.NEGATIVE_INFINITY, Float.NaN, Float.POSITIVE_INFINITY };
+        assertTrue(ArrayUtils.contains(a, Float.POSITIVE_INFINITY));
+        assertTrue(ArrayUtils.contains(a, Float.NEGATIVE_INFINITY));
+        assertTrue(ArrayUtils.contains(a, Float.NaN));
+    }
+","    public void testContainsFloatNaN() { START         float[] a = new float[] { Float.NEGATIVE_INFINITY, Float.NaN, Float.POSITIVE_INFINITY }; END         assertTrue(ArrayUtils.contains(a, Float.POSITIVE_INFINITY));        assertTrue(ArrayUtils.contains(a, Float.NEGATIVE_INFINITY));        assertTrue(ArrayUtils.contains(a, Float.NaN));    }","    public void testContainsFloatNaN() {
+        float[] array = new float[] { Float.NEGATIVE_INFINITY, Float.NaN, Float.POSITIVE_INFINITY };
+        assertTrue(ArrayUtils.contains(array, Float.POSITIVE_INFINITY));
+        assertTrue(ArrayUtils.contains(array, Float.NEGATIVE_INFINITY));
+        assertTrue(ArrayUtils.contains(array, Float.NaN));
+    }
+",False,False,True,2020-11-15T20:00:17Z,"public void testContainsFloatNaN() { <START>  float[] a = new float[] { Float.NEGATIVE_INFINITY, Float.NaN, Float.POSITIVE_INFINITY };  <END> assertTrue(ArrayUtils.contains(a, Float.POSITIVE_INFINITY)); assertTrue(ArrayUtils.contains(a, Float.NEGATIVE_INFINITY)); assertTrue(ArrayUtils.contains(a, Float.NaN)); }","public void testContainsFloatNaN() { float[] array = new float[] { Float.NEGATIVE_INFINITY, Float.NaN, Float.POSITIVE_INFINITY }; assertTrue(ArrayUtils.contains(array, Float.POSITIVE_INFINITY)); assertTrue(ArrayUtils.contains(array, Float.NEGATIVE_INFINITY)); assertTrue(ArrayUtils.contains(array, Float.NaN)); }"

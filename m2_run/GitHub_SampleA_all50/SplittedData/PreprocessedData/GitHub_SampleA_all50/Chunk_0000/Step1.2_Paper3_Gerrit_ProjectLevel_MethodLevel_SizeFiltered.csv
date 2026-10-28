@@ -1,0 +1,422 @@
+Record_id,references,comment,old,new,old_wo_comment,new_wo_comment,Diff_is_tagged,owner_comment,comment_to_comment,creation_time,old_tags,new_clean
+0,"[np.int64(1728), np.int64(1728)]","this is not true, an instant never has a timezone. unfortunately this method now goes on the forbiddenapi list of lucene because of this.
+instant is by definition not related to any time zone. toepochmillies returns a unix timestamp.","      */
+     public static boolean isFileOlder(final File file, final Date date) {
+         Objects.requireNonNull(date, ""date"");
+ START         return isFileOlder(file, date.getTime()); END 
+     }
+     //-----------------------------------------------------------------------","      */
+     public static boolean isFileOlder(final File file, final Date date) {
+         Objects.requireNonNull(date, ""date"");
+-        return isFileOlder(file, date.getTime());
++        return isFileOlder(file, date.getTime());
+     }
+     //-----------------------------------------------------------------------",,,True,False,False,2020-09-23T07:54:21Z,"*/
+     public static boolean isFileOlder(final File file, final Date date) {
+         Objects.requireNonNull(date, ""date"");
+ <START>  return isFileOlder(file, date.getTime());  <END>
+     }
+     //-----------------------------------------------------------------------","*/
+     public static boolean isFileOlder(final File file, final Date date) {
+         Objects.requireNonNull(date, ""date"");
+-        return isFileOlder(file, date.getTime());
++        return isFileOlder(file, date.getTime());
+     }
+     //-----------------------------------------------------------------------"
+45,"[np.int64(668), np.int64(668)]",the last step is to document this in the javadoc for the method.,"         if (ch1 == ':') {
+             ch0 = Character.toUpperCase(ch0);
+             if (ch0 >= 'A' && ch0 <= 'Z') {
+ START                 if (len == 2 && !FileSystem.getCurrent().supportsDriveLetter()) { END 
+                     return 0;
+                 }
+                 if (len == 2 || !isSeparator(fileName.charAt(2))) {","         if (ch1 == ':') {
+             ch0 = Character.toUpperCase(ch0);
+             if (ch0 >= 'A' && ch0 <= 'Z') {
+-                if (len == 2 && !FileSystem.getCurrent().supportsDriveLetter()) {
++                if (len == 2 && !FileSystem.getCurrent().supportsDriveLetter()) {
+                     return 0;
+                 }
+                 if (len == 2 || !isSeparator(fileName.charAt(2))) {","         if (ch1 == ':') {
+             ch0 = Character.toUpperCase(ch0);
+             if (ch0 >= 'A' && ch0 <= 'Z') {
+ START                 if (len == 2 && !FileSystem.getCurrent().supportsDriveLetter()) { END 
+                     return 0;
+                 }
+                 if (len == 2 || !isSeparator(fileName.charAt(2))) {","         if (ch1 == ':') {
+             ch0 = Character.toUpperCase(ch0);
+             if (ch0 >= 'A' && ch0 <= 'Z') {
+-                if (len == 2 && !FileSystem.getCurrent().supportsDriveLetter()) {
++                if (len == 2 && !FileSystem.getCurrent().supportsDriveLetter()) {
+                     return 0;
+                 }
+                 if (len == 2 || !isSeparator(fileName.charAt(2))) {",True,False,False,2020-12-30T22:14:40Z,"if (ch1 == ':') {
+             ch0 = Character.toUpperCase(ch0);
+             if (ch0 >= 'A' && ch0 <= 'Z') {
+ <START>  if (len == 2 && !FileSystem.getCurrent().supportsDriveLetter()) {  <END>
+                     return 0;
+                 }
+                 if (len == 2 || !isSeparator(fileName.charAt(2))) {","if (ch1 == ':') {
+             ch0 = Character.toUpperCase(ch0);
+             if (ch0 >= 'A' && ch0 <= 'Z') {
+-                if (len == 2 && !FileSystem.getCurrent().supportsDriveLetter()) {
++                if (len == 2 && !FileSystem.getCurrent().supportsDriveLetter()) {
+                     return 0;
+                 }
+                 if (len == 2 || !isSeparator(fileName.charAt(2))) {"
+13,"[np.int64(65), np.int64(65)]","as see other javadoc comments, in this case `in` -> `reader`","      * Creates a proxy that shields the given reader from being
+      * closed.
+      *
+     * @param in underlying reader
+      * @return the created proxy
+      * @since 2.9.0
+      */
+ START     public static CloseShieldReader wrap(final Reader in) { END 
+        return new CloseShieldReader(in);
+     }
+ }","      * Creates a proxy that shields the given reader from being
+      * closed.
+      *
+-     * @param in underlying reader
++     * @param reader the reader to wrap
+      * @return the created proxy
+      * @since 2.9.0
+      */
+-    public static CloseShieldReader wrap(final Reader in) {
+-        return new CloseShieldReader(in);
++    public static CloseShieldReader wrap(final Reader reader) {
++        return new CloseShieldReader(reader);
+     }
+ }","      * Creates a proxy that shields the given reader from being
+      * closed.
+      *
+     * @param in underlying reader
+      * @return the created proxy
+      * @since 2.9.0
+      */
+ START     public static CloseShieldReader wrap(final Reader in) { END 
+        return new CloseShieldReader(in);
+     }
+ }","      * Creates a proxy that shields the given reader from being
+      * closed.
+      *
+-     * @param in underlying reader
++     * @param reader the reader to wrap
+      * @return the created proxy
+      * @since 2.9.0
+      */
+-    public static CloseShieldReader wrap(final Reader in) {
+-        return new CloseShieldReader(in);
++    public static CloseShieldReader wrap(final Reader reader) {
++        return new CloseShieldReader(reader);
+     }
+ }",True,False,False,2020-12-08T19:28:47Z,"* Creates a proxy that shields the given reader from being
+      * closed.
+      *
+     * @param in underlying reader
+      * @return the created proxy
+      * @since 2.9.0
+      */
+ <START>  public static CloseShieldReader wrap(final Reader in) {  <END>
+        return new CloseShieldReader(in);
+     }
+ }","* Creates a proxy that shields the given reader from being
+      * closed.
+      *
+-     * @param in underlying reader
++     * @param reader the reader to wrap
+      * @return the created proxy
+      * @since 2.9.0
+      */
+-    public static CloseShieldReader wrap(final Reader in) {
+-        return new CloseShieldReader(in);
++    public static CloseShieldReader wrap(final Reader reader) {
++        return new CloseShieldReader(reader);
+     }
+ }"
+14,"[np.int64(50), np.int64(50)]",nice use of a new junit 5 api! 👍,"     public void testClose() throws IOException {
+         shielded.close();
+         verify(original, never()).close();
+ START         assertThrows(IOException.class, () -> shielded.write('x'), ""write(c)""); END 
+         original.write('y');
+         assertEquals(1, original.getBuilder().length());
+         assertEquals('y', original.toString().charAt(0));","     public void testClose() throws IOException {
+         shielded.close();
+         verify(original, never()).close();
+-        assertThrows(IOException.class, () -> shielded.write('x'), ""write(c)"");
++        assertThrows(IOException.class, () -> shielded.write('x'), ""write(c)"");
+         original.write('y');
+         assertEquals(1, original.getBuilder().length());
+         assertEquals('y', original.toString().charAt(0));","     public void testClose() throws IOException {
+         shielded.close();
+         verify(original, never()).close();
+ START         assertThrows(IOException.class, () -> shielded.write('x'), ""write(c)""); END 
+         original.write('y');
+         assertEquals(1, original.getBuilder().length());
+         assertEquals('y', original.toString().charAt(0));","     public void testClose() throws IOException {
+         shielded.close();
+         verify(original, never()).close();
+-        assertThrows(IOException.class, () -> shielded.write('x'), ""write(c)"");
++        assertThrows(IOException.class, () -> shielded.write('x'), ""write(c)"");
+         original.write('y');
+         assertEquals(1, original.getBuilder().length());
+         assertEquals('y', original.toString().charAt(0));",True,False,False,2020-12-08T19:28:47Z,"public void testClose() throws IOException {
+         shielded.close();
+         verify(original, never()).close();
+ <START>  assertThrows(IOException.class, () -> shielded.write('x'), ""write(c)"");  <END>
+         original.write('y');
+         assertEquals(1, original.getBuilder().length());
+         assertEquals('y', original.toString().charAt(0));","public void testClose() throws IOException {
+         shielded.close();
+         verify(original, never()).close();
+-        assertThrows(IOException.class, () -> shielded.write('x'), ""write(c)"");
++        assertThrows(IOException.class, () -> shielded.write('x'), ""write(c)"");
+         original.write('y');
+         assertEquals(1, original.getBuilder().length());
+         assertEquals('y', original.toString().charAt(0));"
+41,"[np.int64(199), np.int64(199)]","ah, i see, this is a new line, and the other mods are updates. ok, i'll take a look tomorrow probably...","                     return i;
+                 }
+             }
+ START             return NOT_FOUND; END 
+         }
+         //supplementary characters (LANG1300)
+         //NOTE - we must do a forward traversal for this to avoid duplicating code points","                     return i;
+                 }
+             }
+-            return NOT_FOUND;
++            return NOT_FOUND;
+         }
+         //supplementary characters (LANG1300)
+         //NOTE - we must do a forward traversal for this to avoid duplicating code points","                     return i;
+                 }
+             }
+ START             return NOT_FOUND; END 
+         }","                     return i;
+                 }
+             }
+-            return NOT_FOUND;
++            return NOT_FOUND;
+         }",True,False,False,2020-12-23T16:26:27Z,"return i;
+                 }
+             }
+ <START>  return NOT_FOUND;  <END>
+         }
+         //supplementary characters (LANG1300)
+         //NOTE - we must do a forward traversal for this to avoid duplicating code points","return i;
+                 }
+             }
+-            return NOT_FOUND;
++            return NOT_FOUND;
+         }
+         //supplementary characters (LANG1300)
+         //NOTE - we must do a forward traversal for this to avoid duplicating code points"
+3,"[np.int64(27), np.int64(27)]",please don't use star imports.," import java.math.BigInteger;
+ import java.math.RoundingMode;
+ START import static org.junit.jupiter.api.Assertions.*; END 
+ /**
+  * Unit tests {@link org.apache.commons.lang3.math.NumberUtils}."," import java.math.BigInteger;
+ import java.math.RoundingMode;
+-import static org.junit.jupiter.api.Assertions.*;
++import org.junit.jupiter.api.Test;
+ /**
+  * Unit tests {@link org.apache.commons.lang3.math.NumberUtils}."," import java.math.BigInteger;
+ import java.math.RoundingMode;
+ START import static org.junit.jupiter.api.Assertions.*; END "," import java.math.BigInteger;
+ import java.math.RoundingMode;
+-import static org.junit.jupiter.api.Assertions.*;
++import org.junit.jupiter.api.Test;",True,False,False,2020-10-25T14:00:54Z,"import java.math.BigInteger;
+ import java.math.RoundingMode;
+ <START>  import static org.junit.jupiter.api.Assertions.*;  <END>
+ /**
+  * Unit tests {@link org.apache.commons.lang3.math.NumberUtils}.","import java.math.BigInteger;
+ import java.math.RoundingMode;
+-import static org.junit.jupiter.api.Assertions.*;
++import org.junit.jupiter.api.Test;
+ /**
+  * Unit tests {@link org.apache.commons.lang3.math.NumberUtils}."
+11,"[np.int64(42), np.int64(42)]","i don't agree with deprecating these apis, different versions of different ides raise different warnings depending on your preferred configuration of said ide. let's keep this pr simpler and lighter, we can always add deprecation later if it is truly warranted.","      *             the underlying input stream is never closed.
+      *             Use {@link #wrap(InputStream)} instead.
+      */
+ START     @Deprecated END 
+     public CloseShieldInputStream(final InputStream in) {
+         super(in);
+     }","      *             the underlying input stream is never closed.
+      *             Use {@link #wrap(InputStream)} instead.
+      */
+-    @Deprecated
++    @Deprecated
+     public CloseShieldInputStream(final InputStream in) {
+         super(in);
+     }","      *             the underlying input stream is never closed.
+      *             Use {@link #wrap(InputStream)} instead.
+      */
+ START     @Deprecated END 
+     public CloseShieldInputStream(final InputStream in) {
+         super(in);
+     }","      *             the underlying input stream is never closed.
+      *             Use {@link #wrap(InputStream)} instead.
+      */
+-    @Deprecated
++    @Deprecated
+     public CloseShieldInputStream(final InputStream in) {
+         super(in);
+     }",True,False,False,2020-12-08T19:28:47Z,"* the underlying input stream is never closed.
+      * Use {@link #wrap(InputStream)} instead.
+      */
+ <START>  @Deprecated  <END>
+     public CloseShieldInputStream(final InputStream in) {
+         super(in);
+     }","* the underlying input stream is never closed.
+      * Use {@link #wrap(InputStream)} instead.
+      */
+-    @Deprecated
++    @Deprecated
+     public CloseShieldInputStream(final InputStream in) {
+         super(in);
+     }"
+43,"[np.int64(52), np.int64(52)]","this is already defined in `stringutils.index_not_found` and `arrayutils`, please reuse."," 
+     private static final String[] FOOBAR_SUB_ARRAY = new String[] {""ob"", ""ba""};
+ START     private static final int NOT_FOUND = -1; END 
+
+     // The purpose of this class is to test StringUtils#equals(CharSequence, CharSequence)
+     // with a CharSequence implementation whose equals(Object) override requires that the
+     // other object be an instance of CustomCharSequence, even though, as char sequences,"," 
+     private static final String[] FOOBAR_SUB_ARRAY = new String[] {""ob"", ""ba""};
+-    private static final int NOT_FOUND = -1;
+-
+     // The purpose of this class is to test StringUtils#equals(CharSequence, CharSequence)
+     // with a CharSequence implementation whose equals(Object) override requires that the
+     // other object be an instance of CustomCharSequence, even though, as char sequences,"," 
+     private static final String[] FOOBAR_SUB_ARRAY = new String[] {""ob"", ""ba""};
+ START     private static final int NOT_FOUND = -1; END 
+"," 
+     private static final String[] FOOBAR_SUB_ARRAY = new String[] {""ob"", ""ba""};
+-    private static final int NOT_FOUND = -1;
+-",True,False,False,2020-12-23T16:26:27Z,"private static final String[] FOOBAR_SUB_ARRAY = new String[] {""ob"", ""ba""};
+ <START>  private static final int NOT_FOUND = -1;  <END>
+     // The purpose of this class is to test StringUtils#equals(CharSequence, CharSequence)
+     // with a CharSequence implementation whose equals(Object) override requires that the
+     // other object be an instance of CustomCharSequence, even though, as char sequences,","private static final String[] FOOBAR_SUB_ARRAY = new String[] {""ob"", ""ba""};
+-    private static final int NOT_FOUND = -1;
+-
+     // The purpose of this class is to test StringUtils#equals(CharSequence, CharSequence)
+     // with a CharSequence implementation whose equals(Object) override requires that the
+     // other object be an instance of CustomCharSequence, even though, as char sequences,"
+5,"[np.int64(314), np.int64(314)]",a -> array," 
+     @Test
+     public void testContainsFloatNaN() {
+ START         float[] a = new float[] { Float.NEGATIVE_INFINITY, Float.NaN, Float.POSITIVE_INFINITY }; END 
+        assertTrue(ArrayUtils.contains(a, Float.POSITIVE_INFINITY));
+        assertTrue(ArrayUtils.contains(a, Float.NEGATIVE_INFINITY));
+        assertTrue(ArrayUtils.contains(a, Float.NaN));
+     }
+     @Test"," 
+     @Test
+     public void testContainsFloatNaN() {
+-        float[] a = new float[] { Float.NEGATIVE_INFINITY, Float.NaN, Float.POSITIVE_INFINITY };
+-        assertTrue(ArrayUtils.contains(a, Float.POSITIVE_INFINITY));
+-        assertTrue(ArrayUtils.contains(a, Float.NEGATIVE_INFINITY));
+-        assertTrue(ArrayUtils.contains(a, Float.NaN));
++        float[] array = new float[] { Float.NEGATIVE_INFINITY, Float.NaN, Float.POSITIVE_INFINITY };
++        assertTrue(ArrayUtils.contains(array, Float.POSITIVE_INFINITY));
++        assertTrue(ArrayUtils.contains(array, Float.NEGATIVE_INFINITY));
++        assertTrue(ArrayUtils.contains(array, Float.NaN));
+     }
+     @Test"," 
+     @Test
+     public void testContainsFloatNaN() {
+ START         float[] a = new float[] { Float.NEGATIVE_INFINITY, Float.NaN, Float.POSITIVE_INFINITY }; END 
+        assertTrue(ArrayUtils.contains(a, Float.POSITIVE_INFINITY));
+        assertTrue(ArrayUtils.contains(a, Float.NEGATIVE_INFINITY));
+        assertTrue(ArrayUtils.contains(a, Float.NaN));
+     }
+     @Test"," 
+     @Test
+     public void testContainsFloatNaN() {
+-        float[] a = new float[] { Float.NEGATIVE_INFINITY, Float.NaN, Float.POSITIVE_INFINITY };
+-        assertTrue(ArrayUtils.contains(a, Float.POSITIVE_INFINITY));
+-        assertTrue(ArrayUtils.contains(a, Float.NEGATIVE_INFINITY));
+-        assertTrue(ArrayUtils.contains(a, Float.NaN));
++        float[] array = new float[] { Float.NEGATIVE_INFINITY, Float.NaN, Float.POSITIVE_INFINITY };
++        assertTrue(ArrayUtils.contains(array, Float.POSITIVE_INFINITY));
++        assertTrue(ArrayUtils.contains(array, Float.NEGATIVE_INFINITY));
++        assertTrue(ArrayUtils.contains(array, Float.NaN));
+     }
+     @Test",True,False,False,2020-11-15T20:00:17Z,"@Test
+     public void testContainsFloatNaN() {
+ <START>  float[] a = new float[] { Float.NEGATIVE_INFINITY, Float.NaN, Float.POSITIVE_INFINITY };  <END>
+        assertTrue(ArrayUtils.contains(a, Float.POSITIVE_INFINITY));
+        assertTrue(ArrayUtils.contains(a, Float.NEGATIVE_INFINITY));
+        assertTrue(ArrayUtils.contains(a, Float.NaN));
+     }
+     @Test","@Test
+     public void testContainsFloatNaN() {
+-        float[] a = new float[] { Float.NEGATIVE_INFINITY, Float.NaN, Float.POSITIVE_INFINITY };
+-        assertTrue(ArrayUtils.contains(a, Float.POSITIVE_INFINITY));
+-        assertTrue(ArrayUtils.contains(a, Float.NEGATIVE_INFINITY));
+-        assertTrue(ArrayUtils.contains(a, Float.NaN));
++        float[] array = new float[] { Float.NEGATIVE_INFINITY, Float.NaN, Float.POSITIVE_INFINITY };
++        assertTrue(ArrayUtils.contains(array, Float.POSITIVE_INFINITY));
++        assertTrue(ArrayUtils.contains(array, Float.NEGATIVE_INFINITY));
++        assertTrue(ArrayUtils.contains(array, Float.NaN));
+     }
+     @Test"
+48,"[np.int64(442), np.int64(442)]","hi,
+thank you for your pr.
+what about ""yyy""?","     public void testWeekYear() {
+         final GregorianCalendar cal = new GregorianCalendar(2020, 12, 31, 0, 0, 0);
+         final DatePrinter printer4Digits = getInstance(""YYYY"");
+ START         final DatePrinter printer2Digits = getInstance(""YY""); END 
+         assertEquals(""2021"", printer4Digits.format(cal));
+         assertEquals(""21"", printer2Digits.format(cal));
+     }
+ }","     public void testWeekYear() {
+         final GregorianCalendar cal = new GregorianCalendar(2020, 12, 31, 0, 0, 0);
+         final DatePrinter printer4Digits = getInstance(""YYYY"");
+-        final DatePrinter printer2Digits = getInstance(""YY"");
++        final DatePrinter printer4DigitsFallback = getInstance(""YYY"");
++        final DatePrinter printer2Digits = getInstance(""YY"");
++        final DatePrinter printer4DigitAnotherFallback = getInstance(""Y"");
+         assertEquals(""2021"", printer4Digits.format(cal));
++        assertEquals(""2021"", printer4DigitsFallback.format(cal));
++        assertEquals(""2021"", printer4DigitAnotherFallback.format(cal));
+         assertEquals(""21"", printer2Digits.format(cal));
+     }
+ }","     public void testWeekYear() {
+         final GregorianCalendar cal = new GregorianCalendar(2020, 12, 31, 0, 0, 0);
+         final DatePrinter printer4Digits = getInstance(""YYYY"");
+ START         final DatePrinter printer2Digits = getInstance(""YY""); END 
+         assertEquals(""2021"", printer4Digits.format(cal));
+         assertEquals(""21"", printer2Digits.format(cal));
+     }
+ }","     public void testWeekYear() {
+         final GregorianCalendar cal = new GregorianCalendar(2020, 12, 31, 0, 0, 0);
+         final DatePrinter printer4Digits = getInstance(""YYYY"");
+-        final DatePrinter printer2Digits = getInstance(""YY"");
++        final DatePrinter printer4DigitsFallback = getInstance(""YYY"");
++        final DatePrinter printer2Digits = getInstance(""YY"");
++        final DatePrinter printer4DigitAnotherFallback = getInstance(""Y"");
+         assertEquals(""2021"", printer4Digits.format(cal));
++        assertEquals(""2021"", printer4DigitsFallback.format(cal));
++        assertEquals(""2021"", printer4DigitAnotherFallback.format(cal));
+         assertEquals(""21"", printer2Digits.format(cal));
+     }
+ }",True,False,False,2021-01-02T16:14:51Z,"public void testWeekYear() {
+         final GregorianCalendar cal = new GregorianCalendar(2020, 12, 31, 0, 0, 0);
+         final DatePrinter printer4Digits = getInstance(""YYYY"");
+ <START>  final DatePrinter printer2Digits = getInstance(""YY"");  <END>
+         assertEquals(""2021"", printer4Digits.format(cal));
+         assertEquals(""21"", printer2Digits.format(cal));
+     }
+ }","public void testWeekYear() {
+         final GregorianCalendar cal = new GregorianCalendar(2020, 12, 31, 0, 0, 0);
+         final DatePrinter printer4Digits = getInstance(""YYYY"");
+-        final DatePrinter printer2Digits = getInstance(""YY"");
++        final DatePrinter printer4DigitsFallback = getInstance(""YYY"");
++        final DatePrinter printer2Digits = getInstance(""YY"");
++        final DatePrinter printer4DigitAnotherFallback = getInstance(""Y"");
+         assertEquals(""2021"", printer4Digits.format(cal));
++        assertEquals(""2021"", printer4DigitsFallback.format(cal));
++        assertEquals(""2021"", printer4DigitAnotherFallback.format(cal));
+         assertEquals(""21"", printer2Digits.format(cal));
+     }
+ }"

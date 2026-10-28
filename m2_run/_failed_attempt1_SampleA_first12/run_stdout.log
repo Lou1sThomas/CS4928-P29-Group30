@@ -1,0 +1,271 @@
+📋 Column names in the loaded DataFrame:
+['repo', 'comment_id', 'html_url', 'created_at', 'updated_at', 'pull_id', 'pull_number', 'filename', 'message', 'user_id', 'owner_id', 'side', 'original_line', 'original_start_line', 'original_commit_id', 'base_sha', 'head_sha', 'diff_hunk', 'file_content_before', 'file_content_while', 'file_content_after']
+
+📊 Column data types (via pandas):
+repo                    object
+comment_id               int64
+html_url                object
+created_at              object
+updated_at              object
+pull_id                  int64
+pull_number              int64
+filename                object
+message                 object
+user_id                  int64
+owner_id                 int64
+side                    object
+original_line            int64
+original_start_line    float64
+original_commit_id      object
+base_sha                object
+head_sha                object
+diff_hunk               object
+file_content_before     object
+file_content_while      object
+file_content_after      object
+dtype: object
+-----------------------------------------------------------------------------------------------------
+Processing row: 0
+-----------------------------------------------------------------------------------------------------
+Processing row: 1
+-----------------------------------------------------------------------------------------------------
+Processing row: 2
+-----------------------------------------------------------------------------------------------------
+Processing row: 3
+-----------------------------------------------------------------------------------------------------
+Processing row: 4
+-----------------------------------------------------------------------------------------------------
+Processing row: 5
+-----------------------------------------------------------------------------------------------------
+Processing row: 6
+-----------------------------------------------------------------------------------------------------
+Processing row: 7
+⚠️ An error occurred while processing row index 7: write() argument must be str, not float
+-----------------------------------------------------------------------------------------------------
+Processing row: 8
+⚠️ An error occurred while processing row index 8: write() argument must be str, not float
+-----------------------------------------------------------------------------------------------------
+Processing row: 9
+⚠️ An error occurred while processing row index 9: write() argument must be str, not float
+-----------------------------------------------------------------------------------------------------
+Processing row: 10
+
+📐 Method DataFrame Summary:
+Size: (5, 10)
+Column Data Types:
+Record_id             object
+references            object
+comment               object
+before                object
+before_marked         object
+after                 object
+owner_comment           bool
+comment_to_comment      bool
+method_flag_linked      bool
+creation_time         object
+dtype: object
+
+🔍 First Row (method_dfr):
+Record_id                                                             0
+references                                                 [1728, 1728]
+comment               this is not true, an instant never has a timez...
+before                    public static boolean isFileOlder(final Fi...
+before_marked             public static boolean isFileOlder(final Fi...
+after                     public static boolean isFileOlder(final Fi...
+owner_comment                                                     False
+comment_to_comment                                                False
+method_flag_linked                                                 True
+creation_time                                      2020-09-23T07:54:21Z
+Name: 0, dtype: object
+
+📐 Diff DataFrame Summary:
+Size: (8, 11)
+Column Data Types:
+Record_id             object
+references            object
+comment               object
+old                   object
+new                   object
+old_wo_comment        object
+new_wo_comment        object
+Diff_is_tagged          bool
+owner_comment           bool
+comment_to_comment      bool
+creation_time         object
+dtype: object
+
+🔍 First Row (diff_dfr):
+Record_id                                                             0
+references                                                 [1728, 1728]
+comment               this is not true, an instant never has a timez...
+old                         */\n     public static boolean isFileOld...
+new                         */\n     public static boolean isFileOld...
+old_wo_comment                                                         
+new_wo_comment                                                         
+Diff_is_tagged                                                     True
+owner_comment                                                     False
+comment_to_comment                                                False
+creation_time                                      2020-09-23T07:54:21Z
+Name: 0, dtype: object
+
+✅ Extraction finished
+✔️ Total valid rows processed: 11
+✔️ Method rows created: 5
+✔️ Diff rows created: 8
+❌ Skipped due to no valid ref: 0
+❌ Skipped due to missing before method: 3
+💬 Skipped due to comment-to-comment: 0
+⚠️ Skipping column 'references' in duplicate detection due to unhashable type: list
+
+📊 Input lengths:
+1
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00,  5.46it/s]100%|██████████| 1/1 [00:00<00:00,  5.45it/s]
+❌ Exception on row 0: [Errno 2] No such file or directory: './utils/stop-words-english.txt'. Skipping row.
+
+✅ Done iterating over rows.
+❌ abs_error count: 1
+❌ no_marked_abs count: 0
+❌ comment_abs_error count: 0
+
+📊 Final array lengths:
+ - record_ids: 0
+ - comments: 0
+ - cleaned_comments_wo_abs_: 0
+ - cleaned_comments: 0
+ - abstracted_comments: 0
+ - before_: 0
+ - before_marked_: 0
+ - before_abs_: 0
+ - before_abs_marked_: 0
+ - after_: 0
+ - after_abs_: 0
+
+📊 Input lengths:
+1
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 118.84it/s]
+❌ Exception on row 0: [Errno 2] No such file or directory: './utils/stop-words-english.txt'. Skipping row.
+
+✅ Done iterating over rows.
+❌ abs_error count: 1
+❌ no_marked_abs count: 0
+❌ comment_abs_error count: 0
+
+📊 Final array lengths:
+ - record_ids: 0
+ - comments: 0
+ - cleaned_comments_wo_abs_: 0
+ - before_: 0
+ - before_marked_: 0
+ - after_: 0
+⚠️ Skipping column 'references' in duplicate detection due to unhashable type: list
+-----------------------------------------------------------------------------------------------------
+0
+===== Gerrit ProjectLevel Test_NoLeakage Preprocessing Log =====
+
+Initial raw records: 0
+
+[Raw Data Cleanup]
+ - Initial raw records: 0
+ - NaN records removed: 0
+ - Duplicates removed: 0
+ - Left-side comments removed: 0
+
+[Method-Level] (Step 1.1 - Paper 1 & 2) P1: Method extraction
+ - Initial Method-Level extracted records: 0
+ - NaN/empty extracted methods removed: 0
+ - Duplicates removed: 0
+ - Duplicated comments removed (same comments different before&after): 0
+ - Records remaining (Records before size filtering): 0
+   > Size filter (Paper 1 - 100 tokens) removed: 0
+ - Remaining after size filtering: 0
+   > Size filter (Paper 2 - 512 tokens) removed: 0
+ - Remaining after size filtering: 0
+
+[Method-Level] (Step 1.2 - Paper 1 & 2) ----> P2: Comment pruning
+ - Initial records before comment pruning: 0
+ - Rows with invalid comments (owner, comment2comment, not linked, empty string) removed: 0
+ - Methods with multiple comments removed (same before&after, multiple comments): 0
+ - Records remaining  (Records before size filtering): 0
+   > Size filter (Paper 1 - 100 tokens) removed: 0
+ - Remaining after size filtering: 0
+   > Size filter (Paper 2 - 512 tokens) removed: 0
+ - Remaining after size filtering: 0
+
+[Method-Level] (Step 1.3 - Paper 1 & 2) ----> P3: Unchanged methods removal
+ - Initial records before unchanged methods removal: 0
+ - Equal before==after removed: 0
+ - Records remaining: 0
+   > Size filter (Paper 1 - 100 tokens) removed: 0
+ - Remaining after size filtering: 0
+   > Size filter (Paper 2 - 512 tokens) removed: 0
+ - Remaining after size filtering: 0
+
+[Method-Level] (Step 2.1 - Paper 1) ----> P4: Abstraction
+ - Initial records before abstraction: 0
+ - Records After abstraction: 0
+ - Step 2.1: NaNs records removed: 0
+ - Records remaining: 0
+   > Size filter (Paper 1 - 100 tokens) removed: 0
+ - Remaining after size filtering: 0
+
+[Method-Level] (Step 2.2 - Paper 1) ----> P5: Unchanged methods removal
+ - Initial records before unchanged abstracted methods removal: 0
+ - Step 2.2: Removed because abs(before) == abs(after): 0
+ - Records remaining: 0
+   > Size filter (Paper 1 - 100 tokens) removed: 0
+ - Remaining after size filtering: 0
+
+[Method-Level] (Step 2.3 - Paper 1) ----> P6: New token removal
+ - Initial records before new token removal: 0
+ - Step 2.3: Removed due to new tokens in abs(after): 0
+ - Records remaining: 0
+   > Size filter (Paper 1 - 100 tokens) removed: 0
+ - Remaining after size filtering: 0
+
+[Method-Level] (Step 2.4 - Paper 1) ----> P7: Comment cleaning
+ - Initial records before comment cleaning: 0
+ - Step 2.4: Removed irrelevant/empty abstracted comments: 0
+ - Records remaining: 0
+   > Size filter (Paper 1 - 100 tokens) removed: 0
+ - Remaining after size filtering: 0
+
+[Method-Level] (Step 2.1 - Paper 2)  ----> P4: Comment cleaning
+ - Initial records before comment cleaning: 0
+ - Step 2.1: Removed irrelevant/empty non-abstracted comments: 0
+ - Records remaining: 0
+   > Size filter (Paper 2 - 512 tokens) removed: 0
+ - Remaining after size filtering: 0
+
+[Diff-Level] (Step 1.1 - Paper 3) ----> P1: diff extraction
+ - Diff-Level extracted records: 0
+ - NaN/empty diff hunks removed: 0
+ - Duplicates removed: 0
+ - Duplicated comments removed (same comments on different hunks): 0
+ - Records remaining: 0
+   > Size filter (Paper 3 - 200 tokens) removed: 0
+ - Remaining after size filtering: 0
+
+[Diff-Level] (Step 1.2 - Paper 3) ----> P2: Comment pruning
+ - Initial records before comment pruning: 0
+ - Invalid diff comments removed: 0
+ - Multiple comments on same hunk (keeping earliest) removed: 0
+ - Records remaining: 0
+   > Size filter (Paper 3 - 200 tokens) removed: 0
+ - Remaining after size filtering: 0
+
+[Diff-Level] (Step 1.3 - Paper 3) ----> P3: Inline comments removal 
+ - Initial records before inline comments removal: 0
+ - Diff rows with NA/empty old_wo_comment or new_wo_comment removed: 0
+ - Records remaining: 0
+   > Size filter (Paper 3 - 200 tokens) removed: 0
+ - Remaining after size filtering: 0
+
+[Diff-Level] (Step 1.4 - Paper 3) ----> P4: Comment cleaning
+ - Initial records before comment cleaning: 0
+ - Rows with empty/NA cleaned_comment_no_praise removed: 0
+ - Rows outside size limits (Comment_size_filter_3_150) removed: 0
+ - Irrelevant comments removed (diff_Comment_is_relevant=False): 0
+ - Records remaining: 0
+   > Size filter (Paper 3 - 200 tokens) removed: 0
+ - Remaining after size filtering: 0
+

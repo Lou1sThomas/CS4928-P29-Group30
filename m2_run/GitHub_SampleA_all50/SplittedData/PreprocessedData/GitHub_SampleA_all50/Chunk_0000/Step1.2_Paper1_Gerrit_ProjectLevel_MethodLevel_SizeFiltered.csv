@@ -1,0 +1,31 @@
+Record_id,references,comment,before,before_marked,after,owner_comment,comment_to_comment,method_flag_linked,creation_time,before_marked_flat,after_flat
+5,"[np.int64(314), np.int64(314)]",a -> array,"    public void testContainsFloatNaN() {
+        float[] a = new float[] { Float.NEGATIVE_INFINITY, Float.NaN, Float.POSITIVE_INFINITY };
+        assertTrue(ArrayUtils.contains(a, Float.POSITIVE_INFINITY));
+        assertTrue(ArrayUtils.contains(a, Float.NEGATIVE_INFINITY));
+        assertTrue(ArrayUtils.contains(a, Float.NaN));
+    }
+","    public void testContainsFloatNaN() { START         float[] a = new float[] { Float.NEGATIVE_INFINITY, Float.NaN, Float.POSITIVE_INFINITY }; END         assertTrue(ArrayUtils.contains(a, Float.POSITIVE_INFINITY));        assertTrue(ArrayUtils.contains(a, Float.NEGATIVE_INFINITY));        assertTrue(ArrayUtils.contains(a, Float.NaN));    }","    public void testContainsFloatNaN() {
+        float[] array = new float[] { Float.NEGATIVE_INFINITY, Float.NaN, Float.POSITIVE_INFINITY };
+        assertTrue(ArrayUtils.contains(array, Float.POSITIVE_INFINITY));
+        assertTrue(ArrayUtils.contains(array, Float.NEGATIVE_INFINITY));
+        assertTrue(ArrayUtils.contains(array, Float.NaN));
+    }
+",False,False,True,2020-11-15T20:00:17Z,"public void testContainsFloatNaN() { <START>  float[] a = new float[] { Float.NEGATIVE_INFINITY, Float.NaN, Float.POSITIVE_INFINITY };  <END> assertTrue(ArrayUtils.contains(a, Float.POSITIVE_INFINITY)); assertTrue(ArrayUtils.contains(a, Float.NEGATIVE_INFINITY)); assertTrue(ArrayUtils.contains(a, Float.NaN)); }","public void testContainsFloatNaN() { float[] array = new float[] { Float.NEGATIVE_INFINITY, Float.NaN, Float.POSITIVE_INFINITY }; assertTrue(ArrayUtils.contains(array, Float.POSITIVE_INFINITY)); assertTrue(ArrayUtils.contains(array, Float.NEGATIVE_INFINITY)); assertTrue(ArrayUtils.contains(array, Float.NaN)); }"
+14,"[np.int64(50), np.int64(50)]",nice use of a new junit 5 api! 👍,"    public void testClose() throws IOException {
+        shielded.close();
+        verify(original, never()).close();
+        assertThrows(IOException.class, () -> shielded.write('x'), ""write(c)"");
+        original.write('y');
+        assertEquals(1, original.getBuilder().length());
+        assertEquals('y', original.toString().charAt(0));
+    }
+","    public void testClose() throws IOException {        shielded.close();        verify(original, never()).close(); START         assertThrows(IOException.class, () -> shielded.write('x'), ""write(c)""); END         original.write('y');        assertEquals(1, original.getBuilder().length());        assertEquals('y', original.toString().charAt(0));    }","    public void testClose() throws IOException {
+        shielded.close();
+        verify(original, never()).close();
+        assertThrows(IOException.class, () -> shielded.write('x'), ""write(c)"");
+        original.write('y');
+        assertEquals(1, original.getBuilder().length());
+        assertEquals('y', original.toString().charAt(0));
+    }
+",False,False,True,2020-12-08T19:28:47Z,"public void testClose() throws IOException { shielded.close(); verify(original, never()).close(); <START>  assertThrows(IOException.class, () -> shielded.write('x'), ""write(c)"");  <END> original.write('y'); assertEquals(1, original.getBuilder().length()); assertEquals('y', original.toString().charAt(0)); }","public void testClose() throws IOException { shielded.close(); verify(original, never()).close(); assertThrows(IOException.class, () -> shielded.write('x'), ""write(c)""); original.write('y'); assertEquals(1, original.getBuilder().length()); assertEquals('y', original.toString().charAt(0)); }"

@@ -1,0 +1,1074 @@
+Record_id,references,comment,before,before_marked,after,owner_comment,comment_to_comment,method_flag_linked,creation_time,before_marked_flat,after_flat
+0,"[np.int64(1728), np.int64(1728)]","this is not true, an instant never has a timezone. unfortunately this method now goes on the forbiddenapi list of lucene because of this.
+instant is by definition not related to any time zone. toepochmillies returns a unix timestamp.","    public static boolean isFileOlder(final File file, final Date date) {
+        Objects.requireNonNull(date, ""date"");
+        return isFileOlder(file, date.getTime());
+    }
+","    public static boolean isFileOlder(final File file, final Date date) {        Objects.requireNonNull(date, ""date""); START         return isFileOlder(file, date.getTime()); END     }","    public static boolean isFileOlder(final File file, final Date date) {
+        Objects.requireNonNull(date, ""date"");
+        return isFileOlder(file, date.getTime());
+    }
+",False,False,True,2020-09-23T07:54:21Z,"public static boolean isFileOlder(final File file, final Date date) { Objects.requireNonNull(date, ""date""); <START>  return isFileOlder(file, date.getTime());  <END> }","public static boolean isFileOlder(final File file, final Date date) { Objects.requireNonNull(date, ""date""); return isFileOlder(file, date.getTime()); }"
+1,"[np.int64(1728), np.int64(1728)]","the big risk of this forward/backward transformation is now that at the dst changes hour, the calculation is wrong: during dst change the same local date time exists 2 times. when you convert the instant to a local time (after local time went backwards due to dst change) and then you convert the local time back, you're off by an hour.
+the correct way here is to just call toepochmillies(). please do not convert forward backwards from to/local time.","    public static boolean isFileOlder(final File file, final Date date) {
+        Objects.requireNonNull(date, ""date"");
+        return isFileOlder(file, date.getTime());
+    }
+","    public static boolean isFileOlder(final File file, final Date date) {        Objects.requireNonNull(date, ""date""); START         return isFileOlder(file, date.getTime()); END     }","    public static boolean isFileOlder(final File file, final Date date) {
+        Objects.requireNonNull(date, ""date"");
+        return isFileOlder(file, date.getTime());
+    }
+",False,False,True,2020-09-23T07:58:54Z,"public static boolean isFileOlder(final File file, final Date date) { Objects.requireNonNull(date, ""date""); <START>  return isFileOlder(file, date.getTime());  <END> }","public static boolean isFileOlder(final File file, final Date date) { Objects.requireNonNull(date, ""date""); return isFileOlder(file, date.getTime()); }"
+2,"[np.int64(1728), np.int64(1728)]","because of this the whole methods added here are not useable in international application, except the one taking an explicit zoneid. the one which would have been correct (the one taking an instant) was corrupted by this forward/backward transformation.","    public static boolean isFileOlder(final File file, final Date date) {
+        Objects.requireNonNull(date, ""date"");
+        return isFileOlder(file, date.getTime());
+    }
+","    public static boolean isFileOlder(final File file, final Date date) {        Objects.requireNonNull(date, ""date""); START         return isFileOlder(file, date.getTime()); END     }","    public static boolean isFileOlder(final File file, final Date date) {
+        Objects.requireNonNull(date, ""date"");
+        return isFileOlder(file, date.getTime());
+    }
+",False,False,True,2020-09-23T08:01:53Z,"public static boolean isFileOlder(final File file, final Date date) { Objects.requireNonNull(date, ""date""); <START>  return isFileOlder(file, date.getTime());  <END> }","public static boolean isFileOlder(final File file, final Date date) { Objects.requireNonNull(date, ""date""); return isFileOlder(file, date.getTime()); }"
+5,"[np.int64(314), np.int64(314)]",a -> array,"    public void testContainsFloatNaN() {
+        float[] a = new float[] { Float.NEGATIVE_INFINITY, Float.NaN, Float.POSITIVE_INFINITY };
+        assertTrue(ArrayUtils.contains(a, Float.POSITIVE_INFINITY));
+        assertTrue(ArrayUtils.contains(a, Float.NEGATIVE_INFINITY));
+        assertTrue(ArrayUtils.contains(a, Float.NaN));
+    }
+","    public void testContainsFloatNaN() { START         float[] a = new float[] { Float.NEGATIVE_INFINITY, Float.NaN, Float.POSITIVE_INFINITY }; END         assertTrue(ArrayUtils.contains(a, Float.POSITIVE_INFINITY));        assertTrue(ArrayUtils.contains(a, Float.NEGATIVE_INFINITY));        assertTrue(ArrayUtils.contains(a, Float.NaN));    }","    public void testContainsFloatNaN() {
+        float[] array = new float[] { Float.NEGATIVE_INFINITY, Float.NaN, Float.POSITIVE_INFINITY };
+        assertTrue(ArrayUtils.contains(array, Float.POSITIVE_INFINITY));
+        assertTrue(ArrayUtils.contains(array, Float.NEGATIVE_INFINITY));
+        assertTrue(ArrayUtils.contains(array, Float.NaN));
+    }
+",False,False,True,2020-11-15T20:00:17Z,"public void testContainsFloatNaN() { <START>  float[] a = new float[] { Float.NEGATIVE_INFINITY, Float.NaN, Float.POSITIVE_INFINITY };  <END> assertTrue(ArrayUtils.contains(a, Float.POSITIVE_INFINITY)); assertTrue(ArrayUtils.contains(a, Float.NEGATIVE_INFINITY)); assertTrue(ArrayUtils.contains(a, Float.NaN)); }","public void testContainsFloatNaN() { float[] array = new float[] { Float.NEGATIVE_INFINITY, Float.NaN, Float.POSITIVE_INFINITY }; assertTrue(ArrayUtils.contains(array, Float.POSITIVE_INFINITY)); assertTrue(ArrayUtils.contains(array, Float.NEGATIVE_INFINITY)); assertTrue(ArrayUtils.contains(array, Float.NaN)); }"
+6,"[np.int64(314), np.int64(314)]",changed,"    public void testContainsFloatNaN() {
+        float[] a = new float[] { Float.NEGATIVE_INFINITY, Float.NaN, Float.POSITIVE_INFINITY };
+        assertTrue(ArrayUtils.contains(a, Float.POSITIVE_INFINITY));
+        assertTrue(ArrayUtils.contains(a, Float.NEGATIVE_INFINITY));
+        assertTrue(ArrayUtils.contains(a, Float.NaN));
+    }
+","    public void testContainsFloatNaN() { START         float[] a = new float[] { Float.NEGATIVE_INFINITY, Float.NaN, Float.POSITIVE_INFINITY }; END         assertTrue(ArrayUtils.contains(a, Float.POSITIVE_INFINITY));        assertTrue(ArrayUtils.contains(a, Float.NEGATIVE_INFINITY));        assertTrue(ArrayUtils.contains(a, Float.NaN));    }","    public void testContainsFloatNaN() {
+        float[] array = new float[] { Float.NEGATIVE_INFINITY, Float.NaN, Float.POSITIVE_INFINITY };
+        assertTrue(ArrayUtils.contains(array, Float.POSITIVE_INFINITY));
+        assertTrue(ArrayUtils.contains(array, Float.NEGATIVE_INFINITY));
+        assertTrue(ArrayUtils.contains(array, Float.NaN));
+    }
+",True,False,True,2020-11-15T20:00:17Z,"public void testContainsFloatNaN() { <START>  float[] a = new float[] { Float.NEGATIVE_INFINITY, Float.NaN, Float.POSITIVE_INFINITY };  <END> assertTrue(ArrayUtils.contains(a, Float.POSITIVE_INFINITY)); assertTrue(ArrayUtils.contains(a, Float.NEGATIVE_INFINITY)); assertTrue(ArrayUtils.contains(a, Float.NaN)); }","public void testContainsFloatNaN() { float[] array = new float[] { Float.NEGATIVE_INFINITY, Float.NaN, Float.POSITIVE_INFINITY }; assertTrue(ArrayUtils.contains(array, Float.POSITIVE_INFINITY)); assertTrue(ArrayUtils.contains(array, Float.NEGATIVE_INFINITY)); assertTrue(ArrayUtils.contains(array, Float.NaN)); }"
+14,"[np.int64(50), np.int64(50)]",nice use of a new junit 5 api! 👍,"    public void testClose() throws IOException {
+        shielded.close();
+        verify(original, never()).close();
+        assertThrows(IOException.class, () -> shielded.write('x'), ""write(c)"");
+        original.write('y');
+        assertEquals(1, original.getBuilder().length());
+        assertEquals('y', original.toString().charAt(0));
+    }
+","    public void testClose() throws IOException {        shielded.close();        verify(original, never()).close(); START         assertThrows(IOException.class, () -> shielded.write('x'), ""write(c)""); END         original.write('y');        assertEquals(1, original.getBuilder().length());        assertEquals('y', original.toString().charAt(0));    }","    public void testClose() throws IOException {
+        shielded.close();
+        verify(original, never()).close();
+        assertThrows(IOException.class, () -> shielded.write('x'), ""write(c)"");
+        original.write('y');
+        assertEquals(1, original.getBuilder().length());
+        assertEquals('y', original.toString().charAt(0));
+    }
+",False,False,True,2020-12-08T19:28:47Z,"public void testClose() throws IOException { shielded.close(); verify(original, never()).close(); <START>  assertThrows(IOException.class, () -> shielded.write('x'), ""write(c)"");  <END> original.write('y'); assertEquals(1, original.getBuilder().length()); assertEquals('y', original.toString().charAt(0)); }","public void testClose() throws IOException { shielded.close(); verify(original, never()).close(); assertThrows(IOException.class, () -> shielded.write('x'), ""write(c)""); original.write('y'); assertEquals(1, original.getBuilder().length()); assertEquals('y', original.toString().charAt(0)); }"
+27,"[np.int64(543), np.int64(543)]","hi @arturobernalg 
+
+thank you for your pr. 
+
+ps: it's harder to deal with a pr like this because it mixes a change with some clean ups (-1 -> not_found) so i am not sure where the new test is without trolling through all the noise :-(
+
+why is the number in parentheses? if this is a test for the actual bug fix, then you should add a sanity check to validates that the char is indeed bogus.
+
+ty.","    public void testLastIndexOf_char() {
+        assertEquals(NOT_FOUND, StringUtils.lastIndexOf(null, ' '));
+        assertEquals(NOT_FOUND, StringUtils.lastIndexOf("""", ' '));
+        assertEquals(7, StringUtils.lastIndexOf(""aabaabaa"", 'a'));
+        assertEquals(5, StringUtils.lastIndexOf(""aabaabaa"", 'b'));
+
+        assertEquals(5, StringUtils.lastIndexOf(new StringBuilder(""aabaabaa""), 'b'));
+        char[] charArray = new char[9];
+        charArray[0] = '[';
+        charArray[1] = '&';
+        charArray[7] = '{';
+        charArray[3] = '.';
+        charArray[4] = 'c';
+        charArray[5] = '.';
+        charArray[6] = '0';
+        charArray[7] = 'r';
+        charArray[8] = 'o';
+        CharBuffer charBuffer = CharBuffer.wrap(charArray);
+        assertEquals(NOT_FOUND, StringUtils.lastIndexOf (charBuffer, (-1738), 982));
+    }
+","    public void testLastIndexOf_char() {        assertEquals(NOT_FOUND, StringUtils.lastIndexOf(null, ' '));        assertEquals(NOT_FOUND, StringUtils.lastIndexOf("""", ' '));        assertEquals(7, StringUtils.lastIndexOf(""aabaabaa"", 'a'));        assertEquals(5, StringUtils.lastIndexOf(""aabaabaa"", 'b'));        assertEquals(5, StringUtils.lastIndexOf(new StringBuilder(""aabaabaa""), 'b'));        char[] charArray = new char[9];        charArray[0] = '[';        charArray[1] = '&';        charArray[7] = '{';        charArray[3] = '.';        charArray[4] = 'c';        charArray[5] = '.';        charArray[6] = '0';        charArray[7] = 'r';        charArray[8] = 'o';        CharBuffer charBuffer = CharBuffer.wrap(charArray); START         assertEquals(NOT_FOUND, StringUtils.lastIndexOf (charBuffer, (-1738), 982)); END     }","    public void testLastIndexOf_char() {
+        assertEquals(-1, StringUtils.lastIndexOf(null, ' '));
+        assertEquals(-1, StringUtils.lastIndexOf("""", ' '));
+        assertEquals(7, StringUtils.lastIndexOf(""aabaabaa"", 'a'));
+        assertEquals(5, StringUtils.lastIndexOf(""aabaabaa"", 'b'));
+
+        assertEquals(5, StringUtils.lastIndexOf(new StringBuilder(""aabaabaa""), 'b'));
+    }
+",False,False,True,2020-12-23T16:26:27Z,"public void testLastIndexOf_char() { assertEquals(NOT_FOUND, StringUtils.lastIndexOf(null, ' ')); assertEquals(NOT_FOUND, StringUtils.lastIndexOf("""", ' ')); assertEquals(7, StringUtils.lastIndexOf(""aabaabaa"", 'a')); assertEquals(5, StringUtils.lastIndexOf(""aabaabaa"", 'b')); assertEquals(5, StringUtils.lastIndexOf(new StringBuilder(""aabaabaa""), 'b')); char[] charArray = new char[9]; charArray[0] = '['; charArray[1] = '&'; charArray[7] = '{'; charArray[3] = '.'; charArray[4] = 'c'; charArray[5] = '.'; charArray[6] = '0'; charArray[7] = 'r'; charArray[8] = 'o'; CharBuffer charBuffer = CharBuffer.wrap(charArray); <START>  assertEquals(NOT_FOUND, StringUtils.lastIndexOf (charBuffer, (-1738), 982));  <END> }","public void testLastIndexOf_char() { assertEquals(-1, StringUtils.lastIndexOf(null, ' ')); assertEquals(-1, StringUtils.lastIndexOf("""", ' ')); assertEquals(7, StringUtils.lastIndexOf(""aabaabaa"", 'a')); assertEquals(5, StringUtils.lastIndexOf(""aabaabaa"", 'b')); assertEquals(5, StringUtils.lastIndexOf(new StringBuilder(""aabaabaa""), 'b')); }"
+28,"[np.int64(785), np.int64(785)]","let's not hard-code linux-specific new-line chars in error messages, but, if you really want new-lines, use `%n` with `string.format()`.","    public static Method getMatchingMethod(final Class<?> cls, final String methodName,
+            final Class<?>... parameterTypes) {
+        Validate.notNull(cls, ""cls"");
+        Validate.notEmpty(methodName, ""methodName"");
+
+        final List<Method> methods = Arrays.stream(cls.getDeclaredMethods())
+                .filter(method -> method.getName().equals(methodName))
+                .collect(toList());
+
+        ClassUtils.getAllSuperclasses(cls).stream()
+                .map(Class::getDeclaredMethods)
+                .flatMap(Arrays::stream)
+                .filter(method -> method.getName().equals(methodName))
+                .forEach(methods::add);
+
+        for (Method method : methods) {
+            if (Arrays.deepEquals(method.getParameterTypes(), parameterTypes)) {
+                return method;
+            }
+        }
+
+        final TreeMap<Double, List<Method>> candidates = new TreeMap<>();
+
+        methods.stream()
+                .filter(method -> ClassUtils.isAssignable(parameterTypes, method.getParameterTypes(), true))
+                .forEach(method -> {
+                    final double distance = distance(parameterTypes, method.getParameterTypes());
+                    List<Method> methods1 = candidates.computeIfAbsent(distance, k -> new ArrayList<>());
+                    methods1.add(method);
+                });
+
+        if (candidates.isEmpty()) {
+            return null;
+        }
+
+        final List<Method> bestCandidates = candidates.values().iterator().next();
+        if (bestCandidates.size() == 1) {
+            return bestCandidates.get(0);
+        }
+
+        final String target = methodName + Arrays.stream(parameterTypes).map(String::valueOf).collect(Collectors.joining("","", ""("", "")""));
+        final String strCandidates = bestCandidates.stream().map(Method::toString).collect(Collectors.joining(""\n  ""));
+        throw new IllegalStateException(""Found multiple candidates for method "" + target + "" on class "" + cls + "":\n  "" + strCandidates);
+    }
+","    public static Method getMatchingMethod(final Class<?> cls, final String methodName,            final Class<?>... parameterTypes) {        Validate.notNull(cls, ""cls"");        Validate.notEmpty(methodName, ""methodName"");        final List<Method> methods = Arrays.stream(cls.getDeclaredMethods())                .filter(method -> method.getName().equals(methodName))                .collect(toList());        ClassUtils.getAllSuperclasses(cls).stream()                .map(Class::getDeclaredMethods)                .flatMap(Arrays::stream)                .filter(method -> method.getName().equals(methodName))                .forEach(methods::add);        for (Method method : methods) {            if (Arrays.deepEquals(method.getParameterTypes(), parameterTypes)) {                return method;            }        }        final TreeMap<Double, List<Method>> candidates = new TreeMap<>();        methods.stream()                .filter(method -> ClassUtils.isAssignable(parameterTypes, method.getParameterTypes(), true))                .forEach(method -> {                    final double distance = distance(parameterTypes, method.getParameterTypes());                    List<Method> methods1 = candidates.computeIfAbsent(distance, k -> new ArrayList<>());                    methods1.add(method);                });        if (candidates.isEmpty()) {            return null;        }        final List<Method> bestCandidates = candidates.values().iterator().next();        if (bestCandidates.size() == 1) {            return bestCandidates.get(0);        }        final String target = methodName + Arrays.stream(parameterTypes).map(String::valueOf).collect(Collectors.joining("","", ""("", "")""));        final String strCandidates = bestCandidates.stream().map(Method::toString).collect(Collectors.joining(""\n  "")); START         throw new IllegalStateException(""Found multiple candidates for method "" + target + "" on class "" + cls + "":\n  "" + strCandidates); END     }","    public static Method getMatchingMethod(final Class<?> cls, final String methodName,
+            final Class<?>... parameterTypes) {
+        Validate.notNull(cls, ""cls"");
+        Validate.notEmpty(methodName, ""methodName"");
+
+        final List<Method> methods = Arrays.stream(cls.getDeclaredMethods())
+                .filter(method -> method.getName().equals(methodName))
+                .collect(toList());
+
+        ClassUtils.getAllSuperclasses(cls).stream()
+                .map(Class::getDeclaredMethods)
+                .flatMap(Arrays::stream)
+                .filter(method -> method.getName().equals(methodName))
+                .forEach(methods::add);
+
+        for (Method method : methods) {
+            if (Arrays.deepEquals(method.getParameterTypes(), parameterTypes)) {
+                return method;
+            }
+        }
+
+        final TreeMap<Integer, List<Method>> candidates = new TreeMap<>();
+
+        methods.stream()
+                .filter(method -> ClassUtils.isAssignable(parameterTypes, method.getParameterTypes(), true))
+                .forEach(method -> {
+                    final int distance = distance(parameterTypes, method.getParameterTypes());
+                    final List<Method> candidatesAtDistance = candidates.computeIfAbsent(distance, k -> new ArrayList<>());
+                    candidatesAtDistance.add(method);
+                });
+
+        if (candidates.isEmpty()) {
+            return null;
+        }
+
+        final List<Method> bestCandidates = candidates.values().iterator().next();
+        if (bestCandidates.size() == 1) {
+            return bestCandidates.get(0);
+        }
+
+        throw new IllegalStateException(
+                String.format(""Found multiple candidates for method %s on class %s : %s"",
+                        methodName + Arrays.stream(parameterTypes).map(String::valueOf).collect(Collectors.joining("","", ""("", "")"")),
+                        cls.getName(),
+                        bestCandidates.stream().map(Method::toString).collect(Collectors.joining("","", ""["", ""]"")))
+        );
+    }
+",False,False,True,2020-12-22T17:12:09Z,"public static Method getMatchingMethod(final Class<?> cls, final String methodName, final Class<?>... parameterTypes) { Validate.notNull(cls, ""cls""); Validate.notEmpty(methodName, ""methodName""); final List<Method> methods = Arrays.stream(cls.getDeclaredMethods()) .filter(method -> method.getName().equals(methodName)) .collect(toList()); ClassUtils.getAllSuperclasses(cls).stream() .map(Class::getDeclaredMethods) .flatMap(Arrays::stream) .filter(method -> method.getName().equals(methodName)) .forEach(methods::add); for (Method method : methods) { if (Arrays.deepEquals(method.getParameterTypes(), parameterTypes)) { return method; } } final TreeMap<Double, List<Method>> candidates = new TreeMap<>(); methods.stream() .filter(method -> ClassUtils.isAssignable(parameterTypes, method.getParameterTypes(), true)) .forEach(method -> { final double distance = distance(parameterTypes, method.getParameterTypes()); List<Method> methods1 = candidates.computeIfAbsent(distance, k -> new ArrayList<>()); methods1.add(method); }); if (candidates.isEmpty()) { return null; } final List<Method> bestCandidates = candidates.values().iterator().next(); if (bestCandidates.size() == 1) { return bestCandidates.get(0); } final String target = methodName + Arrays.stream(parameterTypes).map(String::valueOf).collect(Collectors.joining("","", ""("", "")"")); final String strCandidates = bestCandidates.stream().map(Method::toString).collect(Collectors.joining(""\n "")); <START>  throw new IllegalStateException(""Found multiple candidates for method "" + target + "" on class "" + cls + "":\n "" + strCandidates);  <END> }","public static Method getMatchingMethod(final Class<?> cls, final String methodName, final Class<?>... parameterTypes) { Validate.notNull(cls, ""cls""); Validate.notEmpty(methodName, ""methodName""); final List<Method> methods = Arrays.stream(cls.getDeclaredMethods()) .filter(method -> method.getName().equals(methodName)) .collect(toList()); ClassUtils.getAllSuperclasses(cls).stream() .map(Class::getDeclaredMethods) .flatMap(Arrays::stream) .filter(method -> method.getName().equals(methodName)) .forEach(methods::add); for (Method method : methods) { if (Arrays.deepEquals(method.getParameterTypes(), parameterTypes)) { return method; } } final TreeMap<Integer, List<Method>> candidates = new TreeMap<>(); methods.stream() .filter(method -> ClassUtils.isAssignable(parameterTypes, method.getParameterTypes(), true)) .forEach(method -> { final int distance = distance(parameterTypes, method.getParameterTypes()); final List<Method> candidatesAtDistance = candidates.computeIfAbsent(distance, k -> new ArrayList<>()); candidatesAtDistance.add(method); }); if (candidates.isEmpty()) { return null; } final List<Method> bestCandidates = candidates.values().iterator().next(); if (bestCandidates.size() == 1) { return bestCandidates.get(0); } throw new IllegalStateException( String.format(""Found multiple candidates for method %s on class %s : %s"", methodName + Arrays.stream(parameterTypes).map(String::valueOf).collect(Collectors.joining("","", ""("", "")"")), cls.getName(), bestCandidates.stream().map(Method::toString).collect(Collectors.joining("","", ""["", ""]""))) ); }"
+32,"[np.int64(543), np.int64(543)]","hi @garydgregory 
+sorry for the noise. when i created the pr it seemed logical.  but you're right. better keep the prs separate","    public void testLastIndexOf_char() {
+        assertEquals(NOT_FOUND, StringUtils.lastIndexOf(null, ' '));
+        assertEquals(NOT_FOUND, StringUtils.lastIndexOf("""", ' '));
+        assertEquals(7, StringUtils.lastIndexOf(""aabaabaa"", 'a'));
+        assertEquals(5, StringUtils.lastIndexOf(""aabaabaa"", 'b'));
+
+        assertEquals(5, StringUtils.lastIndexOf(new StringBuilder(""aabaabaa""), 'b'));
+        char[] charArray = new char[9];
+        charArray[0] = '[';
+        charArray[1] = '&';
+        charArray[7] = '{';
+        charArray[3] = '.';
+        charArray[4] = 'c';
+        charArray[5] = '.';
+        charArray[6] = '0';
+        charArray[7] = 'r';
+        charArray[8] = 'o';
+        CharBuffer charBuffer = CharBuffer.wrap(charArray);
+        assertEquals(NOT_FOUND, StringUtils.lastIndexOf (charBuffer, (-1738), 982));
+    }
+","    public void testLastIndexOf_char() {        assertEquals(NOT_FOUND, StringUtils.lastIndexOf(null, ' '));        assertEquals(NOT_FOUND, StringUtils.lastIndexOf("""", ' '));        assertEquals(7, StringUtils.lastIndexOf(""aabaabaa"", 'a'));        assertEquals(5, StringUtils.lastIndexOf(""aabaabaa"", 'b'));        assertEquals(5, StringUtils.lastIndexOf(new StringBuilder(""aabaabaa""), 'b'));        char[] charArray = new char[9];        charArray[0] = '[';        charArray[1] = '&';        charArray[7] = '{';        charArray[3] = '.';        charArray[4] = 'c';        charArray[5] = '.';        charArray[6] = '0';        charArray[7] = 'r';        charArray[8] = 'o';        CharBuffer charBuffer = CharBuffer.wrap(charArray); START         assertEquals(NOT_FOUND, StringUtils.lastIndexOf (charBuffer, (-1738), 982)); END     }","    public void testLastIndexOf_char() {
+        assertEquals(-1, StringUtils.lastIndexOf(null, ' '));
+        assertEquals(-1, StringUtils.lastIndexOf("""", ' '));
+        assertEquals(7, StringUtils.lastIndexOf(""aabaabaa"", 'a'));
+        assertEquals(5, StringUtils.lastIndexOf(""aabaabaa"", 'b'));
+
+        assertEquals(5, StringUtils.lastIndexOf(new StringBuilder(""aabaabaa""), 'b'));
+    }
+",True,False,True,2020-12-23T16:26:27Z,"public void testLastIndexOf_char() { assertEquals(NOT_FOUND, StringUtils.lastIndexOf(null, ' ')); assertEquals(NOT_FOUND, StringUtils.lastIndexOf("""", ' ')); assertEquals(7, StringUtils.lastIndexOf(""aabaabaa"", 'a')); assertEquals(5, StringUtils.lastIndexOf(""aabaabaa"", 'b')); assertEquals(5, StringUtils.lastIndexOf(new StringBuilder(""aabaabaa""), 'b')); char[] charArray = new char[9]; charArray[0] = '['; charArray[1] = '&'; charArray[7] = '{'; charArray[3] = '.'; charArray[4] = 'c'; charArray[5] = '.'; charArray[6] = '0'; charArray[7] = 'r'; charArray[8] = 'o'; CharBuffer charBuffer = CharBuffer.wrap(charArray); <START>  assertEquals(NOT_FOUND, StringUtils.lastIndexOf (charBuffer, (-1738), 982));  <END> }","public void testLastIndexOf_char() { assertEquals(-1, StringUtils.lastIndexOf(null, ' ')); assertEquals(-1, StringUtils.lastIndexOf("""", ' ')); assertEquals(7, StringUtils.lastIndexOf(""aabaabaa"", 'a')); assertEquals(5, StringUtils.lastIndexOf(""aabaabaa"", 'b')); assertEquals(5, StringUtils.lastIndexOf(new StringBuilder(""aabaabaa""), 'b')); }"
+33,"[np.int64(543), np.int64(543)]","hi @arturobernalg 
+you've not answered all my question.
+also why are you building the char[] one char at a time? why not call charbuffer.wrap(string)?","    public void testLastIndexOf_char() {
+        assertEquals(NOT_FOUND, StringUtils.lastIndexOf(null, ' '));
+        assertEquals(NOT_FOUND, StringUtils.lastIndexOf("""", ' '));
+        assertEquals(7, StringUtils.lastIndexOf(""aabaabaa"", 'a'));
+        assertEquals(5, StringUtils.lastIndexOf(""aabaabaa"", 'b'));
+
+        assertEquals(5, StringUtils.lastIndexOf(new StringBuilder(""aabaabaa""), 'b'));
+        char[] charArray = new char[9];
+        charArray[0] = '[';
+        charArray[1] = '&';
+        charArray[7] = '{';
+        charArray[3] = '.';
+        charArray[4] = 'c';
+        charArray[5] = '.';
+        charArray[6] = '0';
+        charArray[7] = 'r';
+        charArray[8] = 'o';
+        CharBuffer charBuffer = CharBuffer.wrap(charArray);
+        assertEquals(NOT_FOUND, StringUtils.lastIndexOf (charBuffer, (-1738), 982));
+    }
+","    public void testLastIndexOf_char() {        assertEquals(NOT_FOUND, StringUtils.lastIndexOf(null, ' '));        assertEquals(NOT_FOUND, StringUtils.lastIndexOf("""", ' '));        assertEquals(7, StringUtils.lastIndexOf(""aabaabaa"", 'a'));        assertEquals(5, StringUtils.lastIndexOf(""aabaabaa"", 'b'));        assertEquals(5, StringUtils.lastIndexOf(new StringBuilder(""aabaabaa""), 'b'));        char[] charArray = new char[9];        charArray[0] = '[';        charArray[1] = '&';        charArray[7] = '{';        charArray[3] = '.';        charArray[4] = 'c';        charArray[5] = '.';        charArray[6] = '0';        charArray[7] = 'r';        charArray[8] = 'o';        CharBuffer charBuffer = CharBuffer.wrap(charArray); START         assertEquals(NOT_FOUND, StringUtils.lastIndexOf (charBuffer, (-1738), 982)); END     }","    public void testLastIndexOf_char() {
+        assertEquals(-1, StringUtils.lastIndexOf(null, ' '));
+        assertEquals(-1, StringUtils.lastIndexOf("""", ' '));
+        assertEquals(7, StringUtils.lastIndexOf(""aabaabaa"", 'a'));
+        assertEquals(5, StringUtils.lastIndexOf(""aabaabaa"", 'b'));
+
+        assertEquals(5, StringUtils.lastIndexOf(new StringBuilder(""aabaabaa""), 'b'));
+    }
+",False,False,True,2020-12-23T16:26:27Z,"public void testLastIndexOf_char() { assertEquals(NOT_FOUND, StringUtils.lastIndexOf(null, ' ')); assertEquals(NOT_FOUND, StringUtils.lastIndexOf("""", ' ')); assertEquals(7, StringUtils.lastIndexOf(""aabaabaa"", 'a')); assertEquals(5, StringUtils.lastIndexOf(""aabaabaa"", 'b')); assertEquals(5, StringUtils.lastIndexOf(new StringBuilder(""aabaabaa""), 'b')); char[] charArray = new char[9]; charArray[0] = '['; charArray[1] = '&'; charArray[7] = '{'; charArray[3] = '.'; charArray[4] = 'c'; charArray[5] = '.'; charArray[6] = '0'; charArray[7] = 'r'; charArray[8] = 'o'; CharBuffer charBuffer = CharBuffer.wrap(charArray); <START>  assertEquals(NOT_FOUND, StringUtils.lastIndexOf (charBuffer, (-1738), 982));  <END> }","public void testLastIndexOf_char() { assertEquals(-1, StringUtils.lastIndexOf(null, ' ')); assertEquals(-1, StringUtils.lastIndexOf("""", ' ')); assertEquals(7, StringUtils.lastIndexOf(""aabaabaa"", 'a')); assertEquals(5, StringUtils.lastIndexOf(""aabaabaa"", 'b')); assertEquals(5, StringUtils.lastIndexOf(new StringBuilder(""aabaabaa""), 'b')); }"
+34,"[np.int64(785), np.int64(785)]","i replaced the newlines with opening and closing brackets.
+
+michael","    public static Method getMatchingMethod(final Class<?> cls, final String methodName,
+            final Class<?>... parameterTypes) {
+        Validate.notNull(cls, ""cls"");
+        Validate.notEmpty(methodName, ""methodName"");
+
+        final List<Method> methods = Arrays.stream(cls.getDeclaredMethods())
+                .filter(method -> method.getName().equals(methodName))
+                .collect(toList());
+
+        ClassUtils.getAllSuperclasses(cls).stream()
+                .map(Class::getDeclaredMethods)
+                .flatMap(Arrays::stream)
+                .filter(method -> method.getName().equals(methodName))
+                .forEach(methods::add);
+
+        for (Method method : methods) {
+            if (Arrays.deepEquals(method.getParameterTypes(), parameterTypes)) {
+                return method;
+            }
+        }
+
+        final TreeMap<Double, List<Method>> candidates = new TreeMap<>();
+
+        methods.stream()
+                .filter(method -> ClassUtils.isAssignable(parameterTypes, method.getParameterTypes(), true))
+                .forEach(method -> {
+                    final double distance = distance(parameterTypes, method.getParameterTypes());
+                    List<Method> methods1 = candidates.computeIfAbsent(distance, k -> new ArrayList<>());
+                    methods1.add(method);
+                });
+
+        if (candidates.isEmpty()) {
+            return null;
+        }
+
+        final List<Method> bestCandidates = candidates.values().iterator().next();
+        if (bestCandidates.size() == 1) {
+            return bestCandidates.get(0);
+        }
+
+        final String target = methodName + Arrays.stream(parameterTypes).map(String::valueOf).collect(Collectors.joining("","", ""("", "")""));
+        final String strCandidates = bestCandidates.stream().map(Method::toString).collect(Collectors.joining(""\n  ""));
+        throw new IllegalStateException(""Found multiple candidates for method "" + target + "" on class "" + cls + "":\n  "" + strCandidates);
+    }
+","    public static Method getMatchingMethod(final Class<?> cls, final String methodName,            final Class<?>... parameterTypes) {        Validate.notNull(cls, ""cls"");        Validate.notEmpty(methodName, ""methodName"");        final List<Method> methods = Arrays.stream(cls.getDeclaredMethods())                .filter(method -> method.getName().equals(methodName))                .collect(toList());        ClassUtils.getAllSuperclasses(cls).stream()                .map(Class::getDeclaredMethods)                .flatMap(Arrays::stream)                .filter(method -> method.getName().equals(methodName))                .forEach(methods::add);        for (Method method : methods) {            if (Arrays.deepEquals(method.getParameterTypes(), parameterTypes)) {                return method;            }        }        final TreeMap<Double, List<Method>> candidates = new TreeMap<>();        methods.stream()                .filter(method -> ClassUtils.isAssignable(parameterTypes, method.getParameterTypes(), true))                .forEach(method -> {                    final double distance = distance(parameterTypes, method.getParameterTypes());                    List<Method> methods1 = candidates.computeIfAbsent(distance, k -> new ArrayList<>());                    methods1.add(method);                });        if (candidates.isEmpty()) {            return null;        }        final List<Method> bestCandidates = candidates.values().iterator().next();        if (bestCandidates.size() == 1) {            return bestCandidates.get(0);        }        final String target = methodName + Arrays.stream(parameterTypes).map(String::valueOf).collect(Collectors.joining("","", ""("", "")""));        final String strCandidates = bestCandidates.stream().map(Method::toString).collect(Collectors.joining(""\n  "")); START         throw new IllegalStateException(""Found multiple candidates for method "" + target + "" on class "" + cls + "":\n  "" + strCandidates); END     }","    public static Method getMatchingMethod(final Class<?> cls, final String methodName,
+            final Class<?>... parameterTypes) {
+        Validate.notNull(cls, ""cls"");
+        Validate.notEmpty(methodName, ""methodName"");
+
+        final List<Method> methods = Arrays.stream(cls.getDeclaredMethods())
+                .filter(method -> method.getName().equals(methodName))
+                .collect(toList());
+
+        ClassUtils.getAllSuperclasses(cls).stream()
+                .map(Class::getDeclaredMethods)
+                .flatMap(Arrays::stream)
+                .filter(method -> method.getName().equals(methodName))
+                .forEach(methods::add);
+
+        for (Method method : methods) {
+            if (Arrays.deepEquals(method.getParameterTypes(), parameterTypes)) {
+                return method;
+            }
+        }
+
+        final TreeMap<Integer, List<Method>> candidates = new TreeMap<>();
+
+        methods.stream()
+                .filter(method -> ClassUtils.isAssignable(parameterTypes, method.getParameterTypes(), true))
+                .forEach(method -> {
+                    final int distance = distance(parameterTypes, method.getParameterTypes());
+                    final List<Method> candidatesAtDistance = candidates.computeIfAbsent(distance, k -> new ArrayList<>());
+                    candidatesAtDistance.add(method);
+                });
+
+        if (candidates.isEmpty()) {
+            return null;
+        }
+
+        final List<Method> bestCandidates = candidates.values().iterator().next();
+        if (bestCandidates.size() == 1) {
+            return bestCandidates.get(0);
+        }
+
+        throw new IllegalStateException(
+                String.format(""Found multiple candidates for method %s on class %s : %s"",
+                        methodName + Arrays.stream(parameterTypes).map(String::valueOf).collect(Collectors.joining("","", ""("", "")"")),
+                        cls.getName(),
+                        bestCandidates.stream().map(Method::toString).collect(Collectors.joining("","", ""["", ""]"")))
+        );
+    }
+",True,False,True,2020-12-22T17:12:09Z,"public static Method getMatchingMethod(final Class<?> cls, final String methodName, final Class<?>... parameterTypes) { Validate.notNull(cls, ""cls""); Validate.notEmpty(methodName, ""methodName""); final List<Method> methods = Arrays.stream(cls.getDeclaredMethods()) .filter(method -> method.getName().equals(methodName)) .collect(toList()); ClassUtils.getAllSuperclasses(cls).stream() .map(Class::getDeclaredMethods) .flatMap(Arrays::stream) .filter(method -> method.getName().equals(methodName)) .forEach(methods::add); for (Method method : methods) { if (Arrays.deepEquals(method.getParameterTypes(), parameterTypes)) { return method; } } final TreeMap<Double, List<Method>> candidates = new TreeMap<>(); methods.stream() .filter(method -> ClassUtils.isAssignable(parameterTypes, method.getParameterTypes(), true)) .forEach(method -> { final double distance = distance(parameterTypes, method.getParameterTypes()); List<Method> methods1 = candidates.computeIfAbsent(distance, k -> new ArrayList<>()); methods1.add(method); }); if (candidates.isEmpty()) { return null; } final List<Method> bestCandidates = candidates.values().iterator().next(); if (bestCandidates.size() == 1) { return bestCandidates.get(0); } final String target = methodName + Arrays.stream(parameterTypes).map(String::valueOf).collect(Collectors.joining("","", ""("", "")"")); final String strCandidates = bestCandidates.stream().map(Method::toString).collect(Collectors.joining(""\n "")); <START>  throw new IllegalStateException(""Found multiple candidates for method "" + target + "" on class "" + cls + "":\n "" + strCandidates);  <END> }","public static Method getMatchingMethod(final Class<?> cls, final String methodName, final Class<?>... parameterTypes) { Validate.notNull(cls, ""cls""); Validate.notEmpty(methodName, ""methodName""); final List<Method> methods = Arrays.stream(cls.getDeclaredMethods()) .filter(method -> method.getName().equals(methodName)) .collect(toList()); ClassUtils.getAllSuperclasses(cls).stream() .map(Class::getDeclaredMethods) .flatMap(Arrays::stream) .filter(method -> method.getName().equals(methodName)) .forEach(methods::add); for (Method method : methods) { if (Arrays.deepEquals(method.getParameterTypes(), parameterTypes)) { return method; } } final TreeMap<Integer, List<Method>> candidates = new TreeMap<>(); methods.stream() .filter(method -> ClassUtils.isAssignable(parameterTypes, method.getParameterTypes(), true)) .forEach(method -> { final int distance = distance(parameterTypes, method.getParameterTypes()); final List<Method> candidatesAtDistance = candidates.computeIfAbsent(distance, k -> new ArrayList<>()); candidatesAtDistance.add(method); }); if (candidates.isEmpty()) { return null; } final List<Method> bestCandidates = candidates.values().iterator().next(); if (bestCandidates.size() == 1) { return bestCandidates.get(0); } throw new IllegalStateException( String.format(""Found multiple candidates for method %s on class %s : %s"", methodName + Arrays.stream(parameterTypes).map(String::valueOf).collect(Collectors.joining("","", ""("", "")"")), cls.getName(), bestCandidates.stream().map(Method::toString).collect(Collectors.joining("","", ""["", ""]""))) ); }"
+38,"[np.int64(543), np.int64(543)]","mmm 
+
+- the parentheses was a mistake
+- the character in the test there are not valid unicode values
+- i'll change  the test for --> charbuffer.wrap(string)","    public void testLastIndexOf_char() {
+        assertEquals(NOT_FOUND, StringUtils.lastIndexOf(null, ' '));
+        assertEquals(NOT_FOUND, StringUtils.lastIndexOf("""", ' '));
+        assertEquals(7, StringUtils.lastIndexOf(""aabaabaa"", 'a'));
+        assertEquals(5, StringUtils.lastIndexOf(""aabaabaa"", 'b'));
+
+        assertEquals(5, StringUtils.lastIndexOf(new StringBuilder(""aabaabaa""), 'b'));
+        char[] charArray = new char[9];
+        charArray[0] = '[';
+        charArray[1] = '&';
+        charArray[7] = '{';
+        charArray[3] = '.';
+        charArray[4] = 'c';
+        charArray[5] = '.';
+        charArray[6] = '0';
+        charArray[7] = 'r';
+        charArray[8] = 'o';
+        CharBuffer charBuffer = CharBuffer.wrap(charArray);
+        assertEquals(NOT_FOUND, StringUtils.lastIndexOf (charBuffer, (-1738), 982));
+    }
+","    public void testLastIndexOf_char() {        assertEquals(NOT_FOUND, StringUtils.lastIndexOf(null, ' '));        assertEquals(NOT_FOUND, StringUtils.lastIndexOf("""", ' '));        assertEquals(7, StringUtils.lastIndexOf(""aabaabaa"", 'a'));        assertEquals(5, StringUtils.lastIndexOf(""aabaabaa"", 'b'));        assertEquals(5, StringUtils.lastIndexOf(new StringBuilder(""aabaabaa""), 'b'));        char[] charArray = new char[9];        charArray[0] = '[';        charArray[1] = '&';        charArray[7] = '{';        charArray[3] = '.';        charArray[4] = 'c';        charArray[5] = '.';        charArray[6] = '0';        charArray[7] = 'r';        charArray[8] = 'o';        CharBuffer charBuffer = CharBuffer.wrap(charArray); START         assertEquals(NOT_FOUND, StringUtils.lastIndexOf (charBuffer, (-1738), 982)); END     }","    public void testLastIndexOf_char() {
+        assertEquals(-1, StringUtils.lastIndexOf(null, ' '));
+        assertEquals(-1, StringUtils.lastIndexOf("""", ' '));
+        assertEquals(7, StringUtils.lastIndexOf(""aabaabaa"", 'a'));
+        assertEquals(5, StringUtils.lastIndexOf(""aabaabaa"", 'b'));
+
+        assertEquals(5, StringUtils.lastIndexOf(new StringBuilder(""aabaabaa""), 'b'));
+    }
+",True,False,True,2020-12-23T16:26:27Z,"public void testLastIndexOf_char() { assertEquals(NOT_FOUND, StringUtils.lastIndexOf(null, ' ')); assertEquals(NOT_FOUND, StringUtils.lastIndexOf("""", ' ')); assertEquals(7, StringUtils.lastIndexOf(""aabaabaa"", 'a')); assertEquals(5, StringUtils.lastIndexOf(""aabaabaa"", 'b')); assertEquals(5, StringUtils.lastIndexOf(new StringBuilder(""aabaabaa""), 'b')); char[] charArray = new char[9]; charArray[0] = '['; charArray[1] = '&'; charArray[7] = '{'; charArray[3] = '.'; charArray[4] = 'c'; charArray[5] = '.'; charArray[6] = '0'; charArray[7] = 'r'; charArray[8] = 'o'; CharBuffer charBuffer = CharBuffer.wrap(charArray); <START>  assertEquals(NOT_FOUND, StringUtils.lastIndexOf (charBuffer, (-1738), 982));  <END> }","public void testLastIndexOf_char() { assertEquals(-1, StringUtils.lastIndexOf(null, ' ')); assertEquals(-1, StringUtils.lastIndexOf("""", ' ')); assertEquals(7, StringUtils.lastIndexOf(""aabaabaa"", 'a')); assertEquals(5, StringUtils.lastIndexOf(""aabaabaa"", 'b')); assertEquals(5, StringUtils.lastIndexOf(new StringBuilder(""aabaabaa""), 'b')); }"
+39,"[np.int64(199), np.int64(199)]","mm . maybe it's my fault. 
+the idea it's exit the loop and return -1 (not_found) if not found the charset","    static int lastIndexOf(final CharSequence cs, final int searchChar, int start) {
+        if (cs instanceof String) {
+            return ((String) cs).lastIndexOf(searchChar, start);
+        }
+        final int sz = cs.length();
+        if (start < 0) {
+            return NOT_FOUND;
+        }
+        if (start >= sz) {
+            start = sz - 1;
+        }
+        if (searchChar < Character.MIN_SUPPLEMENTARY_CODE_POINT) {
+            for (int i = start; i >= 0; --i) {
+                if (cs.charAt(i) == searchChar) {
+                    return i;
+                }
+            }
+            return NOT_FOUND;
+        }
+        //supplementary characters (LANG1300)
+        //NOTE - we must do a forward traversal for this to avoid duplicating code points
+        if (searchChar <= Character.MAX_CODE_POINT) {
+            final char[] chars = Character.toChars(searchChar);
+            //make sure it's not the last index
+            if (start == sz - 1) {
+                return NOT_FOUND;
+            }
+            for (int i = start; i >= 0; i--) {
+                final char high = cs.charAt(i);
+                final char low = cs.charAt(i + 1);
+                if (chars[0] == high && chars[1] == low) {
+                    return i;
+                }
+            }
+        }
+        return NOT_FOUND;
+    }
+","    static int lastIndexOf(final CharSequence cs, final int searchChar, int start) {        if (cs instanceof String) {            return ((String) cs).lastIndexOf(searchChar, start);        }        final int sz = cs.length();        if (start < 0) {            return NOT_FOUND;        }        if (start >= sz) {            start = sz - 1;        }        if (searchChar < Character.MIN_SUPPLEMENTARY_CODE_POINT) {            for (int i = start; i >= 0; --i) {                if (cs.charAt(i) == searchChar) {                    return i;                }            } START             return NOT_FOUND; END         }        //supplementary characters (LANG1300)        //NOTE - we must do a forward traversal for this to avoid duplicating code points        if (searchChar <= Character.MAX_CODE_POINT) {            final char[] chars = Character.toChars(searchChar);            //make sure it's not the last index            if (start == sz - 1) {                return NOT_FOUND;            }            for (int i = start; i >= 0; i--) {                final char high = cs.charAt(i);                final char low = cs.charAt(i + 1);                if (chars[0] == high && chars[1] == low) {                    return i;                }            }        }        return NOT_FOUND;    }","    static int lastIndexOf(final CharSequence cs, final int searchChar, int start) {
+        if (cs instanceof String) {
+            return ((String) cs).lastIndexOf(searchChar, start);
+        }
+        final int sz = cs.length();
+        if (start < 0) {
+            return NOT_FOUND;
+        }
+        if (start >= sz) {
+            start = sz - 1;
+        }
+        if (searchChar < Character.MIN_SUPPLEMENTARY_CODE_POINT) {
+            for (int i = start; i >= 0; --i) {
+                if (cs.charAt(i) == searchChar) {
+                    return i;
+                }
+            }
+            return NOT_FOUND;
+        }
+        //supplementary characters (LANG1300)
+        //NOTE - we must do a forward traversal for this to avoid duplicating code points
+        if (searchChar <= Character.MAX_CODE_POINT) {
+            final char[] chars = Character.toChars(searchChar);
+            //make sure it's not the last index
+            if (start == sz - 1) {
+                return NOT_FOUND;
+            }
+            for (int i = start; i >= 0; i--) {
+                final char high = cs.charAt(i);
+                final char low = cs.charAt(i + 1);
+                if (chars[0] == high && chars[1] == low) {
+                    return i;
+                }
+            }
+        }
+        return NOT_FOUND;
+    }
+",True,False,True,2020-12-23T16:26:27Z,"static int lastIndexOf(final CharSequence cs, final int searchChar, int start) { if (cs instanceof String) { return ((String) cs).lastIndexOf(searchChar, start); } final int sz = cs.length(); if (start < 0) { return NOT_FOUND; } if (start >= sz) { start = sz - 1; } if (searchChar < Character.MIN_SUPPLEMENTARY_CODE_POINT) { for (int i = start; i >= 0; --i) { if (cs.charAt(i) == searchChar) { return i; } } <START>  return NOT_FOUND;  <END> } //supplementary characters (LANG1300) //NOTE - we must do a forward traversal for this to avoid duplicating code points if (searchChar <= Character.MAX_CODE_POINT) { final char[] chars = Character.toChars(searchChar); //make sure it's not the last index if (start == sz - 1) { return NOT_FOUND; } for (int i = start; i >= 0; i--) { final char high = cs.charAt(i); final char low = cs.charAt(i + 1); if (chars[0] == high && chars[1] == low) { return i; } } } return NOT_FOUND; }","static int lastIndexOf(final CharSequence cs, final int searchChar, int start) { if (cs instanceof String) { return ((String) cs).lastIndexOf(searchChar, start); } final int sz = cs.length(); if (start < 0) { return NOT_FOUND; } if (start >= sz) { start = sz - 1; } if (searchChar < Character.MIN_SUPPLEMENTARY_CODE_POINT) { for (int i = start; i >= 0; --i) { if (cs.charAt(i) == searchChar) { return i; } } return NOT_FOUND; } //supplementary characters (LANG1300) //NOTE - we must do a forward traversal for this to avoid duplicating code points if (searchChar <= Character.MAX_CODE_POINT) { final char[] chars = Character.toChars(searchChar); //make sure it's not the last index if (start == sz - 1) { return NOT_FOUND; } for (int i = start; i >= 0; i--) { final char high = cs.charAt(i); final char low = cs.charAt(i + 1); if (chars[0] == high && chars[1] == low) { return i; } } } return NOT_FOUND; }"
+40,"[np.int64(112), np.int64(112)]",idem @garydgregory,"    static int indexOf(final CharSequence cs, final int searchChar, int start) {
+        if (cs instanceof String) {
+            return ((String) cs).indexOf(searchChar, start);
+        }
+        final int sz = cs.length();
+        if (start < 0) {
+            start = 0;
+        }
+        if (searchChar < Character.MIN_SUPPLEMENTARY_CODE_POINT) {
+            for (int i = start; i < sz; i++) {
+                if (cs.charAt(i) == searchChar) {
+                    return i;
+                }
+            }
+            return NOT_FOUND;
+        }
+        //supplementary characters (LANG1300)
+        if (searchChar <= Character.MAX_CODE_POINT) {
+            final char[] chars = Character.toChars(searchChar);
+            for (int i = start; i < sz - 1; i++) {
+                final char high = cs.charAt(i);
+                final char low = cs.charAt(i + 1);
+                if (high == chars[0] && low == chars[1]) {
+                    return i;
+                }
+            }
+        }
+        return NOT_FOUND;
+    }
+","    static int indexOf(final CharSequence cs, final int searchChar, int start) {        if (cs instanceof String) {            return ((String) cs).indexOf(searchChar, start);        }        final int sz = cs.length();        if (start < 0) {            start = 0;        }        if (searchChar < Character.MIN_SUPPLEMENTARY_CODE_POINT) {            for (int i = start; i < sz; i++) {                if (cs.charAt(i) == searchChar) {                    return i;                }            } START             return NOT_FOUND; END         }        //supplementary characters (LANG1300)        if (searchChar <= Character.MAX_CODE_POINT) {            final char[] chars = Character.toChars(searchChar);            for (int i = start; i < sz - 1; i++) {                final char high = cs.charAt(i);                final char low = cs.charAt(i + 1);                if (high == chars[0] && low == chars[1]) {                    return i;                }            }        }        return NOT_FOUND;    }","    static int indexOf(final CharSequence cs, final int searchChar, int start) {
+        if (cs instanceof String) {
+            return ((String) cs).indexOf(searchChar, start);
+        }
+        final int sz = cs.length();
+        if (start < 0) {
+            start = 0;
+        }
+        if (searchChar < Character.MIN_SUPPLEMENTARY_CODE_POINT) {
+            for (int i = start; i < sz; i++) {
+                if (cs.charAt(i) == searchChar) {
+                    return i;
+                }
+            }
+            return NOT_FOUND;
+        }
+        //supplementary characters (LANG1300)
+        if (searchChar <= Character.MAX_CODE_POINT) {
+            final char[] chars = Character.toChars(searchChar);
+            for (int i = start; i < sz - 1; i++) {
+                final char high = cs.charAt(i);
+                final char low = cs.charAt(i + 1);
+                if (high == chars[0] && low == chars[1]) {
+                    return i;
+                }
+            }
+        }
+        return NOT_FOUND;
+    }
+",True,False,True,2020-12-23T16:26:27Z,"static int indexOf(final CharSequence cs, final int searchChar, int start) { if (cs instanceof String) { return ((String) cs).indexOf(searchChar, start); } final int sz = cs.length(); if (start < 0) { start = 0; } if (searchChar < Character.MIN_SUPPLEMENTARY_CODE_POINT) { for (int i = start; i < sz; i++) { if (cs.charAt(i) == searchChar) { return i; } } <START>  return NOT_FOUND;  <END> } //supplementary characters (LANG1300) if (searchChar <= Character.MAX_CODE_POINT) { final char[] chars = Character.toChars(searchChar); for (int i = start; i < sz - 1; i++) { final char high = cs.charAt(i); final char low = cs.charAt(i + 1); if (high == chars[0] && low == chars[1]) { return i; } } } return NOT_FOUND; }","static int indexOf(final CharSequence cs, final int searchChar, int start) { if (cs instanceof String) { return ((String) cs).indexOf(searchChar, start); } final int sz = cs.length(); if (start < 0) { start = 0; } if (searchChar < Character.MIN_SUPPLEMENTARY_CODE_POINT) { for (int i = start; i < sz; i++) { if (cs.charAt(i) == searchChar) { return i; } } return NOT_FOUND; } //supplementary characters (LANG1300) if (searchChar <= Character.MAX_CODE_POINT) { final char[] chars = Character.toChars(searchChar); for (int i = start; i < sz - 1; i++) { final char high = cs.charAt(i); final char low = cs.charAt(i + 1); if (high == chars[0] && low == chars[1]) { return i; } } } return NOT_FOUND; }"
+41,"[np.int64(199), np.int64(199)]","ah, i see, this is a new line, and the other mods are updates. ok, i'll take a look tomorrow probably...","    static int lastIndexOf(final CharSequence cs, final int searchChar, int start) {
+        if (cs instanceof String) {
+            return ((String) cs).lastIndexOf(searchChar, start);
+        }
+        final int sz = cs.length();
+        if (start < 0) {
+            return NOT_FOUND;
+        }
+        if (start >= sz) {
+            start = sz - 1;
+        }
+        if (searchChar < Character.MIN_SUPPLEMENTARY_CODE_POINT) {
+            for (int i = start; i >= 0; --i) {
+                if (cs.charAt(i) == searchChar) {
+                    return i;
+                }
+            }
+            return NOT_FOUND;
+        }
+        //supplementary characters (LANG1300)
+        //NOTE - we must do a forward traversal for this to avoid duplicating code points
+        if (searchChar <= Character.MAX_CODE_POINT) {
+            final char[] chars = Character.toChars(searchChar);
+            //make sure it's not the last index
+            if (start == sz - 1) {
+                return NOT_FOUND;
+            }
+            for (int i = start; i >= 0; i--) {
+                final char high = cs.charAt(i);
+                final char low = cs.charAt(i + 1);
+                if (chars[0] == high && chars[1] == low) {
+                    return i;
+                }
+            }
+        }
+        return NOT_FOUND;
+    }
+","    static int lastIndexOf(final CharSequence cs, final int searchChar, int start) {        if (cs instanceof String) {            return ((String) cs).lastIndexOf(searchChar, start);        }        final int sz = cs.length();        if (start < 0) {            return NOT_FOUND;        }        if (start >= sz) {            start = sz - 1;        }        if (searchChar < Character.MIN_SUPPLEMENTARY_CODE_POINT) {            for (int i = start; i >= 0; --i) {                if (cs.charAt(i) == searchChar) {                    return i;                }            } START             return NOT_FOUND; END         }        //supplementary characters (LANG1300)        //NOTE - we must do a forward traversal for this to avoid duplicating code points        if (searchChar <= Character.MAX_CODE_POINT) {            final char[] chars = Character.toChars(searchChar);            //make sure it's not the last index            if (start == sz - 1) {                return NOT_FOUND;            }            for (int i = start; i >= 0; i--) {                final char high = cs.charAt(i);                final char low = cs.charAt(i + 1);                if (chars[0] == high && chars[1] == low) {                    return i;                }            }        }        return NOT_FOUND;    }","    static int lastIndexOf(final CharSequence cs, final int searchChar, int start) {
+        if (cs instanceof String) {
+            return ((String) cs).lastIndexOf(searchChar, start);
+        }
+        final int sz = cs.length();
+        if (start < 0) {
+            return NOT_FOUND;
+        }
+        if (start >= sz) {
+            start = sz - 1;
+        }
+        if (searchChar < Character.MIN_SUPPLEMENTARY_CODE_POINT) {
+            for (int i = start; i >= 0; --i) {
+                if (cs.charAt(i) == searchChar) {
+                    return i;
+                }
+            }
+            return NOT_FOUND;
+        }
+        //supplementary characters (LANG1300)
+        //NOTE - we must do a forward traversal for this to avoid duplicating code points
+        if (searchChar <= Character.MAX_CODE_POINT) {
+            final char[] chars = Character.toChars(searchChar);
+            //make sure it's not the last index
+            if (start == sz - 1) {
+                return NOT_FOUND;
+            }
+            for (int i = start; i >= 0; i--) {
+                final char high = cs.charAt(i);
+                final char low = cs.charAt(i + 1);
+                if (chars[0] == high && chars[1] == low) {
+                    return i;
+                }
+            }
+        }
+        return NOT_FOUND;
+    }
+",False,False,True,2020-12-23T16:26:27Z,"static int lastIndexOf(final CharSequence cs, final int searchChar, int start) { if (cs instanceof String) { return ((String) cs).lastIndexOf(searchChar, start); } final int sz = cs.length(); if (start < 0) { return NOT_FOUND; } if (start >= sz) { start = sz - 1; } if (searchChar < Character.MIN_SUPPLEMENTARY_CODE_POINT) { for (int i = start; i >= 0; --i) { if (cs.charAt(i) == searchChar) { return i; } } <START>  return NOT_FOUND;  <END> } //supplementary characters (LANG1300) //NOTE - we must do a forward traversal for this to avoid duplicating code points if (searchChar <= Character.MAX_CODE_POINT) { final char[] chars = Character.toChars(searchChar); //make sure it's not the last index if (start == sz - 1) { return NOT_FOUND; } for (int i = start; i >= 0; i--) { final char high = cs.charAt(i); final char low = cs.charAt(i + 1); if (chars[0] == high && chars[1] == low) { return i; } } } return NOT_FOUND; }","static int lastIndexOf(final CharSequence cs, final int searchChar, int start) { if (cs instanceof String) { return ((String) cs).lastIndexOf(searchChar, start); } final int sz = cs.length(); if (start < 0) { return NOT_FOUND; } if (start >= sz) { start = sz - 1; } if (searchChar < Character.MIN_SUPPLEMENTARY_CODE_POINT) { for (int i = start; i >= 0; --i) { if (cs.charAt(i) == searchChar) { return i; } } return NOT_FOUND; } //supplementary characters (LANG1300) //NOTE - we must do a forward traversal for this to avoid duplicating code points if (searchChar <= Character.MAX_CODE_POINT) { final char[] chars = Character.toChars(searchChar); //make sure it's not the last index if (start == sz - 1) { return NOT_FOUND; } for (int i = start; i >= 0; i--) { final char high = cs.charAt(i); final char low = cs.charAt(i + 1); if (chars[0] == high && chars[1] == low) { return i; } } } return NOT_FOUND; }"
+42,"[np.int64(199), np.int64(199)]",sorry. my fault for mixing.,"    static int lastIndexOf(final CharSequence cs, final int searchChar, int start) {
+        if (cs instanceof String) {
+            return ((String) cs).lastIndexOf(searchChar, start);
+        }
+        final int sz = cs.length();
+        if (start < 0) {
+            return NOT_FOUND;
+        }
+        if (start >= sz) {
+            start = sz - 1;
+        }
+        if (searchChar < Character.MIN_SUPPLEMENTARY_CODE_POINT) {
+            for (int i = start; i >= 0; --i) {
+                if (cs.charAt(i) == searchChar) {
+                    return i;
+                }
+            }
+            return NOT_FOUND;
+        }
+        //supplementary characters (LANG1300)
+        //NOTE - we must do a forward traversal for this to avoid duplicating code points
+        if (searchChar <= Character.MAX_CODE_POINT) {
+            final char[] chars = Character.toChars(searchChar);
+            //make sure it's not the last index
+            if (start == sz - 1) {
+                return NOT_FOUND;
+            }
+            for (int i = start; i >= 0; i--) {
+                final char high = cs.charAt(i);
+                final char low = cs.charAt(i + 1);
+                if (chars[0] == high && chars[1] == low) {
+                    return i;
+                }
+            }
+        }
+        return NOT_FOUND;
+    }
+","    static int lastIndexOf(final CharSequence cs, final int searchChar, int start) {        if (cs instanceof String) {            return ((String) cs).lastIndexOf(searchChar, start);        }        final int sz = cs.length();        if (start < 0) {            return NOT_FOUND;        }        if (start >= sz) {            start = sz - 1;        }        if (searchChar < Character.MIN_SUPPLEMENTARY_CODE_POINT) {            for (int i = start; i >= 0; --i) {                if (cs.charAt(i) == searchChar) {                    return i;                }            } START             return NOT_FOUND; END         }        //supplementary characters (LANG1300)        //NOTE - we must do a forward traversal for this to avoid duplicating code points        if (searchChar <= Character.MAX_CODE_POINT) {            final char[] chars = Character.toChars(searchChar);            //make sure it's not the last index            if (start == sz - 1) {                return NOT_FOUND;            }            for (int i = start; i >= 0; i--) {                final char high = cs.charAt(i);                final char low = cs.charAt(i + 1);                if (chars[0] == high && chars[1] == low) {                    return i;                }            }        }        return NOT_FOUND;    }","    static int lastIndexOf(final CharSequence cs, final int searchChar, int start) {
+        if (cs instanceof String) {
+            return ((String) cs).lastIndexOf(searchChar, start);
+        }
+        final int sz = cs.length();
+        if (start < 0) {
+            return NOT_FOUND;
+        }
+        if (start >= sz) {
+            start = sz - 1;
+        }
+        if (searchChar < Character.MIN_SUPPLEMENTARY_CODE_POINT) {
+            for (int i = start; i >= 0; --i) {
+                if (cs.charAt(i) == searchChar) {
+                    return i;
+                }
+            }
+            return NOT_FOUND;
+        }
+        //supplementary characters (LANG1300)
+        //NOTE - we must do a forward traversal for this to avoid duplicating code points
+        if (searchChar <= Character.MAX_CODE_POINT) {
+            final char[] chars = Character.toChars(searchChar);
+            //make sure it's not the last index
+            if (start == sz - 1) {
+                return NOT_FOUND;
+            }
+            for (int i = start; i >= 0; i--) {
+                final char high = cs.charAt(i);
+                final char low = cs.charAt(i + 1);
+                if (chars[0] == high && chars[1] == low) {
+                    return i;
+                }
+            }
+        }
+        return NOT_FOUND;
+    }
+",True,False,True,2020-12-23T16:26:27Z,"static int lastIndexOf(final CharSequence cs, final int searchChar, int start) { if (cs instanceof String) { return ((String) cs).lastIndexOf(searchChar, start); } final int sz = cs.length(); if (start < 0) { return NOT_FOUND; } if (start >= sz) { start = sz - 1; } if (searchChar < Character.MIN_SUPPLEMENTARY_CODE_POINT) { for (int i = start; i >= 0; --i) { if (cs.charAt(i) == searchChar) { return i; } } <START>  return NOT_FOUND;  <END> } //supplementary characters (LANG1300) //NOTE - we must do a forward traversal for this to avoid duplicating code points if (searchChar <= Character.MAX_CODE_POINT) { final char[] chars = Character.toChars(searchChar); //make sure it's not the last index if (start == sz - 1) { return NOT_FOUND; } for (int i = start; i >= 0; i--) { final char high = cs.charAt(i); final char low = cs.charAt(i + 1); if (chars[0] == high && chars[1] == low) { return i; } } } return NOT_FOUND; }","static int lastIndexOf(final CharSequence cs, final int searchChar, int start) { if (cs instanceof String) { return ((String) cs).lastIndexOf(searchChar, start); } final int sz = cs.length(); if (start < 0) { return NOT_FOUND; } if (start >= sz) { start = sz - 1; } if (searchChar < Character.MIN_SUPPLEMENTARY_CODE_POINT) { for (int i = start; i >= 0; --i) { if (cs.charAt(i) == searchChar) { return i; } } return NOT_FOUND; } //supplementary characters (LANG1300) //NOTE - we must do a forward traversal for this to avoid duplicating code points if (searchChar <= Character.MAX_CODE_POINT) { final char[] chars = Character.toChars(searchChar); //make sure it's not the last index if (start == sz - 1) { return NOT_FOUND; } for (int i = start; i >= 0; i--) { final char high = cs.charAt(i); final char low = cs.charAt(i + 1); if (chars[0] == high && chars[1] == low) { return i; } } } return NOT_FOUND; }"
+45,"[np.int64(668), np.int64(668)]",the last step is to document this in the javadoc for the method.,"    public static int getPrefixLength(final String fileName) {
+        if (fileName == null) {
+            return NOT_FOUND;
+        }
+        final int len = fileName.length();
+        if (len == 0) {
+            return 0;
+        }
+        char ch0 = fileName.charAt(0);
+        if (ch0 == ':') {
+            return NOT_FOUND;
+        }
+        if (len == 1) {
+            if (ch0 == '~') {
+                return 2;  // return a length greater than the input
+            }
+            return isSeparator(ch0) ? 1 : 0;
+        }
+        if (ch0 == '~') {
+            int posUnix = fileName.indexOf(UNIX_SEPARATOR, 1);
+            int posWin = fileName.indexOf(WINDOWS_SEPARATOR, 1);
+            if (posUnix == NOT_FOUND && posWin == NOT_FOUND) {
+                return len + 1;  // return a length greater than the input
+            }
+            posUnix = posUnix == NOT_FOUND ? posWin : posUnix;
+            posWin = posWin == NOT_FOUND ? posUnix : posWin;
+            return Math.min(posUnix, posWin) + 1;
+        }
+        final char ch1 = fileName.charAt(1);
+        if (ch1 == ':') {
+            ch0 = Character.toUpperCase(ch0);
+            if (ch0 >= 'A' && ch0 <= 'Z') {
+                if (len == 2 && !FileSystem.getCurrent().supportsDriveLetter()) {
+                    return 0;
+                }
+                if (len == 2 || !isSeparator(fileName.charAt(2))) {
+                    return 2;
+                }
+                return 3;
+            } else if (ch0 == UNIX_SEPARATOR) {
+                return 1;
+            }
+            return NOT_FOUND;
+
+        } else if (isSeparator(ch0) && isSeparator(ch1)) {
+            int posUnix = fileName.indexOf(UNIX_SEPARATOR, 2);
+            int posWin = fileName.indexOf(WINDOWS_SEPARATOR, 2);
+            if (posUnix == NOT_FOUND && posWin == NOT_FOUND || posUnix == 2 || posWin == 2) {
+                return NOT_FOUND;
+            }
+            posUnix = posUnix == NOT_FOUND ? posWin : posUnix;
+            posWin = posWin == NOT_FOUND ? posUnix : posWin;
+            final int pos = Math.min(posUnix, posWin) + 1;
+            final String hostnamePart = fileName.substring(2, pos - 1);
+            return isValidHostName(hostnamePart) ? pos : NOT_FOUND;
+        } else {
+            return isSeparator(ch0) ? 1 : 0;
+        }
+    }
+","    public static int getPrefixLength(final String fileName) {        if (fileName == null) {            return NOT_FOUND;        }        final int len = fileName.length();        if (len == 0) {            return 0;        }        char ch0 = fileName.charAt(0);        if (ch0 == ':') {            return NOT_FOUND;        }        if (len == 1) {            if (ch0 == '~') {                return 2;  // return a length greater than the input            }            return isSeparator(ch0) ? 1 : 0;        }        if (ch0 == '~') {            int posUnix = fileName.indexOf(UNIX_SEPARATOR, 1);            int posWin = fileName.indexOf(WINDOWS_SEPARATOR, 1);            if (posUnix == NOT_FOUND && posWin == NOT_FOUND) {                return len + 1;  // return a length greater than the input            }            posUnix = posUnix == NOT_FOUND ? posWin : posUnix;            posWin = posWin == NOT_FOUND ? posUnix : posWin;            return Math.min(posUnix, posWin) + 1;        }        final char ch1 = fileName.charAt(1);        if (ch1 == ':') {            ch0 = Character.toUpperCase(ch0);            if (ch0 >= 'A' && ch0 <= 'Z') { START                 if (len == 2 && !FileSystem.getCurrent().supportsDriveLetter()) { END                     return 0;                }                if (len == 2 || !isSeparator(fileName.charAt(2))) {                    return 2;                }                return 3;            } else if (ch0 == UNIX_SEPARATOR) {                return 1;            }            return NOT_FOUND;        } else if (isSeparator(ch0) && isSeparator(ch1)) {            int posUnix = fileName.indexOf(UNIX_SEPARATOR, 2);            int posWin = fileName.indexOf(WINDOWS_SEPARATOR, 2);            if (posUnix == NOT_FOUND && posWin == NOT_FOUND || posUnix == 2 || posWin == 2) {                return NOT_FOUND;            }            posUnix = posUnix == NOT_FOUND ? posWin : posUnix;            posWin = posWin == NOT_FOUND ? posUnix : posWin;            final int pos = Math.min(posUnix, posWin) + 1;            final String hostnamePart = fileName.substring(2, pos - 1);            return isValidHostName(hostnamePart) ? pos : NOT_FOUND;        } else {            return isSeparator(ch0) ? 1 : 0;        }    }","    public static int getPrefixLength(final String fileName) {
+        if (fileName == null) {
+            return NOT_FOUND;
+        }
+        final int len = fileName.length();
+        if (len == 0) {
+            return 0;
+        }
+        char ch0 = fileName.charAt(0);
+        if (ch0 == ':') {
+            return NOT_FOUND;
+        }
+        if (len == 1) {
+            if (ch0 == '~') {
+                return 2;  // return a length greater than the input
+            }
+            return isSeparator(ch0) ? 1 : 0;
+        }
+        if (ch0 == '~') {
+            int posUnix = fileName.indexOf(UNIX_SEPARATOR, 1);
+            int posWin = fileName.indexOf(WINDOWS_SEPARATOR, 1);
+            if (posUnix == NOT_FOUND && posWin == NOT_FOUND) {
+                return len + 1;  // return a length greater than the input
+            }
+            posUnix = posUnix == NOT_FOUND ? posWin : posUnix;
+            posWin = posWin == NOT_FOUND ? posUnix : posWin;
+            return Math.min(posUnix, posWin) + 1;
+        }
+        final char ch1 = fileName.charAt(1);
+        if (ch1 == ':') {
+            ch0 = Character.toUpperCase(ch0);
+            if (ch0 >= 'A' && ch0 <= 'Z') {
+                if (len == 2 && !FileSystem.getCurrent().supportsDriveLetter()) {
+                    return 0;
+                }
+                if (len == 2 || !isSeparator(fileName.charAt(2))) {
+                    return 2;
+                }
+                return 3;
+            } else if (ch0 == UNIX_SEPARATOR) {
+                return 1;
+            }
+            return NOT_FOUND;
+
+        } else if (isSeparator(ch0) && isSeparator(ch1)) {
+            int posUnix = fileName.indexOf(UNIX_SEPARATOR, 2);
+            int posWin = fileName.indexOf(WINDOWS_SEPARATOR, 2);
+            if (posUnix == NOT_FOUND && posWin == NOT_FOUND || posUnix == 2 || posWin == 2) {
+                return NOT_FOUND;
+            }
+            posUnix = posUnix == NOT_FOUND ? posWin : posUnix;
+            posWin = posWin == NOT_FOUND ? posUnix : posWin;
+            final int pos = Math.min(posUnix, posWin) + 1;
+            final String hostnamePart = fileName.substring(2, pos - 1);
+            return isValidHostName(hostnamePart) ? pos : NOT_FOUND;
+        } else {
+            return isSeparator(ch0) ? 1 : 0;
+        }
+    }
+",False,False,True,2020-12-30T22:14:40Z,"public static int getPrefixLength(final String fileName) { if (fileName == null) { return NOT_FOUND; } final int len = fileName.length(); if (len == 0) { return 0; } char ch0 = fileName.charAt(0); if (ch0 == ':') { return NOT_FOUND; } if (len == 1) { if (ch0 == '~') { return 2; // return a length greater than the input } return isSeparator(ch0) ? 1 : 0; } if (ch0 == '~') { int posUnix = fileName.indexOf(UNIX_SEPARATOR, 1); int posWin = fileName.indexOf(WINDOWS_SEPARATOR, 1); if (posUnix == NOT_FOUND && posWin == NOT_FOUND) { return len + 1; // return a length greater than the input } posUnix = posUnix == NOT_FOUND ? posWin : posUnix; posWin = posWin == NOT_FOUND ? posUnix : posWin; return Math.min(posUnix, posWin) + 1; } final char ch1 = fileName.charAt(1); if (ch1 == ':') { ch0 = Character.toUpperCase(ch0); if (ch0 >= 'A' && ch0 <= 'Z') { <START>  if (len == 2 && !FileSystem.getCurrent().supportsDriveLetter()) {  <END> return 0; } if (len == 2 || !isSeparator(fileName.charAt(2))) { return 2; } return 3; } else if (ch0 == UNIX_SEPARATOR) { return 1; } return NOT_FOUND; } else if (isSeparator(ch0) && isSeparator(ch1)) { int posUnix = fileName.indexOf(UNIX_SEPARATOR, 2); int posWin = fileName.indexOf(WINDOWS_SEPARATOR, 2); if (posUnix == NOT_FOUND && posWin == NOT_FOUND || posUnix == 2 || posWin == 2) { return NOT_FOUND; } posUnix = posUnix == NOT_FOUND ? posWin : posUnix; posWin = posWin == NOT_FOUND ? posUnix : posWin; final int pos = Math.min(posUnix, posWin) + 1; final String hostnamePart = fileName.substring(2, pos - 1); return isValidHostName(hostnamePart) ? pos : NOT_FOUND; } else { return isSeparator(ch0) ? 1 : 0; } }","public static int getPrefixLength(final String fileName) { if (fileName == null) { return NOT_FOUND; } final int len = fileName.length(); if (len == 0) { return 0; } char ch0 = fileName.charAt(0); if (ch0 == ':') { return NOT_FOUND; } if (len == 1) { if (ch0 == '~') { return 2; // return a length greater than the input } return isSeparator(ch0) ? 1 : 0; } if (ch0 == '~') { int posUnix = fileName.indexOf(UNIX_SEPARATOR, 1); int posWin = fileName.indexOf(WINDOWS_SEPARATOR, 1); if (posUnix == NOT_FOUND && posWin == NOT_FOUND) { return len + 1; // return a length greater than the input } posUnix = posUnix == NOT_FOUND ? posWin : posUnix; posWin = posWin == NOT_FOUND ? posUnix : posWin; return Math.min(posUnix, posWin) + 1; } final char ch1 = fileName.charAt(1); if (ch1 == ':') { ch0 = Character.toUpperCase(ch0); if (ch0 >= 'A' && ch0 <= 'Z') { if (len == 2 && !FileSystem.getCurrent().supportsDriveLetter()) { return 0; } if (len == 2 || !isSeparator(fileName.charAt(2))) { return 2; } return 3; } else if (ch0 == UNIX_SEPARATOR) { return 1; } return NOT_FOUND; } else if (isSeparator(ch0) && isSeparator(ch1)) { int posUnix = fileName.indexOf(UNIX_SEPARATOR, 2); int posWin = fileName.indexOf(WINDOWS_SEPARATOR, 2); if (posUnix == NOT_FOUND && posWin == NOT_FOUND || posUnix == 2 || posWin == 2) { return NOT_FOUND; } posUnix = posUnix == NOT_FOUND ? posWin : posUnix; posWin = posWin == NOT_FOUND ? posUnix : posWin; final int pos = Math.min(posUnix, posWin) + 1; final String hostnamePart = fileName.substring(2, pos - 1); return isValidHostName(hostnamePart) ? pos : NOT_FOUND; } else { return isSeparator(ch0) ? 1 : 0; } }"
+46,"[np.int64(668), np.int64(668)]","adding this in under unix section : 
+ * c:                  --&gt; """"          --&gt; valid filename as only null byte and / are reserved characters
+ let me know your thoughts, thanks","    public static int getPrefixLength(final String fileName) {
+        if (fileName == null) {
+            return NOT_FOUND;
+        }
+        final int len = fileName.length();
+        if (len == 0) {
+            return 0;
+        }
+        char ch0 = fileName.charAt(0);
+        if (ch0 == ':') {
+            return NOT_FOUND;
+        }
+        if (len == 1) {
+            if (ch0 == '~') {
+                return 2;  // return a length greater than the input
+            }
+            return isSeparator(ch0) ? 1 : 0;
+        }
+        if (ch0 == '~') {
+            int posUnix = fileName.indexOf(UNIX_SEPARATOR, 1);
+            int posWin = fileName.indexOf(WINDOWS_SEPARATOR, 1);
+            if (posUnix == NOT_FOUND && posWin == NOT_FOUND) {
+                return len + 1;  // return a length greater than the input
+            }
+            posUnix = posUnix == NOT_FOUND ? posWin : posUnix;
+            posWin = posWin == NOT_FOUND ? posUnix : posWin;
+            return Math.min(posUnix, posWin) + 1;
+        }
+        final char ch1 = fileName.charAt(1);
+        if (ch1 == ':') {
+            ch0 = Character.toUpperCase(ch0);
+            if (ch0 >= 'A' && ch0 <= 'Z') {
+                if (len == 2 && !FileSystem.getCurrent().supportsDriveLetter()) {
+                    return 0;
+                }
+                if (len == 2 || !isSeparator(fileName.charAt(2))) {
+                    return 2;
+                }
+                return 3;
+            } else if (ch0 == UNIX_SEPARATOR) {
+                return 1;
+            }
+            return NOT_FOUND;
+
+        } else if (isSeparator(ch0) && isSeparator(ch1)) {
+            int posUnix = fileName.indexOf(UNIX_SEPARATOR, 2);
+            int posWin = fileName.indexOf(WINDOWS_SEPARATOR, 2);
+            if (posUnix == NOT_FOUND && posWin == NOT_FOUND || posUnix == 2 || posWin == 2) {
+                return NOT_FOUND;
+            }
+            posUnix = posUnix == NOT_FOUND ? posWin : posUnix;
+            posWin = posWin == NOT_FOUND ? posUnix : posWin;
+            final int pos = Math.min(posUnix, posWin) + 1;
+            final String hostnamePart = fileName.substring(2, pos - 1);
+            return isValidHostName(hostnamePart) ? pos : NOT_FOUND;
+        } else {
+            return isSeparator(ch0) ? 1 : 0;
+        }
+    }
+","    public static int getPrefixLength(final String fileName) {        if (fileName == null) {            return NOT_FOUND;        }        final int len = fileName.length();        if (len == 0) {            return 0;        }        char ch0 = fileName.charAt(0);        if (ch0 == ':') {            return NOT_FOUND;        }        if (len == 1) {            if (ch0 == '~') {                return 2;  // return a length greater than the input            }            return isSeparator(ch0) ? 1 : 0;        }        if (ch0 == '~') {            int posUnix = fileName.indexOf(UNIX_SEPARATOR, 1);            int posWin = fileName.indexOf(WINDOWS_SEPARATOR, 1);            if (posUnix == NOT_FOUND && posWin == NOT_FOUND) {                return len + 1;  // return a length greater than the input            }            posUnix = posUnix == NOT_FOUND ? posWin : posUnix;            posWin = posWin == NOT_FOUND ? posUnix : posWin;            return Math.min(posUnix, posWin) + 1;        }        final char ch1 = fileName.charAt(1);        if (ch1 == ':') {            ch0 = Character.toUpperCase(ch0);            if (ch0 >= 'A' && ch0 <= 'Z') { START                 if (len == 2 && !FileSystem.getCurrent().supportsDriveLetter()) { END                     return 0;                }                if (len == 2 || !isSeparator(fileName.charAt(2))) {                    return 2;                }                return 3;            } else if (ch0 == UNIX_SEPARATOR) {                return 1;            }            return NOT_FOUND;        } else if (isSeparator(ch0) && isSeparator(ch1)) {            int posUnix = fileName.indexOf(UNIX_SEPARATOR, 2);            int posWin = fileName.indexOf(WINDOWS_SEPARATOR, 2);            if (posUnix == NOT_FOUND && posWin == NOT_FOUND || posUnix == 2 || posWin == 2) {                return NOT_FOUND;            }            posUnix = posUnix == NOT_FOUND ? posWin : posUnix;            posWin = posWin == NOT_FOUND ? posUnix : posWin;            final int pos = Math.min(posUnix, posWin) + 1;            final String hostnamePart = fileName.substring(2, pos - 1);            return isValidHostName(hostnamePart) ? pos : NOT_FOUND;        } else {            return isSeparator(ch0) ? 1 : 0;        }    }","    public static int getPrefixLength(final String fileName) {
+        if (fileName == null) {
+            return NOT_FOUND;
+        }
+        final int len = fileName.length();
+        if (len == 0) {
+            return 0;
+        }
+        char ch0 = fileName.charAt(0);
+        if (ch0 == ':') {
+            return NOT_FOUND;
+        }
+        if (len == 1) {
+            if (ch0 == '~') {
+                return 2;  // return a length greater than the input
+            }
+            return isSeparator(ch0) ? 1 : 0;
+        }
+        if (ch0 == '~') {
+            int posUnix = fileName.indexOf(UNIX_SEPARATOR, 1);
+            int posWin = fileName.indexOf(WINDOWS_SEPARATOR, 1);
+            if (posUnix == NOT_FOUND && posWin == NOT_FOUND) {
+                return len + 1;  // return a length greater than the input
+            }
+            posUnix = posUnix == NOT_FOUND ? posWin : posUnix;
+            posWin = posWin == NOT_FOUND ? posUnix : posWin;
+            return Math.min(posUnix, posWin) + 1;
+        }
+        final char ch1 = fileName.charAt(1);
+        if (ch1 == ':') {
+            ch0 = Character.toUpperCase(ch0);
+            if (ch0 >= 'A' && ch0 <= 'Z') {
+                if (len == 2 && !FileSystem.getCurrent().supportsDriveLetter()) {
+                    return 0;
+                }
+                if (len == 2 || !isSeparator(fileName.charAt(2))) {
+                    return 2;
+                }
+                return 3;
+            } else if (ch0 == UNIX_SEPARATOR) {
+                return 1;
+            }
+            return NOT_FOUND;
+
+        } else if (isSeparator(ch0) && isSeparator(ch1)) {
+            int posUnix = fileName.indexOf(UNIX_SEPARATOR, 2);
+            int posWin = fileName.indexOf(WINDOWS_SEPARATOR, 2);
+            if (posUnix == NOT_FOUND && posWin == NOT_FOUND || posUnix == 2 || posWin == 2) {
+                return NOT_FOUND;
+            }
+            posUnix = posUnix == NOT_FOUND ? posWin : posUnix;
+            posWin = posWin == NOT_FOUND ? posUnix : posWin;
+            final int pos = Math.min(posUnix, posWin) + 1;
+            final String hostnamePart = fileName.substring(2, pos - 1);
+            return isValidHostName(hostnamePart) ? pos : NOT_FOUND;
+        } else {
+            return isSeparator(ch0) ? 1 : 0;
+        }
+    }
+",True,False,True,2020-12-30T22:14:40Z,"public static int getPrefixLength(final String fileName) { if (fileName == null) { return NOT_FOUND; } final int len = fileName.length(); if (len == 0) { return 0; } char ch0 = fileName.charAt(0); if (ch0 == ':') { return NOT_FOUND; } if (len == 1) { if (ch0 == '~') { return 2; // return a length greater than the input } return isSeparator(ch0) ? 1 : 0; } if (ch0 == '~') { int posUnix = fileName.indexOf(UNIX_SEPARATOR, 1); int posWin = fileName.indexOf(WINDOWS_SEPARATOR, 1); if (posUnix == NOT_FOUND && posWin == NOT_FOUND) { return len + 1; // return a length greater than the input } posUnix = posUnix == NOT_FOUND ? posWin : posUnix; posWin = posWin == NOT_FOUND ? posUnix : posWin; return Math.min(posUnix, posWin) + 1; } final char ch1 = fileName.charAt(1); if (ch1 == ':') { ch0 = Character.toUpperCase(ch0); if (ch0 >= 'A' && ch0 <= 'Z') { <START>  if (len == 2 && !FileSystem.getCurrent().supportsDriveLetter()) {  <END> return 0; } if (len == 2 || !isSeparator(fileName.charAt(2))) { return 2; } return 3; } else if (ch0 == UNIX_SEPARATOR) { return 1; } return NOT_FOUND; } else if (isSeparator(ch0) && isSeparator(ch1)) { int posUnix = fileName.indexOf(UNIX_SEPARATOR, 2); int posWin = fileName.indexOf(WINDOWS_SEPARATOR, 2); if (posUnix == NOT_FOUND && posWin == NOT_FOUND || posUnix == 2 || posWin == 2) { return NOT_FOUND; } posUnix = posUnix == NOT_FOUND ? posWin : posUnix; posWin = posWin == NOT_FOUND ? posUnix : posWin; final int pos = Math.min(posUnix, posWin) + 1; final String hostnamePart = fileName.substring(2, pos - 1); return isValidHostName(hostnamePart) ? pos : NOT_FOUND; } else { return isSeparator(ch0) ? 1 : 0; } }","public static int getPrefixLength(final String fileName) { if (fileName == null) { return NOT_FOUND; } final int len = fileName.length(); if (len == 0) { return 0; } char ch0 = fileName.charAt(0); if (ch0 == ':') { return NOT_FOUND; } if (len == 1) { if (ch0 == '~') { return 2; // return a length greater than the input } return isSeparator(ch0) ? 1 : 0; } if (ch0 == '~') { int posUnix = fileName.indexOf(UNIX_SEPARATOR, 1); int posWin = fileName.indexOf(WINDOWS_SEPARATOR, 1); if (posUnix == NOT_FOUND && posWin == NOT_FOUND) { return len + 1; // return a length greater than the input } posUnix = posUnix == NOT_FOUND ? posWin : posUnix; posWin = posWin == NOT_FOUND ? posUnix : posWin; return Math.min(posUnix, posWin) + 1; } final char ch1 = fileName.charAt(1); if (ch1 == ':') { ch0 = Character.toUpperCase(ch0); if (ch0 >= 'A' && ch0 <= 'Z') { if (len == 2 && !FileSystem.getCurrent().supportsDriveLetter()) { return 0; } if (len == 2 || !isSeparator(fileName.charAt(2))) { return 2; } return 3; } else if (ch0 == UNIX_SEPARATOR) { return 1; } return NOT_FOUND; } else if (isSeparator(ch0) && isSeparator(ch1)) { int posUnix = fileName.indexOf(UNIX_SEPARATOR, 2); int posWin = fileName.indexOf(WINDOWS_SEPARATOR, 2); if (posUnix == NOT_FOUND && posWin == NOT_FOUND || posUnix == 2 || posWin == 2) { return NOT_FOUND; } posUnix = posUnix == NOT_FOUND ? posWin : posUnix; posWin = posWin == NOT_FOUND ? posUnix : posWin; final int pos = Math.min(posUnix, posWin) + 1; final String hostnamePart = fileName.substring(2, pos - 1); return isValidHostName(hostnamePart) ? pos : NOT_FOUND; } else { return isSeparator(ch0) ? 1 : 0; } }"
+47,"[np.int64(668), np.int64(668)]","well, our current javadoc is lame because while this methods returns an `int`, the javadoc shows `string` examples as 'output' which is not so helpful imo, so if you can fix the javadoc to show what the `int` value is now for all the example strings, that would be appreciated.","    public static int getPrefixLength(final String fileName) {
+        if (fileName == null) {
+            return NOT_FOUND;
+        }
+        final int len = fileName.length();
+        if (len == 0) {
+            return 0;
+        }
+        char ch0 = fileName.charAt(0);
+        if (ch0 == ':') {
+            return NOT_FOUND;
+        }
+        if (len == 1) {
+            if (ch0 == '~') {
+                return 2;  // return a length greater than the input
+            }
+            return isSeparator(ch0) ? 1 : 0;
+        }
+        if (ch0 == '~') {
+            int posUnix = fileName.indexOf(UNIX_SEPARATOR, 1);
+            int posWin = fileName.indexOf(WINDOWS_SEPARATOR, 1);
+            if (posUnix == NOT_FOUND && posWin == NOT_FOUND) {
+                return len + 1;  // return a length greater than the input
+            }
+            posUnix = posUnix == NOT_FOUND ? posWin : posUnix;
+            posWin = posWin == NOT_FOUND ? posUnix : posWin;
+            return Math.min(posUnix, posWin) + 1;
+        }
+        final char ch1 = fileName.charAt(1);
+        if (ch1 == ':') {
+            ch0 = Character.toUpperCase(ch0);
+            if (ch0 >= 'A' && ch0 <= 'Z') {
+                if (len == 2 && !FileSystem.getCurrent().supportsDriveLetter()) {
+                    return 0;
+                }
+                if (len == 2 || !isSeparator(fileName.charAt(2))) {
+                    return 2;
+                }
+                return 3;
+            } else if (ch0 == UNIX_SEPARATOR) {
+                return 1;
+            }
+            return NOT_FOUND;
+
+        } else if (isSeparator(ch0) && isSeparator(ch1)) {
+            int posUnix = fileName.indexOf(UNIX_SEPARATOR, 2);
+            int posWin = fileName.indexOf(WINDOWS_SEPARATOR, 2);
+            if (posUnix == NOT_FOUND && posWin == NOT_FOUND || posUnix == 2 || posWin == 2) {
+                return NOT_FOUND;
+            }
+            posUnix = posUnix == NOT_FOUND ? posWin : posUnix;
+            posWin = posWin == NOT_FOUND ? posUnix : posWin;
+            final int pos = Math.min(posUnix, posWin) + 1;
+            final String hostnamePart = fileName.substring(2, pos - 1);
+            return isValidHostName(hostnamePart) ? pos : NOT_FOUND;
+        } else {
+            return isSeparator(ch0) ? 1 : 0;
+        }
+    }
+","    public static int getPrefixLength(final String fileName) {        if (fileName == null) {            return NOT_FOUND;        }        final int len = fileName.length();        if (len == 0) {            return 0;        }        char ch0 = fileName.charAt(0);        if (ch0 == ':') {            return NOT_FOUND;        }        if (len == 1) {            if (ch0 == '~') {                return 2;  // return a length greater than the input            }            return isSeparator(ch0) ? 1 : 0;        }        if (ch0 == '~') {            int posUnix = fileName.indexOf(UNIX_SEPARATOR, 1);            int posWin = fileName.indexOf(WINDOWS_SEPARATOR, 1);            if (posUnix == NOT_FOUND && posWin == NOT_FOUND) {                return len + 1;  // return a length greater than the input            }            posUnix = posUnix == NOT_FOUND ? posWin : posUnix;            posWin = posWin == NOT_FOUND ? posUnix : posWin;            return Math.min(posUnix, posWin) + 1;        }        final char ch1 = fileName.charAt(1);        if (ch1 == ':') {            ch0 = Character.toUpperCase(ch0);            if (ch0 >= 'A' && ch0 <= 'Z') { START                 if (len == 2 && !FileSystem.getCurrent().supportsDriveLetter()) { END                     return 0;                }                if (len == 2 || !isSeparator(fileName.charAt(2))) {                    return 2;                }                return 3;            } else if (ch0 == UNIX_SEPARATOR) {                return 1;            }            return NOT_FOUND;        } else if (isSeparator(ch0) && isSeparator(ch1)) {            int posUnix = fileName.indexOf(UNIX_SEPARATOR, 2);            int posWin = fileName.indexOf(WINDOWS_SEPARATOR, 2);            if (posUnix == NOT_FOUND && posWin == NOT_FOUND || posUnix == 2 || posWin == 2) {                return NOT_FOUND;            }            posUnix = posUnix == NOT_FOUND ? posWin : posUnix;            posWin = posWin == NOT_FOUND ? posUnix : posWin;            final int pos = Math.min(posUnix, posWin) + 1;            final String hostnamePart = fileName.substring(2, pos - 1);            return isValidHostName(hostnamePart) ? pos : NOT_FOUND;        } else {            return isSeparator(ch0) ? 1 : 0;        }    }","    public static int getPrefixLength(final String fileName) {
+        if (fileName == null) {
+            return NOT_FOUND;
+        }
+        final int len = fileName.length();
+        if (len == 0) {
+            return 0;
+        }
+        char ch0 = fileName.charAt(0);
+        if (ch0 == ':') {
+            return NOT_FOUND;
+        }
+        if (len == 1) {
+            if (ch0 == '~') {
+                return 2;  // return a length greater than the input
+            }
+            return isSeparator(ch0) ? 1 : 0;
+        }
+        if (ch0 == '~') {
+            int posUnix = fileName.indexOf(UNIX_SEPARATOR, 1);
+            int posWin = fileName.indexOf(WINDOWS_SEPARATOR, 1);
+            if (posUnix == NOT_FOUND && posWin == NOT_FOUND) {
+                return len + 1;  // return a length greater than the input
+            }
+            posUnix = posUnix == NOT_FOUND ? posWin : posUnix;
+            posWin = posWin == NOT_FOUND ? posUnix : posWin;
+            return Math.min(posUnix, posWin) + 1;
+        }
+        final char ch1 = fileName.charAt(1);
+        if (ch1 == ':') {
+            ch0 = Character.toUpperCase(ch0);
+            if (ch0 >= 'A' && ch0 <= 'Z') {
+                if (len == 2 && !FileSystem.getCurrent().supportsDriveLetter()) {
+                    return 0;
+                }
+                if (len == 2 || !isSeparator(fileName.charAt(2))) {
+                    return 2;
+                }
+                return 3;
+            } else if (ch0 == UNIX_SEPARATOR) {
+                return 1;
+            }
+            return NOT_FOUND;
+
+        } else if (isSeparator(ch0) && isSeparator(ch1)) {
+            int posUnix = fileName.indexOf(UNIX_SEPARATOR, 2);
+            int posWin = fileName.indexOf(WINDOWS_SEPARATOR, 2);
+            if (posUnix == NOT_FOUND && posWin == NOT_FOUND || posUnix == 2 || posWin == 2) {
+                return NOT_FOUND;
+            }
+            posUnix = posUnix == NOT_FOUND ? posWin : posUnix;
+            posWin = posWin == NOT_FOUND ? posUnix : posWin;
+            final int pos = Math.min(posUnix, posWin) + 1;
+            final String hostnamePart = fileName.substring(2, pos - 1);
+            return isValidHostName(hostnamePart) ? pos : NOT_FOUND;
+        } else {
+            return isSeparator(ch0) ? 1 : 0;
+        }
+    }
+",False,False,True,2020-12-30T22:14:40Z,"public static int getPrefixLength(final String fileName) { if (fileName == null) { return NOT_FOUND; } final int len = fileName.length(); if (len == 0) { return 0; } char ch0 = fileName.charAt(0); if (ch0 == ':') { return NOT_FOUND; } if (len == 1) { if (ch0 == '~') { return 2; // return a length greater than the input } return isSeparator(ch0) ? 1 : 0; } if (ch0 == '~') { int posUnix = fileName.indexOf(UNIX_SEPARATOR, 1); int posWin = fileName.indexOf(WINDOWS_SEPARATOR, 1); if (posUnix == NOT_FOUND && posWin == NOT_FOUND) { return len + 1; // return a length greater than the input } posUnix = posUnix == NOT_FOUND ? posWin : posUnix; posWin = posWin == NOT_FOUND ? posUnix : posWin; return Math.min(posUnix, posWin) + 1; } final char ch1 = fileName.charAt(1); if (ch1 == ':') { ch0 = Character.toUpperCase(ch0); if (ch0 >= 'A' && ch0 <= 'Z') { <START>  if (len == 2 && !FileSystem.getCurrent().supportsDriveLetter()) {  <END> return 0; } if (len == 2 || !isSeparator(fileName.charAt(2))) { return 2; } return 3; } else if (ch0 == UNIX_SEPARATOR) { return 1; } return NOT_FOUND; } else if (isSeparator(ch0) && isSeparator(ch1)) { int posUnix = fileName.indexOf(UNIX_SEPARATOR, 2); int posWin = fileName.indexOf(WINDOWS_SEPARATOR, 2); if (posUnix == NOT_FOUND && posWin == NOT_FOUND || posUnix == 2 || posWin == 2) { return NOT_FOUND; } posUnix = posUnix == NOT_FOUND ? posWin : posUnix; posWin = posWin == NOT_FOUND ? posUnix : posWin; final int pos = Math.min(posUnix, posWin) + 1; final String hostnamePart = fileName.substring(2, pos - 1); return isValidHostName(hostnamePart) ? pos : NOT_FOUND; } else { return isSeparator(ch0) ? 1 : 0; } }","public static int getPrefixLength(final String fileName) { if (fileName == null) { return NOT_FOUND; } final int len = fileName.length(); if (len == 0) { return 0; } char ch0 = fileName.charAt(0); if (ch0 == ':') { return NOT_FOUND; } if (len == 1) { if (ch0 == '~') { return 2; // return a length greater than the input } return isSeparator(ch0) ? 1 : 0; } if (ch0 == '~') { int posUnix = fileName.indexOf(UNIX_SEPARATOR, 1); int posWin = fileName.indexOf(WINDOWS_SEPARATOR, 1); if (posUnix == NOT_FOUND && posWin == NOT_FOUND) { return len + 1; // return a length greater than the input } posUnix = posUnix == NOT_FOUND ? posWin : posUnix; posWin = posWin == NOT_FOUND ? posUnix : posWin; return Math.min(posUnix, posWin) + 1; } final char ch1 = fileName.charAt(1); if (ch1 == ':') { ch0 = Character.toUpperCase(ch0); if (ch0 >= 'A' && ch0 <= 'Z') { if (len == 2 && !FileSystem.getCurrent().supportsDriveLetter()) { return 0; } if (len == 2 || !isSeparator(fileName.charAt(2))) { return 2; } return 3; } else if (ch0 == UNIX_SEPARATOR) { return 1; } return NOT_FOUND; } else if (isSeparator(ch0) && isSeparator(ch1)) { int posUnix = fileName.indexOf(UNIX_SEPARATOR, 2); int posWin = fileName.indexOf(WINDOWS_SEPARATOR, 2); if (posUnix == NOT_FOUND && posWin == NOT_FOUND || posUnix == 2 || posWin == 2) { return NOT_FOUND; } posUnix = posUnix == NOT_FOUND ? posWin : posUnix; posWin = posWin == NOT_FOUND ? posUnix : posWin; final int pos = Math.min(posUnix, posWin) + 1; final String hostnamePart = fileName.substring(2, pos - 1); return isValidHostName(hostnamePart) ? pos : NOT_FOUND; } else { return isSeparator(ch0) ? 1 : 0; } }"
+48,"[np.int64(442), np.int64(442)]","hi,
+thank you for your pr.
+what about ""yyy""?","    public void testWeekYear() {
+        final GregorianCalendar cal = new GregorianCalendar(2020, 12, 31, 0, 0, 0);
+        final DatePrinter printer4Digits = getInstance(""YYYY"");
+        final DatePrinter printer2Digits = getInstance(""YY"");
+        assertEquals(""2021"", printer4Digits.format(cal));
+        assertEquals(""21"", printer2Digits.format(cal));
+    }
+","    public void testWeekYear() {        final GregorianCalendar cal = new GregorianCalendar(2020, 12, 31, 0, 0, 0);        final DatePrinter printer4Digits = getInstance(""YYYY""); START         final DatePrinter printer2Digits = getInstance(""YY""); END         assertEquals(""2021"", printer4Digits.format(cal));        assertEquals(""21"", printer2Digits.format(cal));    }","    public void testWeekYear() {
+        final GregorianCalendar cal = new GregorianCalendar(2020, 12, 31, 0, 0, 0);
+        final DatePrinter printer4Digits = getInstance(""YYYY"");
+        final DatePrinter printer4DigitsFallback = getInstance(""YYY"");
+        final DatePrinter printer2Digits = getInstance(""YY"");
+        final DatePrinter printer4DigitAnotherFallback = getInstance(""Y"");
+        assertEquals(""2021"", printer4Digits.format(cal));
+        assertEquals(""2021"", printer4DigitsFallback.format(cal));
+        assertEquals(""2021"", printer4DigitAnotherFallback.format(cal));
+        assertEquals(""21"", printer2Digits.format(cal));
+    }
+",False,False,True,2021-01-02T16:14:51Z,"public void testWeekYear() { final GregorianCalendar cal = new GregorianCalendar(2020, 12, 31, 0, 0, 0); final DatePrinter printer4Digits = getInstance(""YYYY""); <START>  final DatePrinter printer2Digits = getInstance(""YY"");  <END> assertEquals(""2021"", printer4Digits.format(cal)); assertEquals(""21"", printer2Digits.format(cal)); }","public void testWeekYear() { final GregorianCalendar cal = new GregorianCalendar(2020, 12, 31, 0, 0, 0); final DatePrinter printer4Digits = getInstance(""YYYY""); final DatePrinter printer4DigitsFallback = getInstance(""YYY""); final DatePrinter printer2Digits = getInstance(""YY""); final DatePrinter printer4DigitAnotherFallback = getInstance(""Y""); assertEquals(""2021"", printer4Digits.format(cal)); assertEquals(""2021"", printer4DigitsFallback.format(cal)); assertEquals(""2021"", printer4DigitAnotherFallback.format(cal)); assertEquals(""21"", printer2Digits.format(cal)); }"
+49,"[np.int64(442), np.int64(442)]",please add code in your new test for y and yyy.,"    public void testWeekYear() {
+        final GregorianCalendar cal = new GregorianCalendar(2020, 12, 31, 0, 0, 0);
+        final DatePrinter printer4Digits = getInstance(""YYYY"");
+        final DatePrinter printer2Digits = getInstance(""YY"");
+        assertEquals(""2021"", printer4Digits.format(cal));
+        assertEquals(""21"", printer2Digits.format(cal));
+    }
+","    public void testWeekYear() {        final GregorianCalendar cal = new GregorianCalendar(2020, 12, 31, 0, 0, 0);        final DatePrinter printer4Digits = getInstance(""YYYY""); START         final DatePrinter printer2Digits = getInstance(""YY""); END         assertEquals(""2021"", printer4Digits.format(cal));        assertEquals(""21"", printer2Digits.format(cal));    }","    public void testWeekYear() {
+        final GregorianCalendar cal = new GregorianCalendar(2020, 12, 31, 0, 0, 0);
+        final DatePrinter printer4Digits = getInstance(""YYYY"");
+        final DatePrinter printer4DigitsFallback = getInstance(""YYY"");
+        final DatePrinter printer2Digits = getInstance(""YY"");
+        final DatePrinter printer4DigitAnotherFallback = getInstance(""Y"");
+        assertEquals(""2021"", printer4Digits.format(cal));
+        assertEquals(""2021"", printer4DigitsFallback.format(cal));
+        assertEquals(""2021"", printer4DigitAnotherFallback.format(cal));
+        assertEquals(""21"", printer2Digits.format(cal));
+    }
+",False,False,True,2021-01-02T16:14:51Z,"public void testWeekYear() { final GregorianCalendar cal = new GregorianCalendar(2020, 12, 31, 0, 0, 0); final DatePrinter printer4Digits = getInstance(""YYYY""); <START>  final DatePrinter printer2Digits = getInstance(""YY"");  <END> assertEquals(""2021"", printer4Digits.format(cal)); assertEquals(""21"", printer2Digits.format(cal)); }","public void testWeekYear() { final GregorianCalendar cal = new GregorianCalendar(2020, 12, 31, 0, 0, 0); final DatePrinter printer4Digits = getInstance(""YYYY""); final DatePrinter printer4DigitsFallback = getInstance(""YYY""); final DatePrinter printer2Digits = getInstance(""YY""); final DatePrinter printer4DigitAnotherFallback = getInstance(""Y""); assertEquals(""2021"", printer4Digits.format(cal)); assertEquals(""2021"", printer4DigitsFallback.format(cal)); assertEquals(""2021"", printer4DigitAnotherFallback.format(cal)); assertEquals(""21"", printer2Digits.format(cal)); }"

@@ -1,0 +1,933 @@
+Record_id,references,comment,old,new,old_wo_comment,new_wo_comment,Diff_is_tagged,owner_comment,comment_to_comment,creation_time,old_tags,new_clean,old_wo_comment_tags,new_wo_comment_clean,cleaned_comment,cleaned_comment_no_praise,diff_Comment_is_relevant,Comment_size_filter_3_150,old_wo_comment_clean
+49,"[np.int64(130), np.int64(130)]",reuse `arrayutils.empty_string_array`,"      */
+     public ReflectionDiffBuilder setExcludeFieldNames(final String... excludeFieldNamesParam) {
+         if (excludeFieldNamesParam == null) {
+ START             this.excludeFieldNames = new String[0]; END 
+         } else {
+            //clone and remove nulls
+             this.excludeFieldNames = ArraySorter.sort(ReflectionToStringBuilder.toNoNullStringArray(excludeFieldNamesParam));
+         }
+         return this;","      */
+     public ReflectionDiffBuilder setExcludeFieldNames(final String... excludeFieldNamesParam) {
+         if (excludeFieldNamesParam == null) {
+-            this.excludeFieldNames = new String[0];
++            this.excludeFieldNames = ArrayUtils.EMPTY_STRING_ARRAY;
+         } else {
+-            //clone and remove nulls
++            // clone and remove nulls
+             this.excludeFieldNames = ArraySorter.sort(ReflectionToStringBuilder.toNoNullStringArray(excludeFieldNamesParam));
+         }
+         return this;","      */
+     public ReflectionDiffBuilder setExcludeFieldNames(final String... excludeFieldNamesParam) {
+         if (excludeFieldNamesParam == null) {
+ START             this.excludeFieldNames = new String[0]; END 
+         } else {
+             this.excludeFieldNames = ArraySorter.sort(ReflectionToStringBuilder.toNoNullStringArray(excludeFieldNamesParam));
+         }
+         return this;","      */
+     public ReflectionDiffBuilder setExcludeFieldNames(final String... excludeFieldNamesParam) {
+         if (excludeFieldNamesParam == null) {
+-            this.excludeFieldNames = new String[0];
++            this.excludeFieldNames = ArrayUtils.EMPTY_STRING_ARRAY;
+         } else {
+             this.excludeFieldNames = ArraySorter.sort(ReflectionToStringBuilder.toNoNullStringArray(excludeFieldNamesParam));
+         }
+         return this;",True,False,False,2022-04-06T14:16:29Z,"*/
+     public ReflectionDiffBuilder setExcludeFieldNames(final String... excludeFieldNamesParam) {
+         if (excludeFieldNamesParam == null) {
+ <START>  this.excludeFieldNames = new String[0];  <END>
+         } else {
+            //clone and remove nulls
+             this.excludeFieldNames = ArraySorter.sort(ReflectionToStringBuilder.toNoNullStringArray(excludeFieldNamesParam));
+         }
+         return this;","*/
+     public ReflectionDiffBuilder setExcludeFieldNames(final String... excludeFieldNamesParam) {
+         if (excludeFieldNamesParam == null) {
+-            this.excludeFieldNames = new String[0];
++            this.excludeFieldNames = ArrayUtils.EMPTY_STRING_ARRAY;
+         } else {
+-            //clone and remove nulls
++            // clone and remove nulls
+             this.excludeFieldNames = ArraySorter.sort(ReflectionToStringBuilder.toNoNullStringArray(excludeFieldNamesParam));
+         }
+         return this;","*/
+     public ReflectionDiffBuilder setExcludeFieldNames(final String... excludeFieldNamesParam) {
+         if (excludeFieldNamesParam == null) {
+ <START>  this.excludeFieldNames = new String[0];  <END>
+         } else {
+             this.excludeFieldNames = ArraySorter.sort(ReflectionToStringBuilder.toNoNullStringArray(excludeFieldNamesParam));
+         }
+         return this;","*/
+     public ReflectionDiffBuilder setExcludeFieldNames(final String... excludeFieldNamesParam) {
+         if (excludeFieldNamesParam == null) {
+-            this.excludeFieldNames = new String[0];
++            this.excludeFieldNames = ArrayUtils.EMPTY_STRING_ARRAY;
+         } else {
+             this.excludeFieldNames = ArraySorter.sort(ReflectionToStringBuilder.toNoNullStringArray(excludeFieldNamesParam));
+         }
+         return this;",reuse arrayutils empty_string_array,reuse arrayutils empty_string_array,True,False,"*/
+     public ReflectionDiffBuilder setExcludeFieldNames(final String... excludeFieldNamesParam) {
+         if (excludeFieldNamesParam == null) {
+ START this.excludeFieldNames = new String[0]; END
+         } else {
+             this.excludeFieldNames = ArraySorter.sort(ReflectionToStringBuilder.toNoNullStringArray(excludeFieldNamesParam));
+         }
+         return this;"
+10,"[np.int64(1008), np.int64(1008)]",this pr should test this path with an `assertthrows()`.,"      * @since 2.12
+      */
+     @SuppressWarnings(""resource"") // streams are closed by the caller.
+ START     public static QueueInputStream copy(final java.io.ByteArrayOutputStream outputStream) throws IOException { END 
+         Objects.requireNonNull(outputStream, ""outputStream"");
+         final QueueInputStream in = new QueueInputStream();
+        final QueueOutputStream out = in.newQueueOutputStream();
+        outputStream.writeTo(out);
+         return in;
+     }","      * @since 2.12
+      */
+     @SuppressWarnings(""resource"") // streams are closed by the caller.
+-    public static QueueInputStream copy(final java.io.ByteArrayOutputStream outputStream) throws IOException {
++    public static QueueInputStream copy(final java.io.ByteArrayOutputStream outputStream) throws IOException {
+         Objects.requireNonNull(outputStream, ""outputStream"");
+         final QueueInputStream in = new QueueInputStream();
+-        final QueueOutputStream out = in.newQueueOutputStream();
+-        outputStream.writeTo(out);
++        outputStream.writeTo(in.newQueueOutputStream());
+         return in;
+     }","      * @since 2.12
+      */
+     @SuppressWarnings(""resource"") // streams are closed by the caller.
+ START     public static QueueInputStream copy(final java.io.ByteArrayOutputStream outputStream) throws IOException { END 
+         Objects.requireNonNull(outputStream, ""outputStream"");
+         final QueueInputStream in = new QueueInputStream();
+        final QueueOutputStream out = in.newQueueOutputStream();
+        outputStream.writeTo(out);
+         return in;
+     }","      * @since 2.12
+      */
+     @SuppressWarnings(""resource"") // streams are closed by the caller.
+-    public static QueueInputStream copy(final java.io.ByteArrayOutputStream outputStream) throws IOException {
++    public static QueueInputStream copy(final java.io.ByteArrayOutputStream outputStream) throws IOException {
+         Objects.requireNonNull(outputStream, ""outputStream"");
+         final QueueInputStream in = new QueueInputStream();
+-        final QueueOutputStream out = in.newQueueOutputStream();
+-        outputStream.writeTo(out);
++        outputStream.writeTo(in.newQueueOutputStream());
+         return in;
+     }",True,False,False,2021-10-16T18:14:26Z,"* @since 2.12
+      */
+     @SuppressWarnings(""resource"") // streams are closed by the caller.
+ <START>  public static QueueInputStream copy(final java.io.ByteArrayOutputStream outputStream) throws IOException {  <END>
+         Objects.requireNonNull(outputStream, ""outputStream"");
+         final QueueInputStream in = new QueueInputStream();
+        final QueueOutputStream out = in.newQueueOutputStream();
+        outputStream.writeTo(out);
+         return in;
+     }","* @since 2.12
+      */
+     @SuppressWarnings(""resource"") // streams are closed by the caller.
+-    public static QueueInputStream copy(final java.io.ByteArrayOutputStream outputStream) throws IOException {
++    public static QueueInputStream copy(final java.io.ByteArrayOutputStream outputStream) throws IOException {
+         Objects.requireNonNull(outputStream, ""outputStream"");
+         final QueueInputStream in = new QueueInputStream();
+-        final QueueOutputStream out = in.newQueueOutputStream();
+-        outputStream.writeTo(out);
++        outputStream.writeTo(in.newQueueOutputStream());
+         return in;
+     }","* @since 2.12
+      */
+     @SuppressWarnings(""resource"") // streams are closed by the caller.
+ <START>  public static QueueInputStream copy(final java.io.ByteArrayOutputStream outputStream) throws IOException {  <END>
+         Objects.requireNonNull(outputStream, ""outputStream"");
+         final QueueInputStream in = new QueueInputStream();
+        final QueueOutputStream out = in.newQueueOutputStream();
+        outputStream.writeTo(out);
+         return in;
+     }","* @since 2.12
+      */
+     @SuppressWarnings(""resource"") // streams are closed by the caller.
+-    public static QueueInputStream copy(final java.io.ByteArrayOutputStream outputStream) throws IOException {
++    public static QueueInputStream copy(final java.io.ByteArrayOutputStream outputStream) throws IOException {
+         Objects.requireNonNull(outputStream, ""outputStream"");
+         final QueueInputStream in = new QueueInputStream();
+-        final QueueOutputStream out = in.newQueueOutputStream();
+-        outputStream.writeTo(out);
++        outputStream.writeTo(in.newQueueOutputStream());
+         return in;
+     }",this pr test this path assertthrows ( ),this pr test this path assertthrows ( ),True,False,"* @since 2.12
+      */
+     @SuppressWarnings(""resource"") // streams are closed by the caller.
+ START public static QueueInputStream copy(final java.io.ByteArrayOutputStream outputStream) throws IOException { END
+         Objects.requireNonNull(outputStream, ""outputStream"");
+         final QueueInputStream in = new QueueInputStream();
+        final QueueOutputStream out = in.newQueueOutputStream();
+        outputStream.writeTo(out);
+         return in;
+     }"
+30,"[np.int64(252), np.int64(252)]","blame my weak eyes - could we introduce constants here, e.g. ""underscore""?","             return new Locale(str);
+         }
+        final String[] segments = str.contains(""-"")
+ START             ? str.split(""-"", -1) END 
+            : str.split(""_"", -1);
+         final String language = segments[0];
+         if (segments.length == 2) {
+             final String country = segments[1];","             return new Locale(str);
+         }
+-        final String[] segments = str.contains(""-"")
+-            ? str.split(""-"", -1)
+-            : str.split(""_"", -1);
++        final String[] segments = str.indexOf(UNDERSCORE) != -1
++            ? str.split(String.valueOf(UNDERSCORE), -1)
++            : str.split(String.valueOf(DASH), -1);
+         final String language = segments[0];
+         if (segments.length == 2) {
+             final String country = segments[1];","             return new Locale(str);
+         }
+        final String[] segments = str.contains(""-"")
+ START             ? str.split(""-"", -1) END 
+            : str.split(""_"", -1);
+         final String language = segments[0];
+         if (segments.length == 2) {
+             final String country = segments[1];","             return new Locale(str);
+         }
+-        final String[] segments = str.contains(""-"")
+-            ? str.split(""-"", -1)
+-            : str.split(""_"", -1);
++        final String[] segments = str.indexOf(UNDERSCORE) != -1
++            ? str.split(String.valueOf(UNDERSCORE), -1)
++            : str.split(String.valueOf(DASH), -1);
+         final String language = segments[0];
+         if (segments.length == 2) {
+             final String country = segments[1];",True,False,False,2021-11-08T17:18:53Z,"return new Locale(str);
+         }
+        final String[] segments = str.contains(""-"")
+ <START>  ? str.split(""-"", -1)  <END>
+            : str.split(""_"", -1);
+         final String language = segments[0];
+         if (segments.length == 2) {
+             final String country = segments[1];","return new Locale(str);
+         }
+-        final String[] segments = str.contains(""-"")
+-            ? str.split(""-"", -1)
+-            : str.split(""_"", -1);
++        final String[] segments = str.indexOf(UNDERSCORE) != -1
++            ? str.split(String.valueOf(UNDERSCORE), -1)
++            : str.split(String.valueOf(DASH), -1);
+         final String language = segments[0];
+         if (segments.length == 2) {
+             final String country = segments[1];","return new Locale(str);
+         }
+        final String[] segments = str.contains(""-"")
+ <START>  ? str.split(""-"", -1)  <END>
+            : str.split(""_"", -1);
+         final String language = segments[0];
+         if (segments.length == 2) {
+             final String country = segments[1];","return new Locale(str);
+         }
+-        final String[] segments = str.contains(""-"")
+-            ? str.split(""-"", -1)
+-            : str.split(""_"", -1);
++        final String[] segments = str.indexOf(UNDERSCORE) != -1
++            ? str.split(String.valueOf(UNDERSCORE), -1)
++            : str.split(String.valueOf(DASH), -1);
+         final String language = segments[0];
+         if (segments.length == 2) {
+             final String country = segments[1];",blame weak eyes - introduce constants e g underscore,blame weak eyes - introduce constants e g underscore,True,False,"return new Locale(str);
+         }
+        final String[] segments = str.contains(""-"")
+ START ? str.split(""-"", -1) END
+            : str.split(""_"", -1);
+         final String language = segments[0];
+         if (segments.length == 2) {
+             final String country = segments[1];"
+12,"[np.int64(97), np.int64(97)]","see above, missing test for null input using `assertthrows()`.","         assertEquals(0, in.available(), ""Not all bytes were read"");
+         assertEquals(inData.length, insize, ""Sizes differ"");
+         assertArrayEquals(inData, inData2, ""Content differs"");
+ START     } END 
+     /**
+      * Test Copying file > 2GB  - see issue# IO-84","         assertEquals(0, in.available(), ""Not all bytes were read"");
+         assertEquals(inData.length, insize, ""Sizes differ"");
+         assertArrayEquals(inData, inData2, ""Content differs"");
+-    }
++    }
++
++    @Test
++    public void testCopy_byteArrayOutputStreamToInputStream_nullOutputStream() {
++        assertThrows(NullPointerException.class, () -> IOUtils.copy(null));
++    }
+     /**
+      * Test Copying file > 2GB  - see issue# IO-84","         assertEquals(0, in.available(), ""Not all bytes were read"");
+         assertEquals(inData.length, insize, ""Sizes differ"");
+         assertArrayEquals(inData, inData2, ""Content differs"");
+ START     } END ","         assertEquals(0, in.available(), ""Not all bytes were read"");
+         assertEquals(inData.length, insize, ""Sizes differ"");
+         assertArrayEquals(inData, inData2, ""Content differs"");
+-    }
++    }
++
++    @Test
++    public void testCopy_byteArrayOutputStreamToInputStream_nullOutputStream() {
++        assertThrows(NullPointerException.class, () -> IOUtils.copy(null));
++    }",True,False,False,2021-10-16T18:14:26Z,"assertEquals(0, in.available(), ""Not all bytes were read"");
+         assertEquals(inData.length, insize, ""Sizes differ"");
+         assertArrayEquals(inData, inData2, ""Content differs"");
+ <START>  }  <END>
+     /**
+      * Test Copying file > 2GB - see issue# IO-84","assertEquals(0, in.available(), ""Not all bytes were read"");
+         assertEquals(inData.length, insize, ""Sizes differ"");
+         assertArrayEquals(inData, inData2, ""Content differs"");
+-    }
++    }
++
++    @Test
++    public void testCopy_byteArrayOutputStreamToInputStream_nullOutputStream() {
++        assertThrows(NullPointerException.class, () -> IOUtils.copy(null));
++    }
+     /**
+      * Test Copying file > 2GB - see issue# IO-84","assertEquals(0, in.available(), ""Not all bytes were read"");
+         assertEquals(inData.length, insize, ""Sizes differ"");
+         assertArrayEquals(inData, inData2, ""Content differs"");
+ <START>  }  <END>","assertEquals(0, in.available(), ""Not all bytes were read"");
+         assertEquals(inData.length, insize, ""Sizes differ"");
+         assertArrayEquals(inData, inData2, ""Content differs"");
+-    }
++    }
++
++    @Test
++    public void testCopy_byteArrayOutputStreamToInputStream_nullOutputStream() {
++        assertThrows(NullPointerException.class, () -> IOUtils.copy(null));
++    }",missing test for null input assertthrows ( ),missing test for null input assertthrows ( ),True,False,"assertEquals(0, in.available(), ""Not all bytes were read"");
+         assertEquals(inData.length, insize, ""Sizes differ"");
+         assertArrayEquals(inData, inData2, ""Content differs"");
+ START } END"
+31,"[np.int64(330), np.int64(330)]","we could use ""underscore"" or ""dash"" here or introduce a helper method, e.g. ""isdelimiter""? what do you think?","             throw new IllegalArgumentException(""Invalid locale format: "" + str);
+         }
+         final char ch0 = str.charAt(0);
+ START         if (ch0 == '_' || ch0 == '-') { END 
+             if (len < 3) {
+                 throw new IllegalArgumentException(""Invalid locale format: "" + str);
+             }","             throw new IllegalArgumentException(""Invalid locale format: "" + str);
+         }
+         final char ch0 = str.charAt(0);
+-        if (ch0 == '_' || ch0 == '-') {
++        if (ch0 == UNDERSCORE || ch0 == DASH) {
+             if (len < 3) {
+                 throw new IllegalArgumentException(""Invalid locale format: "" + str);
+             }","             throw new IllegalArgumentException(""Invalid locale format: "" + str);
+         }
+         final char ch0 = str.charAt(0);
+ START         if (ch0 == '_' || ch0 == '-') { END 
+             if (len < 3) {
+                 throw new IllegalArgumentException(""Invalid locale format: "" + str);
+             }","             throw new IllegalArgumentException(""Invalid locale format: "" + str);
+         }
+         final char ch0 = str.charAt(0);
+-        if (ch0 == '_' || ch0 == '-') {
++        if (ch0 == UNDERSCORE || ch0 == DASH) {
+             if (len < 3) {
+                 throw new IllegalArgumentException(""Invalid locale format: "" + str);
+             }",True,False,False,2021-11-08T17:18:53Z,"throw new IllegalArgumentException(""Invalid locale format: "" + str);
+         }
+         final char ch0 = str.charAt(0);
+ <START>  if (ch0 == '_' || ch0 == '-') {  <END>
+             if (len < 3) {
+                 throw new IllegalArgumentException(""Invalid locale format: "" + str);
+             }","throw new IllegalArgumentException(""Invalid locale format: "" + str);
+         }
+         final char ch0 = str.charAt(0);
+-        if (ch0 == '_' || ch0 == '-') {
++        if (ch0 == UNDERSCORE || ch0 == DASH) {
+             if (len < 3) {
+                 throw new IllegalArgumentException(""Invalid locale format: "" + str);
+             }","throw new IllegalArgumentException(""Invalid locale format: "" + str);
+         }
+         final char ch0 = str.charAt(0);
+ <START>  if (ch0 == '_' || ch0 == '-') {  <END>
+             if (len < 3) {
+                 throw new IllegalArgumentException(""Invalid locale format: "" + str);
+             }","throw new IllegalArgumentException(""Invalid locale format: "" + str);
+         }
+         final char ch0 = str.charAt(0);
+-        if (ch0 == '_' || ch0 == '-') {
++        if (ch0 == UNDERSCORE || ch0 == DASH) {
+             if (len < 3) {
+                 throw new IllegalArgumentException(""Invalid locale format: "" + str);
+             }",underscore dash introduce a helper method e g isdelimiter ? do,underscore dash introduce a helper method e g isdelimiter ? do,True,False,"throw new IllegalArgumentException(""Invalid locale format: "" + str);
+         }
+         final char ch0 = str.charAt(0);
+ START if (ch0 == '_' || ch0 == '-') { END
+             if (len < 3) {
+                 throw new IllegalArgumentException(""Invalid locale format: "" + str);
+             }"
+40,"[np.int64(3941), np.int64(3941)]","interesting, i thought instead of `deletechartat` using an `if` statement in the `for` above, to avoid adding the last `delimiter` would improve more the performance. for a follow-up discussion i think.","         if (endIndex - startIndex <= 0) {
+             return EMPTY;
+         }
+        final StringBuilder stringBuilder = new StringBuilder();
+         for (int i = startIndex; i < endIndex; i++) {
+             stringBuilder
+                     .append(array[i])
+                     .append(delimiter);
+         }
+        return stringBuilder
+                .deleteCharAt(stringBuilder.length() - 1)
+ START                 .toString(); END 
+     }
+     /**","         if (endIndex - startIndex <= 0) {
+             return EMPTY;
+         }
+-        final StringBuilder stringBuilder = new StringBuilder();
++        final StringBuilder stringBuilder = new StringBuilder(array.length * 5 + array.length - 1);
+         for (int i = startIndex; i < endIndex; i++) {
+             stringBuilder
+                     .append(array[i])
+                     .append(delimiter);
+         }
+-        return stringBuilder
+-                .deleteCharAt(stringBuilder.length() - 1)
+-                .toString();
++        return stringBuilder.substring(0, stringBuilder.length() - 1);
+     }
+     /**","         if (endIndex - startIndex <= 0) {
+             return EMPTY;
+         }
+        final StringBuilder stringBuilder = new StringBuilder();
+         for (int i = startIndex; i < endIndex; i++) {
+             stringBuilder
+                     .append(array[i])
+                     .append(delimiter);
+         }
+        return stringBuilder
+                .deleteCharAt(stringBuilder.length() - 1)
+ START                 .toString(); END 
+     }","         if (endIndex - startIndex <= 0) {
+             return EMPTY;
+         }
+-        final StringBuilder stringBuilder = new StringBuilder();
++        final StringBuilder stringBuilder = new StringBuilder(array.length * 5 + array.length - 1);
+         for (int i = startIndex; i < endIndex; i++) {
+             stringBuilder
+                     .append(array[i])
+                     .append(delimiter);
+         }
+-        return stringBuilder
+-                .deleteCharAt(stringBuilder.length() - 1)
+-                .toString();
++        return stringBuilder.substring(0, stringBuilder.length() - 1);
+     }",True,False,False,2021-11-19T09:45:23Z,"if (endIndex - startIndex <= 0) {
+             return EMPTY;
+         }
+        final StringBuilder stringBuilder = new StringBuilder();
+         for (int i = startIndex; i < endIndex; i++) {
+             stringBuilder
+                     .append(array[i])
+                     .append(delimiter);
+         }
+        return stringBuilder
+                .deleteCharAt(stringBuilder.length() - 1)
+ <START>  .toString();  <END>
+     }
+     /**","if (endIndex - startIndex <= 0) {
+             return EMPTY;
+         }
+-        final StringBuilder stringBuilder = new StringBuilder();
++        final StringBuilder stringBuilder = new StringBuilder(array.length * 5 + array.length - 1);
+         for (int i = startIndex; i < endIndex; i++) {
+             stringBuilder
+                     .append(array[i])
+                     .append(delimiter);
+         }
+-        return stringBuilder
+-                .deleteCharAt(stringBuilder.length() - 1)
+-                .toString();
++        return stringBuilder.substring(0, stringBuilder.length() - 1);
+     }
+     /**","if (endIndex - startIndex <= 0) {
+             return EMPTY;
+         }
+        final StringBuilder stringBuilder = new StringBuilder();
+         for (int i = startIndex; i < endIndex; i++) {
+             stringBuilder
+                     .append(array[i])
+                     .append(delimiter);
+         }
+        return stringBuilder
+                .deleteCharAt(stringBuilder.length() - 1)
+ <START>  .toString();  <END>
+     }","if (endIndex - startIndex <= 0) {
+             return EMPTY;
+         }
+-        final StringBuilder stringBuilder = new StringBuilder();
++        final StringBuilder stringBuilder = new StringBuilder(array.length * 5 + array.length - 1);
+         for (int i = startIndex; i < endIndex; i++) {
+             stringBuilder
+                     .append(array[i])
+                     .append(delimiter);
+         }
+-        return stringBuilder
+-                .deleteCharAt(stringBuilder.length() - 1)
+-                .toString();
++        return stringBuilder.substring(0, stringBuilder.length() - 1);
+     }",interesting i thought instead of deletechartat if statement in the for to avoid adding the delimiter improve more the performance for a follow - discussion i,interesting i thought instead of deletechartat if statement in the for to avoid adding the delimiter improve more the performance for a follow - discussion i,True,False,"if (endIndex - startIndex <= 0) {
+             return EMPTY;
+         }
+        final StringBuilder stringBuilder = new StringBuilder();
+         for (int i = startIndex; i < endIndex; i++) {
+             stringBuilder
+                     .append(array[i])
+                     .append(delimiter);
+         }
+        return stringBuilder
+                .deleteCharAt(stringBuilder.length() - 1)
+ START .toString(); END
+     }"
+15,"[np.int64(86), np.int64(86)]","here, using the fqcn is required since this test class imports `org.apache.commons.io.output.bytearrayoutputstream`.","     @SuppressWarnings(""resource"") // 'in' is deliberately not closed
+     @Test
+     public void testCopy_byteArrayOutputStreamToInputStream() throws Exception {
+ START         final java.io.ByteArrayOutputStream out = new java.io.ByteArrayOutputStream(); END 
+         out.write(inData);
+         final InputStream in = IOUtils.copy(out);","     @SuppressWarnings(""resource"") // 'in' is deliberately not closed
+     @Test
+     public void testCopy_byteArrayOutputStreamToInputStream() throws Exception {
+-        final java.io.ByteArrayOutputStream out = new java.io.ByteArrayOutputStream();
++        final java.io.ByteArrayOutputStream out = new java.io.ByteArrayOutputStream();
+         out.write(inData);
+         final InputStream in = IOUtils.copy(out);","     @SuppressWarnings(""resource"") // 'in' is deliberately not closed
+     @Test
+     public void testCopy_byteArrayOutputStreamToInputStream() throws Exception {
+ START         final java.io.ByteArrayOutputStream out = new java.io.ByteArrayOutputStream(); END 
+         out.write(inData);
+         final InputStream in = IOUtils.copy(out);","     @SuppressWarnings(""resource"") // 'in' is deliberately not closed
+     @Test
+     public void testCopy_byteArrayOutputStreamToInputStream() throws Exception {
+-        final java.io.ByteArrayOutputStream out = new java.io.ByteArrayOutputStream();
++        final java.io.ByteArrayOutputStream out = new java.io.ByteArrayOutputStream();
+         out.write(inData);
+         final InputStream in = IOUtils.copy(out);",True,False,False,2021-10-16T18:14:26Z,"@SuppressWarnings(""resource"") // 'in' is deliberately not closed
+     @Test
+     public void testCopy_byteArrayOutputStreamToInputStream() throws Exception {
+ <START>  final java.io.ByteArrayOutputStream out = new java.io.ByteArrayOutputStream();  <END>
+         out.write(inData);
+         final InputStream in = IOUtils.copy(out);","@SuppressWarnings(""resource"") // 'in' is deliberately not closed
+     @Test
+     public void testCopy_byteArrayOutputStreamToInputStream() throws Exception {
+-        final java.io.ByteArrayOutputStream out = new java.io.ByteArrayOutputStream();
++        final java.io.ByteArrayOutputStream out = new java.io.ByteArrayOutputStream();
+         out.write(inData);
+         final InputStream in = IOUtils.copy(out);","@SuppressWarnings(""resource"") // 'in' is deliberately not closed
+     @Test
+     public void testCopy_byteArrayOutputStreamToInputStream() throws Exception {
+ <START>  final java.io.ByteArrayOutputStream out = new java.io.ByteArrayOutputStream();  <END>
+         out.write(inData);
+         final InputStream in = IOUtils.copy(out);","@SuppressWarnings(""resource"") // 'in' is deliberately not closed
+     @Test
+     public void testCopy_byteArrayOutputStreamToInputStream() throws Exception {
+-        final java.io.ByteArrayOutputStream out = new java.io.ByteArrayOutputStream();
++        final java.io.ByteArrayOutputStream out = new java.io.ByteArrayOutputStream();
+         out.write(inData);
+         final InputStream in = IOUtils.copy(out);",the fqcn is required this test class imports org apache commons io output bytearrayoutputstream,the fqcn is required this test class imports org apache commons io output bytearrayoutputstream,True,False,"@SuppressWarnings(""resource"") // 'in' is deliberately not closed
+     @Test
+     public void testCopy_byteArrayOutputStreamToInputStream() throws Exception {
+ START final java.io.ByteArrayOutputStream out = new java.io.ByteArrayOutputStream(); END
+         out.write(inData);
+         final InputStream in = IOUtils.copy(out);"
+52,"[np.int64(171), np.int64(171)]","if you make the default value the empty array and the setter does not allow excludefieldnames to be null, then you do not need this check? it might be better this way though, not sure.","             return false;
+         }
+         if (Modifier.isStatic(field.getModifiers())) {
+ START             return false; END 
+         }
+         if (this.excludeFieldNames != null
+                 && Arrays.binarySearch(this.excludeFieldNames, field.getName()) >= 0) {","             return false;
+         }
+         if (Modifier.isStatic(field.getModifiers())) {
+-            return false;
++            return false;
+         }
+         if (this.excludeFieldNames != null
+                 && Arrays.binarySearch(this.excludeFieldNames, field.getName()) >= 0) {","             return false;
+         }
+         if (Modifier.isStatic(field.getModifiers())) {
+ START             return false; END 
+         }
+         if (this.excludeFieldNames != null
+                 && Arrays.binarySearch(this.excludeFieldNames, field.getName()) >= 0) {","             return false;
+         }
+         if (Modifier.isStatic(field.getModifiers())) {
+-            return false;
++            return false;
+         }
+         if (this.excludeFieldNames != null
+                 && Arrays.binarySearch(this.excludeFieldNames, field.getName()) >= 0) {",True,False,False,2022-04-06T14:16:29Z,"return false;
+         }
+         if (Modifier.isStatic(field.getModifiers())) {
+ <START>  return false;  <END>
+         }
+         if (this.excludeFieldNames != null
+                 && Arrays.binarySearch(this.excludeFieldNames, field.getName()) >= 0) {","return false;
+         }
+         if (Modifier.isStatic(field.getModifiers())) {
+-            return false;
++            return false;
+         }
+         if (this.excludeFieldNames != null
+                 && Arrays.binarySearch(this.excludeFieldNames, field.getName()) >= 0) {","return false;
+         }
+         if (Modifier.isStatic(field.getModifiers())) {
+ <START>  return false;  <END>
+         }
+         if (this.excludeFieldNames != null
+                 && Arrays.binarySearch(this.excludeFieldNames, field.getName()) >= 0) {","return false;
+         }
+         if (Modifier.isStatic(field.getModifiers())) {
+-            return false;
++            return false;
+         }
+         if (this.excludeFieldNames != null
+                 && Arrays.binarySearch(this.excludeFieldNames, field.getName()) >= 0) {",if the default value the empty array and the setter allow excludefieldnames to null do need this check ? it this,if the default value the empty array and the setter allow excludefieldnames to null do need this check ? it this,True,False,"return false;
+         }
+         if (Modifier.isStatic(field.getModifiers())) {
+ START return false; END
+         }
+         if (this.excludeFieldNames != null
+                 && Arrays.binarySearch(this.excludeFieldNames, field.getName()) >= 0) {"
+28,"[np.int64(60), np.int64(60)]","this one is not really necessary @wodencafe ? `initwriter` is already private, so making it `final` won't change much for internal/external devs?","      * @return the initialized writer
+      * @throws IOException if an error occurs
+      */
+ START     private static final Writer initWriter(final File file, final Object encoding, final boolean append) throws IOException { END 
+         Objects.requireNonNull(file, ""file"");
+         OutputStream stream = null;
+         final boolean fileExistedAlready = file.exists();","      * @return the initialized writer
+      * @throws IOException if an error occurs
+      */
+-    private static final Writer initWriter(final File file, final Object encoding, final boolean append) throws IOException {
++    private static Writer initWriter(final File file, final Object encoding, final boolean append) throws IOException {
+         Objects.requireNonNull(file, ""file"");
+         OutputStream stream = null;
+         final boolean fileExistedAlready = file.exists();","      * @return the initialized writer
+      * @throws IOException if an error occurs
+      */
+ START     private static final Writer initWriter(final File file, final Object encoding, final boolean append) throws IOException { END 
+         Objects.requireNonNull(file, ""file"");
+         OutputStream stream = null;
+         final boolean fileExistedAlready = file.exists();","      * @return the initialized writer
+      * @throws IOException if an error occurs
+      */
+-    private static final Writer initWriter(final File file, final Object encoding, final boolean append) throws IOException {
++    private static Writer initWriter(final File file, final Object encoding, final boolean append) throws IOException {
+         Objects.requireNonNull(file, ""file"");
+         OutputStream stream = null;
+         final boolean fileExistedAlready = file.exists();",True,False,False,2021-11-04T21:12:54Z,"* @return the initialized writer
+      * @throws IOException if an error occurs
+      */
+ <START>  private static final Writer initWriter(final File file, final Object encoding, final boolean append) throws IOException {  <END>
+         Objects.requireNonNull(file, ""file"");
+         OutputStream stream = null;
+         final boolean fileExistedAlready = file.exists();","* @return the initialized writer
+      * @throws IOException if an error occurs
+      */
+-    private static final Writer initWriter(final File file, final Object encoding, final boolean append) throws IOException {
++    private static Writer initWriter(final File file, final Object encoding, final boolean append) throws IOException {
+         Objects.requireNonNull(file, ""file"");
+         OutputStream stream = null;
+         final boolean fileExistedAlready = file.exists();","* @return the initialized writer
+      * @throws IOException if an error occurs
+      */
+ <START>  private static final Writer initWriter(final File file, final Object encoding, final boolean append) throws IOException {  <END>
+         Objects.requireNonNull(file, ""file"");
+         OutputStream stream = null;
+         final boolean fileExistedAlready = file.exists();","* @return the initialized writer
+      * @throws IOException if an error occurs
+      */
+-    private static final Writer initWriter(final File file, final Object encoding, final boolean append) throws IOException {
++    private static Writer initWriter(final File file, final Object encoding, final boolean append) throws IOException {
+         Objects.requireNonNull(file, ""file"");
+         OutputStream stream = null;
+         final boolean fileExistedAlready = file.exists();",this is necessary ? initwriter is private making it final won t change for internal / external devs,this is necessary ? initwriter is private making it final won t change for internal / external devs,True,False,"* @return the initialized writer
+      * @throws IOException if an error occurs
+      */
+ START private static final Writer initWriter(final File file, final Object encoding, final boolean append) throws IOException { END
+         Objects.requireNonNull(file, ""file"");
+         OutputStream stream = null;
+         final boolean fileExistedAlready = file.exists();"
+43,"[np.int64(254), np.int64(254)]",does it matter that dash is tested before underscore?,"             return new Locale(str);
+         }
+        final String[] segments = str.indexOf(DASH) != -1
+ START             ? str.split(String.valueOf(DASH), -1) END 
+            : str.split(String.valueOf(UNDERSCORE), -1);
+         final String language = segments[0];
+         if (segments.length == 2) {
+             final String country = segments[1];","             return new Locale(str);
+         }
+-        final String[] segments = str.indexOf(DASH) != -1
+-            ? str.split(String.valueOf(DASH), -1)
+-            : str.split(String.valueOf(UNDERSCORE), -1);
++        final String[] segments = str.indexOf(UNDERSCORE) != -1
++            ? str.split(String.valueOf(UNDERSCORE), -1)
++            : str.split(String.valueOf(DASH), -1);
+         final String language = segments[0];
+         if (segments.length == 2) {
+             final String country = segments[1];","             return new Locale(str);
+         }
+        final String[] segments = str.indexOf(DASH) != -1
+ START             ? str.split(String.valueOf(DASH), -1) END 
+            : str.split(String.valueOf(UNDERSCORE), -1);
+         final String language = segments[0];
+         if (segments.length == 2) {
+             final String country = segments[1];","             return new Locale(str);
+         }
+-        final String[] segments = str.indexOf(DASH) != -1
+-            ? str.split(String.valueOf(DASH), -1)
+-            : str.split(String.valueOf(UNDERSCORE), -1);
++        final String[] segments = str.indexOf(UNDERSCORE) != -1
++            ? str.split(String.valueOf(UNDERSCORE), -1)
++            : str.split(String.valueOf(DASH), -1);
+         final String language = segments[0];
+         if (segments.length == 2) {
+             final String country = segments[1];",True,False,False,2021-12-06T15:59:28Z,"return new Locale(str);
+         }
+        final String[] segments = str.indexOf(DASH) != -1
+ <START>  ? str.split(String.valueOf(DASH), -1)  <END>
+            : str.split(String.valueOf(UNDERSCORE), -1);
+         final String language = segments[0];
+         if (segments.length == 2) {
+             final String country = segments[1];","return new Locale(str);
+         }
+-        final String[] segments = str.indexOf(DASH) != -1
+-            ? str.split(String.valueOf(DASH), -1)
+-            : str.split(String.valueOf(UNDERSCORE), -1);
++        final String[] segments = str.indexOf(UNDERSCORE) != -1
++            ? str.split(String.valueOf(UNDERSCORE), -1)
++            : str.split(String.valueOf(DASH), -1);
+         final String language = segments[0];
+         if (segments.length == 2) {
+             final String country = segments[1];","return new Locale(str);
+         }
+        final String[] segments = str.indexOf(DASH) != -1
+ <START>  ? str.split(String.valueOf(DASH), -1)  <END>
+            : str.split(String.valueOf(UNDERSCORE), -1);
+         final String language = segments[0];
+         if (segments.length == 2) {
+             final String country = segments[1];","return new Locale(str);
+         }
+-        final String[] segments = str.indexOf(DASH) != -1
+-            ? str.split(String.valueOf(DASH), -1)
+-            : str.split(String.valueOf(UNDERSCORE), -1);
++        final String[] segments = str.indexOf(UNDERSCORE) != -1
++            ? str.split(String.valueOf(UNDERSCORE), -1)
++            : str.split(String.valueOf(DASH), -1);
+         final String language = segments[0];
+         if (segments.length == 2) {
+             final String country = segments[1];",it matter that dash is tested underscore,it matter that dash is tested underscore,True,False,"return new Locale(str);
+         }
+        final String[] segments = str.indexOf(DASH) != -1
+ START ? str.split(String.valueOf(DASH), -1) END
+            : str.split(String.valueOf(UNDERSCORE), -1);
+         final String language = segments[0];
+         if (segments.length == 2) {
+             final String country = segments[1];"
+7,"[np.int64(1021), np.int64(1021)]",not sure if this is correct. needs analysis. was this change made by a tool in intellij or eclipse?,"             final Class<?> acls;
+             if (interfaceIndex >= allInterfaces.size()) {
+                 acls = allSuperclasses.get(superClassIndex++);
+ START             } else if ((superClassIndex >= allSuperclasses.size()) || !(superClassIndex < interfaceIndex)) { END 
+                 acls = allInterfaces.get(interfaceIndex++);
+             } else {
+                 acls = allSuperclasses.get(superClassIndex++);","             final Class<?> acls;
+             if (interfaceIndex >= allInterfaces.size()) {
+                 acls = allSuperclasses.get(superClassIndex++);
+-            } else if ((superClassIndex >= allSuperclasses.size()) || !(superClassIndex < interfaceIndex)) {
++            } else if ((superClassIndex >= allSuperclasses.size()) || !(superClassIndex < interfaceIndex)) {
+                 acls = allInterfaces.get(interfaceIndex++);
+             } else {
+                 acls = allSuperclasses.get(superClassIndex++);","             final Class<?> acls;
+             if (interfaceIndex >= allInterfaces.size()) {
+                 acls = allSuperclasses.get(superClassIndex++);
+ START             } else if ((superClassIndex >= allSuperclasses.size()) || !(superClassIndex < interfaceIndex)) { END 
+                 acls = allInterfaces.get(interfaceIndex++);
+             } else {
+                 acls = allSuperclasses.get(superClassIndex++);","             final Class<?> acls;
+             if (interfaceIndex >= allInterfaces.size()) {
+                 acls = allSuperclasses.get(superClassIndex++);
+-            } else if ((superClassIndex >= allSuperclasses.size()) || !(superClassIndex < interfaceIndex)) {
++            } else if ((superClassIndex >= allSuperclasses.size()) || !(superClassIndex < interfaceIndex)) {
+                 acls = allInterfaces.get(interfaceIndex++);
+             } else {
+                 acls = allSuperclasses.get(superClassIndex++);",True,False,False,2021-10-08T19:31:26Z,"final Class<?> acls;
+             if (interfaceIndex >= allInterfaces.size()) {
+                 acls = allSuperclasses.get(superClassIndex++);
+ <START>  } else if ((superClassIndex >= allSuperclasses.size()) || !(superClassIndex < interfaceIndex)) {  <END>
+                 acls = allInterfaces.get(interfaceIndex++);
+             } else {
+                 acls = allSuperclasses.get(superClassIndex++);","final Class<?> acls;
+             if (interfaceIndex >= allInterfaces.size()) {
+                 acls = allSuperclasses.get(superClassIndex++);
+-            } else if ((superClassIndex >= allSuperclasses.size()) || !(superClassIndex < interfaceIndex)) {
++            } else if ((superClassIndex >= allSuperclasses.size()) || !(superClassIndex < interfaceIndex)) {
+                 acls = allInterfaces.get(interfaceIndex++);
+             } else {
+                 acls = allSuperclasses.get(superClassIndex++);","final Class<?> acls;
+             if (interfaceIndex >= allInterfaces.size()) {
+                 acls = allSuperclasses.get(superClassIndex++);
+ <START>  } else if ((superClassIndex >= allSuperclasses.size()) || !(superClassIndex < interfaceIndex)) {  <END>
+                 acls = allInterfaces.get(interfaceIndex++);
+             } else {
+                 acls = allSuperclasses.get(superClassIndex++);","final Class<?> acls;
+             if (interfaceIndex >= allInterfaces.size()) {
+                 acls = allSuperclasses.get(superClassIndex++);
+-            } else if ((superClassIndex >= allSuperclasses.size()) || !(superClassIndex < interfaceIndex)) {
++            } else if ((superClassIndex >= allSuperclasses.size()) || !(superClassIndex < interfaceIndex)) {
+                 acls = allInterfaces.get(interfaceIndex++);
+             } else {
+                 acls = allSuperclasses.get(superClassIndex++);",if this is correct needs analysis this change a tool in intellij eclipse,if this is correct needs analysis this change a tool in intellij eclipse,True,False,"final Class<?> acls;
+             if (interfaceIndex >= allInterfaces.size()) {
+                 acls = allSuperclasses.get(superClassIndex++);
+ START } else if ((superClassIndex >= allSuperclasses.size()) || !(superClassIndex < interfaceIndex)) { END
+                 acls = allInterfaces.get(interfaceIndex++);
+             } else {
+                 acls = allSuperclasses.get(superClassIndex++);"
+11,"[np.int64(1012), np.int64(1012)]",the `out` variable is not needed imo.,"         Objects.requireNonNull(outputStream, ""outputStream"");
+         final QueueInputStream in = new QueueInputStream();
+ START         final QueueOutputStream out = in.newQueueOutputStream(); END 
+        outputStream.writeTo(out);
+         return in;
+     }","         Objects.requireNonNull(outputStream, ""outputStream"");
+         final QueueInputStream in = new QueueInputStream();
+-        final QueueOutputStream out = in.newQueueOutputStream();
+-        outputStream.writeTo(out);
++        outputStream.writeTo(in.newQueueOutputStream());
+         return in;
+     }","         Objects.requireNonNull(outputStream, ""outputStream"");
+         final QueueInputStream in = new QueueInputStream();
+ START         final QueueOutputStream out = in.newQueueOutputStream(); END 
+        outputStream.writeTo(out);
+         return in;
+     }","         Objects.requireNonNull(outputStream, ""outputStream"");
+         final QueueInputStream in = new QueueInputStream();
+-        final QueueOutputStream out = in.newQueueOutputStream();
+-        outputStream.writeTo(out);
++        outputStream.writeTo(in.newQueueOutputStream());
+         return in;
+     }",True,False,False,2021-10-16T18:14:26Z,"Objects.requireNonNull(outputStream, ""outputStream"");
+         final QueueInputStream in = new QueueInputStream();
+ <START>  final QueueOutputStream out = in.newQueueOutputStream();  <END>
+        outputStream.writeTo(out);
+         return in;
+     }","Objects.requireNonNull(outputStream, ""outputStream"");
+         final QueueInputStream in = new QueueInputStream();
+-        final QueueOutputStream out = in.newQueueOutputStream();
+-        outputStream.writeTo(out);
++        outputStream.writeTo(in.newQueueOutputStream());
+         return in;
+     }","Objects.requireNonNull(outputStream, ""outputStream"");
+         final QueueInputStream in = new QueueInputStream();
+ <START>  final QueueOutputStream out = in.newQueueOutputStream();  <END>
+        outputStream.writeTo(out);
+         return in;
+     }","Objects.requireNonNull(outputStream, ""outputStream"");
+         final QueueInputStream in = new QueueInputStream();
+-        final QueueOutputStream out = in.newQueueOutputStream();
+-        outputStream.writeTo(out);
++        outputStream.writeTo(in.newQueueOutputStream());
+         return in;
+     }",the out variable is needed imo,the out variable is needed imo,True,False,"Objects.requireNonNull(outputStream, ""outputStream"");
+         final QueueInputStream in = new QueueInputStream();
+ START final QueueOutputStream out = in.newQueueOutputStream(); END
+        outputStream.writeTo(out);
+         return in;
+     }"
+14,"[np.int64(1007), np.int64(1007)]",import bytearrayoutputstream instead of using a fqcn.,"      * @throws IOException if an I/O error occurs.
+      * @since 2.12
+      */
+ START     @SuppressWarnings(""resource"") // streams are closed by the caller. END 
+     public static QueueInputStream copy(final java.io.ByteArrayOutputStream outputStream) throws IOException {
+         Objects.requireNonNull(outputStream, ""outputStream"");
+         final QueueInputStream in = new QueueInputStream();
+        final QueueOutputStream out = in.newQueueOutputStream();
+        outputStream.writeTo(out);
+         return in;
+     }","      * @throws IOException if an I/O error occurs.
+      * @since 2.12
+      */
+-    @SuppressWarnings(""resource"") // streams are closed by the caller.
++    @SuppressWarnings(""resource"") // streams are closed by the caller.
+     public static QueueInputStream copy(final java.io.ByteArrayOutputStream outputStream) throws IOException {
+         Objects.requireNonNull(outputStream, ""outputStream"");
+         final QueueInputStream in = new QueueInputStream();
+-        final QueueOutputStream out = in.newQueueOutputStream();
+-        outputStream.writeTo(out);
++        outputStream.writeTo(in.newQueueOutputStream());
+         return in;
+     }","      * @throws IOException if an I/O error occurs.
+      * @since 2.12
+      */
+ START     @SuppressWarnings(""resource"") // streams are closed by the caller. END 
+     public static QueueInputStream copy(final java.io.ByteArrayOutputStream outputStream) throws IOException {
+         Objects.requireNonNull(outputStream, ""outputStream"");
+         final QueueInputStream in = new QueueInputStream();
+        final QueueOutputStream out = in.newQueueOutputStream();
+        outputStream.writeTo(out);
+         return in;
+     }","      * @throws IOException if an I/O error occurs.
+      * @since 2.12
+      */
+-    @SuppressWarnings(""resource"") // streams are closed by the caller.
++    @SuppressWarnings(""resource"") // streams are closed by the caller.
+     public static QueueInputStream copy(final java.io.ByteArrayOutputStream outputStream) throws IOException {
+         Objects.requireNonNull(outputStream, ""outputStream"");
+         final QueueInputStream in = new QueueInputStream();
+-        final QueueOutputStream out = in.newQueueOutputStream();
+-        outputStream.writeTo(out);
++        outputStream.writeTo(in.newQueueOutputStream());
+         return in;
+     }",True,False,False,2021-10-16T18:14:26Z,"* @throws IOException if an I/O error occurs.
+      * @since 2.12
+      */
+ <START>  @SuppressWarnings(""resource"") // streams are closed by the caller.  <END>
+     public static QueueInputStream copy(final java.io.ByteArrayOutputStream outputStream) throws IOException {
+         Objects.requireNonNull(outputStream, ""outputStream"");
+         final QueueInputStream in = new QueueInputStream();
+        final QueueOutputStream out = in.newQueueOutputStream();
+        outputStream.writeTo(out);
+         return in;
+     }","* @throws IOException if an I/O error occurs.
+      * @since 2.12
+      */
+-    @SuppressWarnings(""resource"") // streams are closed by the caller.
++    @SuppressWarnings(""resource"") // streams are closed by the caller.
+     public static QueueInputStream copy(final java.io.ByteArrayOutputStream outputStream) throws IOException {
+         Objects.requireNonNull(outputStream, ""outputStream"");
+         final QueueInputStream in = new QueueInputStream();
+-        final QueueOutputStream out = in.newQueueOutputStream();
+-        outputStream.writeTo(out);
++        outputStream.writeTo(in.newQueueOutputStream());
+         return in;
+     }","* @throws IOException if an I/O error occurs.
+      * @since 2.12
+      */
+ <START>  @SuppressWarnings(""resource"") // streams are closed by the caller.  <END>
+     public static QueueInputStream copy(final java.io.ByteArrayOutputStream outputStream) throws IOException {
+         Objects.requireNonNull(outputStream, ""outputStream"");
+         final QueueInputStream in = new QueueInputStream();
+        final QueueOutputStream out = in.newQueueOutputStream();
+        outputStream.writeTo(out);
+         return in;
+     }","* @throws IOException if an I/O error occurs.
+      * @since 2.12
+      */
+-    @SuppressWarnings(""resource"") // streams are closed by the caller.
++    @SuppressWarnings(""resource"") // streams are closed by the caller.
+     public static QueueInputStream copy(final java.io.ByteArrayOutputStream outputStream) throws IOException {
+         Objects.requireNonNull(outputStream, ""outputStream"");
+         final QueueInputStream in = new QueueInputStream();
+-        final QueueOutputStream out = in.newQueueOutputStream();
+-        outputStream.writeTo(out);
++        outputStream.writeTo(in.newQueueOutputStream());
+         return in;
+     }",import bytearrayoutputstream instead of a fqcn,import bytearrayoutputstream instead of a fqcn,True,False,"* @throws IOException if an I/O error occurs.
+      * @since 2.12
+      */
+ START @SuppressWarnings(""resource"") // streams are closed by the caller. END
+     public static QueueInputStream copy(final java.io.ByteArrayOutputStream outputStream) throws IOException {
+         Objects.requireNonNull(outputStream, ""outputStream"");
+         final QueueInputStream in = new QueueInputStream();
+        final QueueOutputStream out = in.newQueueOutputStream();
+        outputStream.writeTo(out);
+         return in;
+     }"

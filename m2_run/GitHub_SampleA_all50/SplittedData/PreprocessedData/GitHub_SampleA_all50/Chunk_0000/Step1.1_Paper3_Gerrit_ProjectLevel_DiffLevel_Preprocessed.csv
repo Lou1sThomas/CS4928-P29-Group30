@@ -1,0 +1,3701 @@
+Record_id,references,comment,old,new,old_wo_comment,new_wo_comment,Diff_is_tagged,owner_comment,comment_to_comment,creation_time,old_tags,new_clean
+0,"[np.int64(1728), np.int64(1728)]","this is not true, an instant never has a timezone. unfortunately this method now goes on the forbiddenapi list of lucene because of this.
+instant is by definition not related to any time zone. toepochmillies returns a unix timestamp.","      */
+     public static boolean isFileOlder(final File file, final Date date) {
+         Objects.requireNonNull(date, ""date"");
+ START         return isFileOlder(file, date.getTime()); END 
+     }
+     //-----------------------------------------------------------------------","      */
+     public static boolean isFileOlder(final File file, final Date date) {
+         Objects.requireNonNull(date, ""date"");
+-        return isFileOlder(file, date.getTime());
++        return isFileOlder(file, date.getTime());
+     }
+     //-----------------------------------------------------------------------",,,True,False,False,2020-09-23T07:54:21Z,"*/
+     public static boolean isFileOlder(final File file, final Date date) {
+         Objects.requireNonNull(date, ""date"");
+ <START>  return isFileOlder(file, date.getTime());  <END>
+     }
+     //-----------------------------------------------------------------------","*/
+     public static boolean isFileOlder(final File file, final Date date) {
+         Objects.requireNonNull(date, ""date"");
+-        return isFileOlder(file, date.getTime());
++        return isFileOlder(file, date.getTime());
+     }
+     //-----------------------------------------------------------------------"
+1,"[np.int64(1728), np.int64(1728)]","the big risk of this forward/backward transformation is now that at the dst changes hour, the calculation is wrong: during dst change the same local date time exists 2 times. when you convert the instant to a local time (after local time went backwards due to dst change) and then you convert the local time back, you're off by an hour.
+the correct way here is to just call toepochmillies(). please do not convert forward backwards from to/local time.","      */
+     public static boolean isFileOlder(final File file, final Date date) {
+         Objects.requireNonNull(date, ""date"");
+ START         return isFileOlder(file, date.getTime()); END 
+     }
+     //-----------------------------------------------------------------------","      */
+     public static boolean isFileOlder(final File file, final Date date) {
+         Objects.requireNonNull(date, ""date"");
+-        return isFileOlder(file, date.getTime());
++        return isFileOlder(file, date.getTime());
+     }
+     //-----------------------------------------------------------------------",,,True,False,False,2020-09-23T07:58:54Z,"*/
+     public static boolean isFileOlder(final File file, final Date date) {
+         Objects.requireNonNull(date, ""date"");
+ <START>  return isFileOlder(file, date.getTime());  <END>
+     }
+     //-----------------------------------------------------------------------","*/
+     public static boolean isFileOlder(final File file, final Date date) {
+         Objects.requireNonNull(date, ""date"");
+-        return isFileOlder(file, date.getTime());
++        return isFileOlder(file, date.getTime());
+     }
+     //-----------------------------------------------------------------------"
+2,"[np.int64(1728), np.int64(1728)]","because of this the whole methods added here are not useable in international application, except the one taking an explicit zoneid. the one which would have been correct (the one taking an instant) was corrupted by this forward/backward transformation.","      */
+     public static boolean isFileOlder(final File file, final Date date) {
+         Objects.requireNonNull(date, ""date"");
+ START         return isFileOlder(file, date.getTime()); END 
+     }
+     //-----------------------------------------------------------------------","      */
+     public static boolean isFileOlder(final File file, final Date date) {
+         Objects.requireNonNull(date, ""date"");
+-        return isFileOlder(file, date.getTime());
++        return isFileOlder(file, date.getTime());
+     }
+     //-----------------------------------------------------------------------",,,True,False,False,2020-09-23T08:01:53Z,"*/
+     public static boolean isFileOlder(final File file, final Date date) {
+         Objects.requireNonNull(date, ""date"");
+ <START>  return isFileOlder(file, date.getTime());  <END>
+     }
+     //-----------------------------------------------------------------------","*/
+     public static boolean isFileOlder(final File file, final Date date) {
+         Objects.requireNonNull(date, ""date"");
+-        return isFileOlder(file, date.getTime());
++        return isFileOlder(file, date.getTime());
+     }
+     //-----------------------------------------------------------------------"
+3,"[np.int64(27), np.int64(27)]",please don't use star imports.," import java.math.BigInteger;
+ import java.math.RoundingMode;
+ START import static org.junit.jupiter.api.Assertions.*; END 
+ /**
+  * Unit tests {@link org.apache.commons.lang3.math.NumberUtils}."," import java.math.BigInteger;
+ import java.math.RoundingMode;
+-import static org.junit.jupiter.api.Assertions.*;
++import org.junit.jupiter.api.Test;
+ /**
+  * Unit tests {@link org.apache.commons.lang3.math.NumberUtils}."," import java.math.BigInteger;
+ import java.math.RoundingMode;
+ START import static org.junit.jupiter.api.Assertions.*; END "," import java.math.BigInteger;
+ import java.math.RoundingMode;
+-import static org.junit.jupiter.api.Assertions.*;
++import org.junit.jupiter.api.Test;",True,False,False,2020-10-25T14:00:54Z,"import java.math.BigInteger;
+ import java.math.RoundingMode;
+ <START>  import static org.junit.jupiter.api.Assertions.*;  <END>
+ /**
+  * Unit tests {@link org.apache.commons.lang3.math.NumberUtils}.","import java.math.BigInteger;
+ import java.math.RoundingMode;
+-import static org.junit.jupiter.api.Assertions.*;
++import org.junit.jupiter.api.Test;
+ /**
+  * Unit tests {@link org.apache.commons.lang3.math.NumberUtils}."
+4,"[np.int64(27), np.int64(27)]",fixed.," import java.math.BigInteger;
+ import java.math.RoundingMode;
+ START import static org.junit.jupiter.api.Assertions.*; END 
+ /**
+  * Unit tests {@link org.apache.commons.lang3.math.NumberUtils}."," import java.math.BigInteger;
+ import java.math.RoundingMode;
+-import static org.junit.jupiter.api.Assertions.*;
++import org.junit.jupiter.api.Test;
+ /**
+  * Unit tests {@link org.apache.commons.lang3.math.NumberUtils}."," import java.math.BigInteger;
+ import java.math.RoundingMode;
+ START import static org.junit.jupiter.api.Assertions.*; END "," import java.math.BigInteger;
+ import java.math.RoundingMode;
+-import static org.junit.jupiter.api.Assertions.*;
++import org.junit.jupiter.api.Test;",True,True,False,2020-10-25T14:05:28Z,"import java.math.BigInteger;
+ import java.math.RoundingMode;
+ <START>  import static org.junit.jupiter.api.Assertions.*;  <END>
+ /**
+  * Unit tests {@link org.apache.commons.lang3.math.NumberUtils}.","import java.math.BigInteger;
+ import java.math.RoundingMode;
+-import static org.junit.jupiter.api.Assertions.*;
++import org.junit.jupiter.api.Test;
+ /**
+  * Unit tests {@link org.apache.commons.lang3.math.NumberUtils}."
+5,"[np.int64(314), np.int64(314)]",a -> array," 
+     @Test
+     public void testContainsFloatNaN() {
+ START         float[] a = new float[] { Float.NEGATIVE_INFINITY, Float.NaN, Float.POSITIVE_INFINITY }; END 
+        assertTrue(ArrayUtils.contains(a, Float.POSITIVE_INFINITY));
+        assertTrue(ArrayUtils.contains(a, Float.NEGATIVE_INFINITY));
+        assertTrue(ArrayUtils.contains(a, Float.NaN));
+     }
+     @Test"," 
+     @Test
+     public void testContainsFloatNaN() {
+-        float[] a = new float[] { Float.NEGATIVE_INFINITY, Float.NaN, Float.POSITIVE_INFINITY };
+-        assertTrue(ArrayUtils.contains(a, Float.POSITIVE_INFINITY));
+-        assertTrue(ArrayUtils.contains(a, Float.NEGATIVE_INFINITY));
+-        assertTrue(ArrayUtils.contains(a, Float.NaN));
++        float[] array = new float[] { Float.NEGATIVE_INFINITY, Float.NaN, Float.POSITIVE_INFINITY };
++        assertTrue(ArrayUtils.contains(array, Float.POSITIVE_INFINITY));
++        assertTrue(ArrayUtils.contains(array, Float.NEGATIVE_INFINITY));
++        assertTrue(ArrayUtils.contains(array, Float.NaN));
+     }
+     @Test"," 
+     @Test
+     public void testContainsFloatNaN() {
+ START         float[] a = new float[] { Float.NEGATIVE_INFINITY, Float.NaN, Float.POSITIVE_INFINITY }; END 
+        assertTrue(ArrayUtils.contains(a, Float.POSITIVE_INFINITY));
+        assertTrue(ArrayUtils.contains(a, Float.NEGATIVE_INFINITY));
+        assertTrue(ArrayUtils.contains(a, Float.NaN));
+     }
+     @Test"," 
+     @Test
+     public void testContainsFloatNaN() {
+-        float[] a = new float[] { Float.NEGATIVE_INFINITY, Float.NaN, Float.POSITIVE_INFINITY };
+-        assertTrue(ArrayUtils.contains(a, Float.POSITIVE_INFINITY));
+-        assertTrue(ArrayUtils.contains(a, Float.NEGATIVE_INFINITY));
+-        assertTrue(ArrayUtils.contains(a, Float.NaN));
++        float[] array = new float[] { Float.NEGATIVE_INFINITY, Float.NaN, Float.POSITIVE_INFINITY };
++        assertTrue(ArrayUtils.contains(array, Float.POSITIVE_INFINITY));
++        assertTrue(ArrayUtils.contains(array, Float.NEGATIVE_INFINITY));
++        assertTrue(ArrayUtils.contains(array, Float.NaN));
+     }
+     @Test",True,False,False,2020-11-15T20:00:17Z,"@Test
+     public void testContainsFloatNaN() {
+ <START>  float[] a = new float[] { Float.NEGATIVE_INFINITY, Float.NaN, Float.POSITIVE_INFINITY };  <END>
+        assertTrue(ArrayUtils.contains(a, Float.POSITIVE_INFINITY));
+        assertTrue(ArrayUtils.contains(a, Float.NEGATIVE_INFINITY));
+        assertTrue(ArrayUtils.contains(a, Float.NaN));
+     }
+     @Test","@Test
+     public void testContainsFloatNaN() {
+-        float[] a = new float[] { Float.NEGATIVE_INFINITY, Float.NaN, Float.POSITIVE_INFINITY };
+-        assertTrue(ArrayUtils.contains(a, Float.POSITIVE_INFINITY));
+-        assertTrue(ArrayUtils.contains(a, Float.NEGATIVE_INFINITY));
+-        assertTrue(ArrayUtils.contains(a, Float.NaN));
++        float[] array = new float[] { Float.NEGATIVE_INFINITY, Float.NaN, Float.POSITIVE_INFINITY };
++        assertTrue(ArrayUtils.contains(array, Float.POSITIVE_INFINITY));
++        assertTrue(ArrayUtils.contains(array, Float.NEGATIVE_INFINITY));
++        assertTrue(ArrayUtils.contains(array, Float.NaN));
+     }
+     @Test"
+6,"[np.int64(314), np.int64(314)]",changed," 
+     @Test
+     public void testContainsFloatNaN() {
+ START         float[] a = new float[] { Float.NEGATIVE_INFINITY, Float.NaN, Float.POSITIVE_INFINITY }; END 
+        assertTrue(ArrayUtils.contains(a, Float.POSITIVE_INFINITY));
+        assertTrue(ArrayUtils.contains(a, Float.NEGATIVE_INFINITY));
+        assertTrue(ArrayUtils.contains(a, Float.NaN));
+     }
+     @Test"," 
+     @Test
+     public void testContainsFloatNaN() {
+-        float[] a = new float[] { Float.NEGATIVE_INFINITY, Float.NaN, Float.POSITIVE_INFINITY };
+-        assertTrue(ArrayUtils.contains(a, Float.POSITIVE_INFINITY));
+-        assertTrue(ArrayUtils.contains(a, Float.NEGATIVE_INFINITY));
+-        assertTrue(ArrayUtils.contains(a, Float.NaN));
++        float[] array = new float[] { Float.NEGATIVE_INFINITY, Float.NaN, Float.POSITIVE_INFINITY };
++        assertTrue(ArrayUtils.contains(array, Float.POSITIVE_INFINITY));
++        assertTrue(ArrayUtils.contains(array, Float.NEGATIVE_INFINITY));
++        assertTrue(ArrayUtils.contains(array, Float.NaN));
+     }
+     @Test"," 
+     @Test
+     public void testContainsFloatNaN() {
+ START         float[] a = new float[] { Float.NEGATIVE_INFINITY, Float.NaN, Float.POSITIVE_INFINITY }; END 
+        assertTrue(ArrayUtils.contains(a, Float.POSITIVE_INFINITY));
+        assertTrue(ArrayUtils.contains(a, Float.NEGATIVE_INFINITY));
+        assertTrue(ArrayUtils.contains(a, Float.NaN));
+     }
+     @Test"," 
+     @Test
+     public void testContainsFloatNaN() {
+-        float[] a = new float[] { Float.NEGATIVE_INFINITY, Float.NaN, Float.POSITIVE_INFINITY };
+-        assertTrue(ArrayUtils.contains(a, Float.POSITIVE_INFINITY));
+-        assertTrue(ArrayUtils.contains(a, Float.NEGATIVE_INFINITY));
+-        assertTrue(ArrayUtils.contains(a, Float.NaN));
++        float[] array = new float[] { Float.NEGATIVE_INFINITY, Float.NaN, Float.POSITIVE_INFINITY };
++        assertTrue(ArrayUtils.contains(array, Float.POSITIVE_INFINITY));
++        assertTrue(ArrayUtils.contains(array, Float.NEGATIVE_INFINITY));
++        assertTrue(ArrayUtils.contains(array, Float.NaN));
+     }
+     @Test",True,True,False,2020-11-15T20:00:17Z,"@Test
+     public void testContainsFloatNaN() {
+ <START>  float[] a = new float[] { Float.NEGATIVE_INFINITY, Float.NaN, Float.POSITIVE_INFINITY };  <END>
+        assertTrue(ArrayUtils.contains(a, Float.POSITIVE_INFINITY));
+        assertTrue(ArrayUtils.contains(a, Float.NEGATIVE_INFINITY));
+        assertTrue(ArrayUtils.contains(a, Float.NaN));
+     }
+     @Test","@Test
+     public void testContainsFloatNaN() {
+-        float[] a = new float[] { Float.NEGATIVE_INFINITY, Float.NaN, Float.POSITIVE_INFINITY };
+-        assertTrue(ArrayUtils.contains(a, Float.POSITIVE_INFINITY));
+-        assertTrue(ArrayUtils.contains(a, Float.NEGATIVE_INFINITY));
+-        assertTrue(ArrayUtils.contains(a, Float.NaN));
++        float[] array = new float[] { Float.NEGATIVE_INFINITY, Float.NaN, Float.POSITIVE_INFINITY };
++        assertTrue(ArrayUtils.contains(array, Float.POSITIVE_INFINITY));
++        assertTrue(ArrayUtils.contains(array, Float.NEGATIVE_INFINITY));
++        assertTrue(ArrayUtils.contains(array, Float.NaN));
+     }
+     @Test"
+11,"[np.int64(42), np.int64(42)]","i don't agree with deprecating these apis, different versions of different ides raise different warnings depending on your preferred configuration of said ide. let's keep this pr simpler and lighter, we can always add deprecation later if it is truly warranted.","      *             the underlying input stream is never closed.
+      *             Use {@link #wrap(InputStream)} instead.
+      */
+ START     @Deprecated END 
+     public CloseShieldInputStream(final InputStream in) {
+         super(in);
+     }","      *             the underlying input stream is never closed.
+      *             Use {@link #wrap(InputStream)} instead.
+      */
+-    @Deprecated
++    @Deprecated
+     public CloseShieldInputStream(final InputStream in) {
+         super(in);
+     }","      *             the underlying input stream is never closed.
+      *             Use {@link #wrap(InputStream)} instead.
+      */
+ START     @Deprecated END 
+     public CloseShieldInputStream(final InputStream in) {
+         super(in);
+     }","      *             the underlying input stream is never closed.
+      *             Use {@link #wrap(InputStream)} instead.
+      */
+-    @Deprecated
++    @Deprecated
+     public CloseShieldInputStream(final InputStream in) {
+         super(in);
+     }",True,False,False,2020-12-08T19:28:47Z,"* the underlying input stream is never closed.
+      * Use {@link #wrap(InputStream)} instead.
+      */
+ <START>  @Deprecated  <END>
+     public CloseShieldInputStream(final InputStream in) {
+         super(in);
+     }","* the underlying input stream is never closed.
+      * Use {@link #wrap(InputStream)} instead.
+      */
+-    @Deprecated
++    @Deprecated
+     public CloseShieldInputStream(final InputStream in) {
+         super(in);
+     }"
+12,"[np.int64(61), np.int64(61)]",`@param in underlying input stream` -> `@param inputstream the input stream to wrap`,"      * Creates a proxy that shields the given input stream from being
+      * closed.
+      *
+ START      * @param in underlying input stream END 
+      * @return the created proxy
+      * @since 2.9.0
+      */
+    public static CloseShieldInputStream wrap(final InputStream in) {
+        return new CloseShieldInputStream(in);
+     }
+ }","      * Creates a proxy that shields the given input stream from being
+      * closed.
+      *
+-     * @param in underlying input stream
++     * @param inputStream the input stream to wrap
+      * @return the created proxy
+      * @since 2.9.0
+      */
+-    public static CloseShieldInputStream wrap(final InputStream in) {
+-        return new CloseShieldInputStream(in);
++    public static CloseShieldInputStream wrap(final InputStream inputStream) {
++        return new CloseShieldInputStream(inputStream);
+     }
+ }","      * Creates a proxy that shields the given input stream from being
+      * closed.
+      *
+ START      * @param in underlying input stream END 
+      * @return the created proxy
+      * @since 2.9.0
+      */
+    public static CloseShieldInputStream wrap(final InputStream in) {
+        return new CloseShieldInputStream(in);
+     }
+ }","      * Creates a proxy that shields the given input stream from being
+      * closed.
+      *
+-     * @param in underlying input stream
++     * @param inputStream the input stream to wrap
+      * @return the created proxy
+      * @since 2.9.0
+      */
+-    public static CloseShieldInputStream wrap(final InputStream in) {
+-        return new CloseShieldInputStream(in);
++    public static CloseShieldInputStream wrap(final InputStream inputStream) {
++        return new CloseShieldInputStream(inputStream);
+     }
+ }",True,False,True,2020-12-08T19:28:47Z,"* Creates a proxy that shields the given input stream from being
+      * closed.
+      *
+ <START>  * @param in underlying input stream  <END>
+      * @return the created proxy
+      * @since 2.9.0
+      */
+    public static CloseShieldInputStream wrap(final InputStream in) {
+        return new CloseShieldInputStream(in);
+     }
+ }","* Creates a proxy that shields the given input stream from being
+      * closed.
+      *
+-     * @param in underlying input stream
++     * @param inputStream the input stream to wrap
+      * @return the created proxy
+      * @since 2.9.0
+      */
+-    public static CloseShieldInputStream wrap(final InputStream in) {
+-        return new CloseShieldInputStream(in);
++    public static CloseShieldInputStream wrap(final InputStream inputStream) {
++        return new CloseShieldInputStream(inputStream);
+     }
+ }"
+13,"[np.int64(65), np.int64(65)]","as see other javadoc comments, in this case `in` -> `reader`","      * Creates a proxy that shields the given reader from being
+      * closed.
+      *
+     * @param in underlying reader
+      * @return the created proxy
+      * @since 2.9.0
+      */
+ START     public static CloseShieldReader wrap(final Reader in) { END 
+        return new CloseShieldReader(in);
+     }
+ }","      * Creates a proxy that shields the given reader from being
+      * closed.
+      *
+-     * @param in underlying reader
++     * @param reader the reader to wrap
+      * @return the created proxy
+      * @since 2.9.0
+      */
+-    public static CloseShieldReader wrap(final Reader in) {
+-        return new CloseShieldReader(in);
++    public static CloseShieldReader wrap(final Reader reader) {
++        return new CloseShieldReader(reader);
+     }
+ }","      * Creates a proxy that shields the given reader from being
+      * closed.
+      *
+     * @param in underlying reader
+      * @return the created proxy
+      * @since 2.9.0
+      */
+ START     public static CloseShieldReader wrap(final Reader in) { END 
+        return new CloseShieldReader(in);
+     }
+ }","      * Creates a proxy that shields the given reader from being
+      * closed.
+      *
+-     * @param in underlying reader
++     * @param reader the reader to wrap
+      * @return the created proxy
+      * @since 2.9.0
+      */
+-    public static CloseShieldReader wrap(final Reader in) {
+-        return new CloseShieldReader(in);
++    public static CloseShieldReader wrap(final Reader reader) {
++        return new CloseShieldReader(reader);
+     }
+ }",True,False,False,2020-12-08T19:28:47Z,"* Creates a proxy that shields the given reader from being
+      * closed.
+      *
+     * @param in underlying reader
+      * @return the created proxy
+      * @since 2.9.0
+      */
+ <START>  public static CloseShieldReader wrap(final Reader in) {  <END>
+        return new CloseShieldReader(in);
+     }
+ }","* Creates a proxy that shields the given reader from being
+      * closed.
+      *
+-     * @param in underlying reader
++     * @param reader the reader to wrap
+      * @return the created proxy
+      * @since 2.9.0
+      */
+-    public static CloseShieldReader wrap(final Reader in) {
+-        return new CloseShieldReader(in);
++    public static CloseShieldReader wrap(final Reader reader) {
++        return new CloseShieldReader(reader);
+     }
+ }"
+14,"[np.int64(50), np.int64(50)]",nice use of a new junit 5 api! 👍,"     public void testClose() throws IOException {
+         shielded.close();
+         verify(original, never()).close();
+ START         assertThrows(IOException.class, () -> shielded.write('x'), ""write(c)""); END 
+         original.write('y');
+         assertEquals(1, original.getBuilder().length());
+         assertEquals('y', original.toString().charAt(0));","     public void testClose() throws IOException {
+         shielded.close();
+         verify(original, never()).close();
+-        assertThrows(IOException.class, () -> shielded.write('x'), ""write(c)"");
++        assertThrows(IOException.class, () -> shielded.write('x'), ""write(c)"");
+         original.write('y');
+         assertEquals(1, original.getBuilder().length());
+         assertEquals('y', original.toString().charAt(0));","     public void testClose() throws IOException {
+         shielded.close();
+         verify(original, never()).close();
+ START         assertThrows(IOException.class, () -> shielded.write('x'), ""write(c)""); END 
+         original.write('y');
+         assertEquals(1, original.getBuilder().length());
+         assertEquals('y', original.toString().charAt(0));","     public void testClose() throws IOException {
+         shielded.close();
+         verify(original, never()).close();
+-        assertThrows(IOException.class, () -> shielded.write('x'), ""write(c)"");
++        assertThrows(IOException.class, () -> shielded.write('x'), ""write(c)"");
+         original.write('y');
+         assertEquals(1, original.getBuilder().length());
+         assertEquals('y', original.toString().charAt(0));",True,False,False,2020-12-08T19:28:47Z,"public void testClose() throws IOException {
+         shielded.close();
+         verify(original, never()).close();
+ <START>  assertThrows(IOException.class, () -> shielded.write('x'), ""write(c)"");  <END>
+         original.write('y');
+         assertEquals(1, original.getBuilder().length());
+         assertEquals('y', original.toString().charAt(0));","public void testClose() throws IOException {
+         shielded.close();
+         verify(original, never()).close();
+-        assertThrows(IOException.class, () -> shielded.write('x'), ""write(c)"");
++        assertThrows(IOException.class, () -> shielded.write('x'), ""write(c)"");
+         original.write('y');
+         assertEquals(1, original.getBuilder().length());
+         assertEquals('y', original.toString().charAt(0));"
+26,"[np.int64(42), np.int64(42)]","i feel that without deprecating the constructors, this pr adds no real value. people that currently use the constructors will keep doing so because they see no reason to change their code, and new users of the classes may only get confused if there are two ways to do the same thing. they'll probably end up using the constructors too because that's a character shorter (`new` vs `.wrap`).
+
+my thought was that deprecating the constructors will make current users think about whether or not they have closed the underlying streams, even if their ides don't warn them. new users will chose the wrapper method because the alternative is deprecated.
+
+the only downside to deprecating the constructors that i can see is that current users that don't have their ides setup to warn about unclosed streams will get warnings where there were none first, but as i said, perhaps they will think about whether or not their streams are properly closed somewhere else.","      *             the underlying input stream is never closed.
+      *             Use {@link #wrap(InputStream)} instead.
+      */
+ START     @Deprecated END 
+     public CloseShieldInputStream(final InputStream in) {
+         super(in);
+     }","      *             the underlying input stream is never closed.
+      *             Use {@link #wrap(InputStream)} instead.
+      */
+-    @Deprecated
++    @Deprecated
+     public CloseShieldInputStream(final InputStream in) {
+         super(in);
+     }","      *             the underlying input stream is never closed.
+      *             Use {@link #wrap(InputStream)} instead.
+      */
+ START     @Deprecated END 
+     public CloseShieldInputStream(final InputStream in) {
+         super(in);
+     }","      *             the underlying input stream is never closed.
+      *             Use {@link #wrap(InputStream)} instead.
+      */
+-    @Deprecated
++    @Deprecated
+     public CloseShieldInputStream(final InputStream in) {
+         super(in);
+     }",True,True,False,2020-12-08T19:37:32Z,"* the underlying input stream is never closed.
+      * Use {@link #wrap(InputStream)} instead.
+      */
+ <START>  @Deprecated  <END>
+     public CloseShieldInputStream(final InputStream in) {
+         super(in);
+     }","* the underlying input stream is never closed.
+      * Use {@link #wrap(InputStream)} instead.
+      */
+-    @Deprecated
++    @Deprecated
+     public CloseShieldInputStream(final InputStream in) {
+         super(in);
+     }"
+27,"[np.int64(543), np.int64(543)]","hi @arturobernalg 
+
+thank you for your pr. 
+
+ps: it's harder to deal with a pr like this because it mixes a change with some clean ups (-1 -> not_found) so i am not sure where the new test is without trolling through all the noise :-(
+
+why is the number in parentheses? if this is a test for the actual bug fix, then you should add a sanity check to validates that the char is indeed bogus.
+
+ty.","         assertEquals(4, StringUtils.indexOfIgnoreCase(""aabaabaa"", ""AB"", 2));
+         assertEquals(4, StringUtils.indexOfIgnoreCase(""aabaabaa"", ""AB"", 3));
+         assertEquals(4, StringUtils.indexOfIgnoreCase(""aabaabaa"", ""AB"", 4));
+        assertEquals(NOT_FOUND, StringUtils.indexOfIgnoreCase(""aabaabaa"", ""AB"", 5));
+        assertEquals(NOT_FOUND, StringUtils.indexOfIgnoreCase(""aabaabaa"", ""AB"", 6));
+        assertEquals(NOT_FOUND, StringUtils.indexOfIgnoreCase(""aabaabaa"", ""AB"", 7));
+        assertEquals(NOT_FOUND, StringUtils.indexOfIgnoreCase(""aabaabaa"", ""AB"", 8));
+         assertEquals(1, StringUtils.indexOfIgnoreCase(""aab"", ""AB"", 1));
+         assertEquals(5, StringUtils.indexOfIgnoreCase(""aabaabaa"", """", 5));
+        assertEquals(NOT_FOUND, StringUtils.indexOfIgnoreCase(""ab"", ""AAB"", 0));
+        assertEquals(NOT_FOUND, StringUtils.indexOfIgnoreCase(""aab"", ""AAB"", 1));
+        assertEquals(NOT_FOUND, StringUtils.indexOfIgnoreCase(""abc"", """", 9));
+     }
+     @Test
+     public void testLastIndexOf_char() {
+        assertEquals(NOT_FOUND, StringUtils.lastIndexOf(null, ' '));
+        assertEquals(NOT_FOUND, StringUtils.lastIndexOf("""", ' '));
+         assertEquals(7, StringUtils.lastIndexOf(""aabaabaa"", 'a'));
+         assertEquals(5, StringUtils.lastIndexOf(""aabaabaa"", 'b'));
+         assertEquals(5, StringUtils.lastIndexOf(new StringBuilder(""aabaabaa""), 'b'));
+        char[] charArray = new char[9];
+        charArray[0] = '[';
+        charArray[1] = '&';
+        charArray[7] = '{';
+        charArray[3] = '.';
+        charArray[4] = 'c';
+        charArray[5] = '.';
+        charArray[6] = '0';
+        charArray[7] = 'r';
+        charArray[8] = 'o';
+        CharBuffer charBuffer = CharBuffer.wrap(charArray);
+ START         assertEquals(NOT_FOUND, StringUtils.lastIndexOf (charBuffer, (-1738), 982)); END 
+     }
+     @Test
+     public void testLastIndexOf_charInt() {
+        assertEquals(NOT_FOUND, StringUtils.lastIndexOf(null, ' ', 0));
+        assertEquals(NOT_FOUND, StringUtils.lastIndexOf(null, ' ', -1));
+        assertEquals(NOT_FOUND, StringUtils.lastIndexOf("""", ' ', 0));
+        assertEquals(NOT_FOUND, StringUtils.lastIndexOf("""", ' ', -1));
+         assertEquals(7, StringUtils.lastIndexOf(""aabaabaa"", 'a', 8));
+         assertEquals(5, StringUtils.lastIndexOf(""aabaabaa"", 'b', 8));
+         assertEquals(2, StringUtils.lastIndexOf(""aabaabaa"", 'b', 3));
+         assertEquals(5, StringUtils.lastIndexOf(""aabaabaa"", 'b', 9));
+        assertEquals(NOT_FOUND, StringUtils.lastIndexOf(""aabaabaa"", 'b', -1));
+         assertEquals(0, StringUtils.lastIndexOf(""aabaabaa"", 'a', 0));
+         assertEquals(2, StringUtils.lastIndexOf(new StringBuilder(""aabaabaa""), 'b', 2));
+        CharBuffer charBuffer = CharBuffer.allocate(93);
+        CharSequence charSequence = CharSequenceUtils.subSequence(charBuffer, 93);
+        assertEquals(NOT_FOUND, StringUtils.indexOf(charSequence, 553, (-1392)));
+        assertEquals(NOT_FOUND, StringUtils.indexOf(charBuffer, (-1), (-1392)));
+         //LANG-1300 addition test
+         final int CODE_POINT = 0x2070E;
+         StringBuilder builder = new StringBuilder();","         assertEquals(4, StringUtils.indexOfIgnoreCase(""aabaabaa"", ""AB"", 2));
+         assertEquals(4, StringUtils.indexOfIgnoreCase(""aabaabaa"", ""AB"", 3));
+         assertEquals(4, StringUtils.indexOfIgnoreCase(""aabaabaa"", ""AB"", 4));
+-        assertEquals(NOT_FOUND, StringUtils.indexOfIgnoreCase(""aabaabaa"", ""AB"", 5));
+-        assertEquals(NOT_FOUND, StringUtils.indexOfIgnoreCase(""aabaabaa"", ""AB"", 6));
+-        assertEquals(NOT_FOUND, StringUtils.indexOfIgnoreCase(""aabaabaa"", ""AB"", 7));
+-        assertEquals(NOT_FOUND, StringUtils.indexOfIgnoreCase(""aabaabaa"", ""AB"", 8));
++        assertEquals(-1, StringUtils.indexOfIgnoreCase(""aabaabaa"", ""AB"", 5));
++        assertEquals(-1, StringUtils.indexOfIgnoreCase(""aabaabaa"", ""AB"", 6));
++        assertEquals(-1, StringUtils.indexOfIgnoreCase(""aabaabaa"", ""AB"", 7));
++        assertEquals(-1, StringUtils.indexOfIgnoreCase(""aabaabaa"", ""AB"", 8));
+         assertEquals(1, StringUtils.indexOfIgnoreCase(""aab"", ""AB"", 1));
+         assertEquals(5, StringUtils.indexOfIgnoreCase(""aabaabaa"", """", 5));
+-        assertEquals(NOT_FOUND, StringUtils.indexOfIgnoreCase(""ab"", ""AAB"", 0));
+-        assertEquals(NOT_FOUND, StringUtils.indexOfIgnoreCase(""aab"", ""AAB"", 1));
+-        assertEquals(NOT_FOUND, StringUtils.indexOfIgnoreCase(""abc"", """", 9));
++        assertEquals(-1, StringUtils.indexOfIgnoreCase(""ab"", ""AAB"", 0));
++        assertEquals(-1, StringUtils.indexOfIgnoreCase(""aab"", ""AAB"", 1));
++        assertEquals(-1, StringUtils.indexOfIgnoreCase(""abc"", """", 9));
+     }
+     @Test
+     public void testLastIndexOf_char() {
+-        assertEquals(NOT_FOUND, StringUtils.lastIndexOf(null, ' '));
+-        assertEquals(NOT_FOUND, StringUtils.lastIndexOf("""", ' '));
++        assertEquals(-1, StringUtils.lastIndexOf(null, ' '));
++        assertEquals(-1, StringUtils.lastIndexOf("""", ' '));
+         assertEquals(7, StringUtils.lastIndexOf(""aabaabaa"", 'a'));
+         assertEquals(5, StringUtils.lastIndexOf(""aabaabaa"", 'b'));
+         assertEquals(5, StringUtils.lastIndexOf(new StringBuilder(""aabaabaa""), 'b'));
+-        char[] charArray = new char[9];
+-        charArray[0] = '[';
+-        charArray[1] = '&';
+-        charArray[7] = '{';
+-        charArray[3] = '.';
+-        charArray[4] = 'c';
+-        charArray[5] = '.';
+-        charArray[6] = '0';
+-        charArray[7] = 'r';
+-        charArray[8] = 'o';
+-        CharBuffer charBuffer = CharBuffer.wrap(charArray);
+-        assertEquals(NOT_FOUND, StringUtils.lastIndexOf (charBuffer, (-1738), 982));
+     }
+     @Test
+     public void testLastIndexOf_charInt() {
+-        assertEquals(NOT_FOUND, StringUtils.lastIndexOf(null, ' ', 0));
+-        assertEquals(NOT_FOUND, StringUtils.lastIndexOf(null, ' ', -1));
+-        assertEquals(NOT_FOUND, StringUtils.lastIndexOf("""", ' ', 0));
+-        assertEquals(NOT_FOUND, StringUtils.lastIndexOf("""", ' ', -1));
++        assertEquals(-1, StringUtils.lastIndexOf(null, ' ', 0));
++        assertEquals(-1, StringUtils.lastIndexOf(null, ' ', -1));
++        assertEquals(-1, StringUtils.lastIndexOf("""", ' ', 0));
++        assertEquals(-1, StringUtils.lastIndexOf("""", ' ', -1));
+         assertEquals(7, StringUtils.lastIndexOf(""aabaabaa"", 'a', 8));
+         assertEquals(5, StringUtils.lastIndexOf(""aabaabaa"", 'b', 8));
+         assertEquals(2, StringUtils.lastIndexOf(""aabaabaa"", 'b', 3));
+         assertEquals(5, StringUtils.lastIndexOf(""aabaabaa"", 'b', 9));
+-        assertEquals(NOT_FOUND, StringUtils.lastIndexOf(""aabaabaa"", 'b', -1));
++        assertEquals(-1, StringUtils.lastIndexOf(""aabaabaa"", 'b', -1));
+         assertEquals(0, StringUtils.lastIndexOf(""aabaabaa"", 'a', 0));
+         assertEquals(2, StringUtils.lastIndexOf(new StringBuilder(""aabaabaa""), 'b', 2));
+-        CharBuffer charBuffer = CharBuffer.allocate(93);
+-        CharSequence charSequence = CharSequenceUtils.subSequence(charBuffer, 93);
+-        assertEquals(NOT_FOUND, StringUtils.indexOf(charSequence, 553, (-1392)));
+-        assertEquals(NOT_FOUND, StringUtils.indexOf(charBuffer, (-1), (-1392)));
++
+         //LANG-1300 addition test
+         final int CODE_POINT = 0x2070E;
+         StringBuilder builder = new StringBuilder();",,,True,False,False,2020-12-23T16:26:27Z,"assertEquals(4, StringUtils.indexOfIgnoreCase(""aabaabaa"", ""AB"", 2));
+         assertEquals(4, StringUtils.indexOfIgnoreCase(""aabaabaa"", ""AB"", 3));
+         assertEquals(4, StringUtils.indexOfIgnoreCase(""aabaabaa"", ""AB"", 4));
+        assertEquals(NOT_FOUND, StringUtils.indexOfIgnoreCase(""aabaabaa"", ""AB"", 5));
+        assertEquals(NOT_FOUND, StringUtils.indexOfIgnoreCase(""aabaabaa"", ""AB"", 6));
+        assertEquals(NOT_FOUND, StringUtils.indexOfIgnoreCase(""aabaabaa"", ""AB"", 7));
+        assertEquals(NOT_FOUND, StringUtils.indexOfIgnoreCase(""aabaabaa"", ""AB"", 8));
+         assertEquals(1, StringUtils.indexOfIgnoreCase(""aab"", ""AB"", 1));
+         assertEquals(5, StringUtils.indexOfIgnoreCase(""aabaabaa"", """", 5));
+        assertEquals(NOT_FOUND, StringUtils.indexOfIgnoreCase(""ab"", ""AAB"", 0));
+        assertEquals(NOT_FOUND, StringUtils.indexOfIgnoreCase(""aab"", ""AAB"", 1));
+        assertEquals(NOT_FOUND, StringUtils.indexOfIgnoreCase(""abc"", """", 9));
+     }
+     @Test
+     public void testLastIndexOf_char() {
+        assertEquals(NOT_FOUND, StringUtils.lastIndexOf(null, ' '));
+        assertEquals(NOT_FOUND, StringUtils.lastIndexOf("""", ' '));
+         assertEquals(7, StringUtils.lastIndexOf(""aabaabaa"", 'a'));
+         assertEquals(5, StringUtils.lastIndexOf(""aabaabaa"", 'b'));
+         assertEquals(5, StringUtils.lastIndexOf(new StringBuilder(""aabaabaa""), 'b'));
+        char[] charArray = new char[9];
+        charArray[0] = '[';
+        charArray[1] = '&';
+        charArray[7] = '{';
+        charArray[3] = '.';
+        charArray[4] = 'c';
+        charArray[5] = '.';
+        charArray[6] = '0';
+        charArray[7] = 'r';
+        charArray[8] = 'o';
+        CharBuffer charBuffer = CharBuffer.wrap(charArray);
+ <START>  assertEquals(NOT_FOUND, StringUtils.lastIndexOf (charBuffer, (-1738), 982));  <END>
+     }
+     @Test
+     public void testLastIndexOf_charInt() {
+        assertEquals(NOT_FOUND, StringUtils.lastIndexOf(null, ' ', 0));
+        assertEquals(NOT_FOUND, StringUtils.lastIndexOf(null, ' ', -1));
+        assertEquals(NOT_FOUND, StringUtils.lastIndexOf("""", ' ', 0));
+        assertEquals(NOT_FOUND, StringUtils.lastIndexOf("""", ' ', -1));
+         assertEquals(7, StringUtils.lastIndexOf(""aabaabaa"", 'a', 8));
+         assertEquals(5, StringUtils.lastIndexOf(""aabaabaa"", 'b', 8));
+         assertEquals(2, StringUtils.lastIndexOf(""aabaabaa"", 'b', 3));
+         assertEquals(5, StringUtils.lastIndexOf(""aabaabaa"", 'b', 9));
+        assertEquals(NOT_FOUND, StringUtils.lastIndexOf(""aabaabaa"", 'b', -1));
+         assertEquals(0, StringUtils.lastIndexOf(""aabaabaa"", 'a', 0));
+         assertEquals(2, StringUtils.lastIndexOf(new StringBuilder(""aabaabaa""), 'b', 2));
+        CharBuffer charBuffer = CharBuffer.allocate(93);
+        CharSequence charSequence = CharSequenceUtils.subSequence(charBuffer, 93);
+        assertEquals(NOT_FOUND, StringUtils.indexOf(charSequence, 553, (-1392)));
+        assertEquals(NOT_FOUND, StringUtils.indexOf(charBuffer, (-1), (-1392)));
+         //LANG-1300 addition test
+         final int CODE_POINT = 0x2070E;
+         StringBuilder builder = new StringBuilder();","assertEquals(4, StringUtils.indexOfIgnoreCase(""aabaabaa"", ""AB"", 2));
+         assertEquals(4, StringUtils.indexOfIgnoreCase(""aabaabaa"", ""AB"", 3));
+         assertEquals(4, StringUtils.indexOfIgnoreCase(""aabaabaa"", ""AB"", 4));
+-        assertEquals(NOT_FOUND, StringUtils.indexOfIgnoreCase(""aabaabaa"", ""AB"", 5));
+-        assertEquals(NOT_FOUND, StringUtils.indexOfIgnoreCase(""aabaabaa"", ""AB"", 6));
+-        assertEquals(NOT_FOUND, StringUtils.indexOfIgnoreCase(""aabaabaa"", ""AB"", 7));
+-        assertEquals(NOT_FOUND, StringUtils.indexOfIgnoreCase(""aabaabaa"", ""AB"", 8));
++        assertEquals(-1, StringUtils.indexOfIgnoreCase(""aabaabaa"", ""AB"", 5));
++        assertEquals(-1, StringUtils.indexOfIgnoreCase(""aabaabaa"", ""AB"", 6));
++        assertEquals(-1, StringUtils.indexOfIgnoreCase(""aabaabaa"", ""AB"", 7));
++        assertEquals(-1, StringUtils.indexOfIgnoreCase(""aabaabaa"", ""AB"", 8));
+         assertEquals(1, StringUtils.indexOfIgnoreCase(""aab"", ""AB"", 1));
+         assertEquals(5, StringUtils.indexOfIgnoreCase(""aabaabaa"", """", 5));
+-        assertEquals(NOT_FOUND, StringUtils.indexOfIgnoreCase(""ab"", ""AAB"", 0));
+-        assertEquals(NOT_FOUND, StringUtils.indexOfIgnoreCase(""aab"", ""AAB"", 1));
+-        assertEquals(NOT_FOUND, StringUtils.indexOfIgnoreCase(""abc"", """", 9));
++        assertEquals(-1, StringUtils.indexOfIgnoreCase(""ab"", ""AAB"", 0));
++        assertEquals(-1, StringUtils.indexOfIgnoreCase(""aab"", ""AAB"", 1));
++        assertEquals(-1, StringUtils.indexOfIgnoreCase(""abc"", """", 9));
+     }
+     @Test
+     public void testLastIndexOf_char() {
+-        assertEquals(NOT_FOUND, StringUtils.lastIndexOf(null, ' '));
+-        assertEquals(NOT_FOUND, StringUtils.lastIndexOf("""", ' '));
++        assertEquals(-1, StringUtils.lastIndexOf(null, ' '));
++        assertEquals(-1, StringUtils.lastIndexOf("""", ' '));
+         assertEquals(7, StringUtils.lastIndexOf(""aabaabaa"", 'a'));
+         assertEquals(5, StringUtils.lastIndexOf(""aabaabaa"", 'b'));
+         assertEquals(5, StringUtils.lastIndexOf(new StringBuilder(""aabaabaa""), 'b'));
+-        char[] charArray = new char[9];
+-        charArray[0] = '[';
+-        charArray[1] = '&';
+-        charArray[7] = '{';
+-        charArray[3] = '.';
+-        charArray[4] = 'c';
+-        charArray[5] = '.';
+-        charArray[6] = '0';
+-        charArray[7] = 'r';
+-        charArray[8] = 'o';
+-        CharBuffer charBuffer = CharBuffer.wrap(charArray);
+-        assertEquals(NOT_FOUND, StringUtils.lastIndexOf (charBuffer, (-1738), 982));
+     }
+     @Test
+     public void testLastIndexOf_charInt() {
+-        assertEquals(NOT_FOUND, StringUtils.lastIndexOf(null, ' ', 0));
+-        assertEquals(NOT_FOUND, StringUtils.lastIndexOf(null, ' ', -1));
+-        assertEquals(NOT_FOUND, StringUtils.lastIndexOf("""", ' ', 0));
+-        assertEquals(NOT_FOUND, StringUtils.lastIndexOf("""", ' ', -1));
++        assertEquals(-1, StringUtils.lastIndexOf(null, ' ', 0));
++        assertEquals(-1, StringUtils.lastIndexOf(null, ' ', -1));
++        assertEquals(-1, StringUtils.lastIndexOf("""", ' ', 0));
++        assertEquals(-1, StringUtils.lastIndexOf("""", ' ', -1));
+         assertEquals(7, StringUtils.lastIndexOf(""aabaabaa"", 'a', 8));
+         assertEquals(5, StringUtils.lastIndexOf(""aabaabaa"", 'b', 8));
+         assertEquals(2, StringUtils.lastIndexOf(""aabaabaa"", 'b', 3));
+         assertEquals(5, StringUtils.lastIndexOf(""aabaabaa"", 'b', 9));
+-        assertEquals(NOT_FOUND, StringUtils.lastIndexOf(""aabaabaa"", 'b', -1));
++        assertEquals(-1, StringUtils.lastIndexOf(""aabaabaa"", 'b', -1));
+         assertEquals(0, StringUtils.lastIndexOf(""aabaabaa"", 'a', 0));
+         assertEquals(2, StringUtils.lastIndexOf(new StringBuilder(""aabaabaa""), 'b', 2));
+-        CharBuffer charBuffer = CharBuffer.allocate(93);
+-        CharSequence charSequence = CharSequenceUtils.subSequence(charBuffer, 93);
+-        assertEquals(NOT_FOUND, StringUtils.indexOf(charSequence, 553, (-1392)));
+-        assertEquals(NOT_FOUND, StringUtils.indexOf(charBuffer, (-1), (-1392)));
++
+         //LANG-1300 addition test
+         final int CODE_POINT = 0x2070E;
+         StringBuilder builder = new StringBuilder();"
+28,"[np.int64(785), np.int64(785)]","let's not hard-code linux-specific new-line chars in error messages, but, if you really want new-lines, use `%n` with `string.format()`.","             return bestCandidates.get(0);
+         }
+        final String target = methodName + Arrays.stream(parameterTypes).map(String::valueOf).collect(Collectors.joining("","", ""("", "")""));
+        final String strCandidates = bestCandidates.stream().map(Method::toString).collect(Collectors.joining(""\n  ""));
+ START         throw new IllegalStateException(""Found multiple candidates for method "" + target + "" on class "" + cls + "":\n  "" + strCandidates); END 
+     }
+     /**
+      * <p>Returns the aggregate number of inheritance hops between assignable argument class types.  Returns -1
+      * if the arguments aren't assignable.  Fills a specific purpose for getMatchingMethod and is not generalized.</p>
+     * @param classArray the Class array to calculate the distance from.
+      * @param toClassArray the Class array to calculate the distance to.
+      * @return the aggregate number of inheritance hops between assignable argument class types.
+      */
+    private static int distance(final Class<?>[] classArray, final Class<?>[] toClassArray) {
+         int answer = 0;
+        if (!ClassUtils.isAssignable(classArray, toClassArray, true)) {
+             return -1;
+         }
+        for (int offset = 0; offset < classArray.length; offset++) {
+             // Note InheritanceUtils.distance() uses different scoring system.
+            final Class<?> aClass = classArray[offset];
+             final Class<?> toClass = toClassArray[offset];
+             if (aClass == null || aClass.equals(toClass)) {
+                 continue;","             return bestCandidates.get(0);
+         }
+-        final String target = methodName + Arrays.stream(parameterTypes).map(String::valueOf).collect(Collectors.joining("","", ""("", "")""));
+-        final String strCandidates = bestCandidates.stream().map(Method::toString).collect(Collectors.joining(""\n  ""));
+-        throw new IllegalStateException(""Found multiple candidates for method "" + target + "" on class "" + cls + "":\n  "" + strCandidates);
++        throw new IllegalStateException(
++                String.format(""Found multiple candidates for method %s on class %s : %s"",
++                        methodName + Arrays.stream(parameterTypes).map(String::valueOf).collect(Collectors.joining("","", ""("", "")"")),
++                        cls.getName(),
++                        bestCandidates.stream().map(Method::toString).collect(Collectors.joining("","", ""["", ""]"")))
++        );
+     }
+     /**
+      * <p>Returns the aggregate number of inheritance hops between assignable argument class types.  Returns -1
+      * if the arguments aren't assignable.  Fills a specific purpose for getMatchingMethod and is not generalized.</p>
+-     * @param classArray the Class array to calculate the distance from.
++     * @param fromClassArray the Class array to calculate the distance from.
+      * @param toClassArray the Class array to calculate the distance to.
+      * @return the aggregate number of inheritance hops between assignable argument class types.
+      */
+-    private static int distance(final Class<?>[] classArray, final Class<?>[] toClassArray) {
++    private static int distance(final Class<?>[] fromClassArray, final Class<?>[] toClassArray) {
+         int answer = 0;
+-        if (!ClassUtils.isAssignable(classArray, toClassArray, true)) {
++        if (!ClassUtils.isAssignable(fromClassArray, toClassArray, true)) {
+             return -1;
+         }
+-        for (int offset = 0; offset < classArray.length; offset++) {
++        for (int offset = 0; offset < fromClassArray.length; offset++) {
+             // Note InheritanceUtils.distance() uses different scoring system.
+-            final Class<?> aClass = classArray[offset];
++            final Class<?> aClass = fromClassArray[offset];
+             final Class<?> toClass = toClassArray[offset];
+             if (aClass == null || aClass.equals(toClass)) {
+                 continue;","             return bestCandidates.get(0);
+         }
+        final String target = methodName + Arrays.stream(parameterTypes).map(String::valueOf).collect(Collectors.joining("","", ""("", "")""));
+        final String strCandidates = bestCandidates.stream().map(Method::toString).collect(Collectors.joining(""\n  ""));
+ START         throw new IllegalStateException(""Found multiple candidates for method "" + target + "" on class "" + cls + "":\n  "" + strCandidates); END 
+     }
+    private static int distance(final Class<?>[] classArray, final Class<?>[] toClassArray) {
+         int answer = 0;
+        if (!ClassUtils.isAssignable(classArray, toClassArray, true)) {
+             return -1;
+         }
+        for (int offset = 0; offset < classArray.length; offset++) {
+            final Class<?> aClass = classArray[offset];
+             final Class<?> toClass = toClassArray[offset];
+             if (aClass == null || aClass.equals(toClass)) {
+                 continue;","             return bestCandidates.get(0);
+         }
+-        final String target = methodName + Arrays.stream(parameterTypes).map(String::valueOf).collect(Collectors.joining("","", ""("", "")""));
+-        final String strCandidates = bestCandidates.stream().map(Method::toString).collect(Collectors.joining(""\n  ""));
+-        throw new IllegalStateException(""Found multiple candidates for method "" + target + "" on class "" + cls + "":\n  "" + strCandidates);
++        throw new IllegalStateException(
++                String.format(""Found multiple candidates for method %s on class %s : %s"",
++                        methodName + Arrays.stream(parameterTypes).map(String::valueOf).collect(Collectors.joining("","", ""("", "")"")),
++                        cls.getName(),
++                        bestCandidates.stream().map(Method::toString).collect(Collectors.joining("","", ""["", ""]"")))
++        );
+     }
+-    private static int distance(final Class<?>[] classArray, final Class<?>[] toClassArray) {
++    private static int distance(final Class<?>[] fromClassArray, final Class<?>[] toClassArray) {
+         int answer = 0;
+-        if (!ClassUtils.isAssignable(classArray, toClassArray, true)) {
++        if (!ClassUtils.isAssignable(fromClassArray, toClassArray, true)) {
+             return -1;
+         }
+-        for (int offset = 0; offset < classArray.length; offset++) {
++        for (int offset = 0; offset < fromClassArray.length; offset++) {
+-            final Class<?> aClass = classArray[offset];
++            final Class<?> aClass = fromClassArray[offset];
+             final Class<?> toClass = toClassArray[offset];
+             if (aClass == null || aClass.equals(toClass)) {
+                 continue;",True,False,False,2020-12-22T17:12:09Z,"return bestCandidates.get(0);
+         }
+        final String target = methodName + Arrays.stream(parameterTypes).map(String::valueOf).collect(Collectors.joining("","", ""("", "")""));
+        final String strCandidates = bestCandidates.stream().map(Method::toString).collect(Collectors.joining(""\n ""));
+ <START>  throw new IllegalStateException(""Found multiple candidates for method "" + target + "" on class "" + cls + "":\n "" + strCandidates);  <END>
+     }
+     /**
+      * <p>Returns the aggregate number of inheritance hops between assignable argument class types. Returns -1
+      * if the arguments aren't assignable. Fills a specific purpose for getMatchingMethod and is not generalized.</p>
+     * @param classArray the Class array to calculate the distance from.
+      * @param toClassArray the Class array to calculate the distance to.
+      * @return the aggregate number of inheritance hops between assignable argument class types.
+      */
+    private static int distance(final Class<?>[] classArray, final Class<?>[] toClassArray) {
+         int answer = 0;
+        if (!ClassUtils.isAssignable(classArray, toClassArray, true)) {
+             return -1;
+         }
+        for (int offset = 0; offset < classArray.length; offset++) {
+             // Note InheritanceUtils.distance() uses different scoring system.
+            final Class<?> aClass = classArray[offset];
+             final Class<?> toClass = toClassArray[offset];
+             if (aClass == null || aClass.equals(toClass)) {
+                 continue;","return bestCandidates.get(0);
+         }
+-        final String target = methodName + Arrays.stream(parameterTypes).map(String::valueOf).collect(Collectors.joining("","", ""("", "")""));
+-        final String strCandidates = bestCandidates.stream().map(Method::toString).collect(Collectors.joining(""\n ""));
+-        throw new IllegalStateException(""Found multiple candidates for method "" + target + "" on class "" + cls + "":\n "" + strCandidates);
++        throw new IllegalStateException(
++                String.format(""Found multiple candidates for method %s on class %s : %s"",
++                        methodName + Arrays.stream(parameterTypes).map(String::valueOf).collect(Collectors.joining("","", ""("", "")"")),
++                        cls.getName(),
++                        bestCandidates.stream().map(Method::toString).collect(Collectors.joining("","", ""["", ""]"")))
++        );
+     }
+     /**
+      * <p>Returns the aggregate number of inheritance hops between assignable argument class types. Returns -1
+      * if the arguments aren't assignable. Fills a specific purpose for getMatchingMethod and is not generalized.</p>
+-     * @param classArray the Class array to calculate the distance from.
++     * @param fromClassArray the Class array to calculate the distance from.
+      * @param toClassArray the Class array to calculate the distance to.
+      * @return the aggregate number of inheritance hops between assignable argument class types.
+      */
+-    private static int distance(final Class<?>[] classArray, final Class<?>[] toClassArray) {
++    private static int distance(final Class<?>[] fromClassArray, final Class<?>[] toClassArray) {
+         int answer = 0;
+-        if (!ClassUtils.isAssignable(classArray, toClassArray, true)) {
++        if (!ClassUtils.isAssignable(fromClassArray, toClassArray, true)) {
+             return -1;
+         }
+-        for (int offset = 0; offset < classArray.length; offset++) {
++        for (int offset = 0; offset < fromClassArray.length; offset++) {
+             // Note InheritanceUtils.distance() uses different scoring system.
+-            final Class<?> aClass = classArray[offset];
++            final Class<?> aClass = fromClassArray[offset];
+             final Class<?> toClass = toClassArray[offset];
+             if (aClass == null || aClass.equals(toClass)) {
+                 continue;"
+29,"[np.int64(1061), np.int64(1061)]","use final where you can, like here for parms.","     }
+     private static final class GetMatchingMethodClass {
+        public String testMethod() {
+            return ""testMethod"";
+        }
+
+ START         public String testMethod(Long aLong) { END 
+            return String.valueOf(aLong);
+        }
+
+        public String testMethod(long aLong) {
+            return String.valueOf(aLong);
+        }
+
+        public String testMethod2(Long aLong) {
+            return String.valueOf(aLong);
+        }
+
+        public String testMethod2(Color aColor) {
+            return String.valueOf(aColor);
+        }
+
+        public String testMethod2(long aLong) {
+            return String.valueOf(aLong);
+        }
+
+        public String testMethod3(long aLong, Long anotherLong) {
+            return aLong + "", "" + anotherLong;
+        }
+
+        public String testMethod3(Long aLong, long anotherLong) {
+            return aLong + "", "" + anotherLong;
+        }
+
+        public String testMethod3(Long aLong, Long anotherLong) {
+            return aLong + "", "" + anotherLong;
+        }
+
+        public String testMethod4(Long aLong, Long anotherLong) {
+            return aLong + "", "" + anotherLong;
+        }
+
+        public String testMethod4(Color aColor1, Color aColor2) {
+            return aColor1 + "", "" + aColor2;
+         }
+     }
+ }","     }
+     private static final class GetMatchingMethodClass {
+-        public String testMethod() {
+-            return ""testMethod"";
+-        }
+-
+-        public String testMethod(Long aLong) {
+-            return String.valueOf(aLong);
+-        }
+-
+-        public String testMethod(long aLong) {
+-            return String.valueOf(aLong);
+-        }
+-
+-        public String testMethod2(Long aLong) {
+-            return String.valueOf(aLong);
+-        }
+-
+-        public String testMethod2(Color aColor) {
+-            return String.valueOf(aColor);
+-        }
+-
+-        public String testMethod2(long aLong) {
+-            return String.valueOf(aLong);
+-        }
+-
+-        public String testMethod3(long aLong, Long anotherLong) {
+-            return aLong + "", "" + anotherLong;
+-        }
+-
+-        public String testMethod3(Long aLong, long anotherLong) {
+-            return aLong + "", "" + anotherLong;
+-        }
+-
+-        public String testMethod3(Long aLong, Long anotherLong) {
+-            return aLong + "", "" + anotherLong;
+-        }
+-
+-        public String testMethod4(Long aLong, Long anotherLong) {
+-            return aLong + "", "" + anotherLong;
+-        }
+-
+-        public String testMethod4(Color aColor1, Color aColor2) {
+-            return aColor1 + "", "" + aColor2;
++        public void testMethod() {
++        }
++
++        public void testMethod(final Long aLong) {
++        }
++
++        public void testMethod(final long aLong) {
++        }
++
++        public void testMethod2(final Long aLong) {
++        }
++
++        public void testMethod2(final Color aColor) {
++        }
++
++        public void testMethod2(final long aLong) {
++        }
++
++        public void testMethod3(final long aLong, final Long anotherLong) {
++        }
++
++        public void testMethod3(final Long aLong, final long anotherLong) {
++        }
++
++        public void testMethod3(final Long aLong, final Long anotherLong) {
++        }
++
++        public void testMethod4(final Long aLong, final Long anotherLong) {
++        }
++
++        public void testMethod4(final Color aColor1, final Color aColor2) {
+         }
+     }
+ }","     }
+     private static final class GetMatchingMethodClass {
+        public String testMethod() {
+            return ""testMethod"";
+        }
+
+ START         public String testMethod(Long aLong) { END 
+            return String.valueOf(aLong);
+        }
+
+        public String testMethod(long aLong) {
+            return String.valueOf(aLong);
+        }
+
+        public String testMethod2(Long aLong) {
+            return String.valueOf(aLong);
+        }
+
+        public String testMethod2(Color aColor) {
+            return String.valueOf(aColor);
+        }
+
+        public String testMethod2(long aLong) {
+            return String.valueOf(aLong);
+        }
+
+        public String testMethod3(long aLong, Long anotherLong) {
+            return aLong + "", "" + anotherLong;
+        }
+
+        public String testMethod3(Long aLong, long anotherLong) {
+            return aLong + "", "" + anotherLong;
+        }
+
+        public String testMethod3(Long aLong, Long anotherLong) {
+            return aLong + "", "" + anotherLong;
+        }
+
+        public String testMethod4(Long aLong, Long anotherLong) {
+            return aLong + "", "" + anotherLong;
+        }
+
+        public String testMethod4(Color aColor1, Color aColor2) {
+            return aColor1 + "", "" + aColor2;
+         }
+     }
+ }","     }
+     private static final class GetMatchingMethodClass {
+-        public String testMethod() {
+-            return ""testMethod"";
+-        }
+-
+-        public String testMethod(Long aLong) {
+-            return String.valueOf(aLong);
+-        }
+-
+-        public String testMethod(long aLong) {
+-            return String.valueOf(aLong);
+-        }
+-
+-        public String testMethod2(Long aLong) {
+-            return String.valueOf(aLong);
+-        }
+-
+-        public String testMethod2(Color aColor) {
+-            return String.valueOf(aColor);
+-        }
+-
+-        public String testMethod2(long aLong) {
+-            return String.valueOf(aLong);
+-        }
+-
+-        public String testMethod3(long aLong, Long anotherLong) {
+-            return aLong + "", "" + anotherLong;
+-        }
+-
+-        public String testMethod3(Long aLong, long anotherLong) {
+-            return aLong + "", "" + anotherLong;
+-        }
+-
+-        public String testMethod3(Long aLong, Long anotherLong) {
+-            return aLong + "", "" + anotherLong;
+-        }
+-
+-        public String testMethod4(Long aLong, Long anotherLong) {
+-            return aLong + "", "" + anotherLong;
+-        }
+-
+-        public String testMethod4(Color aColor1, Color aColor2) {
+-            return aColor1 + "", "" + aColor2;
++        public void testMethod() {
++        }
++
++        public void testMethod(final Long aLong) {
++        }
++
++        public void testMethod(final long aLong) {
++        }
++
++        public void testMethod2(final Long aLong) {
++        }
++
++        public void testMethod2(final Color aColor) {
++        }
++
++        public void testMethod2(final long aLong) {
++        }
++
++        public void testMethod3(final long aLong, final Long anotherLong) {
++        }
++
++        public void testMethod3(final Long aLong, final long anotherLong) {
++        }
++
++        public void testMethod3(final Long aLong, final Long anotherLong) {
++        }
++
++        public void testMethod4(final Long aLong, final Long anotherLong) {
++        }
++
++        public void testMethod4(final Color aColor1, final Color aColor2) {
+         }
+     }
+ }",True,False,False,2020-12-22T17:12:09Z,"}
+     private static final class GetMatchingMethodClass {
+        public String testMethod() {
+            return ""testMethod"";
+        }
+ <START>  public String testMethod(Long aLong) {  <END>
+            return String.valueOf(aLong);
+        }
+        public String testMethod(long aLong) {
+            return String.valueOf(aLong);
+        }
+        public String testMethod2(Long aLong) {
+            return String.valueOf(aLong);
+        }
+        public String testMethod2(Color aColor) {
+            return String.valueOf(aColor);
+        }
+        public String testMethod2(long aLong) {
+            return String.valueOf(aLong);
+        }
+        public String testMethod3(long aLong, Long anotherLong) {
+            return aLong + "", "" + anotherLong;
+        }
+        public String testMethod3(Long aLong, long anotherLong) {
+            return aLong + "", "" + anotherLong;
+        }
+        public String testMethod3(Long aLong, Long anotherLong) {
+            return aLong + "", "" + anotherLong;
+        }
+        public String testMethod4(Long aLong, Long anotherLong) {
+            return aLong + "", "" + anotherLong;
+        }
+        public String testMethod4(Color aColor1, Color aColor2) {
+            return aColor1 + "", "" + aColor2;
+         }
+     }
+ }","}
+     private static final class GetMatchingMethodClass {
+-        public String testMethod() {
+-            return ""testMethod"";
+-        }
+-
+-        public String testMethod(Long aLong) {
+-            return String.valueOf(aLong);
+-        }
+-
+-        public String testMethod(long aLong) {
+-            return String.valueOf(aLong);
+-        }
+-
+-        public String testMethod2(Long aLong) {
+-            return String.valueOf(aLong);
+-        }
+-
+-        public String testMethod2(Color aColor) {
+-            return String.valueOf(aColor);
+-        }
+-
+-        public String testMethod2(long aLong) {
+-            return String.valueOf(aLong);
+-        }
+-
+-        public String testMethod3(long aLong, Long anotherLong) {
+-            return aLong + "", "" + anotherLong;
+-        }
+-
+-        public String testMethod3(Long aLong, long anotherLong) {
+-            return aLong + "", "" + anotherLong;
+-        }
+-
+-        public String testMethod3(Long aLong, Long anotherLong) {
+-            return aLong + "", "" + anotherLong;
+-        }
+-
+-        public String testMethod4(Long aLong, Long anotherLong) {
+-            return aLong + "", "" + anotherLong;
+-        }
+-
+-        public String testMethod4(Color aColor1, Color aColor2) {
+-            return aColor1 + "", "" + aColor2;
++        public void testMethod() {
++        }
++
++        public void testMethod(final Long aLong) {
++        }
++
++        public void testMethod(final long aLong) {
++        }
++
++        public void testMethod2(final Long aLong) {
++        }
++
++        public void testMethod2(final Color aColor) {
++        }
++
++        public void testMethod2(final long aLong) {
++        }
++
++        public void testMethod3(final long aLong, final Long anotherLong) {
++        }
++
++        public void testMethod3(final Long aLong, final long anotherLong) {
++        }
++
++        public void testMethod3(final Long aLong, final Long anotherLong) {
++        }
++
++        public void testMethod4(final Long aLong, final Long anotherLong) {
++        }
++
++        public void testMethod4(final Color aColor1, final Color aColor2) {
+         }
+     }
+ }"
+30,"[np.int64(1056), np.int64(1056)]",please make the test fixture as simple as possible: all of these methods can just return `void`.,"                 () -> MethodUtils.getMatchingMethod(GetMatchingMethodClass.class, ""testMethod4"", null, null));
+     }
+ START     private static final class GetMatchingMethodClass { END 
+        public String testMethod() {
+            return ""testMethod"";
+        }
+
+        public String testMethod(Long aLong) {
+            return String.valueOf(aLong);
+        }
+
+        public String testMethod(long aLong) {
+            return String.valueOf(aLong);
+        }
+
+        public String testMethod2(Long aLong) {
+            return String.valueOf(aLong);
+        }
+
+        public String testMethod2(Color aColor) {
+            return String.valueOf(aColor);
+        }
+
+        public String testMethod2(long aLong) {
+            return String.valueOf(aLong);
+        }
+
+        public String testMethod3(long aLong, Long anotherLong) {
+            return aLong + "", "" + anotherLong;
+        }
+
+        public String testMethod3(Long aLong, long anotherLong) {
+            return aLong + "", "" + anotherLong;
+        }
+
+        public String testMethod3(Long aLong, Long anotherLong) {
+            return aLong + "", "" + anotherLong;
+        }
+
+        public String testMethod4(Long aLong, Long anotherLong) {
+            return aLong + "", "" + anotherLong;
+        }
+
+        public String testMethod4(Color aColor1, Color aColor2) {
+            return aColor1 + "", "" + aColor2;
+         }
+     }
+ }","                 () -> MethodUtils.getMatchingMethod(GetMatchingMethodClass.class, ""testMethod4"", null, null));
+     }
+-    private static final class GetMatchingMethodClass {
+-        public String testMethod() {
+-            return ""testMethod"";
+-        }
+-
+-        public String testMethod(Long aLong) {
+-            return String.valueOf(aLong);
+-        }
+-
+-        public String testMethod(long aLong) {
+-            return String.valueOf(aLong);
+-        }
+-
+-        public String testMethod2(Long aLong) {
+-            return String.valueOf(aLong);
+-        }
+-
+-        public String testMethod2(Color aColor) {
+-            return String.valueOf(aColor);
+-        }
+-
+-        public String testMethod2(long aLong) {
+-            return String.valueOf(aLong);
+-        }
+-
+-        public String testMethod3(long aLong, Long anotherLong) {
+-            return aLong + "", "" + anotherLong;
+-        }
+-
+-        public String testMethod3(Long aLong, long anotherLong) {
+-            return aLong + "", "" + anotherLong;
+-        }
+-
+-        public String testMethod3(Long aLong, Long anotherLong) {
+-            return aLong + "", "" + anotherLong;
+-        }
+-
+-        public String testMethod4(Long aLong, Long anotherLong) {
+-            return aLong + "", "" + anotherLong;
+-        }
+-
+-        public String testMethod4(Color aColor1, Color aColor2) {
+-            return aColor1 + "", "" + aColor2;
++    private static final class GetMatchingMethodClass {
++        public void testMethod() {
++        }
++
++        public void testMethod(final Long aLong) {
++        }
++
++        public void testMethod(final long aLong) {
++        }
++
++        public void testMethod2(final Long aLong) {
++        }
++
++        public void testMethod2(final Color aColor) {
++        }
++
++        public void testMethod2(final long aLong) {
++        }
++
++        public void testMethod3(final long aLong, final Long anotherLong) {
++        }
++
++        public void testMethod3(final Long aLong, final long anotherLong) {
++        }
++
++        public void testMethod3(final Long aLong, final Long anotherLong) {
++        }
++
++        public void testMethod4(final Long aLong, final Long anotherLong) {
++        }
++
++        public void testMethod4(final Color aColor1, final Color aColor2) {
+         }
+     }
+ }","                 () -> MethodUtils.getMatchingMethod(GetMatchingMethodClass.class, ""testMethod4"", null, null));
+     }
+ START     private static final class GetMatchingMethodClass { END 
+        public String testMethod() {
+            return ""testMethod"";
+        }
+
+        public String testMethod(Long aLong) {
+            return String.valueOf(aLong);
+        }
+
+        public String testMethod(long aLong) {
+            return String.valueOf(aLong);
+        }
+
+        public String testMethod2(Long aLong) {
+            return String.valueOf(aLong);
+        }
+
+        public String testMethod2(Color aColor) {
+            return String.valueOf(aColor);
+        }
+
+        public String testMethod2(long aLong) {
+            return String.valueOf(aLong);
+        }
+
+        public String testMethod3(long aLong, Long anotherLong) {
+            return aLong + "", "" + anotherLong;
+        }
+
+        public String testMethod3(Long aLong, long anotherLong) {
+            return aLong + "", "" + anotherLong;
+        }
+
+        public String testMethod3(Long aLong, Long anotherLong) {
+            return aLong + "", "" + anotherLong;
+        }
+
+        public String testMethod4(Long aLong, Long anotherLong) {
+            return aLong + "", "" + anotherLong;
+        }
+
+        public String testMethod4(Color aColor1, Color aColor2) {
+            return aColor1 + "", "" + aColor2;
+         }
+     }
+ }","                 () -> MethodUtils.getMatchingMethod(GetMatchingMethodClass.class, ""testMethod4"", null, null));
+     }
+-    private static final class GetMatchingMethodClass {
+-        public String testMethod() {
+-            return ""testMethod"";
+-        }
+-
+-        public String testMethod(Long aLong) {
+-            return String.valueOf(aLong);
+-        }
+-
+-        public String testMethod(long aLong) {
+-            return String.valueOf(aLong);
+-        }
+-
+-        public String testMethod2(Long aLong) {
+-            return String.valueOf(aLong);
+-        }
+-
+-        public String testMethod2(Color aColor) {
+-            return String.valueOf(aColor);
+-        }
+-
+-        public String testMethod2(long aLong) {
+-            return String.valueOf(aLong);
+-        }
+-
+-        public String testMethod3(long aLong, Long anotherLong) {
+-            return aLong + "", "" + anotherLong;
+-        }
+-
+-        public String testMethod3(Long aLong, long anotherLong) {
+-            return aLong + "", "" + anotherLong;
+-        }
+-
+-        public String testMethod3(Long aLong, Long anotherLong) {
+-            return aLong + "", "" + anotherLong;
+-        }
+-
+-        public String testMethod4(Long aLong, Long anotherLong) {
+-            return aLong + "", "" + anotherLong;
+-        }
+-
+-        public String testMethod4(Color aColor1, Color aColor2) {
+-            return aColor1 + "", "" + aColor2;
++    private static final class GetMatchingMethodClass {
++        public void testMethod() {
++        }
++
++        public void testMethod(final Long aLong) {
++        }
++
++        public void testMethod(final long aLong) {
++        }
++
++        public void testMethod2(final Long aLong) {
++        }
++
++        public void testMethod2(final Color aColor) {
++        }
++
++        public void testMethod2(final long aLong) {
++        }
++
++        public void testMethod3(final long aLong, final Long anotherLong) {
++        }
++
++        public void testMethod3(final Long aLong, final long anotherLong) {
++        }
++
++        public void testMethod3(final Long aLong, final Long anotherLong) {
++        }
++
++        public void testMethod4(final Long aLong, final Long anotherLong) {
++        }
++
++        public void testMethod4(final Color aColor1, final Color aColor2) {
+         }
+     }
+ }",True,False,False,2020-12-22T17:12:09Z,"() -> MethodUtils.getMatchingMethod(GetMatchingMethodClass.class, ""testMethod4"", null, null));
+     }
+ <START>  private static final class GetMatchingMethodClass {  <END>
+        public String testMethod() {
+            return ""testMethod"";
+        }
+        public String testMethod(Long aLong) {
+            return String.valueOf(aLong);
+        }
+        public String testMethod(long aLong) {
+            return String.valueOf(aLong);
+        }
+        public String testMethod2(Long aLong) {
+            return String.valueOf(aLong);
+        }
+        public String testMethod2(Color aColor) {
+            return String.valueOf(aColor);
+        }
+        public String testMethod2(long aLong) {
+            return String.valueOf(aLong);
+        }
+        public String testMethod3(long aLong, Long anotherLong) {
+            return aLong + "", "" + anotherLong;
+        }
+        public String testMethod3(Long aLong, long anotherLong) {
+            return aLong + "", "" + anotherLong;
+        }
+        public String testMethod3(Long aLong, Long anotherLong) {
+            return aLong + "", "" + anotherLong;
+        }
+        public String testMethod4(Long aLong, Long anotherLong) {
+            return aLong + "", "" + anotherLong;
+        }
+        public String testMethod4(Color aColor1, Color aColor2) {
+            return aColor1 + "", "" + aColor2;
+         }
+     }
+ }","() -> MethodUtils.getMatchingMethod(GetMatchingMethodClass.class, ""testMethod4"", null, null));
+     }
+-    private static final class GetMatchingMethodClass {
+-        public String testMethod() {
+-            return ""testMethod"";
+-        }
+-
+-        public String testMethod(Long aLong) {
+-            return String.valueOf(aLong);
+-        }
+-
+-        public String testMethod(long aLong) {
+-            return String.valueOf(aLong);
+-        }
+-
+-        public String testMethod2(Long aLong) {
+-            return String.valueOf(aLong);
+-        }
+-
+-        public String testMethod2(Color aColor) {
+-            return String.valueOf(aColor);
+-        }
+-
+-        public String testMethod2(long aLong) {
+-            return String.valueOf(aLong);
+-        }
+-
+-        public String testMethod3(long aLong, Long anotherLong) {
+-            return aLong + "", "" + anotherLong;
+-        }
+-
+-        public String testMethod3(Long aLong, long anotherLong) {
+-            return aLong + "", "" + anotherLong;
+-        }
+-
+-        public String testMethod3(Long aLong, Long anotherLong) {
+-            return aLong + "", "" + anotherLong;
+-        }
+-
+-        public String testMethod4(Long aLong, Long anotherLong) {
+-            return aLong + "", "" + anotherLong;
+-        }
+-
+-        public String testMethod4(Color aColor1, Color aColor2) {
+-            return aColor1 + "", "" + aColor2;
++    private static final class GetMatchingMethodClass {
++        public void testMethod() {
++        }
++
++        public void testMethod(final Long aLong) {
++        }
++
++        public void testMethod(final long aLong) {
++        }
++
++        public void testMethod2(final Long aLong) {
++        }
++
++        public void testMethod2(final Color aColor) {
++        }
++
++        public void testMethod2(final long aLong) {
++        }
++
++        public void testMethod3(final long aLong, final Long anotherLong) {
++        }
++
++        public void testMethod3(final Long aLong, final long anotherLong) {
++        }
++
++        public void testMethod3(final Long aLong, final Long anotherLong) {
++        }
++
++        public void testMethod4(final Long aLong, final Long anotherLong) {
++        }
++
++        public void testMethod4(final Color aColor1, final Color aColor2) {
+         }
+     }
+ }"
+31,"[np.int64(791), np.int64(791)]",maybe rename to `fromclassarray` to match `toclassarray`?,"             return bestCandidates.get(0);
+         }
+        final String target = methodName + Arrays.stream(parameterTypes).map(String::valueOf).collect(Collectors.joining("","", ""("", "")""));
+        final String strCandidates = bestCandidates.stream().map(Method::toString).collect(Collectors.joining(""\n  ""));
+        throw new IllegalStateException(""Found multiple candidates for method "" + target + "" on class "" + cls + "":\n  "" + strCandidates);
+     }
+     /**
+      * <p>Returns the aggregate number of inheritance hops between assignable argument class types.  Returns -1
+      * if the arguments aren't assignable.  Fills a specific purpose for getMatchingMethod and is not generalized.</p>
+ START      * @param classArray the Class array to calculate the distance from. END 
+      * @param toClassArray the Class array to calculate the distance to.
+      * @return the aggregate number of inheritance hops between assignable argument class types.
+      */
+    private static int distance(final Class<?>[] classArray, final Class<?>[] toClassArray) {
+         int answer = 0;
+        if (!ClassUtils.isAssignable(classArray, toClassArray, true)) {
+             return -1;
+         }
+        for (int offset = 0; offset < classArray.length; offset++) {
+             // Note InheritanceUtils.distance() uses different scoring system.
+            final Class<?> aClass = classArray[offset];
+             final Class<?> toClass = toClassArray[offset];
+             if (aClass == null || aClass.equals(toClass)) {
+                 continue;","             return bestCandidates.get(0);
+         }
+-        final String target = methodName + Arrays.stream(parameterTypes).map(String::valueOf).collect(Collectors.joining("","", ""("", "")""));
+-        final String strCandidates = bestCandidates.stream().map(Method::toString).collect(Collectors.joining(""\n  ""));
+-        throw new IllegalStateException(""Found multiple candidates for method "" + target + "" on class "" + cls + "":\n  "" + strCandidates);
++        throw new IllegalStateException(
++                String.format(""Found multiple candidates for method %s on class %s : %s"",
++                        methodName + Arrays.stream(parameterTypes).map(String::valueOf).collect(Collectors.joining("","", ""("", "")"")),
++                        cls.getName(),
++                        bestCandidates.stream().map(Method::toString).collect(Collectors.joining("","", ""["", ""]"")))
++        );
+     }
+     /**
+      * <p>Returns the aggregate number of inheritance hops between assignable argument class types.  Returns -1
+      * if the arguments aren't assignable.  Fills a specific purpose for getMatchingMethod and is not generalized.</p>
+-     * @param classArray the Class array to calculate the distance from.
++     * @param fromClassArray the Class array to calculate the distance from.
+      * @param toClassArray the Class array to calculate the distance to.
+      * @return the aggregate number of inheritance hops between assignable argument class types.
+      */
+-    private static int distance(final Class<?>[] classArray, final Class<?>[] toClassArray) {
++    private static int distance(final Class<?>[] fromClassArray, final Class<?>[] toClassArray) {
+         int answer = 0;
+-        if (!ClassUtils.isAssignable(classArray, toClassArray, true)) {
++        if (!ClassUtils.isAssignable(fromClassArray, toClassArray, true)) {
+             return -1;
+         }
+-        for (int offset = 0; offset < classArray.length; offset++) {
++        for (int offset = 0; offset < fromClassArray.length; offset++) {
+             // Note InheritanceUtils.distance() uses different scoring system.
+-            final Class<?> aClass = classArray[offset];
++            final Class<?> aClass = fromClassArray[offset];
+             final Class<?> toClass = toClassArray[offset];
+             if (aClass == null || aClass.equals(toClass)) {
+                 continue;","             return bestCandidates.get(0);
+         }
+        final String target = methodName + Arrays.stream(parameterTypes).map(String::valueOf).collect(Collectors.joining("","", ""("", "")""));
+        final String strCandidates = bestCandidates.stream().map(Method::toString).collect(Collectors.joining(""\n  ""));
+        throw new IllegalStateException(""Found multiple candidates for method "" + target + "" on class "" + cls + "":\n  "" + strCandidates);
+     }
+    private static int distance(final Class<?>[] classArray, final Class<?>[] toClassArray) {
+         int answer = 0;
+        if (!ClassUtils.isAssignable(classArray, toClassArray, true)) {
+             return -1;
+         }
+        for (int offset = 0; offset < classArray.length; offset++) {
+            final Class<?> aClass = classArray[offset];
+             final Class<?> toClass = toClassArray[offset];
+             if (aClass == null || aClass.equals(toClass)) {
+                 continue;","             return bestCandidates.get(0);
+         }
+-        final String target = methodName + Arrays.stream(parameterTypes).map(String::valueOf).collect(Collectors.joining("","", ""("", "")""));
+-        final String strCandidates = bestCandidates.stream().map(Method::toString).collect(Collectors.joining(""\n  ""));
+-        throw new IllegalStateException(""Found multiple candidates for method "" + target + "" on class "" + cls + "":\n  "" + strCandidates);
++        throw new IllegalStateException(
++                String.format(""Found multiple candidates for method %s on class %s : %s"",
++                        methodName + Arrays.stream(parameterTypes).map(String::valueOf).collect(Collectors.joining("","", ""("", "")"")),
++                        cls.getName(),
++                        bestCandidates.stream().map(Method::toString).collect(Collectors.joining("","", ""["", ""]"")))
++        );
+     }
+-    private static int distance(final Class<?>[] classArray, final Class<?>[] toClassArray) {
++    private static int distance(final Class<?>[] fromClassArray, final Class<?>[] toClassArray) {
+         int answer = 0;
+-        if (!ClassUtils.isAssignable(classArray, toClassArray, true)) {
++        if (!ClassUtils.isAssignable(fromClassArray, toClassArray, true)) {
+             return -1;
+         }
+-        for (int offset = 0; offset < classArray.length; offset++) {
++        for (int offset = 0; offset < fromClassArray.length; offset++) {
+-            final Class<?> aClass = classArray[offset];
++            final Class<?> aClass = fromClassArray[offset];
+             final Class<?> toClass = toClassArray[offset];
+             if (aClass == null || aClass.equals(toClass)) {
+                 continue;",True,False,True,2020-12-22T17:12:09Z,"return bestCandidates.get(0);
+         }
+        final String target = methodName + Arrays.stream(parameterTypes).map(String::valueOf).collect(Collectors.joining("","", ""("", "")""));
+        final String strCandidates = bestCandidates.stream().map(Method::toString).collect(Collectors.joining(""\n ""));
+        throw new IllegalStateException(""Found multiple candidates for method "" + target + "" on class "" + cls + "":\n "" + strCandidates);
+     }
+     /**
+      * <p>Returns the aggregate number of inheritance hops between assignable argument class types. Returns -1
+      * if the arguments aren't assignable. Fills a specific purpose for getMatchingMethod and is not generalized.</p>
+ <START>  * @param classArray the Class array to calculate the distance from.  <END>
+      * @param toClassArray the Class array to calculate the distance to.
+      * @return the aggregate number of inheritance hops between assignable argument class types.
+      */
+    private static int distance(final Class<?>[] classArray, final Class<?>[] toClassArray) {
+         int answer = 0;
+        if (!ClassUtils.isAssignable(classArray, toClassArray, true)) {
+             return -1;
+         }
+        for (int offset = 0; offset < classArray.length; offset++) {
+             // Note InheritanceUtils.distance() uses different scoring system.
+            final Class<?> aClass = classArray[offset];
+             final Class<?> toClass = toClassArray[offset];
+             if (aClass == null || aClass.equals(toClass)) {
+                 continue;","return bestCandidates.get(0);
+         }
+-        final String target = methodName + Arrays.stream(parameterTypes).map(String::valueOf).collect(Collectors.joining("","", ""("", "")""));
+-        final String strCandidates = bestCandidates.stream().map(Method::toString).collect(Collectors.joining(""\n ""));
+-        throw new IllegalStateException(""Found multiple candidates for method "" + target + "" on class "" + cls + "":\n "" + strCandidates);
++        throw new IllegalStateException(
++                String.format(""Found multiple candidates for method %s on class %s : %s"",
++                        methodName + Arrays.stream(parameterTypes).map(String::valueOf).collect(Collectors.joining("","", ""("", "")"")),
++                        cls.getName(),
++                        bestCandidates.stream().map(Method::toString).collect(Collectors.joining("","", ""["", ""]"")))
++        );
+     }
+     /**
+      * <p>Returns the aggregate number of inheritance hops between assignable argument class types. Returns -1
+      * if the arguments aren't assignable. Fills a specific purpose for getMatchingMethod and is not generalized.</p>
+-     * @param classArray the Class array to calculate the distance from.
++     * @param fromClassArray the Class array to calculate the distance from.
+      * @param toClassArray the Class array to calculate the distance to.
+      * @return the aggregate number of inheritance hops between assignable argument class types.
+      */
+-    private static int distance(final Class<?>[] classArray, final Class<?>[] toClassArray) {
++    private static int distance(final Class<?>[] fromClassArray, final Class<?>[] toClassArray) {
+         int answer = 0;
+-        if (!ClassUtils.isAssignable(classArray, toClassArray, true)) {
++        if (!ClassUtils.isAssignable(fromClassArray, toClassArray, true)) {
+             return -1;
+         }
+-        for (int offset = 0; offset < classArray.length; offset++) {
++        for (int offset = 0; offset < fromClassArray.length; offset++) {
+             // Note InheritanceUtils.distance() uses different scoring system.
+-            final Class<?> aClass = classArray[offset];
++            final Class<?> aClass = fromClassArray[offset];
+             final Class<?> toClass = toClassArray[offset];
+             if (aClass == null || aClass.equals(toClass)) {
+                 continue;"
+32,"[np.int64(543), np.int64(543)]","hi @garydgregory 
+sorry for the noise. when i created the pr it seemed logical.  but you're right. better keep the prs separate","         assertEquals(4, StringUtils.indexOfIgnoreCase(""aabaabaa"", ""AB"", 2));
+         assertEquals(4, StringUtils.indexOfIgnoreCase(""aabaabaa"", ""AB"", 3));
+         assertEquals(4, StringUtils.indexOfIgnoreCase(""aabaabaa"", ""AB"", 4));
+        assertEquals(NOT_FOUND, StringUtils.indexOfIgnoreCase(""aabaabaa"", ""AB"", 5));
+        assertEquals(NOT_FOUND, StringUtils.indexOfIgnoreCase(""aabaabaa"", ""AB"", 6));
+        assertEquals(NOT_FOUND, StringUtils.indexOfIgnoreCase(""aabaabaa"", ""AB"", 7));
+        assertEquals(NOT_FOUND, StringUtils.indexOfIgnoreCase(""aabaabaa"", ""AB"", 8));
+         assertEquals(1, StringUtils.indexOfIgnoreCase(""aab"", ""AB"", 1));
+         assertEquals(5, StringUtils.indexOfIgnoreCase(""aabaabaa"", """", 5));
+        assertEquals(NOT_FOUND, StringUtils.indexOfIgnoreCase(""ab"", ""AAB"", 0));
+        assertEquals(NOT_FOUND, StringUtils.indexOfIgnoreCase(""aab"", ""AAB"", 1));
+        assertEquals(NOT_FOUND, StringUtils.indexOfIgnoreCase(""abc"", """", 9));
+     }
+     @Test
+     public void testLastIndexOf_char() {
+        assertEquals(NOT_FOUND, StringUtils.lastIndexOf(null, ' '));
+        assertEquals(NOT_FOUND, StringUtils.lastIndexOf("""", ' '));
+         assertEquals(7, StringUtils.lastIndexOf(""aabaabaa"", 'a'));
+         assertEquals(5, StringUtils.lastIndexOf(""aabaabaa"", 'b'));
+         assertEquals(5, StringUtils.lastIndexOf(new StringBuilder(""aabaabaa""), 'b'));
+        char[] charArray = new char[9];
+        charArray[0] = '[';
+        charArray[1] = '&';
+        charArray[7] = '{';
+        charArray[3] = '.';
+        charArray[4] = 'c';
+        charArray[5] = '.';
+        charArray[6] = '0';
+        charArray[7] = 'r';
+        charArray[8] = 'o';
+        CharBuffer charBuffer = CharBuffer.wrap(charArray);
+ START         assertEquals(NOT_FOUND, StringUtils.lastIndexOf (charBuffer, (-1738), 982)); END 
+     }
+     @Test
+     public void testLastIndexOf_charInt() {
+        assertEquals(NOT_FOUND, StringUtils.lastIndexOf(null, ' ', 0));
+        assertEquals(NOT_FOUND, StringUtils.lastIndexOf(null, ' ', -1));
+        assertEquals(NOT_FOUND, StringUtils.lastIndexOf("""", ' ', 0));
+        assertEquals(NOT_FOUND, StringUtils.lastIndexOf("""", ' ', -1));
+         assertEquals(7, StringUtils.lastIndexOf(""aabaabaa"", 'a', 8));
+         assertEquals(5, StringUtils.lastIndexOf(""aabaabaa"", 'b', 8));
+         assertEquals(2, StringUtils.lastIndexOf(""aabaabaa"", 'b', 3));
+         assertEquals(5, StringUtils.lastIndexOf(""aabaabaa"", 'b', 9));
+        assertEquals(NOT_FOUND, StringUtils.lastIndexOf(""aabaabaa"", 'b', -1));
+         assertEquals(0, StringUtils.lastIndexOf(""aabaabaa"", 'a', 0));
+         assertEquals(2, StringUtils.lastIndexOf(new StringBuilder(""aabaabaa""), 'b', 2));
+        CharBuffer charBuffer = CharBuffer.allocate(93);
+        CharSequence charSequence = CharSequenceUtils.subSequence(charBuffer, 93);
+        assertEquals(NOT_FOUND, StringUtils.indexOf(charSequence, 553, (-1392)));
+        assertEquals(NOT_FOUND, StringUtils.indexOf(charBuffer, (-1), (-1392)));
+         //LANG-1300 addition test
+         final int CODE_POINT = 0x2070E;
+         StringBuilder builder = new StringBuilder();","         assertEquals(4, StringUtils.indexOfIgnoreCase(""aabaabaa"", ""AB"", 2));
+         assertEquals(4, StringUtils.indexOfIgnoreCase(""aabaabaa"", ""AB"", 3));
+         assertEquals(4, StringUtils.indexOfIgnoreCase(""aabaabaa"", ""AB"", 4));
+-        assertEquals(NOT_FOUND, StringUtils.indexOfIgnoreCase(""aabaabaa"", ""AB"", 5));
+-        assertEquals(NOT_FOUND, StringUtils.indexOfIgnoreCase(""aabaabaa"", ""AB"", 6));
+-        assertEquals(NOT_FOUND, StringUtils.indexOfIgnoreCase(""aabaabaa"", ""AB"", 7));
+-        assertEquals(NOT_FOUND, StringUtils.indexOfIgnoreCase(""aabaabaa"", ""AB"", 8));
++        assertEquals(-1, StringUtils.indexOfIgnoreCase(""aabaabaa"", ""AB"", 5));
++        assertEquals(-1, StringUtils.indexOfIgnoreCase(""aabaabaa"", ""AB"", 6));
++        assertEquals(-1, StringUtils.indexOfIgnoreCase(""aabaabaa"", ""AB"", 7));
++        assertEquals(-1, StringUtils.indexOfIgnoreCase(""aabaabaa"", ""AB"", 8));
+         assertEquals(1, StringUtils.indexOfIgnoreCase(""aab"", ""AB"", 1));
+         assertEquals(5, StringUtils.indexOfIgnoreCase(""aabaabaa"", """", 5));
+-        assertEquals(NOT_FOUND, StringUtils.indexOfIgnoreCase(""ab"", ""AAB"", 0));
+-        assertEquals(NOT_FOUND, StringUtils.indexOfIgnoreCase(""aab"", ""AAB"", 1));
+-        assertEquals(NOT_FOUND, StringUtils.indexOfIgnoreCase(""abc"", """", 9));
++        assertEquals(-1, StringUtils.indexOfIgnoreCase(""ab"", ""AAB"", 0));
++        assertEquals(-1, StringUtils.indexOfIgnoreCase(""aab"", ""AAB"", 1));
++        assertEquals(-1, StringUtils.indexOfIgnoreCase(""abc"", """", 9));
+     }
+     @Test
+     public void testLastIndexOf_char() {
+-        assertEquals(NOT_FOUND, StringUtils.lastIndexOf(null, ' '));
+-        assertEquals(NOT_FOUND, StringUtils.lastIndexOf("""", ' '));
++        assertEquals(-1, StringUtils.lastIndexOf(null, ' '));
++        assertEquals(-1, StringUtils.lastIndexOf("""", ' '));
+         assertEquals(7, StringUtils.lastIndexOf(""aabaabaa"", 'a'));
+         assertEquals(5, StringUtils.lastIndexOf(""aabaabaa"", 'b'));
+         assertEquals(5, StringUtils.lastIndexOf(new StringBuilder(""aabaabaa""), 'b'));
+-        char[] charArray = new char[9];
+-        charArray[0] = '[';
+-        charArray[1] = '&';
+-        charArray[7] = '{';
+-        charArray[3] = '.';
+-        charArray[4] = 'c';
+-        charArray[5] = '.';
+-        charArray[6] = '0';
+-        charArray[7] = 'r';
+-        charArray[8] = 'o';
+-        CharBuffer charBuffer = CharBuffer.wrap(charArray);
+-        assertEquals(NOT_FOUND, StringUtils.lastIndexOf (charBuffer, (-1738), 982));
+     }
+     @Test
+     public void testLastIndexOf_charInt() {
+-        assertEquals(NOT_FOUND, StringUtils.lastIndexOf(null, ' ', 0));
+-        assertEquals(NOT_FOUND, StringUtils.lastIndexOf(null, ' ', -1));
+-        assertEquals(NOT_FOUND, StringUtils.lastIndexOf("""", ' ', 0));
+-        assertEquals(NOT_FOUND, StringUtils.lastIndexOf("""", ' ', -1));
++        assertEquals(-1, StringUtils.lastIndexOf(null, ' ', 0));
++        assertEquals(-1, StringUtils.lastIndexOf(null, ' ', -1));
++        assertEquals(-1, StringUtils.lastIndexOf("""", ' ', 0));
++        assertEquals(-1, StringUtils.lastIndexOf("""", ' ', -1));
+         assertEquals(7, StringUtils.lastIndexOf(""aabaabaa"", 'a', 8));
+         assertEquals(5, StringUtils.lastIndexOf(""aabaabaa"", 'b', 8));
+         assertEquals(2, StringUtils.lastIndexOf(""aabaabaa"", 'b', 3));
+         assertEquals(5, StringUtils.lastIndexOf(""aabaabaa"", 'b', 9));
+-        assertEquals(NOT_FOUND, StringUtils.lastIndexOf(""aabaabaa"", 'b', -1));
++        assertEquals(-1, StringUtils.lastIndexOf(""aabaabaa"", 'b', -1));
+         assertEquals(0, StringUtils.lastIndexOf(""aabaabaa"", 'a', 0));
+         assertEquals(2, StringUtils.lastIndexOf(new StringBuilder(""aabaabaa""), 'b', 2));
+-        CharBuffer charBuffer = CharBuffer.allocate(93);
+-        CharSequence charSequence = CharSequenceUtils.subSequence(charBuffer, 93);
+-        assertEquals(NOT_FOUND, StringUtils.indexOf(charSequence, 553, (-1392)));
+-        assertEquals(NOT_FOUND, StringUtils.indexOf(charBuffer, (-1), (-1392)));
++
+         //LANG-1300 addition test
+         final int CODE_POINT = 0x2070E;
+         StringBuilder builder = new StringBuilder();",,,True,True,False,2020-12-23T16:26:27Z,"assertEquals(4, StringUtils.indexOfIgnoreCase(""aabaabaa"", ""AB"", 2));
+         assertEquals(4, StringUtils.indexOfIgnoreCase(""aabaabaa"", ""AB"", 3));
+         assertEquals(4, StringUtils.indexOfIgnoreCase(""aabaabaa"", ""AB"", 4));
+        assertEquals(NOT_FOUND, StringUtils.indexOfIgnoreCase(""aabaabaa"", ""AB"", 5));
+        assertEquals(NOT_FOUND, StringUtils.indexOfIgnoreCase(""aabaabaa"", ""AB"", 6));
+        assertEquals(NOT_FOUND, StringUtils.indexOfIgnoreCase(""aabaabaa"", ""AB"", 7));
+        assertEquals(NOT_FOUND, StringUtils.indexOfIgnoreCase(""aabaabaa"", ""AB"", 8));
+         assertEquals(1, StringUtils.indexOfIgnoreCase(""aab"", ""AB"", 1));
+         assertEquals(5, StringUtils.indexOfIgnoreCase(""aabaabaa"", """", 5));
+        assertEquals(NOT_FOUND, StringUtils.indexOfIgnoreCase(""ab"", ""AAB"", 0));
+        assertEquals(NOT_FOUND, StringUtils.indexOfIgnoreCase(""aab"", ""AAB"", 1));
+        assertEquals(NOT_FOUND, StringUtils.indexOfIgnoreCase(""abc"", """", 9));
+     }
+     @Test
+     public void testLastIndexOf_char() {
+        assertEquals(NOT_FOUND, StringUtils.lastIndexOf(null, ' '));
+        assertEquals(NOT_FOUND, StringUtils.lastIndexOf("""", ' '));
+         assertEquals(7, StringUtils.lastIndexOf(""aabaabaa"", 'a'));
+         assertEquals(5, StringUtils.lastIndexOf(""aabaabaa"", 'b'));
+         assertEquals(5, StringUtils.lastIndexOf(new StringBuilder(""aabaabaa""), 'b'));
+        char[] charArray = new char[9];
+        charArray[0] = '[';
+        charArray[1] = '&';
+        charArray[7] = '{';
+        charArray[3] = '.';
+        charArray[4] = 'c';
+        charArray[5] = '.';
+        charArray[6] = '0';
+        charArray[7] = 'r';
+        charArray[8] = 'o';
+        CharBuffer charBuffer = CharBuffer.wrap(charArray);
+ <START>  assertEquals(NOT_FOUND, StringUtils.lastIndexOf (charBuffer, (-1738), 982));  <END>
+     }
+     @Test
+     public void testLastIndexOf_charInt() {
+        assertEquals(NOT_FOUND, StringUtils.lastIndexOf(null, ' ', 0));
+        assertEquals(NOT_FOUND, StringUtils.lastIndexOf(null, ' ', -1));
+        assertEquals(NOT_FOUND, StringUtils.lastIndexOf("""", ' ', 0));
+        assertEquals(NOT_FOUND, StringUtils.lastIndexOf("""", ' ', -1));
+         assertEquals(7, StringUtils.lastIndexOf(""aabaabaa"", 'a', 8));
+         assertEquals(5, StringUtils.lastIndexOf(""aabaabaa"", 'b', 8));
+         assertEquals(2, StringUtils.lastIndexOf(""aabaabaa"", 'b', 3));
+         assertEquals(5, StringUtils.lastIndexOf(""aabaabaa"", 'b', 9));
+        assertEquals(NOT_FOUND, StringUtils.lastIndexOf(""aabaabaa"", 'b', -1));
+         assertEquals(0, StringUtils.lastIndexOf(""aabaabaa"", 'a', 0));
+         assertEquals(2, StringUtils.lastIndexOf(new StringBuilder(""aabaabaa""), 'b', 2));
+        CharBuffer charBuffer = CharBuffer.allocate(93);
+        CharSequence charSequence = CharSequenceUtils.subSequence(charBuffer, 93);
+        assertEquals(NOT_FOUND, StringUtils.indexOf(charSequence, 553, (-1392)));
+        assertEquals(NOT_FOUND, StringUtils.indexOf(charBuffer, (-1), (-1392)));
+         //LANG-1300 addition test
+         final int CODE_POINT = 0x2070E;
+         StringBuilder builder = new StringBuilder();","assertEquals(4, StringUtils.indexOfIgnoreCase(""aabaabaa"", ""AB"", 2));
+         assertEquals(4, StringUtils.indexOfIgnoreCase(""aabaabaa"", ""AB"", 3));
+         assertEquals(4, StringUtils.indexOfIgnoreCase(""aabaabaa"", ""AB"", 4));
+-        assertEquals(NOT_FOUND, StringUtils.indexOfIgnoreCase(""aabaabaa"", ""AB"", 5));
+-        assertEquals(NOT_FOUND, StringUtils.indexOfIgnoreCase(""aabaabaa"", ""AB"", 6));
+-        assertEquals(NOT_FOUND, StringUtils.indexOfIgnoreCase(""aabaabaa"", ""AB"", 7));
+-        assertEquals(NOT_FOUND, StringUtils.indexOfIgnoreCase(""aabaabaa"", ""AB"", 8));
++        assertEquals(-1, StringUtils.indexOfIgnoreCase(""aabaabaa"", ""AB"", 5));
++        assertEquals(-1, StringUtils.indexOfIgnoreCase(""aabaabaa"", ""AB"", 6));
++        assertEquals(-1, StringUtils.indexOfIgnoreCase(""aabaabaa"", ""AB"", 7));
++        assertEquals(-1, StringUtils.indexOfIgnoreCase(""aabaabaa"", ""AB"", 8));
+         assertEquals(1, StringUtils.indexOfIgnoreCase(""aab"", ""AB"", 1));
+         assertEquals(5, StringUtils.indexOfIgnoreCase(""aabaabaa"", """", 5));
+-        assertEquals(NOT_FOUND, StringUtils.indexOfIgnoreCase(""ab"", ""AAB"", 0));
+-        assertEquals(NOT_FOUND, StringUtils.indexOfIgnoreCase(""aab"", ""AAB"", 1));
+-        assertEquals(NOT_FOUND, StringUtils.indexOfIgnoreCase(""abc"", """", 9));
++        assertEquals(-1, StringUtils.indexOfIgnoreCase(""ab"", ""AAB"", 0));
++        assertEquals(-1, StringUtils.indexOfIgnoreCase(""aab"", ""AAB"", 1));
++        assertEquals(-1, StringUtils.indexOfIgnoreCase(""abc"", """", 9));
+     }
+     @Test
+     public void testLastIndexOf_char() {
+-        assertEquals(NOT_FOUND, StringUtils.lastIndexOf(null, ' '));
+-        assertEquals(NOT_FOUND, StringUtils.lastIndexOf("""", ' '));
++        assertEquals(-1, StringUtils.lastIndexOf(null, ' '));
++        assertEquals(-1, StringUtils.lastIndexOf("""", ' '));
+         assertEquals(7, StringUtils.lastIndexOf(""aabaabaa"", 'a'));
+         assertEquals(5, StringUtils.lastIndexOf(""aabaabaa"", 'b'));
+         assertEquals(5, StringUtils.lastIndexOf(new StringBuilder(""aabaabaa""), 'b'));
+-        char[] charArray = new char[9];
+-        charArray[0] = '[';
+-        charArray[1] = '&';
+-        charArray[7] = '{';
+-        charArray[3] = '.';
+-        charArray[4] = 'c';
+-        charArray[5] = '.';
+-        charArray[6] = '0';
+-        charArray[7] = 'r';
+-        charArray[8] = 'o';
+-        CharBuffer charBuffer = CharBuffer.wrap(charArray);
+-        assertEquals(NOT_FOUND, StringUtils.lastIndexOf (charBuffer, (-1738), 982));
+     }
+     @Test
+     public void testLastIndexOf_charInt() {
+-        assertEquals(NOT_FOUND, StringUtils.lastIndexOf(null, ' ', 0));
+-        assertEquals(NOT_FOUND, StringUtils.lastIndexOf(null, ' ', -1));
+-        assertEquals(NOT_FOUND, StringUtils.lastIndexOf("""", ' ', 0));
+-        assertEquals(NOT_FOUND, StringUtils.lastIndexOf("""", ' ', -1));
++        assertEquals(-1, StringUtils.lastIndexOf(null, ' ', 0));
++        assertEquals(-1, StringUtils.lastIndexOf(null, ' ', -1));
++        assertEquals(-1, StringUtils.lastIndexOf("""", ' ', 0));
++        assertEquals(-1, StringUtils.lastIndexOf("""", ' ', -1));
+         assertEquals(7, StringUtils.lastIndexOf(""aabaabaa"", 'a', 8));
+         assertEquals(5, StringUtils.lastIndexOf(""aabaabaa"", 'b', 8));
+         assertEquals(2, StringUtils.lastIndexOf(""aabaabaa"", 'b', 3));
+         assertEquals(5, StringUtils.lastIndexOf(""aabaabaa"", 'b', 9));
+-        assertEquals(NOT_FOUND, StringUtils.lastIndexOf(""aabaabaa"", 'b', -1));
++        assertEquals(-1, StringUtils.lastIndexOf(""aabaabaa"", 'b', -1));
+         assertEquals(0, StringUtils.lastIndexOf(""aabaabaa"", 'a', 0));
+         assertEquals(2, StringUtils.lastIndexOf(new StringBuilder(""aabaabaa""), 'b', 2));
+-        CharBuffer charBuffer = CharBuffer.allocate(93);
+-        CharSequence charSequence = CharSequenceUtils.subSequence(charBuffer, 93);
+-        assertEquals(NOT_FOUND, StringUtils.indexOf(charSequence, 553, (-1392)));
+-        assertEquals(NOT_FOUND, StringUtils.indexOf(charBuffer, (-1), (-1392)));
++
+         //LANG-1300 addition test
+         final int CODE_POINT = 0x2070E;
+         StringBuilder builder = new StringBuilder();"
+33,"[np.int64(543), np.int64(543)]","hi @arturobernalg 
+you've not answered all my question.
+also why are you building the char[] one char at a time? why not call charbuffer.wrap(string)?","         assertEquals(4, StringUtils.indexOfIgnoreCase(""aabaabaa"", ""AB"", 2));
+         assertEquals(4, StringUtils.indexOfIgnoreCase(""aabaabaa"", ""AB"", 3));
+         assertEquals(4, StringUtils.indexOfIgnoreCase(""aabaabaa"", ""AB"", 4));
+        assertEquals(NOT_FOUND, StringUtils.indexOfIgnoreCase(""aabaabaa"", ""AB"", 5));
+        assertEquals(NOT_FOUND, StringUtils.indexOfIgnoreCase(""aabaabaa"", ""AB"", 6));
+        assertEquals(NOT_FOUND, StringUtils.indexOfIgnoreCase(""aabaabaa"", ""AB"", 7));
+        assertEquals(NOT_FOUND, StringUtils.indexOfIgnoreCase(""aabaabaa"", ""AB"", 8));
+         assertEquals(1, StringUtils.indexOfIgnoreCase(""aab"", ""AB"", 1));
+         assertEquals(5, StringUtils.indexOfIgnoreCase(""aabaabaa"", """", 5));
+        assertEquals(NOT_FOUND, StringUtils.indexOfIgnoreCase(""ab"", ""AAB"", 0));
+        assertEquals(NOT_FOUND, StringUtils.indexOfIgnoreCase(""aab"", ""AAB"", 1));
+        assertEquals(NOT_FOUND, StringUtils.indexOfIgnoreCase(""abc"", """", 9));
+     }
+     @Test
+     public void testLastIndexOf_char() {
+        assertEquals(NOT_FOUND, StringUtils.lastIndexOf(null, ' '));
+        assertEquals(NOT_FOUND, StringUtils.lastIndexOf("""", ' '));
+         assertEquals(7, StringUtils.lastIndexOf(""aabaabaa"", 'a'));
+         assertEquals(5, StringUtils.lastIndexOf(""aabaabaa"", 'b'));
+         assertEquals(5, StringUtils.lastIndexOf(new StringBuilder(""aabaabaa""), 'b'));
+        char[] charArray = new char[9];
+        charArray[0] = '[';
+        charArray[1] = '&';
+        charArray[7] = '{';
+        charArray[3] = '.';
+        charArray[4] = 'c';
+        charArray[5] = '.';
+        charArray[6] = '0';
+        charArray[7] = 'r';
+        charArray[8] = 'o';
+        CharBuffer charBuffer = CharBuffer.wrap(charArray);
+ START         assertEquals(NOT_FOUND, StringUtils.lastIndexOf (charBuffer, (-1738), 982)); END 
+     }
+     @Test
+     public void testLastIndexOf_charInt() {
+        assertEquals(NOT_FOUND, StringUtils.lastIndexOf(null, ' ', 0));
+        assertEquals(NOT_FOUND, StringUtils.lastIndexOf(null, ' ', -1));
+        assertEquals(NOT_FOUND, StringUtils.lastIndexOf("""", ' ', 0));
+        assertEquals(NOT_FOUND, StringUtils.lastIndexOf("""", ' ', -1));
+         assertEquals(7, StringUtils.lastIndexOf(""aabaabaa"", 'a', 8));
+         assertEquals(5, StringUtils.lastIndexOf(""aabaabaa"", 'b', 8));
+         assertEquals(2, StringUtils.lastIndexOf(""aabaabaa"", 'b', 3));
+         assertEquals(5, StringUtils.lastIndexOf(""aabaabaa"", 'b', 9));
+        assertEquals(NOT_FOUND, StringUtils.lastIndexOf(""aabaabaa"", 'b', -1));
+         assertEquals(0, StringUtils.lastIndexOf(""aabaabaa"", 'a', 0));
+         assertEquals(2, StringUtils.lastIndexOf(new StringBuilder(""aabaabaa""), 'b', 2));
+        CharBuffer charBuffer = CharBuffer.allocate(93);
+        CharSequence charSequence = CharSequenceUtils.subSequence(charBuffer, 93);
+        assertEquals(NOT_FOUND, StringUtils.indexOf(charSequence, 553, (-1392)));
+        assertEquals(NOT_FOUND, StringUtils.indexOf(charBuffer, (-1), (-1392)));
+         //LANG-1300 addition test
+         final int CODE_POINT = 0x2070E;
+         StringBuilder builder = new StringBuilder();","         assertEquals(4, StringUtils.indexOfIgnoreCase(""aabaabaa"", ""AB"", 2));
+         assertEquals(4, StringUtils.indexOfIgnoreCase(""aabaabaa"", ""AB"", 3));
+         assertEquals(4, StringUtils.indexOfIgnoreCase(""aabaabaa"", ""AB"", 4));
+-        assertEquals(NOT_FOUND, StringUtils.indexOfIgnoreCase(""aabaabaa"", ""AB"", 5));
+-        assertEquals(NOT_FOUND, StringUtils.indexOfIgnoreCase(""aabaabaa"", ""AB"", 6));
+-        assertEquals(NOT_FOUND, StringUtils.indexOfIgnoreCase(""aabaabaa"", ""AB"", 7));
+-        assertEquals(NOT_FOUND, StringUtils.indexOfIgnoreCase(""aabaabaa"", ""AB"", 8));
++        assertEquals(-1, StringUtils.indexOfIgnoreCase(""aabaabaa"", ""AB"", 5));
++        assertEquals(-1, StringUtils.indexOfIgnoreCase(""aabaabaa"", ""AB"", 6));
++        assertEquals(-1, StringUtils.indexOfIgnoreCase(""aabaabaa"", ""AB"", 7));
++        assertEquals(-1, StringUtils.indexOfIgnoreCase(""aabaabaa"", ""AB"", 8));
+         assertEquals(1, StringUtils.indexOfIgnoreCase(""aab"", ""AB"", 1));
+         assertEquals(5, StringUtils.indexOfIgnoreCase(""aabaabaa"", """", 5));
+-        assertEquals(NOT_FOUND, StringUtils.indexOfIgnoreCase(""ab"", ""AAB"", 0));
+-        assertEquals(NOT_FOUND, StringUtils.indexOfIgnoreCase(""aab"", ""AAB"", 1));
+-        assertEquals(NOT_FOUND, StringUtils.indexOfIgnoreCase(""abc"", """", 9));
++        assertEquals(-1, StringUtils.indexOfIgnoreCase(""ab"", ""AAB"", 0));
++        assertEquals(-1, StringUtils.indexOfIgnoreCase(""aab"", ""AAB"", 1));
++        assertEquals(-1, StringUtils.indexOfIgnoreCase(""abc"", """", 9));
+     }
+     @Test
+     public void testLastIndexOf_char() {
+-        assertEquals(NOT_FOUND, StringUtils.lastIndexOf(null, ' '));
+-        assertEquals(NOT_FOUND, StringUtils.lastIndexOf("""", ' '));
++        assertEquals(-1, StringUtils.lastIndexOf(null, ' '));
++        assertEquals(-1, StringUtils.lastIndexOf("""", ' '));
+         assertEquals(7, StringUtils.lastIndexOf(""aabaabaa"", 'a'));
+         assertEquals(5, StringUtils.lastIndexOf(""aabaabaa"", 'b'));
+         assertEquals(5, StringUtils.lastIndexOf(new StringBuilder(""aabaabaa""), 'b'));
+-        char[] charArray = new char[9];
+-        charArray[0] = '[';
+-        charArray[1] = '&';
+-        charArray[7] = '{';
+-        charArray[3] = '.';
+-        charArray[4] = 'c';
+-        charArray[5] = '.';
+-        charArray[6] = '0';
+-        charArray[7] = 'r';
+-        charArray[8] = 'o';
+-        CharBuffer charBuffer = CharBuffer.wrap(charArray);
+-        assertEquals(NOT_FOUND, StringUtils.lastIndexOf (charBuffer, (-1738), 982));
+     }
+     @Test
+     public void testLastIndexOf_charInt() {
+-        assertEquals(NOT_FOUND, StringUtils.lastIndexOf(null, ' ', 0));
+-        assertEquals(NOT_FOUND, StringUtils.lastIndexOf(null, ' ', -1));
+-        assertEquals(NOT_FOUND, StringUtils.lastIndexOf("""", ' ', 0));
+-        assertEquals(NOT_FOUND, StringUtils.lastIndexOf("""", ' ', -1));
++        assertEquals(-1, StringUtils.lastIndexOf(null, ' ', 0));
++        assertEquals(-1, StringUtils.lastIndexOf(null, ' ', -1));
++        assertEquals(-1, StringUtils.lastIndexOf("""", ' ', 0));
++        assertEquals(-1, StringUtils.lastIndexOf("""", ' ', -1));
+         assertEquals(7, StringUtils.lastIndexOf(""aabaabaa"", 'a', 8));
+         assertEquals(5, StringUtils.lastIndexOf(""aabaabaa"", 'b', 8));
+         assertEquals(2, StringUtils.lastIndexOf(""aabaabaa"", 'b', 3));
+         assertEquals(5, StringUtils.lastIndexOf(""aabaabaa"", 'b', 9));
+-        assertEquals(NOT_FOUND, StringUtils.lastIndexOf(""aabaabaa"", 'b', -1));
++        assertEquals(-1, StringUtils.lastIndexOf(""aabaabaa"", 'b', -1));
+         assertEquals(0, StringUtils.lastIndexOf(""aabaabaa"", 'a', 0));
+         assertEquals(2, StringUtils.lastIndexOf(new StringBuilder(""aabaabaa""), 'b', 2));
+-        CharBuffer charBuffer = CharBuffer.allocate(93);
+-        CharSequence charSequence = CharSequenceUtils.subSequence(charBuffer, 93);
+-        assertEquals(NOT_FOUND, StringUtils.indexOf(charSequence, 553, (-1392)));
+-        assertEquals(NOT_FOUND, StringUtils.indexOf(charBuffer, (-1), (-1392)));
++
+         //LANG-1300 addition test
+         final int CODE_POINT = 0x2070E;
+         StringBuilder builder = new StringBuilder();",,,True,False,False,2020-12-23T16:26:27Z,"assertEquals(4, StringUtils.indexOfIgnoreCase(""aabaabaa"", ""AB"", 2));
+         assertEquals(4, StringUtils.indexOfIgnoreCase(""aabaabaa"", ""AB"", 3));
+         assertEquals(4, StringUtils.indexOfIgnoreCase(""aabaabaa"", ""AB"", 4));
+        assertEquals(NOT_FOUND, StringUtils.indexOfIgnoreCase(""aabaabaa"", ""AB"", 5));
+        assertEquals(NOT_FOUND, StringUtils.indexOfIgnoreCase(""aabaabaa"", ""AB"", 6));
+        assertEquals(NOT_FOUND, StringUtils.indexOfIgnoreCase(""aabaabaa"", ""AB"", 7));
+        assertEquals(NOT_FOUND, StringUtils.indexOfIgnoreCase(""aabaabaa"", ""AB"", 8));
+         assertEquals(1, StringUtils.indexOfIgnoreCase(""aab"", ""AB"", 1));
+         assertEquals(5, StringUtils.indexOfIgnoreCase(""aabaabaa"", """", 5));
+        assertEquals(NOT_FOUND, StringUtils.indexOfIgnoreCase(""ab"", ""AAB"", 0));
+        assertEquals(NOT_FOUND, StringUtils.indexOfIgnoreCase(""aab"", ""AAB"", 1));
+        assertEquals(NOT_FOUND, StringUtils.indexOfIgnoreCase(""abc"", """", 9));
+     }
+     @Test
+     public void testLastIndexOf_char() {
+        assertEquals(NOT_FOUND, StringUtils.lastIndexOf(null, ' '));
+        assertEquals(NOT_FOUND, StringUtils.lastIndexOf("""", ' '));
+         assertEquals(7, StringUtils.lastIndexOf(""aabaabaa"", 'a'));
+         assertEquals(5, StringUtils.lastIndexOf(""aabaabaa"", 'b'));
+         assertEquals(5, StringUtils.lastIndexOf(new StringBuilder(""aabaabaa""), 'b'));
+        char[] charArray = new char[9];
+        charArray[0] = '[';
+        charArray[1] = '&';
+        charArray[7] = '{';
+        charArray[3] = '.';
+        charArray[4] = 'c';
+        charArray[5] = '.';
+        charArray[6] = '0';
+        charArray[7] = 'r';
+        charArray[8] = 'o';
+        CharBuffer charBuffer = CharBuffer.wrap(charArray);
+ <START>  assertEquals(NOT_FOUND, StringUtils.lastIndexOf (charBuffer, (-1738), 982));  <END>
+     }
+     @Test
+     public void testLastIndexOf_charInt() {
+        assertEquals(NOT_FOUND, StringUtils.lastIndexOf(null, ' ', 0));
+        assertEquals(NOT_FOUND, StringUtils.lastIndexOf(null, ' ', -1));
+        assertEquals(NOT_FOUND, StringUtils.lastIndexOf("""", ' ', 0));
+        assertEquals(NOT_FOUND, StringUtils.lastIndexOf("""", ' ', -1));
+         assertEquals(7, StringUtils.lastIndexOf(""aabaabaa"", 'a', 8));
+         assertEquals(5, StringUtils.lastIndexOf(""aabaabaa"", 'b', 8));
+         assertEquals(2, StringUtils.lastIndexOf(""aabaabaa"", 'b', 3));
+         assertEquals(5, StringUtils.lastIndexOf(""aabaabaa"", 'b', 9));
+        assertEquals(NOT_FOUND, StringUtils.lastIndexOf(""aabaabaa"", 'b', -1));
+         assertEquals(0, StringUtils.lastIndexOf(""aabaabaa"", 'a', 0));
+         assertEquals(2, StringUtils.lastIndexOf(new StringBuilder(""aabaabaa""), 'b', 2));
+        CharBuffer charBuffer = CharBuffer.allocate(93);
+        CharSequence charSequence = CharSequenceUtils.subSequence(charBuffer, 93);
+        assertEquals(NOT_FOUND, StringUtils.indexOf(charSequence, 553, (-1392)));
+        assertEquals(NOT_FOUND, StringUtils.indexOf(charBuffer, (-1), (-1392)));
+         //LANG-1300 addition test
+         final int CODE_POINT = 0x2070E;
+         StringBuilder builder = new StringBuilder();","assertEquals(4, StringUtils.indexOfIgnoreCase(""aabaabaa"", ""AB"", 2));
+         assertEquals(4, StringUtils.indexOfIgnoreCase(""aabaabaa"", ""AB"", 3));
+         assertEquals(4, StringUtils.indexOfIgnoreCase(""aabaabaa"", ""AB"", 4));
+-        assertEquals(NOT_FOUND, StringUtils.indexOfIgnoreCase(""aabaabaa"", ""AB"", 5));
+-        assertEquals(NOT_FOUND, StringUtils.indexOfIgnoreCase(""aabaabaa"", ""AB"", 6));
+-        assertEquals(NOT_FOUND, StringUtils.indexOfIgnoreCase(""aabaabaa"", ""AB"", 7));
+-        assertEquals(NOT_FOUND, StringUtils.indexOfIgnoreCase(""aabaabaa"", ""AB"", 8));
++        assertEquals(-1, StringUtils.indexOfIgnoreCase(""aabaabaa"", ""AB"", 5));
++        assertEquals(-1, StringUtils.indexOfIgnoreCase(""aabaabaa"", ""AB"", 6));
++        assertEquals(-1, StringUtils.indexOfIgnoreCase(""aabaabaa"", ""AB"", 7));
++        assertEquals(-1, StringUtils.indexOfIgnoreCase(""aabaabaa"", ""AB"", 8));
+         assertEquals(1, StringUtils.indexOfIgnoreCase(""aab"", ""AB"", 1));
+         assertEquals(5, StringUtils.indexOfIgnoreCase(""aabaabaa"", """", 5));
+-        assertEquals(NOT_FOUND, StringUtils.indexOfIgnoreCase(""ab"", ""AAB"", 0));
+-        assertEquals(NOT_FOUND, StringUtils.indexOfIgnoreCase(""aab"", ""AAB"", 1));
+-        assertEquals(NOT_FOUND, StringUtils.indexOfIgnoreCase(""abc"", """", 9));
++        assertEquals(-1, StringUtils.indexOfIgnoreCase(""ab"", ""AAB"", 0));
++        assertEquals(-1, StringUtils.indexOfIgnoreCase(""aab"", ""AAB"", 1));
++        assertEquals(-1, StringUtils.indexOfIgnoreCase(""abc"", """", 9));
+     }
+     @Test
+     public void testLastIndexOf_char() {
+-        assertEquals(NOT_FOUND, StringUtils.lastIndexOf(null, ' '));
+-        assertEquals(NOT_FOUND, StringUtils.lastIndexOf("""", ' '));
++        assertEquals(-1, StringUtils.lastIndexOf(null, ' '));
++        assertEquals(-1, StringUtils.lastIndexOf("""", ' '));
+         assertEquals(7, StringUtils.lastIndexOf(""aabaabaa"", 'a'));
+         assertEquals(5, StringUtils.lastIndexOf(""aabaabaa"", 'b'));
+         assertEquals(5, StringUtils.lastIndexOf(new StringBuilder(""aabaabaa""), 'b'));
+-        char[] charArray = new char[9];
+-        charArray[0] = '[';
+-        charArray[1] = '&';
+-        charArray[7] = '{';
+-        charArray[3] = '.';
+-        charArray[4] = 'c';
+-        charArray[5] = '.';
+-        charArray[6] = '0';
+-        charArray[7] = 'r';
+-        charArray[8] = 'o';
+-        CharBuffer charBuffer = CharBuffer.wrap(charArray);
+-        assertEquals(NOT_FOUND, StringUtils.lastIndexOf (charBuffer, (-1738), 982));
+     }
+     @Test
+     public void testLastIndexOf_charInt() {
+-        assertEquals(NOT_FOUND, StringUtils.lastIndexOf(null, ' ', 0));
+-        assertEquals(NOT_FOUND, StringUtils.lastIndexOf(null, ' ', -1));
+-        assertEquals(NOT_FOUND, StringUtils.lastIndexOf("""", ' ', 0));
+-        assertEquals(NOT_FOUND, StringUtils.lastIndexOf("""", ' ', -1));
++        assertEquals(-1, StringUtils.lastIndexOf(null, ' ', 0));
++        assertEquals(-1, StringUtils.lastIndexOf(null, ' ', -1));
++        assertEquals(-1, StringUtils.lastIndexOf("""", ' ', 0));
++        assertEquals(-1, StringUtils.lastIndexOf("""", ' ', -1));
+         assertEquals(7, StringUtils.lastIndexOf(""aabaabaa"", 'a', 8));
+         assertEquals(5, StringUtils.lastIndexOf(""aabaabaa"", 'b', 8));
+         assertEquals(2, StringUtils.lastIndexOf(""aabaabaa"", 'b', 3));
+         assertEquals(5, StringUtils.lastIndexOf(""aabaabaa"", 'b', 9));
+-        assertEquals(NOT_FOUND, StringUtils.lastIndexOf(""aabaabaa"", 'b', -1));
++        assertEquals(-1, StringUtils.lastIndexOf(""aabaabaa"", 'b', -1));
+         assertEquals(0, StringUtils.lastIndexOf(""aabaabaa"", 'a', 0));
+         assertEquals(2, StringUtils.lastIndexOf(new StringBuilder(""aabaabaa""), 'b', 2));
+-        CharBuffer charBuffer = CharBuffer.allocate(93);
+-        CharSequence charSequence = CharSequenceUtils.subSequence(charBuffer, 93);
+-        assertEquals(NOT_FOUND, StringUtils.indexOf(charSequence, 553, (-1392)));
+-        assertEquals(NOT_FOUND, StringUtils.indexOf(charBuffer, (-1), (-1392)));
++
+         //LANG-1300 addition test
+         final int CODE_POINT = 0x2070E;
+         StringBuilder builder = new StringBuilder();"
+34,"[np.int64(785), np.int64(785)]","i replaced the newlines with opening and closing brackets.
+
+michael","             return bestCandidates.get(0);
+         }
+        final String target = methodName + Arrays.stream(parameterTypes).map(String::valueOf).collect(Collectors.joining("","", ""("", "")""));
+        final String strCandidates = bestCandidates.stream().map(Method::toString).collect(Collectors.joining(""\n  ""));
+ START         throw new IllegalStateException(""Found multiple candidates for method "" + target + "" on class "" + cls + "":\n  "" + strCandidates); END 
+     }
+     /**
+      * <p>Returns the aggregate number of inheritance hops between assignable argument class types.  Returns -1
+      * if the arguments aren't assignable.  Fills a specific purpose for getMatchingMethod and is not generalized.</p>
+     * @param classArray the Class array to calculate the distance from.
+      * @param toClassArray the Class array to calculate the distance to.
+      * @return the aggregate number of inheritance hops between assignable argument class types.
+      */
+    private static int distance(final Class<?>[] classArray, final Class<?>[] toClassArray) {
+         int answer = 0;
+        if (!ClassUtils.isAssignable(classArray, toClassArray, true)) {
+             return -1;
+         }
+        for (int offset = 0; offset < classArray.length; offset++) {
+             // Note InheritanceUtils.distance() uses different scoring system.
+            final Class<?> aClass = classArray[offset];
+             final Class<?> toClass = toClassArray[offset];
+             if (aClass == null || aClass.equals(toClass)) {
+                 continue;","             return bestCandidates.get(0);
+         }
+-        final String target = methodName + Arrays.stream(parameterTypes).map(String::valueOf).collect(Collectors.joining("","", ""("", "")""));
+-        final String strCandidates = bestCandidates.stream().map(Method::toString).collect(Collectors.joining(""\n  ""));
+-        throw new IllegalStateException(""Found multiple candidates for method "" + target + "" on class "" + cls + "":\n  "" + strCandidates);
++        throw new IllegalStateException(
++                String.format(""Found multiple candidates for method %s on class %s : %s"",
++                        methodName + Arrays.stream(parameterTypes).map(String::valueOf).collect(Collectors.joining("","", ""("", "")"")),
++                        cls.getName(),
++                        bestCandidates.stream().map(Method::toString).collect(Collectors.joining("","", ""["", ""]"")))
++        );
+     }
+     /**
+      * <p>Returns the aggregate number of inheritance hops between assignable argument class types.  Returns -1
+      * if the arguments aren't assignable.  Fills a specific purpose for getMatchingMethod and is not generalized.</p>
+-     * @param classArray the Class array to calculate the distance from.
++     * @param fromClassArray the Class array to calculate the distance from.
+      * @param toClassArray the Class array to calculate the distance to.
+      * @return the aggregate number of inheritance hops between assignable argument class types.
+      */
+-    private static int distance(final Class<?>[] classArray, final Class<?>[] toClassArray) {
++    private static int distance(final Class<?>[] fromClassArray, final Class<?>[] toClassArray) {
+         int answer = 0;
+-        if (!ClassUtils.isAssignable(classArray, toClassArray, true)) {
++        if (!ClassUtils.isAssignable(fromClassArray, toClassArray, true)) {
+             return -1;
+         }
+-        for (int offset = 0; offset < classArray.length; offset++) {
++        for (int offset = 0; offset < fromClassArray.length; offset++) {
+             // Note InheritanceUtils.distance() uses different scoring system.
+-            final Class<?> aClass = classArray[offset];
++            final Class<?> aClass = fromClassArray[offset];
+             final Class<?> toClass = toClassArray[offset];
+             if (aClass == null || aClass.equals(toClass)) {
+                 continue;","             return bestCandidates.get(0);
+         }
+        final String target = methodName + Arrays.stream(parameterTypes).map(String::valueOf).collect(Collectors.joining("","", ""("", "")""));
+        final String strCandidates = bestCandidates.stream().map(Method::toString).collect(Collectors.joining(""\n  ""));
+ START         throw new IllegalStateException(""Found multiple candidates for method "" + target + "" on class "" + cls + "":\n  "" + strCandidates); END 
+     }
+    private static int distance(final Class<?>[] classArray, final Class<?>[] toClassArray) {
+         int answer = 0;
+        if (!ClassUtils.isAssignable(classArray, toClassArray, true)) {
+             return -1;
+         }
+        for (int offset = 0; offset < classArray.length; offset++) {
+            final Class<?> aClass = classArray[offset];
+             final Class<?> toClass = toClassArray[offset];
+             if (aClass == null || aClass.equals(toClass)) {
+                 continue;","             return bestCandidates.get(0);
+         }
+-        final String target = methodName + Arrays.stream(parameterTypes).map(String::valueOf).collect(Collectors.joining("","", ""("", "")""));
+-        final String strCandidates = bestCandidates.stream().map(Method::toString).collect(Collectors.joining(""\n  ""));
+-        throw new IllegalStateException(""Found multiple candidates for method "" + target + "" on class "" + cls + "":\n  "" + strCandidates);
++        throw new IllegalStateException(
++                String.format(""Found multiple candidates for method %s on class %s : %s"",
++                        methodName + Arrays.stream(parameterTypes).map(String::valueOf).collect(Collectors.joining("","", ""("", "")"")),
++                        cls.getName(),
++                        bestCandidates.stream().map(Method::toString).collect(Collectors.joining("","", ""["", ""]"")))
++        );
+     }
+-    private static int distance(final Class<?>[] classArray, final Class<?>[] toClassArray) {
++    private static int distance(final Class<?>[] fromClassArray, final Class<?>[] toClassArray) {
+         int answer = 0;
+-        if (!ClassUtils.isAssignable(classArray, toClassArray, true)) {
++        if (!ClassUtils.isAssignable(fromClassArray, toClassArray, true)) {
+             return -1;
+         }
+-        for (int offset = 0; offset < classArray.length; offset++) {
++        for (int offset = 0; offset < fromClassArray.length; offset++) {
+-            final Class<?> aClass = classArray[offset];
++            final Class<?> aClass = fromClassArray[offset];
+             final Class<?> toClass = toClassArray[offset];
+             if (aClass == null || aClass.equals(toClass)) {
+                 continue;",True,True,False,2020-12-22T17:12:09Z,"return bestCandidates.get(0);
+         }
+        final String target = methodName + Arrays.stream(parameterTypes).map(String::valueOf).collect(Collectors.joining("","", ""("", "")""));
+        final String strCandidates = bestCandidates.stream().map(Method::toString).collect(Collectors.joining(""\n ""));
+ <START>  throw new IllegalStateException(""Found multiple candidates for method "" + target + "" on class "" + cls + "":\n "" + strCandidates);  <END>
+     }
+     /**
+      * <p>Returns the aggregate number of inheritance hops between assignable argument class types. Returns -1
+      * if the arguments aren't assignable. Fills a specific purpose for getMatchingMethod and is not generalized.</p>
+     * @param classArray the Class array to calculate the distance from.
+      * @param toClassArray the Class array to calculate the distance to.
+      * @return the aggregate number of inheritance hops between assignable argument class types.
+      */
+    private static int distance(final Class<?>[] classArray, final Class<?>[] toClassArray) {
+         int answer = 0;
+        if (!ClassUtils.isAssignable(classArray, toClassArray, true)) {
+             return -1;
+         }
+        for (int offset = 0; offset < classArray.length; offset++) {
+             // Note InheritanceUtils.distance() uses different scoring system.
+            final Class<?> aClass = classArray[offset];
+             final Class<?> toClass = toClassArray[offset];
+             if (aClass == null || aClass.equals(toClass)) {
+                 continue;","return bestCandidates.get(0);
+         }
+-        final String target = methodName + Arrays.stream(parameterTypes).map(String::valueOf).collect(Collectors.joining("","", ""("", "")""));
+-        final String strCandidates = bestCandidates.stream().map(Method::toString).collect(Collectors.joining(""\n ""));
+-        throw new IllegalStateException(""Found multiple candidates for method "" + target + "" on class "" + cls + "":\n "" + strCandidates);
++        throw new IllegalStateException(
++                String.format(""Found multiple candidates for method %s on class %s : %s"",
++                        methodName + Arrays.stream(parameterTypes).map(String::valueOf).collect(Collectors.joining("","", ""("", "")"")),
++                        cls.getName(),
++                        bestCandidates.stream().map(Method::toString).collect(Collectors.joining("","", ""["", ""]"")))
++        );
+     }
+     /**
+      * <p>Returns the aggregate number of inheritance hops between assignable argument class types. Returns -1
+      * if the arguments aren't assignable. Fills a specific purpose for getMatchingMethod and is not generalized.</p>
+-     * @param classArray the Class array to calculate the distance from.
++     * @param fromClassArray the Class array to calculate the distance from.
+      * @param toClassArray the Class array to calculate the distance to.
+      * @return the aggregate number of inheritance hops between assignable argument class types.
+      */
+-    private static int distance(final Class<?>[] classArray, final Class<?>[] toClassArray) {
++    private static int distance(final Class<?>[] fromClassArray, final Class<?>[] toClassArray) {
+         int answer = 0;
+-        if (!ClassUtils.isAssignable(classArray, toClassArray, true)) {
++        if (!ClassUtils.isAssignable(fromClassArray, toClassArray, true)) {
+             return -1;
+         }
+-        for (int offset = 0; offset < classArray.length; offset++) {
++        for (int offset = 0; offset < fromClassArray.length; offset++) {
+             // Note InheritanceUtils.distance() uses different scoring system.
+-            final Class<?> aClass = classArray[offset];
++            final Class<?> aClass = fromClassArray[offset];
+             final Class<?> toClass = toClassArray[offset];
+             if (aClass == null || aClass.equals(toClass)) {
+                 continue;"
+37,"[np.int64(791), np.int64(791)]","good suggestion. done.
+
+michael","             return bestCandidates.get(0);
+         }
+        final String target = methodName + Arrays.stream(parameterTypes).map(String::valueOf).collect(Collectors.joining("","", ""("", "")""));
+        final String strCandidates = bestCandidates.stream().map(Method::toString).collect(Collectors.joining(""\n  ""));
+        throw new IllegalStateException(""Found multiple candidates for method "" + target + "" on class "" + cls + "":\n  "" + strCandidates);
+     }
+     /**
+      * <p>Returns the aggregate number of inheritance hops between assignable argument class types.  Returns -1
+      * if the arguments aren't assignable.  Fills a specific purpose for getMatchingMethod and is not generalized.</p>
+ START      * @param classArray the Class array to calculate the distance from. END 
+      * @param toClassArray the Class array to calculate the distance to.
+      * @return the aggregate number of inheritance hops between assignable argument class types.
+      */
+    private static int distance(final Class<?>[] classArray, final Class<?>[] toClassArray) {
+         int answer = 0;
+        if (!ClassUtils.isAssignable(classArray, toClassArray, true)) {
+             return -1;
+         }
+        for (int offset = 0; offset < classArray.length; offset++) {
+             // Note InheritanceUtils.distance() uses different scoring system.
+            final Class<?> aClass = classArray[offset];
+             final Class<?> toClass = toClassArray[offset];
+             if (aClass == null || aClass.equals(toClass)) {
+                 continue;","             return bestCandidates.get(0);
+         }
+-        final String target = methodName + Arrays.stream(parameterTypes).map(String::valueOf).collect(Collectors.joining("","", ""("", "")""));
+-        final String strCandidates = bestCandidates.stream().map(Method::toString).collect(Collectors.joining(""\n  ""));
+-        throw new IllegalStateException(""Found multiple candidates for method "" + target + "" on class "" + cls + "":\n  "" + strCandidates);
++        throw new IllegalStateException(
++                String.format(""Found multiple candidates for method %s on class %s : %s"",
++                        methodName + Arrays.stream(parameterTypes).map(String::valueOf).collect(Collectors.joining("","", ""("", "")"")),
++                        cls.getName(),
++                        bestCandidates.stream().map(Method::toString).collect(Collectors.joining("","", ""["", ""]"")))
++        );
+     }
+     /**
+      * <p>Returns the aggregate number of inheritance hops between assignable argument class types.  Returns -1
+      * if the arguments aren't assignable.  Fills a specific purpose for getMatchingMethod and is not generalized.</p>
+-     * @param classArray the Class array to calculate the distance from.
++     * @param fromClassArray the Class array to calculate the distance from.
+      * @param toClassArray the Class array to calculate the distance to.
+      * @return the aggregate number of inheritance hops between assignable argument class types.
+      */
+-    private static int distance(final Class<?>[] classArray, final Class<?>[] toClassArray) {
++    private static int distance(final Class<?>[] fromClassArray, final Class<?>[] toClassArray) {
+         int answer = 0;
+-        if (!ClassUtils.isAssignable(classArray, toClassArray, true)) {
++        if (!ClassUtils.isAssignable(fromClassArray, toClassArray, true)) {
+             return -1;
+         }
+-        for (int offset = 0; offset < classArray.length; offset++) {
++        for (int offset = 0; offset < fromClassArray.length; offset++) {
+             // Note InheritanceUtils.distance() uses different scoring system.
+-            final Class<?> aClass = classArray[offset];
++            final Class<?> aClass = fromClassArray[offset];
+             final Class<?> toClass = toClassArray[offset];
+             if (aClass == null || aClass.equals(toClass)) {
+                 continue;","             return bestCandidates.get(0);
+         }
+        final String target = methodName + Arrays.stream(parameterTypes).map(String::valueOf).collect(Collectors.joining("","", ""("", "")""));
+        final String strCandidates = bestCandidates.stream().map(Method::toString).collect(Collectors.joining(""\n  ""));
+        throw new IllegalStateException(""Found multiple candidates for method "" + target + "" on class "" + cls + "":\n  "" + strCandidates);
+     }
+    private static int distance(final Class<?>[] classArray, final Class<?>[] toClassArray) {
+         int answer = 0;
+        if (!ClassUtils.isAssignable(classArray, toClassArray, true)) {
+             return -1;
+         }
+        for (int offset = 0; offset < classArray.length; offset++) {
+            final Class<?> aClass = classArray[offset];
+             final Class<?> toClass = toClassArray[offset];
+             if (aClass == null || aClass.equals(toClass)) {
+                 continue;","             return bestCandidates.get(0);
+         }
+-        final String target = methodName + Arrays.stream(parameterTypes).map(String::valueOf).collect(Collectors.joining("","", ""("", "")""));
+-        final String strCandidates = bestCandidates.stream().map(Method::toString).collect(Collectors.joining(""\n  ""));
+-        throw new IllegalStateException(""Found multiple candidates for method "" + target + "" on class "" + cls + "":\n  "" + strCandidates);
++        throw new IllegalStateException(
++                String.format(""Found multiple candidates for method %s on class %s : %s"",
++                        methodName + Arrays.stream(parameterTypes).map(String::valueOf).collect(Collectors.joining("","", ""("", "")"")),
++                        cls.getName(),
++                        bestCandidates.stream().map(Method::toString).collect(Collectors.joining("","", ""["", ""]"")))
++        );
+     }
+-    private static int distance(final Class<?>[] classArray, final Class<?>[] toClassArray) {
++    private static int distance(final Class<?>[] fromClassArray, final Class<?>[] toClassArray) {
+         int answer = 0;
+-        if (!ClassUtils.isAssignable(classArray, toClassArray, true)) {
++        if (!ClassUtils.isAssignable(fromClassArray, toClassArray, true)) {
+             return -1;
+         }
+-        for (int offset = 0; offset < classArray.length; offset++) {
++        for (int offset = 0; offset < fromClassArray.length; offset++) {
+-            final Class<?> aClass = classArray[offset];
++            final Class<?> aClass = fromClassArray[offset];
+             final Class<?> toClass = toClassArray[offset];
+             if (aClass == null || aClass.equals(toClass)) {
+                 continue;",True,True,True,2020-12-22T17:12:09Z,"return bestCandidates.get(0);
+         }
+        final String target = methodName + Arrays.stream(parameterTypes).map(String::valueOf).collect(Collectors.joining("","", ""("", "")""));
+        final String strCandidates = bestCandidates.stream().map(Method::toString).collect(Collectors.joining(""\n ""));
+        throw new IllegalStateException(""Found multiple candidates for method "" + target + "" on class "" + cls + "":\n "" + strCandidates);
+     }
+     /**
+      * <p>Returns the aggregate number of inheritance hops between assignable argument class types. Returns -1
+      * if the arguments aren't assignable. Fills a specific purpose for getMatchingMethod and is not generalized.</p>
+ <START>  * @param classArray the Class array to calculate the distance from.  <END>
+      * @param toClassArray the Class array to calculate the distance to.
+      * @return the aggregate number of inheritance hops between assignable argument class types.
+      */
+    private static int distance(final Class<?>[] classArray, final Class<?>[] toClassArray) {
+         int answer = 0;
+        if (!ClassUtils.isAssignable(classArray, toClassArray, true)) {
+             return -1;
+         }
+        for (int offset = 0; offset < classArray.length; offset++) {
+             // Note InheritanceUtils.distance() uses different scoring system.
+            final Class<?> aClass = classArray[offset];
+             final Class<?> toClass = toClassArray[offset];
+             if (aClass == null || aClass.equals(toClass)) {
+                 continue;","return bestCandidates.get(0);
+         }
+-        final String target = methodName + Arrays.stream(parameterTypes).map(String::valueOf).collect(Collectors.joining("","", ""("", "")""));
+-        final String strCandidates = bestCandidates.stream().map(Method::toString).collect(Collectors.joining(""\n ""));
+-        throw new IllegalStateException(""Found multiple candidates for method "" + target + "" on class "" + cls + "":\n "" + strCandidates);
++        throw new IllegalStateException(
++                String.format(""Found multiple candidates for method %s on class %s : %s"",
++                        methodName + Arrays.stream(parameterTypes).map(String::valueOf).collect(Collectors.joining("","", ""("", "")"")),
++                        cls.getName(),
++                        bestCandidates.stream().map(Method::toString).collect(Collectors.joining("","", ""["", ""]"")))
++        );
+     }
+     /**
+      * <p>Returns the aggregate number of inheritance hops between assignable argument class types. Returns -1
+      * if the arguments aren't assignable. Fills a specific purpose for getMatchingMethod and is not generalized.</p>
+-     * @param classArray the Class array to calculate the distance from.
++     * @param fromClassArray the Class array to calculate the distance from.
+      * @param toClassArray the Class array to calculate the distance to.
+      * @return the aggregate number of inheritance hops between assignable argument class types.
+      */
+-    private static int distance(final Class<?>[] classArray, final Class<?>[] toClassArray) {
++    private static int distance(final Class<?>[] fromClassArray, final Class<?>[] toClassArray) {
+         int answer = 0;
+-        if (!ClassUtils.isAssignable(classArray, toClassArray, true)) {
++        if (!ClassUtils.isAssignable(fromClassArray, toClassArray, true)) {
+             return -1;
+         }
+-        for (int offset = 0; offset < classArray.length; offset++) {
++        for (int offset = 0; offset < fromClassArray.length; offset++) {
+             // Note InheritanceUtils.distance() uses different scoring system.
+-            final Class<?> aClass = classArray[offset];
++            final Class<?> aClass = fromClassArray[offset];
+             final Class<?> toClass = toClassArray[offset];
+             if (aClass == null || aClass.equals(toClass)) {
+                 continue;"
+38,"[np.int64(543), np.int64(543)]","mmm 
+
+- the parentheses was a mistake
+- the character in the test there are not valid unicode values
+- i'll change  the test for --> charbuffer.wrap(string)","         assertEquals(4, StringUtils.indexOfIgnoreCase(""aabaabaa"", ""AB"", 2));
+         assertEquals(4, StringUtils.indexOfIgnoreCase(""aabaabaa"", ""AB"", 3));
+         assertEquals(4, StringUtils.indexOfIgnoreCase(""aabaabaa"", ""AB"", 4));
+        assertEquals(NOT_FOUND, StringUtils.indexOfIgnoreCase(""aabaabaa"", ""AB"", 5));
+        assertEquals(NOT_FOUND, StringUtils.indexOfIgnoreCase(""aabaabaa"", ""AB"", 6));
+        assertEquals(NOT_FOUND, StringUtils.indexOfIgnoreCase(""aabaabaa"", ""AB"", 7));
+        assertEquals(NOT_FOUND, StringUtils.indexOfIgnoreCase(""aabaabaa"", ""AB"", 8));
+         assertEquals(1, StringUtils.indexOfIgnoreCase(""aab"", ""AB"", 1));
+         assertEquals(5, StringUtils.indexOfIgnoreCase(""aabaabaa"", """", 5));
+        assertEquals(NOT_FOUND, StringUtils.indexOfIgnoreCase(""ab"", ""AAB"", 0));
+        assertEquals(NOT_FOUND, StringUtils.indexOfIgnoreCase(""aab"", ""AAB"", 1));
+        assertEquals(NOT_FOUND, StringUtils.indexOfIgnoreCase(""abc"", """", 9));
+     }
+     @Test
+     public void testLastIndexOf_char() {
+        assertEquals(NOT_FOUND, StringUtils.lastIndexOf(null, ' '));
+        assertEquals(NOT_FOUND, StringUtils.lastIndexOf("""", ' '));
+         assertEquals(7, StringUtils.lastIndexOf(""aabaabaa"", 'a'));
+         assertEquals(5, StringUtils.lastIndexOf(""aabaabaa"", 'b'));
+         assertEquals(5, StringUtils.lastIndexOf(new StringBuilder(""aabaabaa""), 'b'));
+        char[] charArray = new char[9];
+        charArray[0] = '[';
+        charArray[1] = '&';
+        charArray[7] = '{';
+        charArray[3] = '.';
+        charArray[4] = 'c';
+        charArray[5] = '.';
+        charArray[6] = '0';
+        charArray[7] = 'r';
+        charArray[8] = 'o';
+        CharBuffer charBuffer = CharBuffer.wrap(charArray);
+ START         assertEquals(NOT_FOUND, StringUtils.lastIndexOf (charBuffer, (-1738), 982)); END 
+     }
+     @Test
+     public void testLastIndexOf_charInt() {
+        assertEquals(NOT_FOUND, StringUtils.lastIndexOf(null, ' ', 0));
+        assertEquals(NOT_FOUND, StringUtils.lastIndexOf(null, ' ', -1));
+        assertEquals(NOT_FOUND, StringUtils.lastIndexOf("""", ' ', 0));
+        assertEquals(NOT_FOUND, StringUtils.lastIndexOf("""", ' ', -1));
+         assertEquals(7, StringUtils.lastIndexOf(""aabaabaa"", 'a', 8));
+         assertEquals(5, StringUtils.lastIndexOf(""aabaabaa"", 'b', 8));
+         assertEquals(2, StringUtils.lastIndexOf(""aabaabaa"", 'b', 3));
+         assertEquals(5, StringUtils.lastIndexOf(""aabaabaa"", 'b', 9));
+        assertEquals(NOT_FOUND, StringUtils.lastIndexOf(""aabaabaa"", 'b', -1));
+         assertEquals(0, StringUtils.lastIndexOf(""aabaabaa"", 'a', 0));
+         assertEquals(2, StringUtils.lastIndexOf(new StringBuilder(""aabaabaa""), 'b', 2));
+        CharBuffer charBuffer = CharBuffer.allocate(93);
+        CharSequence charSequence = CharSequenceUtils.subSequence(charBuffer, 93);
+        assertEquals(NOT_FOUND, StringUtils.indexOf(charSequence, 553, (-1392)));
+        assertEquals(NOT_FOUND, StringUtils.indexOf(charBuffer, (-1), (-1392)));
+         //LANG-1300 addition test
+         final int CODE_POINT = 0x2070E;
+         StringBuilder builder = new StringBuilder();","         assertEquals(4, StringUtils.indexOfIgnoreCase(""aabaabaa"", ""AB"", 2));
+         assertEquals(4, StringUtils.indexOfIgnoreCase(""aabaabaa"", ""AB"", 3));
+         assertEquals(4, StringUtils.indexOfIgnoreCase(""aabaabaa"", ""AB"", 4));
+-        assertEquals(NOT_FOUND, StringUtils.indexOfIgnoreCase(""aabaabaa"", ""AB"", 5));
+-        assertEquals(NOT_FOUND, StringUtils.indexOfIgnoreCase(""aabaabaa"", ""AB"", 6));
+-        assertEquals(NOT_FOUND, StringUtils.indexOfIgnoreCase(""aabaabaa"", ""AB"", 7));
+-        assertEquals(NOT_FOUND, StringUtils.indexOfIgnoreCase(""aabaabaa"", ""AB"", 8));
++        assertEquals(-1, StringUtils.indexOfIgnoreCase(""aabaabaa"", ""AB"", 5));
++        assertEquals(-1, StringUtils.indexOfIgnoreCase(""aabaabaa"", ""AB"", 6));
++        assertEquals(-1, StringUtils.indexOfIgnoreCase(""aabaabaa"", ""AB"", 7));
++        assertEquals(-1, StringUtils.indexOfIgnoreCase(""aabaabaa"", ""AB"", 8));
+         assertEquals(1, StringUtils.indexOfIgnoreCase(""aab"", ""AB"", 1));
+         assertEquals(5, StringUtils.indexOfIgnoreCase(""aabaabaa"", """", 5));
+-        assertEquals(NOT_FOUND, StringUtils.indexOfIgnoreCase(""ab"", ""AAB"", 0));
+-        assertEquals(NOT_FOUND, StringUtils.indexOfIgnoreCase(""aab"", ""AAB"", 1));
+-        assertEquals(NOT_FOUND, StringUtils.indexOfIgnoreCase(""abc"", """", 9));
++        assertEquals(-1, StringUtils.indexOfIgnoreCase(""ab"", ""AAB"", 0));
++        assertEquals(-1, StringUtils.indexOfIgnoreCase(""aab"", ""AAB"", 1));
++        assertEquals(-1, StringUtils.indexOfIgnoreCase(""abc"", """", 9));
+     }
+     @Test
+     public void testLastIndexOf_char() {
+-        assertEquals(NOT_FOUND, StringUtils.lastIndexOf(null, ' '));
+-        assertEquals(NOT_FOUND, StringUtils.lastIndexOf("""", ' '));
++        assertEquals(-1, StringUtils.lastIndexOf(null, ' '));
++        assertEquals(-1, StringUtils.lastIndexOf("""", ' '));
+         assertEquals(7, StringUtils.lastIndexOf(""aabaabaa"", 'a'));
+         assertEquals(5, StringUtils.lastIndexOf(""aabaabaa"", 'b'));
+         assertEquals(5, StringUtils.lastIndexOf(new StringBuilder(""aabaabaa""), 'b'));
+-        char[] charArray = new char[9];
+-        charArray[0] = '[';
+-        charArray[1] = '&';
+-        charArray[7] = '{';
+-        charArray[3] = '.';
+-        charArray[4] = 'c';
+-        charArray[5] = '.';
+-        charArray[6] = '0';
+-        charArray[7] = 'r';
+-        charArray[8] = 'o';
+-        CharBuffer charBuffer = CharBuffer.wrap(charArray);
+-        assertEquals(NOT_FOUND, StringUtils.lastIndexOf (charBuffer, (-1738), 982));
+     }
+     @Test
+     public void testLastIndexOf_charInt() {
+-        assertEquals(NOT_FOUND, StringUtils.lastIndexOf(null, ' ', 0));
+-        assertEquals(NOT_FOUND, StringUtils.lastIndexOf(null, ' ', -1));
+-        assertEquals(NOT_FOUND, StringUtils.lastIndexOf("""", ' ', 0));
+-        assertEquals(NOT_FOUND, StringUtils.lastIndexOf("""", ' ', -1));
++        assertEquals(-1, StringUtils.lastIndexOf(null, ' ', 0));
++        assertEquals(-1, StringUtils.lastIndexOf(null, ' ', -1));
++        assertEquals(-1, StringUtils.lastIndexOf("""", ' ', 0));
++        assertEquals(-1, StringUtils.lastIndexOf("""", ' ', -1));
+         assertEquals(7, StringUtils.lastIndexOf(""aabaabaa"", 'a', 8));
+         assertEquals(5, StringUtils.lastIndexOf(""aabaabaa"", 'b', 8));
+         assertEquals(2, StringUtils.lastIndexOf(""aabaabaa"", 'b', 3));
+         assertEquals(5, StringUtils.lastIndexOf(""aabaabaa"", 'b', 9));
+-        assertEquals(NOT_FOUND, StringUtils.lastIndexOf(""aabaabaa"", 'b', -1));
++        assertEquals(-1, StringUtils.lastIndexOf(""aabaabaa"", 'b', -1));
+         assertEquals(0, StringUtils.lastIndexOf(""aabaabaa"", 'a', 0));
+         assertEquals(2, StringUtils.lastIndexOf(new StringBuilder(""aabaabaa""), 'b', 2));
+-        CharBuffer charBuffer = CharBuffer.allocate(93);
+-        CharSequence charSequence = CharSequenceUtils.subSequence(charBuffer, 93);
+-        assertEquals(NOT_FOUND, StringUtils.indexOf(charSequence, 553, (-1392)));
+-        assertEquals(NOT_FOUND, StringUtils.indexOf(charBuffer, (-1), (-1392)));
++
+         //LANG-1300 addition test
+         final int CODE_POINT = 0x2070E;
+         StringBuilder builder = new StringBuilder();",,,True,True,False,2020-12-23T16:26:27Z,"assertEquals(4, StringUtils.indexOfIgnoreCase(""aabaabaa"", ""AB"", 2));
+         assertEquals(4, StringUtils.indexOfIgnoreCase(""aabaabaa"", ""AB"", 3));
+         assertEquals(4, StringUtils.indexOfIgnoreCase(""aabaabaa"", ""AB"", 4));
+        assertEquals(NOT_FOUND, StringUtils.indexOfIgnoreCase(""aabaabaa"", ""AB"", 5));
+        assertEquals(NOT_FOUND, StringUtils.indexOfIgnoreCase(""aabaabaa"", ""AB"", 6));
+        assertEquals(NOT_FOUND, StringUtils.indexOfIgnoreCase(""aabaabaa"", ""AB"", 7));
+        assertEquals(NOT_FOUND, StringUtils.indexOfIgnoreCase(""aabaabaa"", ""AB"", 8));
+         assertEquals(1, StringUtils.indexOfIgnoreCase(""aab"", ""AB"", 1));
+         assertEquals(5, StringUtils.indexOfIgnoreCase(""aabaabaa"", """", 5));
+        assertEquals(NOT_FOUND, StringUtils.indexOfIgnoreCase(""ab"", ""AAB"", 0));
+        assertEquals(NOT_FOUND, StringUtils.indexOfIgnoreCase(""aab"", ""AAB"", 1));
+        assertEquals(NOT_FOUND, StringUtils.indexOfIgnoreCase(""abc"", """", 9));
+     }
+     @Test
+     public void testLastIndexOf_char() {
+        assertEquals(NOT_FOUND, StringUtils.lastIndexOf(null, ' '));
+        assertEquals(NOT_FOUND, StringUtils.lastIndexOf("""", ' '));
+         assertEquals(7, StringUtils.lastIndexOf(""aabaabaa"", 'a'));
+         assertEquals(5, StringUtils.lastIndexOf(""aabaabaa"", 'b'));
+         assertEquals(5, StringUtils.lastIndexOf(new StringBuilder(""aabaabaa""), 'b'));
+        char[] charArray = new char[9];
+        charArray[0] = '[';
+        charArray[1] = '&';
+        charArray[7] = '{';
+        charArray[3] = '.';
+        charArray[4] = 'c';
+        charArray[5] = '.';
+        charArray[6] = '0';
+        charArray[7] = 'r';
+        charArray[8] = 'o';
+        CharBuffer charBuffer = CharBuffer.wrap(charArray);
+ <START>  assertEquals(NOT_FOUND, StringUtils.lastIndexOf (charBuffer, (-1738), 982));  <END>
+     }
+     @Test
+     public void testLastIndexOf_charInt() {
+        assertEquals(NOT_FOUND, StringUtils.lastIndexOf(null, ' ', 0));
+        assertEquals(NOT_FOUND, StringUtils.lastIndexOf(null, ' ', -1));
+        assertEquals(NOT_FOUND, StringUtils.lastIndexOf("""", ' ', 0));
+        assertEquals(NOT_FOUND, StringUtils.lastIndexOf("""", ' ', -1));
+         assertEquals(7, StringUtils.lastIndexOf(""aabaabaa"", 'a', 8));
+         assertEquals(5, StringUtils.lastIndexOf(""aabaabaa"", 'b', 8));
+         assertEquals(2, StringUtils.lastIndexOf(""aabaabaa"", 'b', 3));
+         assertEquals(5, StringUtils.lastIndexOf(""aabaabaa"", 'b', 9));
+        assertEquals(NOT_FOUND, StringUtils.lastIndexOf(""aabaabaa"", 'b', -1));
+         assertEquals(0, StringUtils.lastIndexOf(""aabaabaa"", 'a', 0));
+         assertEquals(2, StringUtils.lastIndexOf(new StringBuilder(""aabaabaa""), 'b', 2));
+        CharBuffer charBuffer = CharBuffer.allocate(93);
+        CharSequence charSequence = CharSequenceUtils.subSequence(charBuffer, 93);
+        assertEquals(NOT_FOUND, StringUtils.indexOf(charSequence, 553, (-1392)));
+        assertEquals(NOT_FOUND, StringUtils.indexOf(charBuffer, (-1), (-1392)));
+         //LANG-1300 addition test
+         final int CODE_POINT = 0x2070E;
+         StringBuilder builder = new StringBuilder();","assertEquals(4, StringUtils.indexOfIgnoreCase(""aabaabaa"", ""AB"", 2));
+         assertEquals(4, StringUtils.indexOfIgnoreCase(""aabaabaa"", ""AB"", 3));
+         assertEquals(4, StringUtils.indexOfIgnoreCase(""aabaabaa"", ""AB"", 4));
+-        assertEquals(NOT_FOUND, StringUtils.indexOfIgnoreCase(""aabaabaa"", ""AB"", 5));
+-        assertEquals(NOT_FOUND, StringUtils.indexOfIgnoreCase(""aabaabaa"", ""AB"", 6));
+-        assertEquals(NOT_FOUND, StringUtils.indexOfIgnoreCase(""aabaabaa"", ""AB"", 7));
+-        assertEquals(NOT_FOUND, StringUtils.indexOfIgnoreCase(""aabaabaa"", ""AB"", 8));
++        assertEquals(-1, StringUtils.indexOfIgnoreCase(""aabaabaa"", ""AB"", 5));
++        assertEquals(-1, StringUtils.indexOfIgnoreCase(""aabaabaa"", ""AB"", 6));
++        assertEquals(-1, StringUtils.indexOfIgnoreCase(""aabaabaa"", ""AB"", 7));
++        assertEquals(-1, StringUtils.indexOfIgnoreCase(""aabaabaa"", ""AB"", 8));
+         assertEquals(1, StringUtils.indexOfIgnoreCase(""aab"", ""AB"", 1));
+         assertEquals(5, StringUtils.indexOfIgnoreCase(""aabaabaa"", """", 5));
+-        assertEquals(NOT_FOUND, StringUtils.indexOfIgnoreCase(""ab"", ""AAB"", 0));
+-        assertEquals(NOT_FOUND, StringUtils.indexOfIgnoreCase(""aab"", ""AAB"", 1));
+-        assertEquals(NOT_FOUND, StringUtils.indexOfIgnoreCase(""abc"", """", 9));
++        assertEquals(-1, StringUtils.indexOfIgnoreCase(""ab"", ""AAB"", 0));
++        assertEquals(-1, StringUtils.indexOfIgnoreCase(""aab"", ""AAB"", 1));
++        assertEquals(-1, StringUtils.indexOfIgnoreCase(""abc"", """", 9));
+     }
+     @Test
+     public void testLastIndexOf_char() {
+-        assertEquals(NOT_FOUND, StringUtils.lastIndexOf(null, ' '));
+-        assertEquals(NOT_FOUND, StringUtils.lastIndexOf("""", ' '));
++        assertEquals(-1, StringUtils.lastIndexOf(null, ' '));
++        assertEquals(-1, StringUtils.lastIndexOf("""", ' '));
+         assertEquals(7, StringUtils.lastIndexOf(""aabaabaa"", 'a'));
+         assertEquals(5, StringUtils.lastIndexOf(""aabaabaa"", 'b'));
+         assertEquals(5, StringUtils.lastIndexOf(new StringBuilder(""aabaabaa""), 'b'));
+-        char[] charArray = new char[9];
+-        charArray[0] = '[';
+-        charArray[1] = '&';
+-        charArray[7] = '{';
+-        charArray[3] = '.';
+-        charArray[4] = 'c';
+-        charArray[5] = '.';
+-        charArray[6] = '0';
+-        charArray[7] = 'r';
+-        charArray[8] = 'o';
+-        CharBuffer charBuffer = CharBuffer.wrap(charArray);
+-        assertEquals(NOT_FOUND, StringUtils.lastIndexOf (charBuffer, (-1738), 982));
+     }
+     @Test
+     public void testLastIndexOf_charInt() {
+-        assertEquals(NOT_FOUND, StringUtils.lastIndexOf(null, ' ', 0));
+-        assertEquals(NOT_FOUND, StringUtils.lastIndexOf(null, ' ', -1));
+-        assertEquals(NOT_FOUND, StringUtils.lastIndexOf("""", ' ', 0));
+-        assertEquals(NOT_FOUND, StringUtils.lastIndexOf("""", ' ', -1));
++        assertEquals(-1, StringUtils.lastIndexOf(null, ' ', 0));
++        assertEquals(-1, StringUtils.lastIndexOf(null, ' ', -1));
++        assertEquals(-1, StringUtils.lastIndexOf("""", ' ', 0));
++        assertEquals(-1, StringUtils.lastIndexOf("""", ' ', -1));
+         assertEquals(7, StringUtils.lastIndexOf(""aabaabaa"", 'a', 8));
+         assertEquals(5, StringUtils.lastIndexOf(""aabaabaa"", 'b', 8));
+         assertEquals(2, StringUtils.lastIndexOf(""aabaabaa"", 'b', 3));
+         assertEquals(5, StringUtils.lastIndexOf(""aabaabaa"", 'b', 9));
+-        assertEquals(NOT_FOUND, StringUtils.lastIndexOf(""aabaabaa"", 'b', -1));
++        assertEquals(-1, StringUtils.lastIndexOf(""aabaabaa"", 'b', -1));
+         assertEquals(0, StringUtils.lastIndexOf(""aabaabaa"", 'a', 0));
+         assertEquals(2, StringUtils.lastIndexOf(new StringBuilder(""aabaabaa""), 'b', 2));
+-        CharBuffer charBuffer = CharBuffer.allocate(93);
+-        CharSequence charSequence = CharSequenceUtils.subSequence(charBuffer, 93);
+-        assertEquals(NOT_FOUND, StringUtils.indexOf(charSequence, 553, (-1392)));
+-        assertEquals(NOT_FOUND, StringUtils.indexOf(charBuffer, (-1), (-1392)));
++
+         //LANG-1300 addition test
+         final int CODE_POINT = 0x2070E;
+         StringBuilder builder = new StringBuilder();"
+39,"[np.int64(199), np.int64(199)]","mm . maybe it's my fault. 
+the idea it's exit the loop and return -1 (not_found) if not found the charset","                     return i;
+                 }
+             }
+ START             return NOT_FOUND; END 
+         }
+         //supplementary characters (LANG1300)
+         //NOTE - we must do a forward traversal for this to avoid duplicating code points","                     return i;
+                 }
+             }
+-            return NOT_FOUND;
++            return NOT_FOUND;
+         }
+         //supplementary characters (LANG1300)
+         //NOTE - we must do a forward traversal for this to avoid duplicating code points","                     return i;
+                 }
+             }
+ START             return NOT_FOUND; END 
+         }","                     return i;
+                 }
+             }
+-            return NOT_FOUND;
++            return NOT_FOUND;
+         }",True,True,False,2020-12-23T16:26:27Z,"return i;
+                 }
+             }
+ <START>  return NOT_FOUND;  <END>
+         }
+         //supplementary characters (LANG1300)
+         //NOTE - we must do a forward traversal for this to avoid duplicating code points","return i;
+                 }
+             }
+-            return NOT_FOUND;
++            return NOT_FOUND;
+         }
+         //supplementary characters (LANG1300)
+         //NOTE - we must do a forward traversal for this to avoid duplicating code points"
+40,"[np.int64(112), np.int64(112)]",idem @garydgregory,"                     return i;
+                 }
+             }
+ START             return NOT_FOUND; END 
+         }
+         //supplementary characters (LANG1300)
+         if (searchChar <= Character.MAX_CODE_POINT) {","                     return i;
+                 }
+             }
+-            return NOT_FOUND;
++            return NOT_FOUND;
+         }
+         //supplementary characters (LANG1300)
+         if (searchChar <= Character.MAX_CODE_POINT) {","                     return i;
+                 }
+             }
+ START             return NOT_FOUND; END 
+         }
+         if (searchChar <= Character.MAX_CODE_POINT) {","                     return i;
+                 }
+             }
+-            return NOT_FOUND;
++            return NOT_FOUND;
+         }
+         if (searchChar <= Character.MAX_CODE_POINT) {",True,True,False,2020-12-23T16:26:27Z,"return i;
+                 }
+             }
+ <START>  return NOT_FOUND;  <END>
+         }
+         //supplementary characters (LANG1300)
+         if (searchChar <= Character.MAX_CODE_POINT) {","return i;
+                 }
+             }
+-            return NOT_FOUND;
++            return NOT_FOUND;
+         }
+         //supplementary characters (LANG1300)
+         if (searchChar <= Character.MAX_CODE_POINT) {"
+41,"[np.int64(199), np.int64(199)]","ah, i see, this is a new line, and the other mods are updates. ok, i'll take a look tomorrow probably...","                     return i;
+                 }
+             }
+ START             return NOT_FOUND; END 
+         }
+         //supplementary characters (LANG1300)
+         //NOTE - we must do a forward traversal for this to avoid duplicating code points","                     return i;
+                 }
+             }
+-            return NOT_FOUND;
++            return NOT_FOUND;
+         }
+         //supplementary characters (LANG1300)
+         //NOTE - we must do a forward traversal for this to avoid duplicating code points","                     return i;
+                 }
+             }
+ START             return NOT_FOUND; END 
+         }","                     return i;
+                 }
+             }
+-            return NOT_FOUND;
++            return NOT_FOUND;
+         }",True,False,False,2020-12-23T16:26:27Z,"return i;
+                 }
+             }
+ <START>  return NOT_FOUND;  <END>
+         }
+         //supplementary characters (LANG1300)
+         //NOTE - we must do a forward traversal for this to avoid duplicating code points","return i;
+                 }
+             }
+-            return NOT_FOUND;
++            return NOT_FOUND;
+         }
+         //supplementary characters (LANG1300)
+         //NOTE - we must do a forward traversal for this to avoid duplicating code points"
+42,"[np.int64(199), np.int64(199)]",sorry. my fault for mixing.,"                     return i;
+                 }
+             }
+ START             return NOT_FOUND; END 
+         }
+         //supplementary characters (LANG1300)
+         //NOTE - we must do a forward traversal for this to avoid duplicating code points","                     return i;
+                 }
+             }
+-            return NOT_FOUND;
++            return NOT_FOUND;
+         }
+         //supplementary characters (LANG1300)
+         //NOTE - we must do a forward traversal for this to avoid duplicating code points","                     return i;
+                 }
+             }
+ START             return NOT_FOUND; END 
+         }","                     return i;
+                 }
+             }
+-            return NOT_FOUND;
++            return NOT_FOUND;
+         }",True,True,False,2020-12-23T16:26:27Z,"return i;
+                 }
+             }
+ <START>  return NOT_FOUND;  <END>
+         }
+         //supplementary characters (LANG1300)
+         //NOTE - we must do a forward traversal for this to avoid duplicating code points","return i;
+                 }
+             }
+-            return NOT_FOUND;
++            return NOT_FOUND;
+         }
+         //supplementary characters (LANG1300)
+         //NOTE - we must do a forward traversal for this to avoid duplicating code points"
+43,"[np.int64(52), np.int64(52)]","this is already defined in `stringutils.index_not_found` and `arrayutils`, please reuse."," 
+     private static final String[] FOOBAR_SUB_ARRAY = new String[] {""ob"", ""ba""};
+ START     private static final int NOT_FOUND = -1; END 
+
+     // The purpose of this class is to test StringUtils#equals(CharSequence, CharSequence)
+     // with a CharSequence implementation whose equals(Object) override requires that the
+     // other object be an instance of CustomCharSequence, even though, as char sequences,"," 
+     private static final String[] FOOBAR_SUB_ARRAY = new String[] {""ob"", ""ba""};
+-    private static final int NOT_FOUND = -1;
+-
+     // The purpose of this class is to test StringUtils#equals(CharSequence, CharSequence)
+     // with a CharSequence implementation whose equals(Object) override requires that the
+     // other object be an instance of CustomCharSequence, even though, as char sequences,"," 
+     private static final String[] FOOBAR_SUB_ARRAY = new String[] {""ob"", ""ba""};
+ START     private static final int NOT_FOUND = -1; END 
+"," 
+     private static final String[] FOOBAR_SUB_ARRAY = new String[] {""ob"", ""ba""};
+-    private static final int NOT_FOUND = -1;
+-",True,False,False,2020-12-23T16:26:27Z,"private static final String[] FOOBAR_SUB_ARRAY = new String[] {""ob"", ""ba""};
+ <START>  private static final int NOT_FOUND = -1;  <END>
+     // The purpose of this class is to test StringUtils#equals(CharSequence, CharSequence)
+     // with a CharSequence implementation whose equals(Object) override requires that the
+     // other object be an instance of CustomCharSequence, even though, as char sequences,","private static final String[] FOOBAR_SUB_ARRAY = new String[] {""ob"", ""ba""};
+-    private static final int NOT_FOUND = -1;
+-
+     // The purpose of this class is to test StringUtils#equals(CharSequence, CharSequence)
+     // with a CharSequence implementation whose equals(Object) override requires that the
+     // other object be an instance of CustomCharSequence, even though, as char sequences,"
+44,"[np.int64(52), np.int64(52)]",true. changed," 
+     private static final String[] FOOBAR_SUB_ARRAY = new String[] {""ob"", ""ba""};
+ START     private static final int NOT_FOUND = -1; END 
+
+     // The purpose of this class is to test StringUtils#equals(CharSequence, CharSequence)
+     // with a CharSequence implementation whose equals(Object) override requires that the
+     // other object be an instance of CustomCharSequence, even though, as char sequences,"," 
+     private static final String[] FOOBAR_SUB_ARRAY = new String[] {""ob"", ""ba""};
+-    private static final int NOT_FOUND = -1;
+-
+     // The purpose of this class is to test StringUtils#equals(CharSequence, CharSequence)
+     // with a CharSequence implementation whose equals(Object) override requires that the
+     // other object be an instance of CustomCharSequence, even though, as char sequences,"," 
+     private static final String[] FOOBAR_SUB_ARRAY = new String[] {""ob"", ""ba""};
+ START     private static final int NOT_FOUND = -1; END 
+"," 
+     private static final String[] FOOBAR_SUB_ARRAY = new String[] {""ob"", ""ba""};
+-    private static final int NOT_FOUND = -1;
+-",True,True,False,2020-12-23T16:26:27Z,"private static final String[] FOOBAR_SUB_ARRAY = new String[] {""ob"", ""ba""};
+ <START>  private static final int NOT_FOUND = -1;  <END>
+     // The purpose of this class is to test StringUtils#equals(CharSequence, CharSequence)
+     // with a CharSequence implementation whose equals(Object) override requires that the
+     // other object be an instance of CustomCharSequence, even though, as char sequences,","private static final String[] FOOBAR_SUB_ARRAY = new String[] {""ob"", ""ba""};
+-    private static final int NOT_FOUND = -1;
+-
+     // The purpose of this class is to test StringUtils#equals(CharSequence, CharSequence)
+     // with a CharSequence implementation whose equals(Object) override requires that the
+     // other object be an instance of CustomCharSequence, even though, as char sequences,"
+45,"[np.int64(668), np.int64(668)]",the last step is to document this in the javadoc for the method.,"         if (ch1 == ':') {
+             ch0 = Character.toUpperCase(ch0);
+             if (ch0 >= 'A' && ch0 <= 'Z') {
+ START                 if (len == 2 && !FileSystem.getCurrent().supportsDriveLetter()) { END 
+                     return 0;
+                 }
+                 if (len == 2 || !isSeparator(fileName.charAt(2))) {","         if (ch1 == ':') {
+             ch0 = Character.toUpperCase(ch0);
+             if (ch0 >= 'A' && ch0 <= 'Z') {
+-                if (len == 2 && !FileSystem.getCurrent().supportsDriveLetter()) {
++                if (len == 2 && !FileSystem.getCurrent().supportsDriveLetter()) {
+                     return 0;
+                 }
+                 if (len == 2 || !isSeparator(fileName.charAt(2))) {","         if (ch1 == ':') {
+             ch0 = Character.toUpperCase(ch0);
+             if (ch0 >= 'A' && ch0 <= 'Z') {
+ START                 if (len == 2 && !FileSystem.getCurrent().supportsDriveLetter()) { END 
+                     return 0;
+                 }
+                 if (len == 2 || !isSeparator(fileName.charAt(2))) {","         if (ch1 == ':') {
+             ch0 = Character.toUpperCase(ch0);
+             if (ch0 >= 'A' && ch0 <= 'Z') {
+-                if (len == 2 && !FileSystem.getCurrent().supportsDriveLetter()) {
++                if (len == 2 && !FileSystem.getCurrent().supportsDriveLetter()) {
+                     return 0;
+                 }
+                 if (len == 2 || !isSeparator(fileName.charAt(2))) {",True,False,False,2020-12-30T22:14:40Z,"if (ch1 == ':') {
+             ch0 = Character.toUpperCase(ch0);
+             if (ch0 >= 'A' && ch0 <= 'Z') {
+ <START>  if (len == 2 && !FileSystem.getCurrent().supportsDriveLetter()) {  <END>
+                     return 0;
+                 }
+                 if (len == 2 || !isSeparator(fileName.charAt(2))) {","if (ch1 == ':') {
+             ch0 = Character.toUpperCase(ch0);
+             if (ch0 >= 'A' && ch0 <= 'Z') {
+-                if (len == 2 && !FileSystem.getCurrent().supportsDriveLetter()) {
++                if (len == 2 && !FileSystem.getCurrent().supportsDriveLetter()) {
+                     return 0;
+                 }
+                 if (len == 2 || !isSeparator(fileName.charAt(2))) {"
+46,"[np.int64(668), np.int64(668)]","adding this in under unix section : 
+ * c:                  --&gt; """"          --&gt; valid filename as only null byte and / are reserved characters
+ let me know your thoughts, thanks","         if (ch1 == ':') {
+             ch0 = Character.toUpperCase(ch0);
+             if (ch0 >= 'A' && ch0 <= 'Z') {
+ START                 if (len == 2 && !FileSystem.getCurrent().supportsDriveLetter()) { END 
+                     return 0;
+                 }
+                 if (len == 2 || !isSeparator(fileName.charAt(2))) {","         if (ch1 == ':') {
+             ch0 = Character.toUpperCase(ch0);
+             if (ch0 >= 'A' && ch0 <= 'Z') {
+-                if (len == 2 && !FileSystem.getCurrent().supportsDriveLetter()) {
++                if (len == 2 && !FileSystem.getCurrent().supportsDriveLetter()) {
+                     return 0;
+                 }
+                 if (len == 2 || !isSeparator(fileName.charAt(2))) {","         if (ch1 == ':') {
+             ch0 = Character.toUpperCase(ch0);
+             if (ch0 >= 'A' && ch0 <= 'Z') {
+ START                 if (len == 2 && !FileSystem.getCurrent().supportsDriveLetter()) { END 
+                     return 0;
+                 }
+                 if (len == 2 || !isSeparator(fileName.charAt(2))) {","         if (ch1 == ':') {
+             ch0 = Character.toUpperCase(ch0);
+             if (ch0 >= 'A' && ch0 <= 'Z') {
+-                if (len == 2 && !FileSystem.getCurrent().supportsDriveLetter()) {
++                if (len == 2 && !FileSystem.getCurrent().supportsDriveLetter()) {
+                     return 0;
+                 }
+                 if (len == 2 || !isSeparator(fileName.charAt(2))) {",True,True,False,2020-12-30T22:14:40Z,"if (ch1 == ':') {
+             ch0 = Character.toUpperCase(ch0);
+             if (ch0 >= 'A' && ch0 <= 'Z') {
+ <START>  if (len == 2 && !FileSystem.getCurrent().supportsDriveLetter()) {  <END>
+                     return 0;
+                 }
+                 if (len == 2 || !isSeparator(fileName.charAt(2))) {","if (ch1 == ':') {
+             ch0 = Character.toUpperCase(ch0);
+             if (ch0 >= 'A' && ch0 <= 'Z') {
+-                if (len == 2 && !FileSystem.getCurrent().supportsDriveLetter()) {
++                if (len == 2 && !FileSystem.getCurrent().supportsDriveLetter()) {
+                     return 0;
+                 }
+                 if (len == 2 || !isSeparator(fileName.charAt(2))) {"
+47,"[np.int64(668), np.int64(668)]","well, our current javadoc is lame because while this methods returns an `int`, the javadoc shows `string` examples as 'output' which is not so helpful imo, so if you can fix the javadoc to show what the `int` value is now for all the example strings, that would be appreciated.","         if (ch1 == ':') {
+             ch0 = Character.toUpperCase(ch0);
+             if (ch0 >= 'A' && ch0 <= 'Z') {
+ START                 if (len == 2 && !FileSystem.getCurrent().supportsDriveLetter()) { END 
+                     return 0;
+                 }
+                 if (len == 2 || !isSeparator(fileName.charAt(2))) {","         if (ch1 == ':') {
+             ch0 = Character.toUpperCase(ch0);
+             if (ch0 >= 'A' && ch0 <= 'Z') {
+-                if (len == 2 && !FileSystem.getCurrent().supportsDriveLetter()) {
++                if (len == 2 && !FileSystem.getCurrent().supportsDriveLetter()) {
+                     return 0;
+                 }
+                 if (len == 2 || !isSeparator(fileName.charAt(2))) {","         if (ch1 == ':') {
+             ch0 = Character.toUpperCase(ch0);
+             if (ch0 >= 'A' && ch0 <= 'Z') {
+ START                 if (len == 2 && !FileSystem.getCurrent().supportsDriveLetter()) { END 
+                     return 0;
+                 }
+                 if (len == 2 || !isSeparator(fileName.charAt(2))) {","         if (ch1 == ':') {
+             ch0 = Character.toUpperCase(ch0);
+             if (ch0 >= 'A' && ch0 <= 'Z') {
+-                if (len == 2 && !FileSystem.getCurrent().supportsDriveLetter()) {
++                if (len == 2 && !FileSystem.getCurrent().supportsDriveLetter()) {
+                     return 0;
+                 }
+                 if (len == 2 || !isSeparator(fileName.charAt(2))) {",True,False,False,2020-12-30T22:14:40Z,"if (ch1 == ':') {
+             ch0 = Character.toUpperCase(ch0);
+             if (ch0 >= 'A' && ch0 <= 'Z') {
+ <START>  if (len == 2 && !FileSystem.getCurrent().supportsDriveLetter()) {  <END>
+                     return 0;
+                 }
+                 if (len == 2 || !isSeparator(fileName.charAt(2))) {","if (ch1 == ':') {
+             ch0 = Character.toUpperCase(ch0);
+             if (ch0 >= 'A' && ch0 <= 'Z') {
+-                if (len == 2 && !FileSystem.getCurrent().supportsDriveLetter()) {
++                if (len == 2 && !FileSystem.getCurrent().supportsDriveLetter()) {
+                     return 0;
+                 }
+                 if (len == 2 || !isSeparator(fileName.charAt(2))) {"
+48,"[np.int64(442), np.int64(442)]","hi,
+thank you for your pr.
+what about ""yyy""?","     public void testWeekYear() {
+         final GregorianCalendar cal = new GregorianCalendar(2020, 12, 31, 0, 0, 0);
+         final DatePrinter printer4Digits = getInstance(""YYYY"");
+ START         final DatePrinter printer2Digits = getInstance(""YY""); END 
+         assertEquals(""2021"", printer4Digits.format(cal));
+         assertEquals(""21"", printer2Digits.format(cal));
+     }
+ }","     public void testWeekYear() {
+         final GregorianCalendar cal = new GregorianCalendar(2020, 12, 31, 0, 0, 0);
+         final DatePrinter printer4Digits = getInstance(""YYYY"");
+-        final DatePrinter printer2Digits = getInstance(""YY"");
++        final DatePrinter printer4DigitsFallback = getInstance(""YYY"");
++        final DatePrinter printer2Digits = getInstance(""YY"");
++        final DatePrinter printer4DigitAnotherFallback = getInstance(""Y"");
+         assertEquals(""2021"", printer4Digits.format(cal));
++        assertEquals(""2021"", printer4DigitsFallback.format(cal));
++        assertEquals(""2021"", printer4DigitAnotherFallback.format(cal));
+         assertEquals(""21"", printer2Digits.format(cal));
+     }
+ }","     public void testWeekYear() {
+         final GregorianCalendar cal = new GregorianCalendar(2020, 12, 31, 0, 0, 0);
+         final DatePrinter printer4Digits = getInstance(""YYYY"");
+ START         final DatePrinter printer2Digits = getInstance(""YY""); END 
+         assertEquals(""2021"", printer4Digits.format(cal));
+         assertEquals(""21"", printer2Digits.format(cal));
+     }
+ }","     public void testWeekYear() {
+         final GregorianCalendar cal = new GregorianCalendar(2020, 12, 31, 0, 0, 0);
+         final DatePrinter printer4Digits = getInstance(""YYYY"");
+-        final DatePrinter printer2Digits = getInstance(""YY"");
++        final DatePrinter printer4DigitsFallback = getInstance(""YYY"");
++        final DatePrinter printer2Digits = getInstance(""YY"");
++        final DatePrinter printer4DigitAnotherFallback = getInstance(""Y"");
+         assertEquals(""2021"", printer4Digits.format(cal));
++        assertEquals(""2021"", printer4DigitsFallback.format(cal));
++        assertEquals(""2021"", printer4DigitAnotherFallback.format(cal));
+         assertEquals(""21"", printer2Digits.format(cal));
+     }
+ }",True,False,False,2021-01-02T16:14:51Z,"public void testWeekYear() {
+         final GregorianCalendar cal = new GregorianCalendar(2020, 12, 31, 0, 0, 0);
+         final DatePrinter printer4Digits = getInstance(""YYYY"");
+ <START>  final DatePrinter printer2Digits = getInstance(""YY"");  <END>
+         assertEquals(""2021"", printer4Digits.format(cal));
+         assertEquals(""21"", printer2Digits.format(cal));
+     }
+ }","public void testWeekYear() {
+         final GregorianCalendar cal = new GregorianCalendar(2020, 12, 31, 0, 0, 0);
+         final DatePrinter printer4Digits = getInstance(""YYYY"");
+-        final DatePrinter printer2Digits = getInstance(""YY"");
++        final DatePrinter printer4DigitsFallback = getInstance(""YYY"");
++        final DatePrinter printer2Digits = getInstance(""YY"");
++        final DatePrinter printer4DigitAnotherFallback = getInstance(""Y"");
+         assertEquals(""2021"", printer4Digits.format(cal));
++        assertEquals(""2021"", printer4DigitsFallback.format(cal));
++        assertEquals(""2021"", printer4DigitAnotherFallback.format(cal));
+         assertEquals(""21"", printer2Digits.format(cal));
+     }
+ }"
+49,"[np.int64(442), np.int64(442)]",please add code in your new test for y and yyy.,"     public void testWeekYear() {
+         final GregorianCalendar cal = new GregorianCalendar(2020, 12, 31, 0, 0, 0);
+         final DatePrinter printer4Digits = getInstance(""YYYY"");
+ START         final DatePrinter printer2Digits = getInstance(""YY""); END 
+         assertEquals(""2021"", printer4Digits.format(cal));
+         assertEquals(""21"", printer2Digits.format(cal));
+     }
+ }","     public void testWeekYear() {
+         final GregorianCalendar cal = new GregorianCalendar(2020, 12, 31, 0, 0, 0);
+         final DatePrinter printer4Digits = getInstance(""YYYY"");
+-        final DatePrinter printer2Digits = getInstance(""YY"");
++        final DatePrinter printer4DigitsFallback = getInstance(""YYY"");
++        final DatePrinter printer2Digits = getInstance(""YY"");
++        final DatePrinter printer4DigitAnotherFallback = getInstance(""Y"");
+         assertEquals(""2021"", printer4Digits.format(cal));
++        assertEquals(""2021"", printer4DigitsFallback.format(cal));
++        assertEquals(""2021"", printer4DigitAnotherFallback.format(cal));
+         assertEquals(""21"", printer2Digits.format(cal));
+     }
+ }","     public void testWeekYear() {
+         final GregorianCalendar cal = new GregorianCalendar(2020, 12, 31, 0, 0, 0);
+         final DatePrinter printer4Digits = getInstance(""YYYY"");
+ START         final DatePrinter printer2Digits = getInstance(""YY""); END 
+         assertEquals(""2021"", printer4Digits.format(cal));
+         assertEquals(""21"", printer2Digits.format(cal));
+     }
+ }","     public void testWeekYear() {
+         final GregorianCalendar cal = new GregorianCalendar(2020, 12, 31, 0, 0, 0);
+         final DatePrinter printer4Digits = getInstance(""YYYY"");
+-        final DatePrinter printer2Digits = getInstance(""YY"");
++        final DatePrinter printer4DigitsFallback = getInstance(""YYY"");
++        final DatePrinter printer2Digits = getInstance(""YY"");
++        final DatePrinter printer4DigitAnotherFallback = getInstance(""Y"");
+         assertEquals(""2021"", printer4Digits.format(cal));
++        assertEquals(""2021"", printer4DigitsFallback.format(cal));
++        assertEquals(""2021"", printer4DigitAnotherFallback.format(cal));
+         assertEquals(""21"", printer2Digits.format(cal));
+     }
+ }",True,False,False,2021-01-02T16:14:51Z,"public void testWeekYear() {
+         final GregorianCalendar cal = new GregorianCalendar(2020, 12, 31, 0, 0, 0);
+         final DatePrinter printer4Digits = getInstance(""YYYY"");
+ <START>  final DatePrinter printer2Digits = getInstance(""YY"");  <END>
+         assertEquals(""2021"", printer4Digits.format(cal));
+         assertEquals(""21"", printer2Digits.format(cal));
+     }
+ }","public void testWeekYear() {
+         final GregorianCalendar cal = new GregorianCalendar(2020, 12, 31, 0, 0, 0);
+         final DatePrinter printer4Digits = getInstance(""YYYY"");
+-        final DatePrinter printer2Digits = getInstance(""YY"");
++        final DatePrinter printer4DigitsFallback = getInstance(""YYY"");
++        final DatePrinter printer2Digits = getInstance(""YY"");
++        final DatePrinter printer4DigitAnotherFallback = getInstance(""Y"");
+         assertEquals(""2021"", printer4Digits.format(cal));
++        assertEquals(""2021"", printer4DigitsFallback.format(cal));
++        assertEquals(""2021"", printer4DigitAnotherFallback.format(cal));
+         assertEquals(""21"", printer2Digits.format(cal));
+     }
+ }"
+35,"[np.int64(1061), np.int64(1061)]","done.
+
+michael","     }
+     private static final class GetMatchingMethodClass {
+        public String testMethod() {
+            return ""testMethod"";
+        }
+
+ START         public String testMethod(Long aLong) { END 
+            return String.valueOf(aLong);
+        }
+
+        public String testMethod(long aLong) {
+            return String.valueOf(aLong);
+        }
+
+        public String testMethod2(Long aLong) {
+            return String.valueOf(aLong);
+        }
+
+        public String testMethod2(Color aColor) {
+            return String.valueOf(aColor);
+        }
+
+        public String testMethod2(long aLong) {
+            return String.valueOf(aLong);
+        }
+
+        public String testMethod3(long aLong, Long anotherLong) {
+            return aLong + "", "" + anotherLong;
+        }
+
+        public String testMethod3(Long aLong, long anotherLong) {
+            return aLong + "", "" + anotherLong;
+        }
+
+        public String testMethod3(Long aLong, Long anotherLong) {
+            return aLong + "", "" + anotherLong;
+        }
+
+        public String testMethod4(Long aLong, Long anotherLong) {
+            return aLong + "", "" + anotherLong;
+        }
+
+        public String testMethod4(Color aColor1, Color aColor2) {
+            return aColor1 + "", "" + aColor2;
+         }
+     }
+ }","     }
+     private static final class GetMatchingMethodClass {
+-        public String testMethod() {
+-            return ""testMethod"";
+-        }
+-
+-        public String testMethod(Long aLong) {
+-            return String.valueOf(aLong);
+-        }
+-
+-        public String testMethod(long aLong) {
+-            return String.valueOf(aLong);
+-        }
+-
+-        public String testMethod2(Long aLong) {
+-            return String.valueOf(aLong);
+-        }
+-
+-        public String testMethod2(Color aColor) {
+-            return String.valueOf(aColor);
+-        }
+-
+-        public String testMethod2(long aLong) {
+-            return String.valueOf(aLong);
+-        }
+-
+-        public String testMethod3(long aLong, Long anotherLong) {
+-            return aLong + "", "" + anotherLong;
+-        }
+-
+-        public String testMethod3(Long aLong, long anotherLong) {
+-            return aLong + "", "" + anotherLong;
+-        }
+-
+-        public String testMethod3(Long aLong, Long anotherLong) {
+-            return aLong + "", "" + anotherLong;
+-        }
+-
+-        public String testMethod4(Long aLong, Long anotherLong) {
+-            return aLong + "", "" + anotherLong;
+-        }
+-
+-        public String testMethod4(Color aColor1, Color aColor2) {
+-            return aColor1 + "", "" + aColor2;
++        public void testMethod() {
++        }
++
++        public void testMethod(final Long aLong) {
++        }
++
++        public void testMethod(final long aLong) {
++        }
++
++        public void testMethod2(final Long aLong) {
++        }
++
++        public void testMethod2(final Color aColor) {
++        }
++
++        public void testMethod2(final long aLong) {
++        }
++
++        public void testMethod3(final long aLong, final Long anotherLong) {
++        }
++
++        public void testMethod3(final Long aLong, final long anotherLong) {
++        }
++
++        public void testMethod3(final Long aLong, final Long anotherLong) {
++        }
++
++        public void testMethod4(final Long aLong, final Long anotherLong) {
++        }
++
++        public void testMethod4(final Color aColor1, final Color aColor2) {
+         }
+     }
+ }","     }
+     private static final class GetMatchingMethodClass {
+        public String testMethod() {
+            return ""testMethod"";
+        }
+
+ START         public String testMethod(Long aLong) { END 
+            return String.valueOf(aLong);
+        }
+
+        public String testMethod(long aLong) {
+            return String.valueOf(aLong);
+        }
+
+        public String testMethod2(Long aLong) {
+            return String.valueOf(aLong);
+        }
+
+        public String testMethod2(Color aColor) {
+            return String.valueOf(aColor);
+        }
+
+        public String testMethod2(long aLong) {
+            return String.valueOf(aLong);
+        }
+
+        public String testMethod3(long aLong, Long anotherLong) {
+            return aLong + "", "" + anotherLong;
+        }
+
+        public String testMethod3(Long aLong, long anotherLong) {
+            return aLong + "", "" + anotherLong;
+        }
+
+        public String testMethod3(Long aLong, Long anotherLong) {
+            return aLong + "", "" + anotherLong;
+        }
+
+        public String testMethod4(Long aLong, Long anotherLong) {
+            return aLong + "", "" + anotherLong;
+        }
+
+        public String testMethod4(Color aColor1, Color aColor2) {
+            return aColor1 + "", "" + aColor2;
+         }
+     }
+ }","     }
+     private static final class GetMatchingMethodClass {
+-        public String testMethod() {
+-            return ""testMethod"";
+-        }
+-
+-        public String testMethod(Long aLong) {
+-            return String.valueOf(aLong);
+-        }
+-
+-        public String testMethod(long aLong) {
+-            return String.valueOf(aLong);
+-        }
+-
+-        public String testMethod2(Long aLong) {
+-            return String.valueOf(aLong);
+-        }
+-
+-        public String testMethod2(Color aColor) {
+-            return String.valueOf(aColor);
+-        }
+-
+-        public String testMethod2(long aLong) {
+-            return String.valueOf(aLong);
+-        }
+-
+-        public String testMethod3(long aLong, Long anotherLong) {
+-            return aLong + "", "" + anotherLong;
+-        }
+-
+-        public String testMethod3(Long aLong, long anotherLong) {
+-            return aLong + "", "" + anotherLong;
+-        }
+-
+-        public String testMethod3(Long aLong, Long anotherLong) {
+-            return aLong + "", "" + anotherLong;
+-        }
+-
+-        public String testMethod4(Long aLong, Long anotherLong) {
+-            return aLong + "", "" + anotherLong;
+-        }
+-
+-        public String testMethod4(Color aColor1, Color aColor2) {
+-            return aColor1 + "", "" + aColor2;
++        public void testMethod() {
++        }
++
++        public void testMethod(final Long aLong) {
++        }
++
++        public void testMethod(final long aLong) {
++        }
++
++        public void testMethod2(final Long aLong) {
++        }
++
++        public void testMethod2(final Color aColor) {
++        }
++
++        public void testMethod2(final long aLong) {
++        }
++
++        public void testMethod3(final long aLong, final Long anotherLong) {
++        }
++
++        public void testMethod3(final Long aLong, final long anotherLong) {
++        }
++
++        public void testMethod3(final Long aLong, final Long anotherLong) {
++        }
++
++        public void testMethod4(final Long aLong, final Long anotherLong) {
++        }
++
++        public void testMethod4(final Color aColor1, final Color aColor2) {
+         }
+     }
+ }",True,True,False,2020-12-22T17:12:09Z,"}
+     private static final class GetMatchingMethodClass {
+        public String testMethod() {
+            return ""testMethod"";
+        }
+ <START>  public String testMethod(Long aLong) {  <END>
+            return String.valueOf(aLong);
+        }
+        public String testMethod(long aLong) {
+            return String.valueOf(aLong);
+        }
+        public String testMethod2(Long aLong) {
+            return String.valueOf(aLong);
+        }
+        public String testMethod2(Color aColor) {
+            return String.valueOf(aColor);
+        }
+        public String testMethod2(long aLong) {
+            return String.valueOf(aLong);
+        }
+        public String testMethod3(long aLong, Long anotherLong) {
+            return aLong + "", "" + anotherLong;
+        }
+        public String testMethod3(Long aLong, long anotherLong) {
+            return aLong + "", "" + anotherLong;
+        }
+        public String testMethod3(Long aLong, Long anotherLong) {
+            return aLong + "", "" + anotherLong;
+        }
+        public String testMethod4(Long aLong, Long anotherLong) {
+            return aLong + "", "" + anotherLong;
+        }
+        public String testMethod4(Color aColor1, Color aColor2) {
+            return aColor1 + "", "" + aColor2;
+         }
+     }
+ }","}
+     private static final class GetMatchingMethodClass {
+-        public String testMethod() {
+-            return ""testMethod"";
+-        }
+-
+-        public String testMethod(Long aLong) {
+-            return String.valueOf(aLong);
+-        }
+-
+-        public String testMethod(long aLong) {
+-            return String.valueOf(aLong);
+-        }
+-
+-        public String testMethod2(Long aLong) {
+-            return String.valueOf(aLong);
+-        }
+-
+-        public String testMethod2(Color aColor) {
+-            return String.valueOf(aColor);
+-        }
+-
+-        public String testMethod2(long aLong) {
+-            return String.valueOf(aLong);
+-        }
+-
+-        public String testMethod3(long aLong, Long anotherLong) {
+-            return aLong + "", "" + anotherLong;
+-        }
+-
+-        public String testMethod3(Long aLong, long anotherLong) {
+-            return aLong + "", "" + anotherLong;
+-        }
+-
+-        public String testMethod3(Long aLong, Long anotherLong) {
+-            return aLong + "", "" + anotherLong;
+-        }
+-
+-        public String testMethod4(Long aLong, Long anotherLong) {
+-            return aLong + "", "" + anotherLong;
+-        }
+-
+-        public String testMethod4(Color aColor1, Color aColor2) {
+-            return aColor1 + "", "" + aColor2;
++        public void testMethod() {
++        }
++
++        public void testMethod(final Long aLong) {
++        }
++
++        public void testMethod(final long aLong) {
++        }
++
++        public void testMethod2(final Long aLong) {
++        }
++
++        public void testMethod2(final Color aColor) {
++        }
++
++        public void testMethod2(final long aLong) {
++        }
++
++        public void testMethod3(final long aLong, final Long anotherLong) {
++        }
++
++        public void testMethod3(final Long aLong, final long anotherLong) {
++        }
++
++        public void testMethod3(final Long aLong, final Long anotherLong) {
++        }
++
++        public void testMethod4(final Long aLong, final Long anotherLong) {
++        }
++
++        public void testMethod4(final Color aColor1, final Color aColor2) {
+         }
+     }
+ }"
+24,"[np.int64(61), np.int64(61)]",changed as suggested,"      * Creates a proxy that shields the given input stream from being
+      * closed.
+      *
+ START      * @param in underlying input stream END 
+      * @return the created proxy
+      * @since 2.9.0
+      */
+    public static CloseShieldInputStream wrap(final InputStream in) {
+        return new CloseShieldInputStream(in);
+     }
+ }","      * Creates a proxy that shields the given input stream from being
+      * closed.
+      *
+-     * @param in underlying input stream
++     * @param inputStream the input stream to wrap
+      * @return the created proxy
+      * @since 2.9.0
+      */
+-    public static CloseShieldInputStream wrap(final InputStream in) {
+-        return new CloseShieldInputStream(in);
++    public static CloseShieldInputStream wrap(final InputStream inputStream) {
++        return new CloseShieldInputStream(inputStream);
+     }
+ }","      * Creates a proxy that shields the given input stream from being
+      * closed.
+      *
+ START      * @param in underlying input stream END 
+      * @return the created proxy
+      * @since 2.9.0
+      */
+    public static CloseShieldInputStream wrap(final InputStream in) {
+        return new CloseShieldInputStream(in);
+     }
+ }","      * Creates a proxy that shields the given input stream from being
+      * closed.
+      *
+-     * @param in underlying input stream
++     * @param inputStream the input stream to wrap
+      * @return the created proxy
+      * @since 2.9.0
+      */
+-    public static CloseShieldInputStream wrap(final InputStream in) {
+-        return new CloseShieldInputStream(in);
++    public static CloseShieldInputStream wrap(final InputStream inputStream) {
++        return new CloseShieldInputStream(inputStream);
+     }
+ }",True,True,True,2020-12-08T19:29:03Z,"* Creates a proxy that shields the given input stream from being
+      * closed.
+      *
+ <START>  * @param in underlying input stream  <END>
+      * @return the created proxy
+      * @since 2.9.0
+      */
+    public static CloseShieldInputStream wrap(final InputStream in) {
+        return new CloseShieldInputStream(in);
+     }
+ }","* Creates a proxy that shields the given input stream from being
+      * closed.
+      *
+-     * @param in underlying input stream
++     * @param inputStream the input stream to wrap
+      * @return the created proxy
+      * @since 2.9.0
+      */
+-    public static CloseShieldInputStream wrap(final InputStream in) {
+-        return new CloseShieldInputStream(in);
++    public static CloseShieldInputStream wrap(final InputStream inputStream) {
++        return new CloseShieldInputStream(inputStream);
+     }
+ }"

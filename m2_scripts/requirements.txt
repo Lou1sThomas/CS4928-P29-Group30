@@ -1,0 +1,9 @@
+pandas
+numpy
+lizard
+langdetect
+textblob
+regex
+langid
+tqdm
+# pycld3 is replaced by m2_scripts/cld3_stub.py (see M2_NOTES.md, deviation D4)

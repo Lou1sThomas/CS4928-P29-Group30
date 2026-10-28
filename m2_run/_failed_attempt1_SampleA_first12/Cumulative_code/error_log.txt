@@ -1,0 +1,13 @@
+Error in chunk 0000: [Errno 2] No such file or directory: './utils/stop-words-english.txt'
+Traceback (most recent call last):
+  File "/sessions/rcw-019cbioitmaq98hdjem76wxp/mnt/Price-of-Precision/m2_run/GitHub_SampleA_first12/Cumulative_code/Preprocessing_Pipeline.py", line 997, in process_chunk
+    return run_pipeline_for_chunk(chunk_df, i)
+  File "/sessions/rcw-019cbioitmaq98hdjem76wxp/mnt/Price-of-Precision/m2_run/GitHub_SampleA_first12/Cumulative_code/Preprocessing_Pipeline.py", line 666, in run_pipeline_for_chunk
+    step1_4_df = analyzer.analyze_diff_level()
+  File "/sessions/rcw-019cbioitmaq98hdjem76wxp/mnt/Price-of-Precision/m2_run/GitHub_SampleA_first12/Cumulative_code/Analyzer2.py", line 394, in analyze_diff_level
+    cleaned_comment = Analyzer2.clean_comment_without_abstraction(comment, self.idioms_path)
+  File "/sessions/rcw-019cbioitmaq98hdjem76wxp/mnt/Price-of-Precision/m2_run/GitHub_SampleA_first12/Cumulative_code/Analyzer2.py", line 1370, in clean_comment_without_abstraction
+    text = Analyzer2.remove_stopwords(comment_, idioms_path)
+  File "/sessions/rcw-019cbioitmaq98hdjem76wxp/mnt/Price-of-Precision/m2_run/GitHub_SampleA_first12/Cumulative_code/Analyzer2.py", line 1406, in remove_stopwords
+    stopwords = [line.strip() for line in open(path)]
+FileNotFoundError: [Errno 2] No such file or directory: './utils/stop-words-english.txt'

@@ -1,0 +1,920 @@
+Record_id,references,comment,old,new,old_wo_comment,new_wo_comment,Diff_is_tagged,owner_comment,comment_to_comment,creation_time,old_tags,new_clean
+30,"[np.int64(252), np.int64(252)]","blame my weak eyes - could we introduce constants here, e.g. ""underscore""?","             return new Locale(str);
+         }
+        final String[] segments = str.contains(""-"")
+ START             ? str.split(""-"", -1) END 
+            : str.split(""_"", -1);
+         final String language = segments[0];
+         if (segments.length == 2) {
+             final String country = segments[1];","             return new Locale(str);
+         }
+-        final String[] segments = str.contains(""-"")
+-            ? str.split(""-"", -1)
+-            : str.split(""_"", -1);
++        final String[] segments = str.indexOf(UNDERSCORE) != -1
++            ? str.split(String.valueOf(UNDERSCORE), -1)
++            : str.split(String.valueOf(DASH), -1);
+         final String language = segments[0];
+         if (segments.length == 2) {
+             final String country = segments[1];","             return new Locale(str);
+         }
+        final String[] segments = str.contains(""-"")
+ START             ? str.split(""-"", -1) END 
+            : str.split(""_"", -1);
+         final String language = segments[0];
+         if (segments.length == 2) {
+             final String country = segments[1];","             return new Locale(str);
+         }
+-        final String[] segments = str.contains(""-"")
+-            ? str.split(""-"", -1)
+-            : str.split(""_"", -1);
++        final String[] segments = str.indexOf(UNDERSCORE) != -1
++            ? str.split(String.valueOf(UNDERSCORE), -1)
++            : str.split(String.valueOf(DASH), -1);
+         final String language = segments[0];
+         if (segments.length == 2) {
+             final String country = segments[1];",True,False,False,2021-11-08T17:18:53Z,"return new Locale(str);
+         }
+        final String[] segments = str.contains(""-"")
+ <START>  ? str.split(""-"", -1)  <END>
+            : str.split(""_"", -1);
+         final String language = segments[0];
+         if (segments.length == 2) {
+             final String country = segments[1];","return new Locale(str);
+         }
+-        final String[] segments = str.contains(""-"")
+-            ? str.split(""-"", -1)
+-            : str.split(""_"", -1);
++        final String[] segments = str.indexOf(UNDERSCORE) != -1
++            ? str.split(String.valueOf(UNDERSCORE), -1)
++            : str.split(String.valueOf(DASH), -1);
+         final String language = segments[0];
+         if (segments.length == 2) {
+             final String country = segments[1];"
+43,"[np.int64(254), np.int64(254)]",does it matter that dash is tested before underscore?,"             return new Locale(str);
+         }
+        final String[] segments = str.indexOf(DASH) != -1
+ START             ? str.split(String.valueOf(DASH), -1) END 
+            : str.split(String.valueOf(UNDERSCORE), -1);
+         final String language = segments[0];
+         if (segments.length == 2) {
+             final String country = segments[1];","             return new Locale(str);
+         }
+-        final String[] segments = str.indexOf(DASH) != -1
+-            ? str.split(String.valueOf(DASH), -1)
+-            : str.split(String.valueOf(UNDERSCORE), -1);
++        final String[] segments = str.indexOf(UNDERSCORE) != -1
++            ? str.split(String.valueOf(UNDERSCORE), -1)
++            : str.split(String.valueOf(DASH), -1);
+         final String language = segments[0];
+         if (segments.length == 2) {
+             final String country = segments[1];","             return new Locale(str);
+         }
+        final String[] segments = str.indexOf(DASH) != -1
+ START             ? str.split(String.valueOf(DASH), -1) END 
+            : str.split(String.valueOf(UNDERSCORE), -1);
+         final String language = segments[0];
+         if (segments.length == 2) {
+             final String country = segments[1];","             return new Locale(str);
+         }
+-        final String[] segments = str.indexOf(DASH) != -1
+-            ? str.split(String.valueOf(DASH), -1)
+-            : str.split(String.valueOf(UNDERSCORE), -1);
++        final String[] segments = str.indexOf(UNDERSCORE) != -1
++            ? str.split(String.valueOf(UNDERSCORE), -1)
++            : str.split(String.valueOf(DASH), -1);
+         final String language = segments[0];
+         if (segments.length == 2) {
+             final String country = segments[1];",True,False,False,2021-12-06T15:59:28Z,"return new Locale(str);
+         }
+        final String[] segments = str.indexOf(DASH) != -1
+ <START>  ? str.split(String.valueOf(DASH), -1)  <END>
+            : str.split(String.valueOf(UNDERSCORE), -1);
+         final String language = segments[0];
+         if (segments.length == 2) {
+             final String country = segments[1];","return new Locale(str);
+         }
+-        final String[] segments = str.indexOf(DASH) != -1
+-            ? str.split(String.valueOf(DASH), -1)
+-            : str.split(String.valueOf(UNDERSCORE), -1);
++        final String[] segments = str.indexOf(UNDERSCORE) != -1
++            ? str.split(String.valueOf(UNDERSCORE), -1)
++            : str.split(String.valueOf(DASH), -1);
+         final String language = segments[0];
+         if (segments.length == 2) {
+             final String country = segments[1];"
+7,"[np.int64(1021), np.int64(1021)]",not sure if this is correct. needs analysis. was this change made by a tool in intellij or eclipse?,"             final Class<?> acls;
+             if (interfaceIndex >= allInterfaces.size()) {
+                 acls = allSuperclasses.get(superClassIndex++);
+ START             } else if ((superClassIndex >= allSuperclasses.size()) || !(superClassIndex < interfaceIndex)) { END 
+                 acls = allInterfaces.get(interfaceIndex++);
+             } else {
+                 acls = allSuperclasses.get(superClassIndex++);","             final Class<?> acls;
+             if (interfaceIndex >= allInterfaces.size()) {
+                 acls = allSuperclasses.get(superClassIndex++);
+-            } else if ((superClassIndex >= allSuperclasses.size()) || !(superClassIndex < interfaceIndex)) {
++            } else if ((superClassIndex >= allSuperclasses.size()) || !(superClassIndex < interfaceIndex)) {
+                 acls = allInterfaces.get(interfaceIndex++);
+             } else {
+                 acls = allSuperclasses.get(superClassIndex++);","             final Class<?> acls;
+             if (interfaceIndex >= allInterfaces.size()) {
+                 acls = allSuperclasses.get(superClassIndex++);
+ START             } else if ((superClassIndex >= allSuperclasses.size()) || !(superClassIndex < interfaceIndex)) { END 
+                 acls = allInterfaces.get(interfaceIndex++);
+             } else {
+                 acls = allSuperclasses.get(superClassIndex++);","             final Class<?> acls;
+             if (interfaceIndex >= allInterfaces.size()) {
+                 acls = allSuperclasses.get(superClassIndex++);
+-            } else if ((superClassIndex >= allSuperclasses.size()) || !(superClassIndex < interfaceIndex)) {
++            } else if ((superClassIndex >= allSuperclasses.size()) || !(superClassIndex < interfaceIndex)) {
+                 acls = allInterfaces.get(interfaceIndex++);
+             } else {
+                 acls = allSuperclasses.get(superClassIndex++);",True,False,False,2021-10-08T19:31:26Z,"final Class<?> acls;
+             if (interfaceIndex >= allInterfaces.size()) {
+                 acls = allSuperclasses.get(superClassIndex++);
+ <START>  } else if ((superClassIndex >= allSuperclasses.size()) || !(superClassIndex < interfaceIndex)) {  <END>
+                 acls = allInterfaces.get(interfaceIndex++);
+             } else {
+                 acls = allSuperclasses.get(superClassIndex++);","final Class<?> acls;
+             if (interfaceIndex >= allInterfaces.size()) {
+                 acls = allSuperclasses.get(superClassIndex++);
+-            } else if ((superClassIndex >= allSuperclasses.size()) || !(superClassIndex < interfaceIndex)) {
++            } else if ((superClassIndex >= allSuperclasses.size()) || !(superClassIndex < interfaceIndex)) {
+                 acls = allInterfaces.get(interfaceIndex++);
+             } else {
+                 acls = allSuperclasses.get(superClassIndex++);"
+51,"[np.int64(82), np.int64(82)]",make `private`.,"     private final DiffBuilder<T> diffBuilder;
+     /**
+     * Which field names to exclude from output. Intended for fields like {@code ""password""} or {@code ""lastModificationDate}.
+      * @since 3.13.0
+      */
+ START     protected String[] excludeFieldNames; END 
+     /**
+     * <p>
+      * Constructs a builder for the specified objects with the specified style.
+     * </p>
+      *
+      * <p>
+      * If {@code lhs == rhs} or {@code lhs.equals(rhs)} then the builder will","     private final DiffBuilder<T> diffBuilder;
+     /**
+-     * Which field names to exclude from output. Intended for fields like {@code ""password""} or {@code ""lastModificationDate}.
++     * Which field names to exclude from output. Intended for fields like {@code ""password""} or {@code ""lastModificationDate""}.
+      * @since 3.13.0
+      */
+-    protected String[] excludeFieldNames;
++    private String[] excludeFieldNames;
+     /**
+-     * <p>
+      * Constructs a builder for the specified objects with the specified style.
+-     * </p>
+      *
+      * <p>
+      * If {@code lhs == rhs} or {@code lhs.equals(rhs)} then the builder will",,,True,False,False,2022-04-06T14:16:29Z,"private final DiffBuilder<T> diffBuilder;
+     /**
+     * Which field names to exclude from output. Intended for fields like {@code ""password""} or {@code ""lastModificationDate}.
+      * @since 3.13.0
+      */
+ <START>  protected String[] excludeFieldNames;  <END>
+     /**
+     * <p>
+      * Constructs a builder for the specified objects with the specified style.
+     * </p>
+      *
+      * <p>
+      * If {@code lhs == rhs} or {@code lhs.equals(rhs)} then the builder will","private final DiffBuilder<T> diffBuilder;
+     /**
+-     * Which field names to exclude from output. Intended for fields like {@code ""password""} or {@code ""lastModificationDate}.
++     * Which field names to exclude from output. Intended for fields like {@code ""password""} or {@code ""lastModificationDate""}.
+      * @since 3.13.0
+      */
+-    protected String[] excludeFieldNames;
++    private String[] excludeFieldNames;
+     /**
+-     * <p>
+      * Constructs a builder for the specified objects with the specified style.
+-     * </p>
+      *
+      * <p>
+      * If {@code lhs == rhs} or {@code lhs.equals(rhs)} then the builder will"
+11,"[np.int64(1012), np.int64(1012)]",the `out` variable is not needed imo.,"         Objects.requireNonNull(outputStream, ""outputStream"");
+         final QueueInputStream in = new QueueInputStream();
+ START         final QueueOutputStream out = in.newQueueOutputStream(); END 
+        outputStream.writeTo(out);
+         return in;
+     }","         Objects.requireNonNull(outputStream, ""outputStream"");
+         final QueueInputStream in = new QueueInputStream();
+-        final QueueOutputStream out = in.newQueueOutputStream();
+-        outputStream.writeTo(out);
++        outputStream.writeTo(in.newQueueOutputStream());
+         return in;
+     }","         Objects.requireNonNull(outputStream, ""outputStream"");
+         final QueueInputStream in = new QueueInputStream();
+ START         final QueueOutputStream out = in.newQueueOutputStream(); END 
+        outputStream.writeTo(out);
+         return in;
+     }","         Objects.requireNonNull(outputStream, ""outputStream"");
+         final QueueInputStream in = new QueueInputStream();
+-        final QueueOutputStream out = in.newQueueOutputStream();
+-        outputStream.writeTo(out);
++        outputStream.writeTo(in.newQueueOutputStream());
+         return in;
+     }",True,False,False,2021-10-16T18:14:26Z,"Objects.requireNonNull(outputStream, ""outputStream"");
+         final QueueInputStream in = new QueueInputStream();
+ <START>  final QueueOutputStream out = in.newQueueOutputStream();  <END>
+        outputStream.writeTo(out);
+         return in;
+     }","Objects.requireNonNull(outputStream, ""outputStream"");
+         final QueueInputStream in = new QueueInputStream();
+-        final QueueOutputStream out = in.newQueueOutputStream();
+-        outputStream.writeTo(out);
++        outputStream.writeTo(in.newQueueOutputStream());
+         return in;
+     }"
+49,"[np.int64(130), np.int64(130)]",reuse `arrayutils.empty_string_array`,"      */
+     public ReflectionDiffBuilder setExcludeFieldNames(final String... excludeFieldNamesParam) {
+         if (excludeFieldNamesParam == null) {
+ START             this.excludeFieldNames = new String[0]; END 
+         } else {
+            //clone and remove nulls
+             this.excludeFieldNames = ArraySorter.sort(ReflectionToStringBuilder.toNoNullStringArray(excludeFieldNamesParam));
+         }
+         return this;","      */
+     public ReflectionDiffBuilder setExcludeFieldNames(final String... excludeFieldNamesParam) {
+         if (excludeFieldNamesParam == null) {
+-            this.excludeFieldNames = new String[0];
++            this.excludeFieldNames = ArrayUtils.EMPTY_STRING_ARRAY;
+         } else {
+-            //clone and remove nulls
++            // clone and remove nulls
+             this.excludeFieldNames = ArraySorter.sort(ReflectionToStringBuilder.toNoNullStringArray(excludeFieldNamesParam));
+         }
+         return this;","      */
+     public ReflectionDiffBuilder setExcludeFieldNames(final String... excludeFieldNamesParam) {
+         if (excludeFieldNamesParam == null) {
+ START             this.excludeFieldNames = new String[0]; END 
+         } else {
+             this.excludeFieldNames = ArraySorter.sort(ReflectionToStringBuilder.toNoNullStringArray(excludeFieldNamesParam));
+         }
+         return this;","      */
+     public ReflectionDiffBuilder setExcludeFieldNames(final String... excludeFieldNamesParam) {
+         if (excludeFieldNamesParam == null) {
+-            this.excludeFieldNames = new String[0];
++            this.excludeFieldNames = ArrayUtils.EMPTY_STRING_ARRAY;
+         } else {
+             this.excludeFieldNames = ArraySorter.sort(ReflectionToStringBuilder.toNoNullStringArray(excludeFieldNamesParam));
+         }
+         return this;",True,False,False,2022-04-06T14:16:29Z,"*/
+     public ReflectionDiffBuilder setExcludeFieldNames(final String... excludeFieldNamesParam) {
+         if (excludeFieldNamesParam == null) {
+ <START>  this.excludeFieldNames = new String[0];  <END>
+         } else {
+            //clone and remove nulls
+             this.excludeFieldNames = ArraySorter.sort(ReflectionToStringBuilder.toNoNullStringArray(excludeFieldNamesParam));
+         }
+         return this;","*/
+     public ReflectionDiffBuilder setExcludeFieldNames(final String... excludeFieldNamesParam) {
+         if (excludeFieldNamesParam == null) {
+-            this.excludeFieldNames = new String[0];
++            this.excludeFieldNames = ArrayUtils.EMPTY_STRING_ARRAY;
+         } else {
+-            //clone and remove nulls
++            // clone and remove nulls
+             this.excludeFieldNames = ArraySorter.sort(ReflectionToStringBuilder.toNoNullStringArray(excludeFieldNamesParam));
+         }
+         return this;"
+14,"[np.int64(1007), np.int64(1007)]",import bytearrayoutputstream instead of using a fqcn.,"      * @throws IOException if an I/O error occurs.
+      * @since 2.12
+      */
+ START     @SuppressWarnings(""resource"") // streams are closed by the caller. END 
+     public static QueueInputStream copy(final java.io.ByteArrayOutputStream outputStream) throws IOException {
+         Objects.requireNonNull(outputStream, ""outputStream"");
+         final QueueInputStream in = new QueueInputStream();
+        final QueueOutputStream out = in.newQueueOutputStream();
+        outputStream.writeTo(out);
+         return in;
+     }","      * @throws IOException if an I/O error occurs.
+      * @since 2.12
+      */
+-    @SuppressWarnings(""resource"") // streams are closed by the caller.
++    @SuppressWarnings(""resource"") // streams are closed by the caller.
+     public static QueueInputStream copy(final java.io.ByteArrayOutputStream outputStream) throws IOException {
+         Objects.requireNonNull(outputStream, ""outputStream"");
+         final QueueInputStream in = new QueueInputStream();
+-        final QueueOutputStream out = in.newQueueOutputStream();
+-        outputStream.writeTo(out);
++        outputStream.writeTo(in.newQueueOutputStream());
+         return in;
+     }","      * @throws IOException if an I/O error occurs.
+      * @since 2.12
+      */
+ START     @SuppressWarnings(""resource"") // streams are closed by the caller. END 
+     public static QueueInputStream copy(final java.io.ByteArrayOutputStream outputStream) throws IOException {
+         Objects.requireNonNull(outputStream, ""outputStream"");
+         final QueueInputStream in = new QueueInputStream();
+        final QueueOutputStream out = in.newQueueOutputStream();
+        outputStream.writeTo(out);
+         return in;
+     }","      * @throws IOException if an I/O error occurs.
+      * @since 2.12
+      */
+-    @SuppressWarnings(""resource"") // streams are closed by the caller.
++    @SuppressWarnings(""resource"") // streams are closed by the caller.
+     public static QueueInputStream copy(final java.io.ByteArrayOutputStream outputStream) throws IOException {
+         Objects.requireNonNull(outputStream, ""outputStream"");
+         final QueueInputStream in = new QueueInputStream();
+-        final QueueOutputStream out = in.newQueueOutputStream();
+-        outputStream.writeTo(out);
++        outputStream.writeTo(in.newQueueOutputStream());
+         return in;
+     }",True,False,False,2021-10-16T18:14:26Z,"* @throws IOException if an I/O error occurs.
+      * @since 2.12
+      */
+ <START>  @SuppressWarnings(""resource"") // streams are closed by the caller.  <END>
+     public static QueueInputStream copy(final java.io.ByteArrayOutputStream outputStream) throws IOException {
+         Objects.requireNonNull(outputStream, ""outputStream"");
+         final QueueInputStream in = new QueueInputStream();
+        final QueueOutputStream out = in.newQueueOutputStream();
+        outputStream.writeTo(out);
+         return in;
+     }","* @throws IOException if an I/O error occurs.
+      * @since 2.12
+      */
+-    @SuppressWarnings(""resource"") // streams are closed by the caller.
++    @SuppressWarnings(""resource"") // streams are closed by the caller.
+     public static QueueInputStream copy(final java.io.ByteArrayOutputStream outputStream) throws IOException {
+         Objects.requireNonNull(outputStream, ""outputStream"");
+         final QueueInputStream in = new QueueInputStream();
+-        final QueueOutputStream out = in.newQueueOutputStream();
+-        outputStream.writeTo(out);
++        outputStream.writeTo(in.newQueueOutputStream());
+         return in;
+     }"
+5,"[np.int64(72), np.int64(72)]",use final where you can.," 
+     @Test
+     public void testTryWithResources() {
+ START         IOException thrown = assertThrows(IOException.class, () -> { END 
+             try (InputStream newStream = new BrokenInputStream()) {
+                 newStream.read();
+             }
+         });
+         assertEquals(""Broken input stream"", thrown.getMessage());
+        Throwable[] suppressed = thrown.getSuppressed();
+         assertEquals(1, suppressed.length);
+         assertEquals(IOException.class, suppressed[0].getClass());
+         assertEquals(""Broken input stream"", suppressed[0].getMessage());"," 
+     @Test
+     public void testTryWithResources() {
+-        IOException thrown = assertThrows(IOException.class, () -> {
++        final IOException thrown = assertThrows(IOException.class, () -> {
+             try (InputStream newStream = new BrokenInputStream()) {
+                 newStream.read();
+             }
+         });
+         assertEquals(""Broken input stream"", thrown.getMessage());
+-        Throwable[] suppressed = thrown.getSuppressed();
++        final Throwable[] suppressed = thrown.getSuppressed();
+         assertEquals(1, suppressed.length);
+         assertEquals(IOException.class, suppressed[0].getClass());
+         assertEquals(""Broken input stream"", suppressed[0].getMessage());"," 
+     @Test
+     public void testTryWithResources() {
+ START         IOException thrown = assertThrows(IOException.class, () -> { END 
+             try (InputStream newStream = new BrokenInputStream()) {
+                 newStream.read();
+             }
+         });
+         assertEquals(""Broken input stream"", thrown.getMessage());
+        Throwable[] suppressed = thrown.getSuppressed();
+         assertEquals(1, suppressed.length);
+         assertEquals(IOException.class, suppressed[0].getClass());
+         assertEquals(""Broken input stream"", suppressed[0].getMessage());"," 
+     @Test
+     public void testTryWithResources() {
+-        IOException thrown = assertThrows(IOException.class, () -> {
++        final IOException thrown = assertThrows(IOException.class, () -> {
+             try (InputStream newStream = new BrokenInputStream()) {
+                 newStream.read();
+             }
+         });
+         assertEquals(""Broken input stream"", thrown.getMessage());
+-        Throwable[] suppressed = thrown.getSuppressed();
++        final Throwable[] suppressed = thrown.getSuppressed();
+         assertEquals(1, suppressed.length);
+         assertEquals(IOException.class, suppressed[0].getClass());
+         assertEquals(""Broken input stream"", suppressed[0].getMessage());",True,False,False,2021-09-28T00:32:21Z,"@Test
+     public void testTryWithResources() {
+ <START>  IOException thrown = assertThrows(IOException.class, () -> {  <END>
+             try (InputStream newStream = new BrokenInputStream()) {
+                 newStream.read();
+             }
+         });
+         assertEquals(""Broken input stream"", thrown.getMessage());
+        Throwable[] suppressed = thrown.getSuppressed();
+         assertEquals(1, suppressed.length);
+         assertEquals(IOException.class, suppressed[0].getClass());
+         assertEquals(""Broken input stream"", suppressed[0].getMessage());","@Test
+     public void testTryWithResources() {
+-        IOException thrown = assertThrows(IOException.class, () -> {
++        final IOException thrown = assertThrows(IOException.class, () -> {
+             try (InputStream newStream = new BrokenInputStream()) {
+                 newStream.read();
+             }
+         });
+         assertEquals(""Broken input stream"", thrown.getMessage());
+-        Throwable[] suppressed = thrown.getSuppressed();
++        final Throwable[] suppressed = thrown.getSuppressed();
+         assertEquals(1, suppressed.length);
+         assertEquals(IOException.class, suppressed[0].getClass());
+         assertEquals(""Broken input stream"", suppressed[0].getMessage());"
+12,"[np.int64(97), np.int64(97)]","see above, missing test for null input using `assertthrows()`.","         assertEquals(0, in.available(), ""Not all bytes were read"");
+         assertEquals(inData.length, insize, ""Sizes differ"");
+         assertArrayEquals(inData, inData2, ""Content differs"");
+ START     } END 
+     /**
+      * Test Copying file > 2GB  - see issue# IO-84","         assertEquals(0, in.available(), ""Not all bytes were read"");
+         assertEquals(inData.length, insize, ""Sizes differ"");
+         assertArrayEquals(inData, inData2, ""Content differs"");
+-    }
++    }
++
++    @Test
++    public void testCopy_byteArrayOutputStreamToInputStream_nullOutputStream() {
++        assertThrows(NullPointerException.class, () -> IOUtils.copy(null));
++    }
+     /**
+      * Test Copying file > 2GB  - see issue# IO-84","         assertEquals(0, in.available(), ""Not all bytes were read"");
+         assertEquals(inData.length, insize, ""Sizes differ"");
+         assertArrayEquals(inData, inData2, ""Content differs"");
+ START     } END ","         assertEquals(0, in.available(), ""Not all bytes were read"");
+         assertEquals(inData.length, insize, ""Sizes differ"");
+         assertArrayEquals(inData, inData2, ""Content differs"");
+-    }
++    }
++
++    @Test
++    public void testCopy_byteArrayOutputStreamToInputStream_nullOutputStream() {
++        assertThrows(NullPointerException.class, () -> IOUtils.copy(null));
++    }",True,False,False,2021-10-16T18:14:26Z,"assertEquals(0, in.available(), ""Not all bytes were read"");
+         assertEquals(inData.length, insize, ""Sizes differ"");
+         assertArrayEquals(inData, inData2, ""Content differs"");
+ <START>  }  <END>
+     /**
+      * Test Copying file > 2GB - see issue# IO-84","assertEquals(0, in.available(), ""Not all bytes were read"");
+         assertEquals(inData.length, insize, ""Sizes differ"");
+         assertArrayEquals(inData, inData2, ""Content differs"");
+-    }
++    }
++
++    @Test
++    public void testCopy_byteArrayOutputStreamToInputStream_nullOutputStream() {
++        assertThrows(NullPointerException.class, () -> IOUtils.copy(null));
++    }
+     /**
+      * Test Copying file > 2GB - see issue# IO-84"
+40,"[np.int64(3941), np.int64(3941)]","interesting, i thought instead of `deletechartat` using an `if` statement in the `for` above, to avoid adding the last `delimiter` would improve more the performance. for a follow-up discussion i think.","         if (endIndex - startIndex <= 0) {
+             return EMPTY;
+         }
+        final StringBuilder stringBuilder = new StringBuilder();
+         for (int i = startIndex; i < endIndex; i++) {
+             stringBuilder
+                     .append(array[i])
+                     .append(delimiter);
+         }
+        return stringBuilder
+                .deleteCharAt(stringBuilder.length() - 1)
+ START                 .toString(); END 
+     }
+     /**","         if (endIndex - startIndex <= 0) {
+             return EMPTY;
+         }
+-        final StringBuilder stringBuilder = new StringBuilder();
++        final StringBuilder stringBuilder = new StringBuilder(array.length * 5 + array.length - 1);
+         for (int i = startIndex; i < endIndex; i++) {
+             stringBuilder
+                     .append(array[i])
+                     .append(delimiter);
+         }
+-        return stringBuilder
+-                .deleteCharAt(stringBuilder.length() - 1)
+-                .toString();
++        return stringBuilder.substring(0, stringBuilder.length() - 1);
+     }
+     /**","         if (endIndex - startIndex <= 0) {
+             return EMPTY;
+         }
+        final StringBuilder stringBuilder = new StringBuilder();
+         for (int i = startIndex; i < endIndex; i++) {
+             stringBuilder
+                     .append(array[i])
+                     .append(delimiter);
+         }
+        return stringBuilder
+                .deleteCharAt(stringBuilder.length() - 1)
+ START                 .toString(); END 
+     }","         if (endIndex - startIndex <= 0) {
+             return EMPTY;
+         }
+-        final StringBuilder stringBuilder = new StringBuilder();
++        final StringBuilder stringBuilder = new StringBuilder(array.length * 5 + array.length - 1);
+         for (int i = startIndex; i < endIndex; i++) {
+             stringBuilder
+                     .append(array[i])
+                     .append(delimiter);
+         }
+-        return stringBuilder
+-                .deleteCharAt(stringBuilder.length() - 1)
+-                .toString();
++        return stringBuilder.substring(0, stringBuilder.length() - 1);
+     }",True,False,False,2021-11-19T09:45:23Z,"if (endIndex - startIndex <= 0) {
+             return EMPTY;
+         }
+        final StringBuilder stringBuilder = new StringBuilder();
+         for (int i = startIndex; i < endIndex; i++) {
+             stringBuilder
+                     .append(array[i])
+                     .append(delimiter);
+         }
+        return stringBuilder
+                .deleteCharAt(stringBuilder.length() - 1)
+ <START>  .toString();  <END>
+     }
+     /**","if (endIndex - startIndex <= 0) {
+             return EMPTY;
+         }
+-        final StringBuilder stringBuilder = new StringBuilder();
++        final StringBuilder stringBuilder = new StringBuilder(array.length * 5 + array.length - 1);
+         for (int i = startIndex; i < endIndex; i++) {
+             stringBuilder
+                     .append(array[i])
+                     .append(delimiter);
+         }
+-        return stringBuilder
+-                .deleteCharAt(stringBuilder.length() - 1)
+-                .toString();
++        return stringBuilder.substring(0, stringBuilder.length() - 1);
+     }
+     /**"
+41,"[np.int64(81), np.int64(81)]",all _new_ `protected` and `public` elements new `@since 3.13.0`.,"     private final DiffBuilder<T> diffBuilder;
+     /**
+     * Which field names to exclude from output. Intended for fields like {@code ""password""} or {@code ""lastModificationDate}.
+      */
+ START     protected String[] excludeFieldNames; END 
+     /**
+     * <p>
+      * Constructs a builder for the specified objects with the specified style.
+     * </p>
+      *
+      * <p>
+      * If {@code lhs == rhs} or {@code lhs.equals(rhs)} then the builder will","     private final DiffBuilder<T> diffBuilder;
+     /**
+-     * Which field names to exclude from output. Intended for fields like {@code ""password""} or {@code ""lastModificationDate}.
++     * Which field names to exclude from output. Intended for fields like {@code ""password""} or {@code ""lastModificationDate""}.
++     * @since 3.13.0
+      */
+-    protected String[] excludeFieldNames;
++    private String[] excludeFieldNames;
+     /**
+-     * <p>
+      * Constructs a builder for the specified objects with the specified style.
+-     * </p>
+      *
+      * <p>
+      * If {@code lhs == rhs} or {@code lhs.equals(rhs)} then the builder will",,,True,False,False,2021-12-04T15:44:58Z,"private final DiffBuilder<T> diffBuilder;
+     /**
+     * Which field names to exclude from output. Intended for fields like {@code ""password""} or {@code ""lastModificationDate}.
+      */
+ <START>  protected String[] excludeFieldNames;  <END>
+     /**
+     * <p>
+      * Constructs a builder for the specified objects with the specified style.
+     * </p>
+      *
+      * <p>
+      * If {@code lhs == rhs} or {@code lhs.equals(rhs)} then the builder will","private final DiffBuilder<T> diffBuilder;
+     /**
+-     * Which field names to exclude from output. Intended for fields like {@code ""password""} or {@code ""lastModificationDate}.
++     * Which field names to exclude from output. Intended for fields like {@code ""password""} or {@code ""lastModificationDate""}.
++     * @since 3.13.0
+      */
+-    protected String[] excludeFieldNames;
++    private String[] excludeFieldNames;
+     /**
+-     * <p>
+      * Constructs a builder for the specified objects with the specified style.
+-     * </p>
+      *
+      * <p>
+      * If {@code lhs == rhs} or {@code lhs.equals(rhs)} then the builder will"
+28,"[np.int64(60), np.int64(60)]","this one is not really necessary @wodencafe ? `initwriter` is already private, so making it `final` won't change much for internal/external devs?","      * @return the initialized writer
+      * @throws IOException if an error occurs
+      */
+ START     private static final Writer initWriter(final File file, final Object encoding, final boolean append) throws IOException { END 
+         Objects.requireNonNull(file, ""file"");
+         OutputStream stream = null;
+         final boolean fileExistedAlready = file.exists();","      * @return the initialized writer
+      * @throws IOException if an error occurs
+      */
+-    private static final Writer initWriter(final File file, final Object encoding, final boolean append) throws IOException {
++    private static Writer initWriter(final File file, final Object encoding, final boolean append) throws IOException {
+         Objects.requireNonNull(file, ""file"");
+         OutputStream stream = null;
+         final boolean fileExistedAlready = file.exists();","      * @return the initialized writer
+      * @throws IOException if an error occurs
+      */
+ START     private static final Writer initWriter(final File file, final Object encoding, final boolean append) throws IOException { END 
+         Objects.requireNonNull(file, ""file"");
+         OutputStream stream = null;
+         final boolean fileExistedAlready = file.exists();","      * @return the initialized writer
+      * @throws IOException if an error occurs
+      */
+-    private static final Writer initWriter(final File file, final Object encoding, final boolean append) throws IOException {
++    private static Writer initWriter(final File file, final Object encoding, final boolean append) throws IOException {
+         Objects.requireNonNull(file, ""file"");
+         OutputStream stream = null;
+         final boolean fileExistedAlready = file.exists();",True,False,False,2021-11-04T21:12:54Z,"* @return the initialized writer
+      * @throws IOException if an error occurs
+      */
+ <START>  private static final Writer initWriter(final File file, final Object encoding, final boolean append) throws IOException {  <END>
+         Objects.requireNonNull(file, ""file"");
+         OutputStream stream = null;
+         final boolean fileExistedAlready = file.exists();","* @return the initialized writer
+      * @throws IOException if an error occurs
+      */
+-    private static final Writer initWriter(final File file, final Object encoding, final boolean append) throws IOException {
++    private static Writer initWriter(final File file, final Object encoding, final boolean append) throws IOException {
+         Objects.requireNonNull(file, ""file"");
+         OutputStream stream = null;
+         final boolean fileExistedAlready = file.exists();"
+52,"[np.int64(171), np.int64(171)]","if you make the default value the empty array and the setter does not allow excludefieldnames to be null, then you do not need this check? it might be better this way though, not sure.","             return false;
+         }
+         if (Modifier.isStatic(field.getModifiers())) {
+ START             return false; END 
+         }
+         if (this.excludeFieldNames != null
+                 && Arrays.binarySearch(this.excludeFieldNames, field.getName()) >= 0) {","             return false;
+         }
+         if (Modifier.isStatic(field.getModifiers())) {
+-            return false;
++            return false;
+         }
+         if (this.excludeFieldNames != null
+                 && Arrays.binarySearch(this.excludeFieldNames, field.getName()) >= 0) {","             return false;
+         }
+         if (Modifier.isStatic(field.getModifiers())) {
+ START             return false; END 
+         }
+         if (this.excludeFieldNames != null
+                 && Arrays.binarySearch(this.excludeFieldNames, field.getName()) >= 0) {","             return false;
+         }
+         if (Modifier.isStatic(field.getModifiers())) {
+-            return false;
++            return false;
+         }
+         if (this.excludeFieldNames != null
+                 && Arrays.binarySearch(this.excludeFieldNames, field.getName()) >= 0) {",True,False,False,2022-04-06T14:16:29Z,"return false;
+         }
+         if (Modifier.isStatic(field.getModifiers())) {
+ <START>  return false;  <END>
+         }
+         if (this.excludeFieldNames != null
+                 && Arrays.binarySearch(this.excludeFieldNames, field.getName()) >= 0) {","return false;
+         }
+         if (Modifier.isStatic(field.getModifiers())) {
+-            return false;
++            return false;
+         }
+         if (this.excludeFieldNames != null
+                 && Arrays.binarySearch(this.excludeFieldNames, field.getName()) >= 0) {"
+24,"[np.int64(214), np.int64(214)]","ah, i think now i understand this pull request.
+
+@wodencafe i think we pass the `null_writer` to the parent `proxywriter` as a way to give it a valid object. but in reality, that `null_writer` is then replaced here when we call `super.out = ....`.
+
+while i guess that would work, but not sure if modifying setting `super.out` twice (once after the `super(null_writer)`, then here :point_up: ) would be the best approach.","      * @throws IOException in case of an I/O error.
+      */
+     public FileWriterWithEncoding(final File file, final String charsetName, final boolean append) throws IOException {
+        super(NULL_WRITER);
+
+ START         super.out = initWriter(file, charsetName, append); END 
+
+        super.lock = super.out;
+     }
+     /**","      * @throws IOException in case of an I/O error.
+      */
+     public FileWriterWithEncoding(final File file, final String charsetName, final boolean append) throws IOException {
+-        super(NULL_WRITER);
+-
+-        super.out = initWriter(file, charsetName, append);
+-
+-        super.lock = super.out;
++        super(initWriter(file, charsetName, append));
+     }
+     /**",,,True,False,False,2021-11-02T23:27:55Z,"* @throws IOException in case of an I/O error.
+      */
+     public FileWriterWithEncoding(final File file, final String charsetName, final boolean append) throws IOException {
+        super(NULL_WRITER);
+ <START>  super.out = initWriter(file, charsetName, append);  <END>
+        super.lock = super.out;
+     }
+     /**","* @throws IOException in case of an I/O error.
+      */
+     public FileWriterWithEncoding(final File file, final String charsetName, final boolean append) throws IOException {
+-        super(NULL_WRITER);
+-
+-        super.out = initWriter(file, charsetName, append);
+-
+-        super.lock = super.out;
++        super(initWriter(file, charsetName, append));
+     }
+     /**"
+10,"[np.int64(1008), np.int64(1008)]",this pr should test this path with an `assertthrows()`.,"      * @since 2.12
+      */
+     @SuppressWarnings(""resource"") // streams are closed by the caller.
+ START     public static QueueInputStream copy(final java.io.ByteArrayOutputStream outputStream) throws IOException { END 
+         Objects.requireNonNull(outputStream, ""outputStream"");
+         final QueueInputStream in = new QueueInputStream();
+        final QueueOutputStream out = in.newQueueOutputStream();
+        outputStream.writeTo(out);
+         return in;
+     }","      * @since 2.12
+      */
+     @SuppressWarnings(""resource"") // streams are closed by the caller.
+-    public static QueueInputStream copy(final java.io.ByteArrayOutputStream outputStream) throws IOException {
++    public static QueueInputStream copy(final java.io.ByteArrayOutputStream outputStream) throws IOException {
+         Objects.requireNonNull(outputStream, ""outputStream"");
+         final QueueInputStream in = new QueueInputStream();
+-        final QueueOutputStream out = in.newQueueOutputStream();
+-        outputStream.writeTo(out);
++        outputStream.writeTo(in.newQueueOutputStream());
+         return in;
+     }","      * @since 2.12
+      */
+     @SuppressWarnings(""resource"") // streams are closed by the caller.
+ START     public static QueueInputStream copy(final java.io.ByteArrayOutputStream outputStream) throws IOException { END 
+         Objects.requireNonNull(outputStream, ""outputStream"");
+         final QueueInputStream in = new QueueInputStream();
+        final QueueOutputStream out = in.newQueueOutputStream();
+        outputStream.writeTo(out);
+         return in;
+     }","      * @since 2.12
+      */
+     @SuppressWarnings(""resource"") // streams are closed by the caller.
+-    public static QueueInputStream copy(final java.io.ByteArrayOutputStream outputStream) throws IOException {
++    public static QueueInputStream copy(final java.io.ByteArrayOutputStream outputStream) throws IOException {
+         Objects.requireNonNull(outputStream, ""outputStream"");
+         final QueueInputStream in = new QueueInputStream();
+-        final QueueOutputStream out = in.newQueueOutputStream();
+-        outputStream.writeTo(out);
++        outputStream.writeTo(in.newQueueOutputStream());
+         return in;
+     }",True,False,False,2021-10-16T18:14:26Z,"* @since 2.12
+      */
+     @SuppressWarnings(""resource"") // streams are closed by the caller.
+ <START>  public static QueueInputStream copy(final java.io.ByteArrayOutputStream outputStream) throws IOException {  <END>
+         Objects.requireNonNull(outputStream, ""outputStream"");
+         final QueueInputStream in = new QueueInputStream();
+        final QueueOutputStream out = in.newQueueOutputStream();
+        outputStream.writeTo(out);
+         return in;
+     }","* @since 2.12
+      */
+     @SuppressWarnings(""resource"") // streams are closed by the caller.
+-    public static QueueInputStream copy(final java.io.ByteArrayOutputStream outputStream) throws IOException {
++    public static QueueInputStream copy(final java.io.ByteArrayOutputStream outputStream) throws IOException {
+         Objects.requireNonNull(outputStream, ""outputStream"");
+         final QueueInputStream in = new QueueInputStream();
+-        final QueueOutputStream out = in.newQueueOutputStream();
+-        outputStream.writeTo(out);
++        outputStream.writeTo(in.newQueueOutputStream());
+         return in;
+     }"
+15,"[np.int64(86), np.int64(86)]","here, using the fqcn is required since this test class imports `org.apache.commons.io.output.bytearrayoutputstream`.","     @SuppressWarnings(""resource"") // 'in' is deliberately not closed
+     @Test
+     public void testCopy_byteArrayOutputStreamToInputStream() throws Exception {
+ START         final java.io.ByteArrayOutputStream out = new java.io.ByteArrayOutputStream(); END 
+         out.write(inData);
+         final InputStream in = IOUtils.copy(out);","     @SuppressWarnings(""resource"") // 'in' is deliberately not closed
+     @Test
+     public void testCopy_byteArrayOutputStreamToInputStream() throws Exception {
+-        final java.io.ByteArrayOutputStream out = new java.io.ByteArrayOutputStream();
++        final java.io.ByteArrayOutputStream out = new java.io.ByteArrayOutputStream();
+         out.write(inData);
+         final InputStream in = IOUtils.copy(out);","     @SuppressWarnings(""resource"") // 'in' is deliberately not closed
+     @Test
+     public void testCopy_byteArrayOutputStreamToInputStream() throws Exception {
+ START         final java.io.ByteArrayOutputStream out = new java.io.ByteArrayOutputStream(); END 
+         out.write(inData);
+         final InputStream in = IOUtils.copy(out);","     @SuppressWarnings(""resource"") // 'in' is deliberately not closed
+     @Test
+     public void testCopy_byteArrayOutputStreamToInputStream() throws Exception {
+-        final java.io.ByteArrayOutputStream out = new java.io.ByteArrayOutputStream();
++        final java.io.ByteArrayOutputStream out = new java.io.ByteArrayOutputStream();
+         out.write(inData);
+         final InputStream in = IOUtils.copy(out);",True,False,False,2021-10-16T18:14:26Z,"@SuppressWarnings(""resource"") // 'in' is deliberately not closed
+     @Test
+     public void testCopy_byteArrayOutputStreamToInputStream() throws Exception {
+ <START>  final java.io.ByteArrayOutputStream out = new java.io.ByteArrayOutputStream();  <END>
+         out.write(inData);
+         final InputStream in = IOUtils.copy(out);","@SuppressWarnings(""resource"") // 'in' is deliberately not closed
+     @Test
+     public void testCopy_byteArrayOutputStreamToInputStream() throws Exception {
+-        final java.io.ByteArrayOutputStream out = new java.io.ByteArrayOutputStream();
++        final java.io.ByteArrayOutputStream out = new java.io.ByteArrayOutputStream();
+         out.write(inData);
+         final InputStream in = IOUtils.copy(out);"
+37,"[np.int64(242), np.int64(242)]",this pr is only supposed to be about docs as stated in the pr title. furthermore this change is not matched with a unit test.,"         reader.close();
+     }
+    /**
+     * The implementation by {@link ReaderInputStream} always returns 0.
+     */
+    @Override
+    public int available() throws IOException {
+        // Could implement this using Reader.ready(), but would be rather cumbersome
+        // and probably not very efficient
+        return 0;
+    }
+ START  END 
+     /**
+      * Fills the internal char buffer from the reader.
+      *","         reader.close();
+     }
+-    /**
+-     * The implementation by {@link ReaderInputStream} always returns 0.
+-     */
+-    @Override
+-    public int available() throws IOException {
+-        // Could implement this using Reader.ready(), but would be rather cumbersome
+-        // and probably not very efficient
+-        return 0;
+-    }
+-
+     /**
+      * Fills the internal char buffer from the reader.
+      *",,,True,False,False,2021-11-11T19:44:03Z,"reader.close();
+     }
+    /**
+     * The implementation by {@link ReaderInputStream} always returns 0.
+     */
+    @Override
+    public int available() throws IOException {
+        // Could implement this using Reader.ready(), but would be rather cumbersome
+        // and probably not very efficient
+        return 0;
+    }
+ <START>   <END>
+     /**
+      * Fills the internal char buffer from the reader.
+      *","reader.close();
+     }
+-    /**
+-     * The implementation by {@link ReaderInputStream} always returns 0.
+-     */
+-    @Override
+-    public int available() throws IOException {
+-        // Could implement this using Reader.ready(), but would be rather cumbersome
+-        // and probably not very efficient
+-        return 0;
+-    }
+-
+     /**
+      * Fills the internal char buffer from the reader.
+      *"
+31,"[np.int64(330), np.int64(330)]","we could use ""underscore"" or ""dash"" here or introduce a helper method, e.g. ""isdelimiter""? what do you think?","             throw new IllegalArgumentException(""Invalid locale format: "" + str);
+         }
+         final char ch0 = str.charAt(0);
+ START         if (ch0 == '_' || ch0 == '-') { END 
+             if (len < 3) {
+                 throw new IllegalArgumentException(""Invalid locale format: "" + str);
+             }","             throw new IllegalArgumentException(""Invalid locale format: "" + str);
+         }
+         final char ch0 = str.charAt(0);
+-        if (ch0 == '_' || ch0 == '-') {
++        if (ch0 == UNDERSCORE || ch0 == DASH) {
+             if (len < 3) {
+                 throw new IllegalArgumentException(""Invalid locale format: "" + str);
+             }","             throw new IllegalArgumentException(""Invalid locale format: "" + str);
+         }
+         final char ch0 = str.charAt(0);
+ START         if (ch0 == '_' || ch0 == '-') { END 
+             if (len < 3) {
+                 throw new IllegalArgumentException(""Invalid locale format: "" + str);
+             }","             throw new IllegalArgumentException(""Invalid locale format: "" + str);
+         }
+         final char ch0 = str.charAt(0);
+-        if (ch0 == '_' || ch0 == '-') {
++        if (ch0 == UNDERSCORE || ch0 == DASH) {
+             if (len < 3) {
+                 throw new IllegalArgumentException(""Invalid locale format: "" + str);
+             }",True,False,False,2021-11-08T17:18:53Z,"throw new IllegalArgumentException(""Invalid locale format: "" + str);
+         }
+         final char ch0 = str.charAt(0);
+ <START>  if (ch0 == '_' || ch0 == '-') {  <END>
+             if (len < 3) {
+                 throw new IllegalArgumentException(""Invalid locale format: "" + str);
+             }","throw new IllegalArgumentException(""Invalid locale format: "" + str);
+         }
+         final char ch0 = str.charAt(0);
+-        if (ch0 == '_' || ch0 == '-') {
++        if (ch0 == UNDERSCORE || ch0 == DASH) {
+             if (len < 3) {
+                 throw new IllegalArgumentException(""Invalid locale format: "" + str);
+             }"
