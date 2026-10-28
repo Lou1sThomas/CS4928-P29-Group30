@@ -1,0 +1,15 @@
+You are an experienced Java developer acting on a code review.
+
+Below is a Java method that was submitted for review, followed by the reviewer's comment.
+The comment was attached to this line of the method: {line}
+
+Revise the method so that it addresses the reviewer's comment. Do not make any other changes.
+Reply with ONLY the complete revised method inside a single ```java code block, with no explanation.
+
+Method:
+```java
+{code}
+```
+
+Reviewer's comment:
+{comment}

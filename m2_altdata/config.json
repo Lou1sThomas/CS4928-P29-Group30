@@ -1,0 +1,23 @@
+{
+  "projects": ["apache/commons-lang", "google/gson", "checkstyle/checkstyle"],
+  "reserve_projects": ["apache/commons-io"],
+  "window_start": "2025-01-01",
+  "window_end": "2026-09-30",
+  "cases_per_project": 4,
+  "extra_eligible_to_collect": 0,
+  "max_later_commits_checked": 10,
+  "max_method_tokens": 512,
+  "model": {
+    "base_url": "http://localhost:11434/v1",
+    "name": "qwen2.5-coder:7b",
+    "api_key_env": null,
+    "temperature": 0,
+    "seed": 42,
+    "max_tokens": 2048
+  },
+  "decision_rule": {
+    "max_exm_case_difference": 1,
+    "max_mean_lev_difference": 0.05,
+    "rq2_max_project_gap": 0.05
+  }
+}
