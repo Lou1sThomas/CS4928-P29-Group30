@@ -166,8 +166,6 @@ This is a separation-of-responsibilities improvement. We have implemented the sc
 
 ## 10. Evidence
 
-These links are relative to the repository root. Check them against the files included in the evidence commit. Model downloads and virtual environments should stay out of Git; their sources and environment records should be retained instead.
-
 ### Data and preparation
 
 - [Verified Checkstyle pool](data/event_a/sampleEventA_verified_raw.csv)
@@ -207,16 +205,3 @@ These links are relative to the repository root. Check them against the files in
 - [M2 multiline targets](results/event_a/m2_scoring_audit/multiline_targets.csv)
 - [M2 complete references](results/event_a/m2_scoring_audit/complete_references.csv)
 - [M2 diagnostic scores](results/event_a/m2_scoring_audit/complete_reference_scores.csv)
-
-**Diagnostic scripts:** [add the paths once the recovery, verification and scoring commands have been saved as runnable scripts]. These checks were initially run as Python commands in the terminal.
-
-## 11. Before submission
-
-- [ ] Add a link to the pre-execution prediction in the tracker.
-- [ ] Record the execution commit if recoverable and note uncommitted changes.
-- [ ] Save the diagnostic commands as runnable scripts and link them above.
-- [ ] Check that the evidence links work and that the required files are committed.
-- [ ] Add the final evidence commit reference.
-- [ ] Link this report from `my_REPRODUCTION.md` without replacing the original M2 record.
-- [ ] Complete the group's Event A and design-decision tracker fields.
-- [ ] Explain the additional-project adaptation to the TA, including the unverified training overlap and different time periods.
