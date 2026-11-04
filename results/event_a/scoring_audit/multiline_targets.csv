@@ -1,0 +1,223 @@
+p29_rank,Record_id,repo,comment_id,pull_number,filename,created_at,html_url,after
+1,1,checkstyle/checkstyle,483489730,8783,src/test/java/com/puppycrawl/tools/checkstyle/internal/AllTestsTest.java,2020-09-04T09:05:52Z,https://github.com/checkstyle/checkstyle/pull/8783#discussion_r483489730,"    private static void verifyInputFile(Map<String, List<String>> allTests, boolean skipFileNaming,
+            String path, String fileName) {
+        List<String> classes;
+        int slash = path.lastIndexOf(File.separatorChar);
+        String packge = path.substring(0, slash);
+        boolean found = false;
+
+        for (int depth = 0; depth < 4; depth++) {
+            // -@cs[MoveVariableInsideIf] assignment value is modified later so it can't be
+            // moved
+            final String folderPath = packge;
+            slash = packge.lastIndexOf(File.separatorChar);
+            packge = path.substring(0, slash);
+            classes = allTests.get(packge);
+
+            if (classes != null
+                    && checkInputMatchCorrectFileStructure(classes, folderPath, skipFileNaming,
+                            fileName)) {
+                found = true;
+                break;
+            }
+        }
+
+        assertTrue(found, ""Resource must be named after a Test like 'InputMyCustomCase.java' ""
+                + ""and be in the sub-package of the test like 'mycustom' ""
+                + ""for test 'MyCustomCheckTest': "" + path);
+    }
+"
+2,2,checkstyle/checkstyle,483492512,8783,src/test/java/com/puppycrawl/tools/checkstyle/internal/AllTestsTest.java,2020-09-04T09:10:58Z,https://github.com/checkstyle/checkstyle/pull/8783#discussion_r483492512,"    private static void verifyInputFile(Map<String, List<String>> allTests, boolean skipFileNaming,
+            String path, String fileName) {
+        List<String> classes;
+        int slash = path.lastIndexOf(File.separatorChar);
+        String packge = path.substring(0, slash);
+        boolean found = false;
+
+        for (int depth = 0; depth < 4; depth++) {
+            // -@cs[MoveVariableInsideIf] assignment value is modified later so it can't be
+            // moved
+            final String folderPath = packge;
+            slash = packge.lastIndexOf(File.separatorChar);
+            packge = path.substring(0, slash);
+            classes = allTests.get(packge);
+
+            if (classes != null
+                    && checkInputMatchCorrectFileStructure(classes, folderPath, skipFileNaming,
+                            fileName)) {
+                found = true;
+                break;
+            }
+        }
+
+        assertTrue(found, ""Resource must be named after a Test like 'InputMyCustomCase.java' ""
+                + ""and be in the sub-package of the test like 'mycustom' ""
+                + ""for test 'MyCustomCheckTest': "" + path);
+    }
+"
+3,3,checkstyle/checkstyle,483492908,8783,src/test/java/com/puppycrawl/tools/checkstyle/internal/AllTestsTest.java,2020-09-04T09:11:40Z,https://github.com/checkstyle/checkstyle/pull/8783#discussion_r483492908,"    private static boolean shouldSkipInputFileNameCheck(String path, String fileName) {
+        return ""package-info.java"".equals(fileName)
+                || ""package.html"".equals(fileName)
+                // special directory for files that can't be renamed or are secondary inputs
+                || path.contains(File.separatorChar + ""inputs"" + File.separatorChar)
+                // all inputs must start with 'messages'
+                || path.contains(File.separatorChar + ""translation"" + File.separatorChar);
+    }
+"
+4,7,checkstyle/checkstyle,483601964,8783,src/test/java/com/puppycrawl/tools/checkstyle/internal/AllTestsTest.java,2020-09-04T13:03:58Z,https://github.com/checkstyle/checkstyle/pull/8783#discussion_r483601964,"    private static boolean shouldSkipInputFileNameCheck(String path, String fileName) {
+        return ""package-info.java"".equals(fileName)
+                || ""package.html"".equals(fileName)
+                // special directory for files that can't be renamed or are secondary inputs
+                || path.contains(File.separatorChar + ""inputs"" + File.separatorChar)
+                // all inputs must start with 'messages'
+                || path.contains(File.separatorChar + ""translation"" + File.separatorChar);
+    }
+"
+5,8,checkstyle/checkstyle,483628137,8783,src/test/java/com/puppycrawl/tools/checkstyle/internal/AllTestsTest.java,2020-09-04T13:50:30Z,https://github.com/checkstyle/checkstyle/pull/8783#discussion_r483628137,"    private static boolean shouldSkipInputFileNameCheck(String path, String fileName) {
+        return ""package-info.java"".equals(fileName)
+                || ""package.html"".equals(fileName)
+                // special directory for files that can't be renamed or are secondary inputs
+                || path.contains(File.separatorChar + ""inputs"" + File.separatorChar)
+                // all inputs must start with 'messages'
+                || path.contains(File.separatorChar + ""translation"" + File.separatorChar);
+    }
+"
+6,12,checkstyle/checkstyle,483650231,8783,src/test/java/com/puppycrawl/tools/checkstyle/internal/AllTestsTest.java,2020-09-04T14:27:55Z,https://github.com/checkstyle/checkstyle/pull/8783#discussion_r483650231,"    private static boolean shouldSkipInputFileNameCheck(String path, String fileName) {
+        return ""package-info.java"".equals(fileName)
+                || ""package.html"".equals(fileName)
+                // special directory for files that can't be renamed or are secondary inputs
+                || path.contains(File.separatorChar + ""inputs"" + File.separatorChar)
+                // all inputs must start with 'messages'
+                || path.contains(File.separatorChar + ""translation"" + File.separatorChar);
+    }
+"
+7,17,checkstyle/checkstyle,483949228,8783,src/test/java/com/puppycrawl/tools/checkstyle/internal/AllTestsTest.java,2020-09-05T13:02:33Z,https://github.com/checkstyle/checkstyle/pull/8783#discussion_r483949228,"    private static void verifyInputFile(Map<String, List<String>> allTests, boolean skipFileNaming,
+            String path, String fileName) {
+        List<String> classes;
+        int slash = path.lastIndexOf(File.separatorChar);
+        String packge = path.substring(0, slash);
+        boolean found = false;
+
+        for (int depth = 0; depth < 4; depth++) {
+            // -@cs[MoveVariableInsideIf] assignment value is modified later so it can't be
+            // moved
+            final String folderPath = packge;
+            slash = packge.lastIndexOf(File.separatorChar);
+            packge = path.substring(0, slash);
+            classes = allTests.get(packge);
+
+            if (classes != null
+                    && checkInputMatchCorrectFileStructure(classes, folderPath, skipFileNaming,
+                            fileName)) {
+                found = true;
+                break;
+            }
+        }
+
+        assertTrue(found, ""Resource must be named after a Test like 'InputMyCustomCase.java' ""
+                + ""and be in the sub-package of the test like 'mycustom' ""
+                + ""for test 'MyCustomCheckTest': "" + path);
+    }
+"
+8,18,checkstyle/checkstyle,483949244,8783,src/test/java/com/puppycrawl/tools/checkstyle/internal/AllTestsTest.java,2020-09-05T13:02:38Z,https://github.com/checkstyle/checkstyle/pull/8783#discussion_r483949244,"    private static void verifyInputFile(Map<String, List<String>> allTests, boolean skipFileNaming,
+            String path, String fileName) {
+        List<String> classes;
+        int slash = path.lastIndexOf(File.separatorChar);
+        String packge = path.substring(0, slash);
+        boolean found = false;
+
+        for (int depth = 0; depth < 4; depth++) {
+            // -@cs[MoveVariableInsideIf] assignment value is modified later so it can't be
+            // moved
+            final String folderPath = packge;
+            slash = packge.lastIndexOf(File.separatorChar);
+            packge = path.substring(0, slash);
+            classes = allTests.get(packge);
+
+            if (classes != null
+                    && checkInputMatchCorrectFileStructure(classes, folderPath, skipFileNaming,
+                            fileName)) {
+                found = true;
+                break;
+            }
+        }
+
+        assertTrue(found, ""Resource must be named after a Test like 'InputMyCustomCase.java' ""
+                + ""and be in the sub-package of the test like 'mycustom' ""
+                + ""for test 'MyCustomCheckTest': "" + path);
+    }
+"
+9,19,checkstyle/checkstyle,483959090,8786,src/test/java/com/puppycrawl/tools/checkstyle/internal/AllTestsTest.java,2020-09-05T15:06:20Z,https://github.com/checkstyle/checkstyle/pull/8786#discussion_r483959090,"    private static boolean shouldSkipInputFileNameCheck(String path, String fileName) {
+        return ""package-info.java"".equals(fileName)
+                || ""package.html"".equals(fileName)
+                // special directory for files that can't be renamed or are secondary inputs
+                || path.contains(File.separatorChar + ""inputs"" + File.separatorChar)
+                // all inputs must start with 'messages'
+                || path.contains(File.separatorChar + ""translation"" + File.separatorChar);
+    }
+"
+10,20,checkstyle/checkstyle,483959161,8786,src/test/java/com/puppycrawl/tools/checkstyle/internal/AllTestsTest.java,2020-09-05T15:07:18Z,https://github.com/checkstyle/checkstyle/pull/8786#discussion_r483959161,"    private static void verifyInputFile(Map<String, List<String>> allTests, boolean skipFileNaming,
+            String path, String fileName) {
+        List<String> classes;
+        int slash = path.lastIndexOf(File.separatorChar);
+        String packge = path.substring(0, slash);
+        boolean found = false;
+
+        for (int depth = 0; depth < 4; depth++) {
+            // -@cs[MoveVariableInsideIf] assignment value is modified later so it can't be
+            // moved
+            final String folderPath = packge;
+            slash = packge.lastIndexOf(File.separatorChar);
+            packge = path.substring(0, slash);
+            classes = allTests.get(packge);
+
+            if (classes != null
+                    && checkInputMatchCorrectFileStructure(classes, folderPath, skipFileNaming,
+                            fileName)) {
+                found = true;
+                break;
+            }
+        }
+
+        assertTrue(found, ""Resource must be named after a Test like 'InputMyCustomCase.java' ""
+                + ""and be in the sub-package of the test like 'mycustom' ""
+                + ""for test 'MyCustomCheckTest': "" + path);
+    }
+"
+11,22,checkstyle/checkstyle,483960632,8783,src/test/java/com/puppycrawl/tools/checkstyle/internal/AllTestsTest.java,2020-09-05T15:25:35Z,https://github.com/checkstyle/checkstyle/pull/8783#discussion_r483960632,"    private static boolean shouldSkipInputFileNameCheck(String path, String fileName) {
+        return ""package-info.java"".equals(fileName)
+                || ""package.html"".equals(fileName)
+                // special directory for files that can't be renamed or are secondary inputs
+                || path.contains(File.separatorChar + ""inputs"" + File.separatorChar)
+                // all inputs must start with 'messages'
+                || path.contains(File.separatorChar + ""translation"" + File.separatorChar);
+    }
+"
+12,23,checkstyle/checkstyle,483960756,8783,src/test/java/com/puppycrawl/tools/checkstyle/internal/AllTestsTest.java,2020-09-05T15:27:04Z,https://github.com/checkstyle/checkstyle/pull/8783#discussion_r483960756,"    private static void verifyInputFile(Map<String, List<String>> allTests, boolean skipFileNaming,
+            String path, String fileName) {
+        List<String> classes;
+        int slash = path.lastIndexOf(File.separatorChar);
+        String packge = path.substring(0, slash);
+        boolean found = false;
+
+        for (int depth = 0; depth < 4; depth++) {
+            // -@cs[MoveVariableInsideIf] assignment value is modified later so it can't be
+            // moved
+            final String folderPath = packge;
+            slash = packge.lastIndexOf(File.separatorChar);
+            packge = path.substring(0, slash);
+            classes = allTests.get(packge);
+
+            if (classes != null
+                    && checkInputMatchCorrectFileStructure(classes, folderPath, skipFileNaming,
+                            fileName)) {
+                found = true;
+                break;
+            }
+        }
+
+        assertTrue(found, ""Resource must be named after a Test like 'InputMyCustomCase.java' ""
+                + ""and be in the sub-package of the test like 'mycustom' ""
+                + ""for test 'MyCustomCheckTest': "" + path);
+    }
+"

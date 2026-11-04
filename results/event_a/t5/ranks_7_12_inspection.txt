@@ -1,0 +1,115 @@
+
+======================================================================
+RANK 7 — comment 483949228
+
+Review URL:
+https://github.com/checkstyle/checkstyle/pull/8783#discussion_r483949228
+
+source_code identical:
+False
+
+review_comment identical:
+True
+
+target_code identical:
+False
+
+RAW REVIEW COMMENT:
+changed
+
+CLEANED REVIEW COMMENT:
+changed
+
+WORD CHANGES (- removed, + added):
+(No word changes)
+
+Scored targets identical:
+False
+
+RAW SCORED TARGET:
+private static void verifyInputFile(Map<String, List<String>> allTests, boolean skipFileNaming, String path, String fileName) { List<String> classes; int slash = path.lastIndexOf(File.separatorChar); String packge = path.substring(0, slash); boolean found = false; for (int depth = 0; depth < 4; depth++) {
+
+CLEANED SCORED TARGET:
+private static void verifyInputFile(Map<String, List<String>> allTests, boolean skipFileNaming, String path, String fileName) { List<String> classes; int slash = path.lastIndexOf(File.separatorChar); String packge = path.substring(0, slash); boolean found = false; for (int depth = 0; depth < 4; depth++) { final String folderPath = packge; slash = packge.lastIndexOf(File.separatorChar); packge = path.substring(0, slash); classes = allTests.get(packge); if (classes != null && checkInputMatchCorrectFileStructure(classes, folderPath, skipFileNaming, fileName)) { found = true; break; } } assertTrue(found, "Resource must be named after a Test like 'InputMyCustomCase.java' " + "and be in the sub-package of the test like 'mycustom' " + "for test 'MyCustomCheckTest': " + path); }
+
+RAW MATCHING PREDICTION — candidate 10:
+private static void verifyInputFile(Map<String, List<String>> allTests, boolean skipFileNaming, String path, String fileName) { List<String> classes; int slash = path.lastIndexOf(File.separatorChar); String packge = path.substring(0, slash); boolean found = false; for (int depth = 0; depth < 4; depth++) {
+
+CLEANED PREDICTION AT THE SAME RANK — candidate 10:
+private static void verifyInputFile(Map<String, List<String>> allTests, boolean skipFileNaming, String path, String fileName) { List<String> classes; int slash = path.lastIndexOf(File.separatorChar); String packge = path.substring(0, slash); boolean found = false; for (int depth = 0; depth < 4; depth++) { assertTrue(found, "Resource must be named after a Test like 'InputMyCustomCase.java' " + "and be in the sub-package of the test like 'mycustom' " + "for test 'MyCustomCheckTest': " + path); } {
+
+CLEANED FIRST PREDICTION:
+private static void verifyInputFile(Map<String, List<String>> allTests, boolean skipFileNaming, String path, String fileName) { List<String> classes; int slash = path.lastIndexOf(File.separatorChar); String packge = path.substring(0, slash); boolean found = false; for (int depth = 0; depth < 4; depth++) { assertTrue(found, "Resource must be named after a Test like 'InputMyCustomCase.java' " + "and be in the sub-package of the test like 'mycustom' " + "for test 'MyCustomCheckTest': " + path); } }
+
+Raw input truncated:
+False
+
+Cleaned input truncated:
+False
+
+======================================================================
+RANK 12 — comment 483960756
+
+Review URL:
+https://github.com/checkstyle/checkstyle/pull/8783#discussion_r483960756
+
+source_code identical:
+False
+
+review_comment identical:
+False
+
+target_code identical:
+False
+
+RAW REVIEW COMMENT:
+this condition make `checkinputmatchcorrectfilestructure(classes, folderpath, skipfilenaming` illogical as  `skipfilenaming` is used inside, but never would be `true`
+
+CLEANED REVIEW COMMENT:
+this condition checkinputmatchcorrectfilestructure ( classes folderpath skipfilenaming illogical skipfilenaming is true
+
+WORD CHANGES (- removed, + added):
+- make
+- `checkinputmatchcorrectfilestructure(classes,
++ checkinputmatchcorrectfilestructure
++ (
++ classes
+- folderpath,
++ folderpath
+- skipfilenaming`
++ skipfilenaming
+- as
+- `skipfilenaming`
++ skipfilenaming
+- used
+- inside,
+- but
+- never
+- would
+- be
+- `true`
++ true
+
+Scored targets identical:
+False
+
+RAW SCORED TARGET:
+private static void verifyInputFile(Map<String, List<String>> allTests, boolean skipFileNaming, String path, String fileName) { List<String> classes; int slash = path.lastIndexOf(File.separatorChar); String packge = path.substring(0, slash); boolean found = false; for (int depth = 0; depth < 4; depth++) {
+
+CLEANED SCORED TARGET:
+private static void verifyInputFile(Map<String, List<String>> allTests, boolean skipFileNaming, String path, String fileName) { List<String> classes; int slash = path.lastIndexOf(File.separatorChar); String packge = path.substring(0, slash); boolean found = false; for (int depth = 0; depth < 4; depth++) { final String folderPath = packge; slash = packge.lastIndexOf(File.separatorChar); packge = path.substring(0, slash); classes = allTests.get(packge); if (classes != null && checkInputMatchCorrectFileStructure(classes, folderPath, skipFileNaming, fileName)) { found = true; break; } } assertTrue(found, "Resource must be named after a Test like 'InputMyCustomCase.java' " + "and be in the sub-package of the test like 'mycustom' " + "for test 'MyCustomCheckTest': " + path); }
+
+RAW MATCHING PREDICTION — candidate 10:
+private static void verifyInputFile(Map<String, List<String>> allTests, boolean skipFileNaming, String path, String fileName) { List<String> classes; int slash = path.lastIndexOf(File.separatorChar); String packge = path.substring(0, slash); boolean found = false; for (int depth = 0; depth < 4; depth++) {
+
+CLEANED PREDICTION AT THE SAME RANK — candidate 10:
+private static void verifyInputFile(Map<String, List<String>> allTests, boolean skipFileNaming, String path, String fileName) { List<String> classes; String packge = path.substring(0, slash); boolean found = false; for (int depth = 0; depth < 4; depth++) { assertTrue(found, "Resource must be named after a Test like 'InputMyCustomCase.java' " + "and be in the sub-package of the test like 'mycustom' " + "for test 'MyCustomCheckTest': " + path); } }
+
+CLEANED FIRST PREDICTION:
+private static void verifyInputFile(Map<String, List<String>> allTests, boolean skipFileNaming, String path, String fileName) { List<String> classes; int slash = path.lastIndexOf(File.separatorChar); String packge = path.substring(0, slash); boolean found = false; for (int depth = 0; depth < 4; depth++) { assertTrue(found, "Resource must be named after a Test like 'InputMyCustomCase.java' " + "and be in the sub-package of the test like 'mycustom' " + "for test 'MyCustomCheckTest': " + path); } }
+
+Raw input truncated:
+False
+
+Cleaned input truncated:
+False

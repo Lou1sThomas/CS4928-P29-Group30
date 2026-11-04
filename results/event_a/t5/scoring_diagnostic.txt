@@ -1,0 +1,88 @@
+
+======================================================================
+RAW — rank 7
+Target tokens before limit: 225
+Target token-truncated: False
+Stored target newlines: 0
+Decoded target newlines: 0
+
+STORED TARGET:
+private static void verifyInputFile(Map<String, List<String>> allTests, boolean skipFileNaming, String path, String fileName) { List<String> classes; int slash = path.lastIndexOf(File.separatorChar); String packge = path.substring(0, slash); boolean found = false; for (int depth = 0; depth < 4; depth++) { // -@cs[MoveVariableInsideIf] assignment value is modified later so it can't be // moved final String folderPath = packge; slash = packge.lastIndexOf(File.separatorChar); packge = path.substring(0, slash); classes = allTests.get(packge); if (classes != null && checkInputMatchCorrectFileStructure(classes, folderPath, skipFileNaming, fileName)) { found = true; break; } } assertTrue(found, "Resource must be named after a Test like 'InputMyCustomCase.java' " + "and be in the sub-package of the test like 'mycustom' " + "for test 'MyCustomCheckTest': " + path); }
+
+DECODED TARGET BEFORE CLEANING:
+private static void verifyInputFile(Map<String, List<String>> allTests, boolean skipFileNaming, String path, String fileName) { List<String> classes; int slash = path.lastIndexOf(File.separatorChar); String packge = path.substring(0, slash); boolean found = false; for (int depth = 0; depth < 4; depth++) { // -@cs[MoveVariableInsideIf] assignment value is modified later so it can't be // moved final String folderPath = packge; slash = packge.lastIndexOf(File.separatorChar); packge = path.substring(0, slash); classes = allTests.get(packge); if (classes != null && checkInputMatchCorrectFileStructure(classes, folderPath, skipFileNaming, fileName)) { found = true; break; } } assertTrue(found, "Resource must be named after a Test like 'InputMyCustomCase.java' " + "and be in the sub-package of the test like 'mycustom' " + "for test 'MyCustomCheckTest': " + path); }
+
+TEXT REMOVED BY THE FIRST // MATCH:
+// -@cs[MoveVariableInsideIf] assignment value is modified later so it can't be // moved final String folderPath = packge; slash = packge.lastIndexOf(File.separatorChar); packge = path.substring(0, slash); classes = allTests.get(packge); if (classes != null && checkInputMatchCorrectFileStructure(classes, folderPath, skipFileNaming, fileName)) { found = true; break; } } assertTrue(found, "Resource must be named after a Test like 'InputMyCustomCase.java' " + "and be in the sub-package of the test like 'mycustom' " + "for test 'MyCustomCheckTest': " + path); }
+
+Characters before // removal: 870
+Characters after // removal: 307
+
+FINAL SCORED TARGET:
+private static void verifyInputFile(Map<String, List<String>> allTests, boolean skipFileNaming, String path, String fileName) { List<String> classes; int slash = path.lastIndexOf(File.separatorChar); String packge = path.substring(0, slash); boolean found = false; for (int depth = 0; depth < 4; depth++) {
+
+======================================================================
+RAW — rank 12
+Target tokens before limit: 225
+Target token-truncated: False
+Stored target newlines: 0
+Decoded target newlines: 0
+
+STORED TARGET:
+private static void verifyInputFile(Map<String, List<String>> allTests, boolean skipFileNaming, String path, String fileName) { List<String> classes; int slash = path.lastIndexOf(File.separatorChar); String packge = path.substring(0, slash); boolean found = false; for (int depth = 0; depth < 4; depth++) { // -@cs[MoveVariableInsideIf] assignment value is modified later so it can't be // moved final String folderPath = packge; slash = packge.lastIndexOf(File.separatorChar); packge = path.substring(0, slash); classes = allTests.get(packge); if (classes != null && checkInputMatchCorrectFileStructure(classes, folderPath, skipFileNaming, fileName)) { found = true; break; } } assertTrue(found, "Resource must be named after a Test like 'InputMyCustomCase.java' " + "and be in the sub-package of the test like 'mycustom' " + "for test 'MyCustomCheckTest': " + path); }
+
+DECODED TARGET BEFORE CLEANING:
+private static void verifyInputFile(Map<String, List<String>> allTests, boolean skipFileNaming, String path, String fileName) { List<String> classes; int slash = path.lastIndexOf(File.separatorChar); String packge = path.substring(0, slash); boolean found = false; for (int depth = 0; depth < 4; depth++) { // -@cs[MoveVariableInsideIf] assignment value is modified later so it can't be // moved final String folderPath = packge; slash = packge.lastIndexOf(File.separatorChar); packge = path.substring(0, slash); classes = allTests.get(packge); if (classes != null && checkInputMatchCorrectFileStructure(classes, folderPath, skipFileNaming, fileName)) { found = true; break; } } assertTrue(found, "Resource must be named after a Test like 'InputMyCustomCase.java' " + "and be in the sub-package of the test like 'mycustom' " + "for test 'MyCustomCheckTest': " + path); }
+
+TEXT REMOVED BY THE FIRST // MATCH:
+// -@cs[MoveVariableInsideIf] assignment value is modified later so it can't be // moved final String folderPath = packge; slash = packge.lastIndexOf(File.separatorChar); packge = path.substring(0, slash); classes = allTests.get(packge); if (classes != null && checkInputMatchCorrectFileStructure(classes, folderPath, skipFileNaming, fileName)) { found = true; break; } } assertTrue(found, "Resource must be named after a Test like 'InputMyCustomCase.java' " + "and be in the sub-package of the test like 'mycustom' " + "for test 'MyCustomCheckTest': " + path); }
+
+Characters before // removal: 870
+Characters after // removal: 307
+
+FINAL SCORED TARGET:
+private static void verifyInputFile(Map<String, List<String>> allTests, boolean skipFileNaming, String path, String fileName) { List<String> classes; int slash = path.lastIndexOf(File.separatorChar); String packge = path.substring(0, slash); boolean found = false; for (int depth = 0; depth < 4; depth++) {
+
+======================================================================
+CLEANED — rank 7
+Target tokens before limit: 202
+Target token-truncated: False
+Stored target newlines: 0
+Decoded target newlines: 0
+
+STORED TARGET:
+private static void verifyInputFile(Map<String, List<String>> allTests, boolean skipFileNaming, String path, String fileName) { List<String> classes; int slash = path.lastIndexOf(File.separatorChar); String packge = path.substring(0, slash); boolean found = false; for (int depth = 0; depth < 4; depth++) { final String folderPath = packge; slash = packge.lastIndexOf(File.separatorChar); packge = path.substring(0, slash); classes = allTests.get(packge); if (classes != null && checkInputMatchCorrectFileStructure(classes, folderPath, skipFileNaming, fileName)) { found = true; break; } } assertTrue(found, "Resource must be named after a Test like 'InputMyCustomCase.java' " + "and be in the sub-package of the test like 'mycustom' " + "for test 'MyCustomCheckTest': " + path); }
+
+DECODED TARGET BEFORE CLEANING:
+private static void verifyInputFile(Map<String, List<String>> allTests, boolean skipFileNaming, String path, String fileName) { List<String> classes; int slash = path.lastIndexOf(File.separatorChar); String packge = path.substring(0, slash); boolean found = false; for (int depth = 0; depth < 4; depth++) { final String folderPath = packge; slash = packge.lastIndexOf(File.separatorChar); packge = path.substring(0, slash); classes = allTests.get(packge); if (classes != null && checkInputMatchCorrectFileStructure(classes, folderPath, skipFileNaming, fileName)) { found = true; break; } } assertTrue(found, "Resource must be named after a Test like 'InputMyCustomCase.java' " + "and be in the sub-package of the test like 'mycustom' " + "for test 'MyCustomCheckTest': " + path); }
+
+TEXT REMOVED BY THE FIRST // MATCH:
+(No // found)
+
+Characters before // removal: 781
+Characters after // removal: 781
+
+FINAL SCORED TARGET:
+private static void verifyInputFile(Map<String, List<String>> allTests, boolean skipFileNaming, String path, String fileName) { List<String> classes; int slash = path.lastIndexOf(File.separatorChar); String packge = path.substring(0, slash); boolean found = false; for (int depth = 0; depth < 4; depth++) { final String folderPath = packge; slash = packge.lastIndexOf(File.separatorChar); packge = path.substring(0, slash); classes = allTests.get(packge); if (classes != null && checkInputMatchCorrectFileStructure(classes, folderPath, skipFileNaming, fileName)) { found = true; break; } } assertTrue(found, "Resource must be named after a Test like 'InputMyCustomCase.java' " + "and be in the sub-package of the test like 'mycustom' " + "for test 'MyCustomCheckTest': " + path); }
+
+======================================================================
+CLEANED — rank 12
+Target tokens before limit: 202
+Target token-truncated: False
+Stored target newlines: 0
+Decoded target newlines: 0
+
+STORED TARGET:
+private static void verifyInputFile(Map<String, List<String>> allTests, boolean skipFileNaming, String path, String fileName) { List<String> classes; int slash = path.lastIndexOf(File.separatorChar); String packge = path.substring(0, slash); boolean found = false; for (int depth = 0; depth < 4; depth++) { final String folderPath = packge; slash = packge.lastIndexOf(File.separatorChar); packge = path.substring(0, slash); classes = allTests.get(packge); if (classes != null && checkInputMatchCorrectFileStructure(classes, folderPath, skipFileNaming, fileName)) { found = true; break; } } assertTrue(found, "Resource must be named after a Test like 'InputMyCustomCase.java' " + "and be in the sub-package of the test like 'mycustom' " + "for test 'MyCustomCheckTest': " + path); }
+
+DECODED TARGET BEFORE CLEANING:
+private static void verifyInputFile(Map<String, List<String>> allTests, boolean skipFileNaming, String path, String fileName) { List<String> classes; int slash = path.lastIndexOf(File.separatorChar); String packge = path.substring(0, slash); boolean found = false; for (int depth = 0; depth < 4; depth++) { final String folderPath = packge; slash = packge.lastIndexOf(File.separatorChar); packge = path.substring(0, slash); classes = allTests.get(packge); if (classes != null && checkInputMatchCorrectFileStructure(classes, folderPath, skipFileNaming, fileName)) { found = true; break; } } assertTrue(found, "Resource must be named after a Test like 'InputMyCustomCase.java' " + "and be in the sub-package of the test like 'mycustom' " + "for test 'MyCustomCheckTest': " + path); }
+
+TEXT REMOVED BY THE FIRST // MATCH:
+(No // found)
+
+Characters before // removal: 781
+Characters after // removal: 781
+
+FINAL SCORED TARGET:
+private static void verifyInputFile(Map<String, List<String>> allTests, boolean skipFileNaming, String path, String fileName) { List<String> classes; int slash = path.lastIndexOf(File.separatorChar); String packge = path.substring(0, slash); boolean found = false; for (int depth = 0; depth < 4; depth++) { final String folderPath = packge; slash = packge.lastIndexOf(File.separatorChar); packge = path.substring(0, slash); classes = allTests.get(packge); if (classes != null && checkInputMatchCorrectFileStructure(classes, folderPath, skipFileNaming, fileName)) { found = true; break; } } assertTrue(found, "Resource must be named after a Test like 'InputMyCustomCase.java' " + "and be in the sub-package of the test like 'mycustom' " + "for test 'MyCustomCheckTest': " + path); }

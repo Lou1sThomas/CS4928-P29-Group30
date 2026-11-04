@@ -1,0 +1,4 @@
+Source: /mnt/h/dl/Price-of-Precision-main.zip
+Archive member: Price-of-Precision-main/Training_and_Testing/T5/Code/FineTuning_and_Testing.py
+SHA256: 2ad96411423704d18539e3acfbf00e93fafd3a2871d8ab8c44f81de02c6e7c4a
+Exact correspondence with the scorer used for M2 is unverified.

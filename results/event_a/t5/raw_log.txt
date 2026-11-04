@@ -1,0 +1,14 @@
+Loading weights:   0%|          | 0/131 [00:00<?, ?it/s]Loading weights:  67%|██████▋   | 88/131 [00:00<00:00, 878.42it/s]Loading weights: 100%|██████████| 131/131 [00:00<00:00, 1222.98it/s]
+[raw] rank 1 EXM@10=False Lev_Ratio=0.548 (9.4s)
+[raw] rank 2 EXM@10=False Lev_Ratio=0.642 (6.4s)
+[raw] rank 3 EXM@10=False Lev_Ratio=0.903 (2.3s)
+[raw] rank 4 EXM@10=False Lev_Ratio=0.903 (2.0s)
+[raw] rank 5 EXM@10=False Lev_Ratio=0.903 (1.9s)
+[raw] rank 6 EXM@10=False Lev_Ratio=0.905 (1.9s)
+[raw] rank 7 EXM@10=True Lev_Ratio=1.000 (8.2s)
+[raw] rank 8 EXM@10=False Lev_Ratio=0.544 (8.4s)
+[raw] rank 9 EXM@10=False Lev_Ratio=0.908 (2.4s)
+[raw] rank 10 EXM@10=False Lev_Ratio=0.648 (7.8s)
+[raw] rank 11 EXM@10=False Lev_Ratio=0.903 (2.3s)
+[raw] rank 12 EXM@10=True Lev_Ratio=1.000 (6.4s)
+{"representation": "raw", "n": 12, "EXM@1": 0.0, "EXM@3": 0.0, "EXM@5": 0.0, "EXM@10": 16.7, "mean_Lev_Ratio": 0.817, "mean_Lev_Dist": 141.8}

@@ -1,0 +1,73 @@
+
+📊 Input lengths:
+21
+  0%|          | 0/21 [00:00<?, ?it/s]  5%|▍         | 1/21 [00:00<00:05,  3.70it/s] 48%|████▊     | 10/21 [00:00<00:00, 33.07it/s] 86%|████████▌ | 18/21 [00:00<00:00, 46.09it/s]100%|██████████| 21/21 [00:00<00:00, 39.70it/s]
+
+✅ Done iterating over rows.
+❌ abs_error count: 0
+❌ no_marked_abs count: 0
+❌ comment_abs_error count: 0
+
+📊 Final array lengths:
+ - record_ids: 21
+ - comments: 21
+ - cleaned_comments_wo_abs_: 21
+ - before_: 21
+ - before_marked_: 21
+ - after_: 21
+info_for_cleaning_paper2-----------------------------------------------------------------------------------------------------
+0
+info_for_cleaning_paper2-----------------------------------------------------------------------------------------------------
+1
+info_for_cleaning_paper2-----------------------------------------------------------------------------------------------------
+2
+info_for_cleaning_paper2-----------------------------------------------------------------------------------------------------
+3
+info_for_cleaning_paper2-----------------------------------------------------------------------------------------------------
+4
+info_for_cleaning_paper2-----------------------------------------------------------------------------------------------------
+5
+info_for_cleaning_paper2-----------------------------------------------------------------------------------------------------
+6
+info_for_cleaning_paper2-----------------------------------------------------------------------------------------------------
+7
+info_for_cleaning_paper2-----------------------------------------------------------------------------------------------------
+8
+info_for_cleaning_paper2-----------------------------------------------------------------------------------------------------
+9
+info_for_cleaning_paper2-----------------------------------------------------------------------------------------------------
+10
+info_for_cleaning_paper2-----------------------------------------------------------------------------------------------------
+11
+info_for_cleaning_paper2-----------------------------------------------------------------------------------------------------
+12
+info_for_cleaning_paper2-----------------------------------------------------------------------------------------------------
+13
+info_for_cleaning_paper2-----------------------------------------------------------------------------------------------------
+14
+info_for_cleaning_paper2-----------------------------------------------------------------------------------------------------
+15
+info_for_cleaning_paper2-----------------------------------------------------------------------------------------------------
+16
+info_for_cleaning_paper2-----------------------------------------------------------------------------------------------------
+17
+info_for_cleaning_paper2-----------------------------------------------------------------------------------------------------
+18
+info_for_cleaning_paper2-----------------------------------------------------------------------------------------------------
+19
+info_for_cleaning_paper2-----------------------------------------------------------------------------------------------------
+20
+mined=35 P1(raw)=21 cleaned=20 eligible=20 selected=12 excluded=15 
+ p29_rank                  repo  comment_id                                                                 filename
+        1 checkstyle/checkstyle   483489730 src/test/java/com/puppycrawl/tools/checkstyle/internal/AllTestsTest.java
+        2 checkstyle/checkstyle   483492512 src/test/java/com/puppycrawl/tools/checkstyle/internal/AllTestsTest.java
+        3 checkstyle/checkstyle   483492908 src/test/java/com/puppycrawl/tools/checkstyle/internal/AllTestsTest.java
+        4 checkstyle/checkstyle   483601964 src/test/java/com/puppycrawl/tools/checkstyle/internal/AllTestsTest.java
+        5 checkstyle/checkstyle   483628137 src/test/java/com/puppycrawl/tools/checkstyle/internal/AllTestsTest.java
+        6 checkstyle/checkstyle   483650231 src/test/java/com/puppycrawl/tools/checkstyle/internal/AllTestsTest.java
+        7 checkstyle/checkstyle   483949228 src/test/java/com/puppycrawl/tools/checkstyle/internal/AllTestsTest.java
+        8 checkstyle/checkstyle   483949244 src/test/java/com/puppycrawl/tools/checkstyle/internal/AllTestsTest.java
+        9 checkstyle/checkstyle   483959090 src/test/java/com/puppycrawl/tools/checkstyle/internal/AllTestsTest.java
+       10 checkstyle/checkstyle   483959161 src/test/java/com/puppycrawl/tools/checkstyle/internal/AllTestsTest.java
+       11 checkstyle/checkstyle   483960632 src/test/java/com/puppycrawl/tools/checkstyle/internal/AllTestsTest.java
+       12 checkstyle/checkstyle   483960756 src/test/java/com/puppycrawl/tools/checkstyle/internal/AllTestsTest.java
