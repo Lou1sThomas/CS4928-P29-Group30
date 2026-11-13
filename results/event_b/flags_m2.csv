@@ -1,0 +1,13 @@
+Record_id,repo,pull_number,filename,method,java_files_changed,dependency_flag,matched_names,manual_verdict
+5,apache/commons-io,278,src/test/java/org/apache/commons/io/input/BrokenInputStreamTest.java,testTryWithResources,8,True,BrokenInputStream.java: BrokenInputStream,
+7,apache/commons-lang,769,src/main/java/org/apache/commons/lang3/reflect/MethodUtils.java,getAllSuperclassesAndInterfaces,3,False,,
+8,apache/commons-lang,769,src/main/java/org/apache/commons/lang3/reflect/MethodUtils.java,getAllSuperclassesAndInterfaces,3,False,,
+10,apache/commons-io,281,src/main/java/org/apache/commons/io/IOUtils.java,copy,2,False,,
+11,apache/commons-io,281,src/main/java/org/apache/commons/io/IOUtils.java,copy,2,False,,
+12,apache/commons-io,281,src/test/java/org/apache/commons/io/IOUtilsCopyTest.java,testCopy_byteArrayOutputStreamToInputStream,2,True,"IOUtils.java: IOUtils, copy",
+15,apache/commons-io,281,src/test/java/org/apache/commons/io/IOUtilsCopyTest.java,testCopy_byteArrayOutputStreamToInputStream,2,True,"IOUtils.java: IOUtils, copy",
+24,apache/commons-io,296,src/main/java/org/apache/commons/io/output/FileWriterWithEncoding.java,FileWriterWithEncoding,1,False,,
+28,apache/commons-io,296,src/main/java/org/apache/commons/io/output/FileWriterWithEncoding.java,initWriter,1,False,,
+29,apache/commons-io,296,src/main/java/org/apache/commons/io/output/FileWriterWithEncoding.java,initWriter,1,False,,
+30,apache/commons-lang,766,src/main/java/org/apache/commons/lang3/LocaleUtils.java,parseLocale,2,False,,
+31,apache/commons-lang,766,src/main/java/org/apache/commons/lang3/LocaleUtils.java,toLocale,2,False,,

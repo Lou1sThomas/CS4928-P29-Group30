@@ -1,0 +1,54 @@
+{
+  "repo": "checkstyle/checkstyle",
+  "pr": 8786,
+  "head_sha": "e91be0668407c3357e6ac09be20d700397d30afa",
+  "commented_file": "src/test/java/com/puppycrawl/tools/checkstyle/internal/AllTestsTest.java",
+  "method": "verifyInputFile",
+  "java_files_changed": 6,
+  "dependency_flag": false,
+  "neighbours": [
+    {
+      "file": "src/main/java/com/puppycrawl/tools/checkstyle/checks/DescendantTokenCheck.java",
+      "status": "modified",
+      "changed_declarations": [],
+      "used_by_method": []
+    },
+    {
+      "file": "src/main/java/com/puppycrawl/tools/checkstyle/checks/coding/IllegalTypeCheck.java",
+      "status": "modified",
+      "changed_declarations": [],
+      "used_by_method": []
+    },
+    {
+      "file": "src/main/java/com/puppycrawl/tools/checkstyle/checks/coding/MagicNumberCheck.java",
+      "status": "modified",
+      "changed_declarations": [],
+      "used_by_method": []
+    },
+    {
+      "file": "src/main/java/com/puppycrawl/tools/checkstyle/checks/coding/MultipleStringLiteralsCheck.java",
+      "status": "modified",
+      "changed_declarations": [],
+      "used_by_method": []
+    },
+    {
+      "file": "src/main/java/com/puppycrawl/tools/checkstyle/checks/javadoc/AtclauseOrderCheck.java",
+      "status": "modified",
+      "changed_declarations": [],
+      "used_by_method": []
+    },
+    {
+      "file": "src/test/java/com/puppycrawl/tools/checkstyle/internal/XdocsJavaDocsTest.java",
+      "status": "modified",
+      "changed_declarations": [
+        "CHECK_PROPERTIES",
+        "NON_BASE_TOKEN_PROPERTIES",
+        "emptyStringArrayDefaultValue",
+        "getValidationType",
+        "result",
+        "validationType"
+      ],
+      "used_by_method": []
+    }
+  ]
+}

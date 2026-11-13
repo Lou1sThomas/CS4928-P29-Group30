@@ -1,0 +1,27 @@
+{
+  "repo": "apache/commons-io",
+  "pr": 281,
+  "head_sha": "fe4d4d7d360ae48ea336ed7cc47a2ca4d04cfe15",
+  "commented_file": "src/main/java/org/apache/commons/io/IOUtils.java",
+  "method": "copy",
+  "java_files_changed": 2,
+  "dependency_flag": false,
+  "neighbours": [
+    {
+      "file": "src/test/java/org/apache/commons/io/IOUtilsCopyTest.java",
+      "status": "modified",
+      "changed_declarations": [
+        "assertArrayEquals",
+        "assertEquals",
+        "assertThrows",
+        "in",
+        "inData2",
+        "insize",
+        "out",
+        "testCopy_byteArrayOutputStreamToInputStream",
+        "testCopy_byteArrayOutputStreamToInputStream_nullOutputStream"
+      ],
+      "used_by_method": []
+    }
+  ]
+}

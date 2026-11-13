@@ -1,0 +1,13 @@
+Record_id,repo,pull_number,filename,method,java_files_changed,dependency_flag,matched_names,manual_verdict
+1,checkstyle/checkstyle,8783,src/test/java/com/puppycrawl/tools/checkstyle/internal/AllTestsTest.java,verifyInputFile,12,False,,
+2,checkstyle/checkstyle,8783,src/test/java/com/puppycrawl/tools/checkstyle/internal/AllTestsTest.java,verifyInputFile,12,False,,
+3,checkstyle/checkstyle,8783,src/test/java/com/puppycrawl/tools/checkstyle/internal/AllTestsTest.java,shouldSkipInputFileNameCheck,12,False,,
+7,checkstyle/checkstyle,8783,src/test/java/com/puppycrawl/tools/checkstyle/internal/AllTestsTest.java,shouldSkipInputFileNameCheck,12,False,,
+8,checkstyle/checkstyle,8783,src/test/java/com/puppycrawl/tools/checkstyle/internal/AllTestsTest.java,shouldSkipInputFileNameCheck,12,False,,
+12,checkstyle/checkstyle,8783,src/test/java/com/puppycrawl/tools/checkstyle/internal/AllTestsTest.java,shouldSkipInputFileNameCheck,12,False,,
+17,checkstyle/checkstyle,8783,src/test/java/com/puppycrawl/tools/checkstyle/internal/AllTestsTest.java,verifyInputFile,12,False,,
+18,checkstyle/checkstyle,8783,src/test/java/com/puppycrawl/tools/checkstyle/internal/AllTestsTest.java,verifyInputFile,12,False,,
+19,checkstyle/checkstyle,8786,src/test/java/com/puppycrawl/tools/checkstyle/internal/AllTestsTest.java,shouldSkipInputFileNameCheck,6,False,,
+20,checkstyle/checkstyle,8786,src/test/java/com/puppycrawl/tools/checkstyle/internal/AllTestsTest.java,verifyInputFile,6,False,,
+22,checkstyle/checkstyle,8783,src/test/java/com/puppycrawl/tools/checkstyle/internal/AllTestsTest.java,shouldSkipInputFileNameCheck,12,False,,
+23,checkstyle/checkstyle,8783,src/test/java/com/puppycrawl/tools/checkstyle/internal/AllTestsTest.java,verifyInputFile,12,False,,

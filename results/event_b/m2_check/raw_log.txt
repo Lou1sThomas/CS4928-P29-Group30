@@ -1,0 +1,15 @@
+W1113 13:47:10.082000 47535 torch/distributed/elastic/multiprocessing/redirects.py:35] NOTE: Redirects are currently not supported in MacOs.
+Loading weights:   0%|          | 0/131 [00:00<?, ?it/s]Loading weights: 100%|██████████| 131/131 [00:00<00:00, 5668.74it/s]
+[raw] rank 1 EXM@10=True Lev_Ratio=1.000 (2.6s)
+[raw] rank 2 EXM@10=True Lev_Ratio=1.000 (6.0s)
+[raw] rank 3 EXM@10=False Lev_Ratio=0.999 (5.9s)
+[raw] rank 4 EXM@10=False Lev_Ratio=0.909 (1.5s)
+[raw] rank 5 EXM@10=True Lev_Ratio=1.000 (1.3s)
+[raw] rank 6 EXM@10=True Lev_Ratio=1.000 (3.6s)
+[raw] rank 7 EXM@10=False Lev_Ratio=0.880 (2.6s)
+[raw] rank 8 EXM@10=False Lev_Ratio=0.939 (1.3s)
+[raw] rank 9 EXM@10=True Lev_Ratio=1.000 (5.2s)
+[raw] rank 10 EXM@10=True Lev_Ratio=1.000 (5.5s)
+[raw] rank 11 EXM@10=False Lev_Ratio=0.951 (5.9s)
+[raw] rank 12 EXM@10=False Lev_Ratio=0.123 (9.3s)
+{"representation": "raw", "n": 12, "EXM@1": 25.0, "EXM@3": 33.3, "EXM@5": 33.3, "EXM@10": 50.0, "mean_Lev_Ratio": 0.9, "mean_Lev_Dist": 99.9}

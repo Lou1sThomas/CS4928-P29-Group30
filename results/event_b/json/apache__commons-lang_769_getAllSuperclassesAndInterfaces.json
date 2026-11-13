@@ -1,0 +1,28 @@
+{
+  "repo": "apache/commons-lang",
+  "pr": 769,
+  "head_sha": "79714153e166cd7e223fdcbe853a7d1d31ea1134",
+  "commented_file": "src/main/java/org/apache/commons/lang3/reflect/MethodUtils.java",
+  "method": "getAllSuperclassesAndInterfaces",
+  "java_files_changed": 3,
+  "dependency_flag": false,
+  "neighbours": [
+    {
+      "file": "src/main/java/org/apache/commons/lang3/text/StrBuilder.java",
+      "status": "modified",
+      "changed_declarations": [
+        "newEnd"
+      ],
+      "used_by_method": []
+    },
+    {
+      "file": "src/main/java/org/apache/commons/lang3/time/DateUtils.java",
+      "status": "modified",
+      "changed_declarations": [
+        "end",
+        "start"
+      ],
+      "used_by_method": []
+    }
+  ]
+}

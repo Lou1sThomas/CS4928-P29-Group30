@@ -1,0 +1,99 @@
+{
+  "repo": "apache/commons-lang",
+  "pr": 904,
+  "head_sha": "e24276d71d3082b276be7653a41808ac7d8f7723",
+  "commented_file": "src/test/java/org/apache/commons/lang3/NotImplementedExceptionTest.java",
+  "method": "testConstructors",
+  "java_files_changed": 9,
+  "dependency_flag": false,
+  "neighbours": [
+    {
+      "file": "src/test/java/org/apache/commons/lang3/ArchUtilsTest.java",
+      "status": "modified",
+      "changed_declarations": [
+        "assertTrue",
+        "processor"
+      ],
+      "used_by_method": []
+    },
+    {
+      "file": "src/test/java/org/apache/commons/lang3/ClassUtilsTest.java",
+      "status": "modified",
+      "changed_declarations": [
+        "CX",
+        "OBJECT_CANONICAL_NAME",
+        "assertEquals",
+        "test_getClass"
+      ],
+      "used_by_method": []
+    },
+    {
+      "file": "src/test/java/org/apache/commons/lang3/RangeTest.java",
+      "status": "modified",
+      "changed_declarations": [
+        "assertThrows"
+      ],
+      "used_by_method": []
+    },
+    {
+      "file": "src/test/java/org/apache/commons/lang3/ValidateTest.java",
+      "status": "modified",
+      "changed_declarations": [
+        "ValidIndex",
+        "ValidState",
+        "WitMessage",
+        "WithoutMessage",
+        "assertThrows",
+        "ex",
+        "shouldNotThrowExceptionForTrueExpression",
+        "shouldNotThrowExceptionForValidIndex",
+        "shouldThrowExceptionForTrueExpression"
+      ],
+      "used_by_method": []
+    },
+    {
+      "file": "src/test/java/org/apache/commons/lang3/builder/EqualsBuilderTest.java",
+      "status": "modified",
+      "changed_declarations": [
+        "assertTrue",
+        "bypassReflectionClasses",
+        "testObjectRecursiveGenericString",
+        "testObjectsBypassReflectionClasses"
+      ],
+      "used_by_method": []
+    },
+    {
+      "file": "src/test/java/org/apache/commons/lang3/builder/StandardToStringStyleTest.java",
+      "status": "modified",
+      "changed_declarations": [
+        "assertEquals",
+        "assertFalse",
+        "assertTrue",
+        "testDefaultGetter",
+        "testDefaultIsArrayContentDetail",
+        "testDefaultIsFieldSeparatorAtEnd",
+        "testDefaultIsFieldSeparatorAtStart",
+        "testDefaultValueOfFullDetail"
+      ],
+      "used_by_method": []
+    },
+    {
+      "file": "src/test/java/org/apache/commons/lang3/math/NumberUtilsTest.java",
+      "status": "modified",
+      "changed_declarations": [
+        "assertEquals"
+      ],
+      "used_by_method": []
+    },
+    {
+      "file": "src/test/java/org/apache/commons/lang3/tuple/ImmutablePairTest.java",
+      "status": "modified",
+      "changed_declarations": [
+        "assertThrows",
+        "pair",
+        "testUnsupportedOperation"
+      ],
+      "used_by_method": []
+    }
+  ]
+}

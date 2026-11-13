@@ -1,0 +1,87 @@
+{
+  "repo": "apache/commons-io",
+  "pr": 278,
+  "head_sha": "c02f2a1fc7f49b8c0bac9356984dfd9a74e05048",
+  "commented_file": "src/test/java/org/apache/commons/io/input/BrokenInputStreamTest.java",
+  "method": "testTryWithResources",
+  "java_files_changed": 8,
+  "dependency_flag": true,
+  "neighbours": [
+    {
+      "file": "src/main/java/org/apache/commons/io/input/BrokenInputStream.java",
+      "status": "modified",
+      "changed_declarations": [
+        "BrokenInputStream",
+        "exception",
+        "exceptionSupplier"
+      ],
+      "used_by_method": [
+        "BrokenInputStream"
+      ]
+    },
+    {
+      "file": "src/main/java/org/apache/commons/io/input/BrokenReader.java",
+      "status": "modified",
+      "changed_declarations": [
+        "BrokenReader",
+        "exception",
+        "exceptionSupplier"
+      ],
+      "used_by_method": []
+    },
+    {
+      "file": "src/main/java/org/apache/commons/io/output/BrokenOutputStream.java",
+      "status": "modified",
+      "changed_declarations": [
+        "BrokenOutputStream",
+        "INSTANCE",
+        "exception",
+        "exceptionSupplier"
+      ],
+      "used_by_method": []
+    },
+    {
+      "file": "src/main/java/org/apache/commons/io/output/BrokenWriter.java",
+      "status": "modified",
+      "changed_declarations": [
+        "BrokenWriter",
+        "exception",
+        "exceptionSupplier"
+      ],
+      "used_by_method": []
+    },
+    {
+      "file": "src/test/java/org/apache/commons/io/input/BrokenReaderTest.java",
+      "status": "modified",
+      "changed_declarations": [
+        "assertEquals",
+        "suppressed",
+        "testTryWithResources",
+        "thrown"
+      ],
+      "used_by_method": []
+    },
+    {
+      "file": "src/test/java/org/apache/commons/io/output/BrokenOutputStreamTest.java",
+      "status": "modified",
+      "changed_declarations": [
+        "assertEquals",
+        "suppressed",
+        "testTryWithResources",
+        "thrown"
+      ],
+      "used_by_method": []
+    },
+    {
+      "file": "src/test/java/org/apache/commons/io/output/BrokenWriterTest.java",
+      "status": "modified",
+      "changed_declarations": [
+        "assertEquals",
+        "suppressed",
+        "testTryWithResources",
+        "thrown"
+      ],
+      "used_by_method": []
+    }
+  ]
+}

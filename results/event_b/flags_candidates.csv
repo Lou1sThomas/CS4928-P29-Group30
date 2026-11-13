@@ -1,0 +1,7 @@
+Record_id,repo,pull_number,filename,method,java_files_changed,dependency_flag,matched_names,manual_verdict
+0,apache/commons-lang,892,src/test/java/org/apache/commons/lang3/time/DateUtilsTest.java,testGetStandaloneLongMonthNames,6,True,"DateUtils.java: DateUtils, getStandaloneLongMonths", Confirmed - DateUtils.java adds getStandaloneLongMonths which this test calls; not in model input 
+1,apache/commons-lang,892,src/test/java/org/apache/commons/lang3/time/DateUtilsTest.java,testGetStandaloneLongMonthNames,6,True,"DateUtils.java: DateUtils, getStandaloneLongMonths",Confirmed - same dependency as rank 1 inlining the local variable does not need it
+20,apache/commons-lang,904,src/test/java/org/apache/commons/lang3/ValidateTest.java,shouldReturnSameInstance,9,False,,Correct negative - PR changes test files only; comment is about whitespace
+21,apache/commons-lang,904,src/test/java/org/apache/commons/lang3/builder/EqualsBuilderTest.java,testObjectsBypassReflectionClasses,9,False,,Correct negative - PR changes test files only; comment is about whitespace
+23,apache/commons-lang,904,src/test/java/org/apache/commons/lang3/RangeTest.java,testBetweenWithCompare,9,False,,Correct negative - PR changes test files only; comment asks to put a statement on one line
+24,apache/commons-lang,904,src/test/java/org/apache/commons/lang3/NotImplementedExceptionTest.java,testConstructors,9,False,,Correct negative - PR changes test files only; comment asks to remove a local variable

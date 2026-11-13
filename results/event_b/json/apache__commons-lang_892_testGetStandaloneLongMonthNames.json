@@ -1,0 +1,67 @@
+{
+  "repo": "apache/commons-lang",
+  "pr": 892,
+  "head_sha": "92b5f8e9f489bc642d2b3b757cdfd8d35ebed916",
+  "commented_file": "src/test/java/org/apache/commons/lang3/time/DateUtilsTest.java",
+  "method": "testGetStandaloneLongMonthNames",
+  "java_files_changed": 6,
+  "dependency_flag": true,
+  "neighbours": [
+    {
+      "file": "src/main/java/org/apache/commons/lang3/time/DateUtils.java",
+      "status": "modified",
+      "changed_declarations": [
+        "calendar",
+        "displayNames",
+        "getMonthNames",
+        "getStandaloneLongMonths",
+        "getStandaloneShortMonths",
+        "monthNames"
+      ],
+      "used_by_method": [
+        "DateUtils",
+        "getStandaloneLongMonths"
+      ]
+    },
+    {
+      "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+      "status": "modified",
+      "changed_declarations": [],
+      "used_by_method": []
+    },
+    {
+      "file": "src/main/java/org/apache/commons/lang3/time/FastDatePrinter.java",
+      "status": "modified",
+      "changed_declarations": [
+        "break",
+        "rule"
+      ],
+      "used_by_method": []
+    },
+    {
+      "file": "src/test/java/org/apache/commons/lang3/time/FastDateFormatTest.java",
+      "status": "modified",
+      "changed_declarations": [
+        "FINNISH",
+        "HUNGARIAN",
+        "assertEquals",
+        "date",
+        "dateAsString",
+        "measureTime",
+        "testInstant",
+        "testStandaloneLongMonthForm",
+        "testStandaloneShortMonthForm",
+        "utc"
+      ],
+      "used_by_method": []
+    },
+    {
+      "file": "src/test/java/org/apache/commons/lang3/time/FastDatePrinterTest.java",
+      "status": "modified",
+      "changed_declarations": [
+        "pattern"
+      ],
+      "used_by_method": []
+    }
+  ]
+}

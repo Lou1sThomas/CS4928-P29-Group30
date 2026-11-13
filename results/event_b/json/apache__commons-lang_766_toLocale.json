@@ -1,0 +1,20 @@
+{
+  "repo": "apache/commons-lang",
+  "pr": 766,
+  "head_sha": "0319d84d1c68b1335fd23570143aec454ad66108",
+  "commented_file": "src/main/java/org/apache/commons/lang3/LocaleUtils.java",
+  "method": "toLocale",
+  "java_files_changed": 2,
+  "dependency_flag": false,
+  "neighbours": [
+    {
+      "file": "src/test/java/org/apache/commons/lang3/LocaleUtilsTest.java",
+      "status": "modified",
+      "changed_declarations": [
+        "assertThrows",
+        "assertValidToLocale"
+      ],
+      "used_by_method": []
+    }
+  ]
+}

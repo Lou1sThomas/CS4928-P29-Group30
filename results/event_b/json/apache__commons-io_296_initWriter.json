@@ -1,0 +1,10 @@
+{
+  "repo": "apache/commons-io",
+  "pr": 296,
+  "head_sha": "e878286e58a4371a1c59d1ee76ce3dddd011902e",
+  "commented_file": "src/main/java/org/apache/commons/io/output/FileWriterWithEncoding.java",
+  "method": "initWriter",
+  "java_files_changed": 1,
+  "dependency_flag": false,
+  "neighbours": []
+}
