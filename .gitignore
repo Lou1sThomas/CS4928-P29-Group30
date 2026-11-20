@@ -1,3 +1,8 @@
 data/raw/
 __pycache__/
 .env
+.venv-model/
+.venv-pipeline/
+.DS_Store
+m2_run/EVENTB/
+data/event_b/parts/
